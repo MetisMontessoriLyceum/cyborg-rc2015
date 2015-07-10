@@ -419,6 +419,7 @@ int getStatus (unsigned byte &sensor[]) {
   
   if (sensUS(FRONT) < 11) {
     status = OBSTACLE;
+    return status;
   }
 
   int lowestIndex = 7;
@@ -706,16 +707,17 @@ void init () {
 
 bool MoveUntilNoBlock(int dir, int extraTime = 0, bool stopOnLine = false) {
   int status = 0;
+  long startTick = CurrentTick();
   while (true) {
 
     // detect line
-    if( stopOnLine && LSA_ReadRaw_Calibrated (SENS_PORT, SENS_CODE, sens) ) {
+    if( stopOnLine && CurrentTick() - startTick > 500 && LSA_ReadRaw_Calibrated (SENS_PORT, SENS_CODE, sens) ) {
       CorrectSens(sens);
       if (seeLine(sens)) {
         return true;
       }
     }
-    
+
     unsigned long oldTick;
     switch (status) {
       case 0:
@@ -755,7 +757,7 @@ void Obstacle (byte dir) {
     StopMove();
   
     MoveTo(FRONT);
-    if (MoveUntilNoBlock(!dir,800,true)) {
+    if (MoveUntilNoBlock(!dir,800,i)) {
       // robot is on line
       Wait(200);
       MoveTo(dir);
