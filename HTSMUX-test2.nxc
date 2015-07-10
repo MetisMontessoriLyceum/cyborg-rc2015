@@ -1,0 +1,62 @@
+/*
+ * $Id$
+ */
+ 
+#include "HTSMUX-driver.h"
+
+task main () {
+
+  // Variable to hold measurement data from US sensor
+  byte distance = 0;
+
+  bool flag;
+  int c,r,g,b;
+
+  // configure the port for low speed I2C
+  SetSensor(S1, SENSOR_LOWSPEED);
+  
+  // Tell the SMUX to start scanning its ports.
+  // this takes 500ms
+  if (!HTSMUXscanPorts(S1)) {
+    // Scan failed, handle the error
+    TextOut(0, LCD_LINE1, "Scan failed!");
+    Wait(1000);
+  }
+  
+  // The sensor in this example is a HiTechnic Colour Sensor sensor connected
+  // to the SMUX's 2st port (msensor_S1_2).
+  // SMUX sensor ports use the following naming standard:
+  // If the SMUX is connected to the NXT's S1 port, it starts with msensors_S1.
+  // If the SMUX were to be connected to the S2 port, it would start with msensors_S2
+  // 
+  // The second part denotes the SMUX's port, which it has 4 of.
+  // If the sensor was connected to the SMUX port 1 and the SMUX was connected to 
+  // the NXT's S1 port, the smuxport would be written as msensor_S1_1.
+  // If the sensor was connected to the SMUX port 3 with the SMUX still connected 
+  // to S1, it would be written as msensor_S1_3
+  
+  Wait(1000);
+
+  ClearScreen();
+
+  while (true) {
+    
+    flag = smuxReadSensorHTColor(msensor_S1_2, c,r,g,b);
+    if (flag) {
+      TextOut(0, LCD_LINE4, "Color:      ");
+      NumOut(6*6, LCD_LINE4, c);
+      TextOut(0, LCD_LINE5, "Red  :      ");
+      NumOut(6*6, LCD_LINE5, r);
+      TextOut(0, LCD_LINE6, "Green:      ");
+      NumOut(6*6, LCD_LINE6, g);
+      TextOut(0, LCD_LINE7, "blue :      ");
+      NumOut(6*6, LCD_LINE7, b);
+    } else {
+      TextOut(0, LCD_LINE4, "Color Failed");
+    }
+  }
+}
+
+/*
+ * $Id$
+ */

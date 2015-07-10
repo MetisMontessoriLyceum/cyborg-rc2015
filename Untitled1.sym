@@ -1,0 +1,104 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__signed_stack_001main	6	1	0	4	8
+1	__D0main	6	1	4	4	9
+2	__signed_stack_003main	6	1	8	4	2
+3	__signed_stack_002main	6	1	12	4	2
+4	__constVal2	2	0	16	1	1
+5	____initialize_global_data_return	1	1	17	1	3
+6	__PFTmp	1	1	18	1	1
+7	____main_7qG2_array_7qG2_000_0	8	0	2	4	1
+8	____main_7qG2_array_7qG2_000_0.light	4	1	20	2	1
+9	____main_7qG2_array_7qG2_000_0.dark	4	1	22	2	1
+10	__ArrHelper__mainCaliSens_219_0	8	0	2	4	8
+11	__ArrHelper__mainCaliSens_219_0.light	4	1	24	2	8
+12	__ArrHelper__mainCaliSens_219_0.dark	4	1	26	2	8
+13	__TextOutArgs	8	0	4	16	6
+14	__TextOutArgs.Result	2	1	28	1	6
+15	__TextOutArgs.Location	8	0	2	4	6
+16	__TextOutArgs.Location.X	4	1	32	2	6
+17	__TextOutArgs.Location.Y	4	1	34	2	6
+18	__TextOutArgs.Text	7	0	36	4	6
+19	__TextOutArgs.Text.Text_type	1	0	0	1	0
+20	__TextOutArgs.Options	5	1	40	4	6
+21	__main_7qG2_array_7qG2_000	7	0	44	4	8
+22	__main_7qG2_array_7qG2_000.__main_7qG2_array_7qG2_000_type	8	0	2	4	0
+23	__main_7qG2_array_7qG2_000.__main_7qG2_array_7qG2_000_type.light	4	0	0	2	0
+24	__main_7qG2_array_7qG2_000.__main_7qG2_array_7qG2_000_type.dark	4	0	2	2	0
+#SOURCES
+Clump	Line	PC	Source
+0	7	0	#line 7 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	8	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	7	2	#line 7 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	8	2	#line 8 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	8	2	#line 8 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	9	2		arrinit __main_7qG2_array_7qG2_000, ____main_7qG2_array_7qG2_000_0, __constVal2
+0	8	6	#line 8 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	9	6		set __signed_stack_001main, 0
+0	8	9	#line 8 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	8	9	#line 8 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	9	9		index __ArrHelper__mainCaliSens_219_0, __main_7qG2_array_7qG2_000, __signed_stack_001main
+0	9	13	#line 9 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	10	13		set __ArrHelper__mainCaliSens_219_0.light, 5
+0	9	16	#line 9 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	9	16	#line 9 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	10	16		replace __main_7qG2_array_7qG2_000, __main_7qG2_array_7qG2_000, __signed_stack_001main, __ArrHelper__mainCaliSens_219_0
+0	9	21	#line 9 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	9	21	#line 9 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	10	21		set __signed_stack_001main, 0
+0	9	24	#line 9 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	9	24	#line 9 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	10	24		index __ArrHelper__mainCaliSens_219_0, __main_7qG2_array_7qG2_000, __signed_stack_001main
+0	10	28	#line 10 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	11	28		set __ArrHelper__mainCaliSens_219_0.dark, 10
+0	10	31	#line 10 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	10	31	#line 10 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	11	31		replace __main_7qG2_array_7qG2_000, __main_7qG2_array_7qG2_000, __signed_stack_001main, __ArrHelper__mainCaliSens_219_0
+0	10	36	#line 10 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	10	36	#line 10 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	11	36		set __signed_stack_001main, 0
+0	10	39	#line 10 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	10	39	#line 10 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	11	39		set __signed_stack_002main, 56
+0	10	42	#line 10 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	10	42	#line 10 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	11	42		set __signed_stack_003main, 0
+0	10	45	#line 10 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	10	45	#line 10 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	11	45		index __ArrHelper__mainCaliSens_219_0, __main_7qG2_array_7qG2_000, __signed_stack_003main
+0	10	49	#line 10 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	11	49		mov __D0main, __ArrHelper__mainCaliSens_219_0.dark
+0	12	51	#line 12 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	12	51	#line 12 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	13	51		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	12	53	#line 12 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	13	53		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	12	55	#line 12 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	13	55		set __TextOutArgs.Options, 0
+0	12	58	#line 12 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	13	58		numtostr __TextOutArgs.Text, __D0main
+0	12	61	#line 12 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	13	61		syscall 13, __TextOutArgs
+0	12	64	#line 12 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	13	64		mov __D0main, __TextOutArgs.Result
+0	12	66	#line 12 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	12	66	#line 12 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	12	66	#line 12 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	13	66		set __D0main, 0
+0	12	69	#line 12 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	13	69		not __D0main, __D0main
+0	13	72	#line 13 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	14	72		tst 5, __D0main, __D0main
+0	13	75	#line 13 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	14	75		brtst 4, __ASM_Label_506, __D0main
+0	13	78	#line 13 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	13	78	#line 13 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	14	78		jmp __ASM_Label_505
+0	13	80	#line 13 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+0	14	80		exit -1, -1
+1	16	0	#line 16 "C:\Users\Noah\Desktop\nxt\Untitled1.nxc"
+1	17	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Noah\Desktop\nxt\Untitled1.nxc
+1	__initialize_global_data	83	C:\Users\Noah\Desktop\nxt\Untitled1.nxc

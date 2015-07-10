@@ -1,0 +1,2405 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0smuxSensorLegoLightNorm	6	1	0	4	9
+1	__D0smuxSensorLegoLightRaw	6	1	4	4	2
+2	__D0smuxSetSensorLegoLight	6	1	8	4	2
+3	__DU0init	5	1	12	4	10
+4	__D0main	6	1	16	4	32
+5	__D0sens	6	1	20	4	21
+6	__DU0smuxSetSensorLegoLight	5	1	24	4	14
+7	__signed_stack_002_HTSMUXsetMode	6	1	28	4	2
+8	__unsigned_stack_001_HTSMUXsetMode	5	1	32	4	12
+9	__signed_stack_001HTSMUXreadAnalogue	6	1	36	4	12
+10	__signed_stack_001_HTSMUXsendCmd	6	1	40	4	8
+11	__unsigned_stack_001_HTSMUXsendCmd	5	1	44	4	10
+12	__signed_stack_001_HTSMUXsetMode	6	1	48	4	12
+13	__DU0_HTSMUXsetMode	5	1	52	4	11
+14	__D0HTSMUXreadAnalogue	6	1	56	4	45
+15	__DU0HTSMUXreadAnalogue	5	1	60	4	2
+16	__D0_HTSMUXsendCmd	6	1	64	4	39
+17	__DU0_HTSMUXsendCmd	5	1	68	4	15
+18	__D0_HTSMUXsetMode	6	1	72	4	43
+19	__D0HTSMUXscanPorts	6	1	76	4	44
+20	__D0HTSMUXsetAnalogueInactive	6	1	80	4	16
+21	__DU0HTSMUXsetAnalogueInactive	5	1	84	4	6
+22	__D0init	6	1	88	4	15
+23	__DU0HTSMUXscanPorts	5	1	92	4	12
+24	__D0HTSMUXsetAnalogueActive	6	1	96	4	16
+25	__DU0HTSMUXsetAnalogueActive	5	1	100	4	6
+26	__signed_stack_002HTSMUXreadAnalogue	6	1	104	4	4
+27	__signed_stack_002main	6	1	108	4	28
+28	__signed_stack_001sens	6	1	112	4	2
+29	__signed_stack_002sens	6	1	116	4	2
+30	__signed_stack_001init	6	1	120	4	10
+31	__signed_stack_002init	6	1	124	4	10
+32	__signed_stack_001main	6	1	128	4	28
+33	__signed_stack_001smuxSensorLegoLightNorm	6	1	132	4	4
+34	__Wait_7qG2_ms_7qG2_000_inline_init	5	1	136	4	10
+35	__Wait_7qG2_ms_7qG2_000_inline_sens	5	1	140	4	2
+36	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	144	4	2
+37	__signed_stack_001smuxSensorLegoLightRaw	6	1	148	4	2
+38	__Wait_7qG2_ms_7qG2_000_inline__HTSMUXsendCmd	5	1	152	4	4
+39	__Wait_7qG2_ms_7qG2_000_inline_HTSMUXscanPorts	5	1	156	4	2
+40	__signed_stack_001HTSMUXscanPorts	6	1	160	4	16
+41	__signed_stack_002HTSMUXscanPorts	6	1	164	4	6
+42	__signed_stack_003HTSMUXscanPorts	6	1	168	4	2
+43	__unsigned_stack_001HTSMUXreadAnalogue	5	1	172	4	14
+44	__unsigned_stack_002HTSMUXreadAnalogue	5	1	176	4	2
+45	__unsigned_stack_003HTSMUXreadAnalogue	5	1	180	4	2
+46	__unsigned_stack_001HTSMUXscanPorts	5	1	184	4	10
+47	__signed_stack_001HTSMUXsetAnalogueInactive	6	1	188	4	6
+48	__unsigned_stack_001HTSMUXsetAnalogueInactive	5	1	192	4	6
+49	__unsigned_stack_002HTSMUXsetAnalogueInactive	5	1	196	4	2
+50	__signed_stack_001HTSMUXsetAnalogueActive	6	1	200	4	6
+51	__unsigned_stack_001HTSMUXsetAnalogueActive	5	1	204	4	6
+52	__unsigned_stack_002HTSMUXsetAnalogueActive	5	1	208	4	2
+53	__RLSBmutex3	9	0	212	4	4
+54	__CLSWMutex3	9	0	216	4	6
+55	__CLSCSMutex2	9	0	220	4	24
+56	__CLSWMutex2	9	0	224	4	8
+57	__CLSCSMutex1	9	0	228	4	24
+58	__CLSRMutex1	9	0	232	4	4
+59	__CLSRMutex3	9	0	236	4	2
+60	__CLSWMutex1	9	0	240	4	8
+61	__RLSBmutex1	9	0	244	4	6
+62	__CLSRMutex0	9	0	248	4	2
+63	__CLSRMutex2	9	0	252	4	4
+64	__CLSCSMutex0	9	0	256	4	22
+65	__TextOutMutex	9	0	260	4	40
+66	__RLSBmutex0	9	0	264	4	4
+67	__RLSBmutex2	9	0	268	4	6
+68	__CLSWMutex0	9	0	272	4	6
+69	__CLSCSMutex3	9	0	276	4	22
+70	__HTSMUXscanPorts_7qG2_i_7qG2_001	4	1	280	2	7
+71	__sens_7qG2_ret_7qG2_000	4	1	282	2	8
+72	__sens_7qG2_num_7qG2_000	4	1	284	2	8
+73	__constVal200	4	0	286	2	2
+74	___HTSMUXsendCmd_7qG2_cmd_7qG2_000	1	1	288	1	10
+75	___HTSMUXsetMode_7qG2_muxport_7qG2_000	1	1	289	1	4
+76	___HTSMUXsetMode_7qG2_mode_7qG2_000	1	1	290	1	3
+77	___HTSMUXsendCmd_7qG2_smux_7qG2_000	1	1	291	1	14
+78	__smuxSensorLegoLightRaw_7qG2_muxport_7qG2_000	1	1	292	1	2
+79	__smuxSensorLegoLightNorm_7qG2_muxport_7qG2_000	1	1	293	1	5
+80	__HTSMUXscanPorts_7qG2_smux_7qG2_000	1	1	294	1	9
+81	__ResetSensorPort	1	1	295	1	3
+82	__constVal5	2	0	296	1	1
+83	__HTSMUXsetAnalogueInactive_7qG2_muxport_7qG2_000	1	1	297	1	5
+84	__HTSMUXsetAnalogueActive_7qG2_muxport_7qG2_000	1	1	298	1	5
+85	__HTSMUXreadAnalogue_7qG2_muxport_7qG2_000	1	1	299	1	3
+86	__smuxSetSensorLegoLight_7qG2_muxport_7qG2_000	1	1	300	1	6
+87	__smuxSetSensorLegoLight_7qG2_active_7qG2_000	1	1	301	1	5
+88	___HTSMUXsendCmd_return	1	1	302	1	9
+89	__smuxSetSensorLegoLight_return	1	1	303	1	8
+90	__init_return	1	1	304	1	3
+91	__SetSensor_7qG2_port_7qG2_000_inline_init	1	1	305	1	4
+92	__constValNeg1	2	0	306	1	2
+93	__smuxSensorLegoLightRaw_return	1	1	307	1	4
+94	__smuxSensorLegoLightNorm_return	1	1	308	1	7
+95	__constVal0	2	1	309	1	14
+96	__constVal1	2	0	310	1	18
+97	____initialize_global_data_return	1	1	311	1	3
+98	__constVal32	2	0	312	1	1
+99	__SetSensorType_7qG2_port_7qG2_000_inline_init	1	1	313	1	6
+100	__SetSensorType_7qG2_type_7qG2_000_inline_init	1	1	314	1	6
+101	__sens_return	1	1	315	1	10
+102	__HTSMUXsetAnalogueInactive_return	1	1	316	1	6
+103	__HTSMUXreadAnalogue_7qG2_smux_7qG2_000	1	1	317	1	6
+104	__HTSMUXreadAnalogue_7qG2_channel_7qG2_000	1	1	318	1	2
+105	__HTSMUXscanPorts_return	1	1	319	1	7
+106	__constVal4	2	0	320	1	2
+107	__HTSMUXreadAnalogue_return	1	1	321	1	7
+108	__HTSMUXreadAnalogue_7qG2_count_7qG2_000	1	1	322	1	3
+109	__HTSMUXscanPorts_7qG2_size_7qG2_000	1	1	323	1	3
+110	___HTSMUXsetMode_7qG2_channel_7qG2_000	1	1	324	1	2
+111	___HTSMUXsetMode_7qG2_regaddr_7qG2_000	1	1	325	1	2
+112	__HTSMUXsetAnalogueActive_return	1	1	326	1	6
+113	__constVal3	2	0	327	1	1
+114	___HTSMUXsetMode_return	1	1	328	1	7
+115	___HTSMUXsetMode_7qG2_smux_7qG2_000	1	1	329	1	9
+116	__ResetSensorTmp	1	1	330	1	2
+117	__RLSBytesCount2	1	1	331	1	7
+118	__RLSBResult2	2	1	332	1	7
+119	__RLSBIterations2	1	1	333	1	4
+120	__constVal2	2	0	334	1	6
+121	__tmpsbyte_HTSMUXsetMode	2	1	335	1	4
+122	__RLSBResult1	2	1	336	1	7
+123	____ReadLSBytes1_return	1	1	337	1	3
+124	__RLSBytesCount1	1	1	338	1	7
+125	____ReadLSBytes2_return	1	1	339	1	3
+126	__RLSBIterations1	1	1	340	1	4
+127	__RLSBIterationsVar	1	1	341	1	4
+128	__RLSReadPort	1	1	342	1	5
+129	__RLSBytesCountVar	1	1	343	1	10
+130	____ReadLSBytesVar_return	1	1	344	1	4
+131	__RLSBResultVar	2	1	345	1	9
+132	__constVal16	2	0	346	1	3
+133	__tmpsbyte_HTSMUXsendCmd	2	1	347	1	4
+134	__constVal15	2	0	348	1	4
+135	__constVal10	2	0	349	1	1
+136	__PFTmp	1	1	350	1	1
+137	__LSWriteOptions1	1	1	351	1	1
+138	__LSWriteOptionsVar	1	1	352	1	3
+139	____ResetSensorSubroutine_return	1	1	353	1	3
+140	__LSWriteOptions2	1	1	354	1	1
+141	__CLSCSArgs2	8	0	3	4	4
+142	__CLSCSArgs2.Result	2	1	356	1	4
+143	__CLSCSArgs2.Port	1	1	357	1	4
+144	__CLSCSArgs2.BytesReady	1	1	358	1	4
+145	__CLSWArgs2	8	0	4	12	5
+146	__CLSWArgs2.Result	2	1	360	1	5
+147	__CLSWArgs2.Port	1	1	361	1	5
+148	__CLSWArgs2.Buffer	7	0	362	4	5
+149	__CLSWArgs2.Buffer.Buffer_type	1	0	0	1	0
+150	__CLSWArgs2.ReturnLen	1	1	364	1	5
+151	__CLSRArgs2	8	0	4	12	5
+152	__CLSRArgs2.Result	2	1	368	1	5
+153	__CLSRArgs2.Port	1	1	369	1	5
+154	__CLSRArgs2.Buffer	7	0	370	4	5
+155	__CLSRArgs2.Buffer.Buffer_type	1	0	0	1	0
+156	__CLSRArgs2.BufferLen	1	1	372	1	5
+157	__CLSRArgs0	8	0	4	12	5
+158	__CLSRArgs0.Result	2	1	376	1	5
+159	__CLSRArgs0.Port	1	1	377	1	5
+160	__CLSRArgs0.Buffer	7	0	378	4	5
+161	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+162	__CLSRArgs0.BufferLen	1	1	380	1	5
+163	__CLSWArgs0	8	0	4	12	15
+164	__CLSWArgs0.Result	2	1	384	1	15
+165	__CLSWArgs0.Port	1	1	385	1	15
+166	__CLSWArgs0.Buffer	7	0	386	4	15
+167	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+168	__CLSWArgs0.ReturnLen	1	1	388	1	15
+169	__CLSCSArgs0	8	0	3	4	42
+170	__CLSCSArgs0.Result	2	1	392	1	42
+171	__CLSCSArgs0.Port	1	1	393	1	42
+172	__CLSCSArgs0.BytesReady	1	1	394	1	42
+173	__CLSRArgs1	8	0	4	12	5
+174	__CLSRArgs1.Result	2	1	396	1	5
+175	__CLSRArgs1.Port	1	1	397	1	5
+176	__CLSRArgs1.Buffer	7	0	398	4	5
+177	__CLSRArgs1.Buffer.Buffer_type	1	0	0	1	0
+178	__CLSRArgs1.BufferLen	1	1	400	1	5
+179	__CLSWArgs1	8	0	4	12	5
+180	__CLSWArgs1.Result	2	1	404	1	5
+181	__CLSWArgs1.Port	1	1	405	1	5
+182	__CLSWArgs1.Buffer	7	0	406	4	5
+183	__CLSWArgs1.Buffer.Buffer_type	1	0	0	1	0
+184	__CLSWArgs1.ReturnLen	1	1	408	1	5
+185	__CLSCSArgs1	8	0	3	4	4
+186	__CLSCSArgs1.Result	2	1	412	1	4
+187	__CLSCSArgs1.Port	1	1	413	1	4
+188	__CLSCSArgs1.BytesReady	1	1	414	1	4
+189	__TextOutArgs	8	0	4	16	120
+190	__TextOutArgs.Result	2	1	416	1	120
+191	__TextOutArgs.Location	8	0	2	4	120
+192	__TextOutArgs.Location.X	4	1	420	2	120
+193	__TextOutArgs.Location.Y	4	1	422	2	120
+194	__TextOutArgs.Text	7	0	424	4	120
+195	__TextOutArgs.Text.Text_type	1	0	0	1	0
+196	__TextOutArgs.Options	5	1	428	4	120
+197	__PointOutArgs	8	0	3	12	4
+198	__PointOutArgs.Result	2	1	432	1	4
+199	__PointOutArgs.Location	8	0	2	4	4
+200	__PointOutArgs.Location.X	4	1	436	2	4
+201	__PointOutArgs.Location.Y	4	1	438	2	4
+202	__PointOutArgs.Options	5	1	440	4	4
+203	__constStr0014	7	0	444	4	1
+204	__constStr0014.__constStr0014_type	1	1	0	1	0
+205	__HTSMUXreadAnalogue_7qG2_readMsg_7qG2_000	7	0	446	4	4
+206	__HTSMUXreadAnalogue_7qG2_readMsg_7qG2_000.__HTSMUXreadAnalogue_7qG2_readMsg_7qG2_000_type	1	0	0	1	0
+207	__RLSLastGoodReadVar	7	0	448	4	2
+208	__RLSLastGoodReadVar.__RLSLastGoodReadVar_type	1	0	0	1	0
+209	smuxSensorTypes	7	0	450	4	7
+210	smuxSensorTypes.smuxSensorTypes_type	1	0	0	1	0
+211	__RLSReadBufVar	7	0	452	4	10
+212	__RLSReadBufVar.__RLSReadBufVar_type	1	0	0	1	0
+213	smuxStatus	7	0	454	4	14
+214	smuxStatus.smuxStatus_type	1	0	0	1	0
+215	__constStr0013	7	0	456	4	1
+216	__constStr0013.__constStr0013_type	1	1	0	1	0
+217	__constStr0017	7	0	458	4	1
+218	__constStr0017.__constStr0017_type	1	1	0	1	0
+219	__constStr0022	7	0	460	4	1
+220	__constStr0022.__constStr0022_type	1	1	0	1	0
+221	__constStr0023	7	0	462	4	1
+222	__constStr0023.__constStr0023_type	1	1	0	1	0
+223	__HTSMUXreadAnalogue_7qG2_sendMsg_7qG2_000	7	0	464	4	6
+224	__HTSMUXreadAnalogue_7qG2_sendMsg_7qG2_000.__HTSMUXreadAnalogue_7qG2_sendMsg_7qG2_000_type	1	0	0	1	0
+225	__constStr0021	7	0	466	4	1
+226	__constStr0021.__constStr0021_type	1	1	0	1	0
+227	__constStr0018	7	0	468	4	1
+228	__constStr0018.__constStr0018_type	1	1	0	1	0
+229	__constStr0019	7	0	470	4	1
+230	__constStr0019.__constStr0019_type	1	1	0	1	0
+231	__constStr0020	7	0	472	4	1
+232	__constStr0020.__constStr0020_type	1	1	0	1	0
+233	__constStr0012	7	0	474	4	1
+234	__constStr0012.__constStr0012_type	1	1	0	1	0
+235	__RLSReadBuf2	7	0	476	4	8
+236	__RLSReadBuf2.__RLSReadBuf2_type	1	0	0	1	0
+237	__RLSBbufLSWrite1	7	0	478	4	2
+238	__RLSBbufLSWrite1.__RLSBbufLSWrite1_type	1	0	0	1	0
+239	__HTSMUXscanPorts_7qG2_readMsg_7qG2_000	7	0	480	4	2
+240	__HTSMUXscanPorts_7qG2_readMsg_7qG2_000.__HTSMUXscanPorts_7qG2_readMsg_7qG2_000_type	1	0	0	1	0
+241	___HTSMUXsendCmd_7qG2_sendMsg_7qG2_000	7	0	482	4	2
+242	___HTSMUXsendCmd_7qG2_sendMsg_7qG2_000.___HTSMUXsendCmd_7qG2_sendMsg_7qG2_000_type	1	0	0	1	0
+243	__RLSLastGoodRead2	7	0	484	4	2
+244	__RLSLastGoodRead2.__RLSLastGoodRead2_type	1	0	0	1	0
+245	___HTSMUXsetMode_7qG2_sendMsg_7qG2_000	7	0	486	4	2
+246	___HTSMUXsetMode_7qG2_sendMsg_7qG2_000.___HTSMUXsetMode_7qG2_sendMsg_7qG2_000_type	1	0	0	1	0
+247	__RLSReadBuf1	7	0	488	4	8
+248	__RLSReadBuf1.__RLSReadBuf1_type	1	0	0	1	0
+249	__HTSMUXscanPorts_7qG2_sendMsg_7qG2_000	7	0	490	4	6
+250	__HTSMUXscanPorts_7qG2_sendMsg_7qG2_000.__HTSMUXscanPorts_7qG2_sendMsg_7qG2_000_type	1	0	0	1	0
+251	__strbufmain	7	0	492	4	14
+252	__strbufmain.__strbufmain_type	1	0	0	1	0
+253	__constStr0010	7	0	494	4	1
+254	__constStr0010.__constStr0010_type	1	1	0	1	0
+255	__constStr0011	7	0	496	4	1
+256	__constStr0011.__constStr0011_type	1	1	0	1	0
+257	__strbufsens	7	0	498	4	2
+258	__strbufsens.__strbufsens_type	1	0	0	1	0
+259	__RLSLastGoodRead1	7	0	500	4	2
+260	__RLSLastGoodRead1.__RLSLastGoodRead1_type	1	0	0	1	0
+261	__constStr0009	7	0	502	4	1
+262	__constStr0009.__constStr0009_type	1	1	0	1	0
+263	__strbufinit	7	0	504	4	10
+264	__strbufinit.__strbufinit_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	158	0	#line 158 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	159	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	158	2	#line 158 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	160	2	#line 160 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	161	2		subcall init, __init_return
+0	160	4	#line 160 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	160	4	#line 160 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	161	4		set __D0main, 1
+0	247	7	#line 247 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	248	7		tst 5, __D0main, __D0main
+0	247	10	#line 247 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	248	10		brtst 4, __ASM_Label_1534, __D0main
+0	6678	13	#line 6678 "NXCDefs.h"
+0	6679	13	#pragma macro 6
+0	6679	13		mov __PointOutArgs.Location.X, __constVal200
+0	6679	15		mov __PointOutArgs.Location.Y, __constVal200
+0	6679	18		mov __PointOutArgs.Options, __constVal1
+0	6679	20		syscall 14, __PointOutArgs
+0	11617	23	#line 11617 "NXCDefs.h"
+0	6678	23	#line 6678 "NXCDefs.h"
+0	248	23	#line 248 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	248	23	#line 248 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	249	23		set __signed_stack_001main, 1
+0	248	26	#line 248 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	248	26	#line 248 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	249	26		set __signed_stack_002main, 56
+0	248	29	#line 248 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	248	29	#line 248 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	249	29		strcat __strbufmain, __constStr0017
+0	249	33	#line 249 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	250	33		acquire __TextOutMutex
+0	249	34	#line 249 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	250	34		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	249	37	#line 249 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	250	37		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	249	40	#line 249 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	250	40		set __TextOutArgs.Options, 0
+0	249	43	#line 249 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	250	43		mov __TextOutArgs.Text, __strbufmain
+0	249	45	#line 249 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	250	45		syscall 13, __TextOutArgs
+0	249	48	#line 249 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	250	48		mov __D0main, __TextOutArgs.Result
+0	249	51	#line 249 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	250	51		release __TextOutMutex
+0	249	52	#line 249 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	249	52	#line 249 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	250	52		set __signed_stack_001main, 50
+0	249	55	#line 249 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	249	55	#line 249 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	250	55		set __signed_stack_002main, 56
+0	249	58	#line 249 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	249	58	#line 249 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	250	58		mov __sens_7qG2_num_7qG2_000, __constValNeg1
+0	249	60	#line 249 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	249	60	#line 249 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	250	60		subcall sens, __sens_return
+0	249	62	#line 249 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	250	62		mov __D0main, __D0sens
+0	250	64	#line 250 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	251	64		acquire __TextOutMutex
+0	250	65	#line 250 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	251	65		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	250	68	#line 250 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	251	68		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	250	71	#line 250 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	251	71		set __TextOutArgs.Options, 0
+0	250	74	#line 250 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	251	74		numtostr __TextOutArgs.Text, __D0main
+0	250	77	#line 250 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	251	77		syscall 13, __TextOutArgs
+0	250	80	#line 250 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	251	80		mov __D0main, __TextOutArgs.Result
+0	250	83	#line 250 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	251	83		release __TextOutMutex
+0	250	84	#line 250 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	250	84	#line 250 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	251	84		set __signed_stack_001main, 1
+0	250	87	#line 250 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	250	87	#line 250 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	251	87		set __signed_stack_002main, 48
+0	250	90	#line 250 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	250	90	#line 250 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	251	90		strcat __strbufmain, __constStr0018
+0	251	94	#line 251 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	252	94		acquire __TextOutMutex
+0	251	95	#line 251 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	252	95		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	251	98	#line 251 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	252	98		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	251	101	#line 251 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	252	101		set __TextOutArgs.Options, 0
+0	251	104	#line 251 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	252	104		mov __TextOutArgs.Text, __strbufmain
+0	251	106	#line 251 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	252	106		syscall 13, __TextOutArgs
+0	251	109	#line 251 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	252	109		mov __D0main, __TextOutArgs.Result
+0	251	112	#line 251 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	252	112		release __TextOutMutex
+0	251	113	#line 251 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	251	113	#line 251 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	252	113		set __signed_stack_001main, 50
+0	251	116	#line 251 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	251	116	#line 251 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	252	116		set __signed_stack_002main, 48
+0	251	119	#line 251 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	251	119	#line 251 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	252	119		set __sens_7qG2_num_7qG2_000, 0
+0	251	122	#line 251 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	251	122	#line 251 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	252	122		subcall sens, __sens_return
+0	251	124	#line 251 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	252	124		mov __D0main, __D0sens
+0	253	126	#line 253 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	254	126		acquire __TextOutMutex
+0	253	127	#line 253 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	254	127		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	253	130	#line 253 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	254	130		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	253	133	#line 253 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	254	133		set __TextOutArgs.Options, 0
+0	253	136	#line 253 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	254	136		numtostr __TextOutArgs.Text, __D0main
+0	253	139	#line 253 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	254	139		syscall 13, __TextOutArgs
+0	253	142	#line 253 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	254	142		mov __D0main, __TextOutArgs.Result
+0	253	145	#line 253 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	254	145		release __TextOutMutex
+0	253	146	#line 253 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	253	146	#line 253 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	254	146		set __signed_stack_001main, 1
+0	253	149	#line 253 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	253	149	#line 253 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	254	149		set __signed_stack_002main, 40
+0	253	152	#line 253 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	253	152	#line 253 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	254	152		strcat __strbufmain, __constStr0019
+0	254	156	#line 254 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	255	156		acquire __TextOutMutex
+0	254	157	#line 254 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	255	157		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	254	160	#line 254 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	255	160		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	254	163	#line 254 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	255	163		set __TextOutArgs.Options, 0
+0	254	166	#line 254 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	255	166		mov __TextOutArgs.Text, __strbufmain
+0	254	168	#line 254 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	255	168		syscall 13, __TextOutArgs
+0	254	171	#line 254 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	255	171		mov __D0main, __TextOutArgs.Result
+0	254	174	#line 254 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	255	174		release __TextOutMutex
+0	254	175	#line 254 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	254	175	#line 254 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	255	175		set __signed_stack_001main, 50
+0	254	178	#line 254 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	254	178	#line 254 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	255	178		set __signed_stack_002main, 40
+0	254	181	#line 254 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	254	181	#line 254 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	255	181		set __sens_7qG2_num_7qG2_000, 1
+0	254	184	#line 254 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	254	184	#line 254 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	255	184		subcall sens, __sens_return
+0	254	186	#line 254 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	255	186		mov __D0main, __D0sens
+0	255	188	#line 255 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	256	188		acquire __TextOutMutex
+0	255	189	#line 255 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	256	189		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	255	192	#line 255 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	256	192		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	255	195	#line 255 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	256	195		set __TextOutArgs.Options, 0
+0	255	198	#line 255 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	256	198		numtostr __TextOutArgs.Text, __D0main
+0	255	201	#line 255 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	256	201		syscall 13, __TextOutArgs
+0	255	204	#line 255 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	256	204		mov __D0main, __TextOutArgs.Result
+0	255	207	#line 255 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	256	207		release __TextOutMutex
+0	255	208	#line 255 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	255	208	#line 255 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	256	208		set __signed_stack_001main, 1
+0	255	211	#line 255 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	255	211	#line 255 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	256	211		set __signed_stack_002main, 32
+0	255	214	#line 255 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	255	214	#line 255 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	256	214		strcat __strbufmain, __constStr0020
+0	256	218	#line 256 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	257	218		acquire __TextOutMutex
+0	256	219	#line 256 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	257	219		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	256	222	#line 256 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	257	222		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	256	225	#line 256 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	257	225		set __TextOutArgs.Options, 0
+0	256	228	#line 256 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	257	228		mov __TextOutArgs.Text, __strbufmain
+0	256	230	#line 256 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	257	230		syscall 13, __TextOutArgs
+0	256	233	#line 256 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	257	233		mov __D0main, __TextOutArgs.Result
+0	256	236	#line 256 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	257	236		release __TextOutMutex
+0	256	237	#line 256 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	256	237	#line 256 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	257	237		set __signed_stack_001main, 50
+0	256	240	#line 256 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	256	240	#line 256 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	257	240		set __signed_stack_002main, 32
+0	256	243	#line 256 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	256	243	#line 256 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	257	243		set __sens_7qG2_num_7qG2_000, 2
+0	256	246	#line 256 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	256	246	#line 256 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	257	246		subcall sens, __sens_return
+0	256	248	#line 256 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	257	248		mov __D0main, __D0sens
+0	257	250	#line 257 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	258	250		acquire __TextOutMutex
+0	257	251	#line 257 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	258	251		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	257	254	#line 257 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	258	254		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	257	257	#line 257 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	258	257		set __TextOutArgs.Options, 0
+0	257	260	#line 257 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	258	260		numtostr __TextOutArgs.Text, __D0main
+0	257	263	#line 257 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	258	263		syscall 13, __TextOutArgs
+0	257	266	#line 257 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	258	266		mov __D0main, __TextOutArgs.Result
+0	257	269	#line 257 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	258	269		release __TextOutMutex
+0	257	270	#line 257 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	257	270	#line 257 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	258	270		set __signed_stack_001main, 1
+0	257	273	#line 257 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	257	273	#line 257 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	258	273		set __signed_stack_002main, 24
+0	257	276	#line 257 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	257	276	#line 257 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	258	276		strcat __strbufmain, __constStr0021
+0	258	280	#line 258 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	259	280		acquire __TextOutMutex
+0	258	281	#line 258 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	259	281		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	258	284	#line 258 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	259	284		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	258	287	#line 258 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	259	287		set __TextOutArgs.Options, 0
+0	258	290	#line 258 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	259	290		mov __TextOutArgs.Text, __strbufmain
+0	258	292	#line 258 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	259	292		syscall 13, __TextOutArgs
+0	258	295	#line 258 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	259	295		mov __D0main, __TextOutArgs.Result
+0	258	298	#line 258 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	259	298		release __TextOutMutex
+0	258	299	#line 258 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	258	299	#line 258 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	259	299		set __signed_stack_001main, 50
+0	258	302	#line 258 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	258	302	#line 258 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	259	302		set __signed_stack_002main, 24
+0	258	305	#line 258 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	258	305	#line 258 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	259	305		set __sens_7qG2_num_7qG2_000, 3
+0	258	308	#line 258 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	258	308	#line 258 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	259	308		subcall sens, __sens_return
+0	258	310	#line 258 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	259	310		mov __D0main, __D0sens
+0	259	312	#line 259 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	260	312		acquire __TextOutMutex
+0	259	313	#line 259 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	260	313		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	259	316	#line 259 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	260	316		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	259	319	#line 259 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	260	319		set __TextOutArgs.Options, 0
+0	259	322	#line 259 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	260	322		numtostr __TextOutArgs.Text, __D0main
+0	259	325	#line 259 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	260	325		syscall 13, __TextOutArgs
+0	259	328	#line 259 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	260	328		mov __D0main, __TextOutArgs.Result
+0	259	331	#line 259 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	260	331		release __TextOutMutex
+0	259	332	#line 259 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	259	332	#line 259 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	260	332		set __signed_stack_001main, 1
+0	259	335	#line 259 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	259	335	#line 259 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	260	335		set __signed_stack_002main, 16
+0	259	338	#line 259 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	259	338	#line 259 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	260	338		strcat __strbufmain, __constStr0022
+0	260	342	#line 260 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	261	342		acquire __TextOutMutex
+0	260	343	#line 260 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	261	343		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	260	346	#line 260 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	261	346		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	260	349	#line 260 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	261	349		set __TextOutArgs.Options, 0
+0	260	352	#line 260 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	261	352		mov __TextOutArgs.Text, __strbufmain
+0	260	354	#line 260 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	261	354		syscall 13, __TextOutArgs
+0	260	357	#line 260 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	261	357		mov __D0main, __TextOutArgs.Result
+0	260	360	#line 260 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	261	360		release __TextOutMutex
+0	260	361	#line 260 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	260	361	#line 260 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	261	361		set __signed_stack_001main, 50
+0	260	364	#line 260 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	260	364	#line 260 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	261	364		set __signed_stack_002main, 16
+0	260	367	#line 260 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	260	367	#line 260 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	261	367		set __sens_7qG2_num_7qG2_000, 4
+0	260	370	#line 260 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	260	370	#line 260 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	261	370		subcall sens, __sens_return
+0	260	372	#line 260 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	261	372		mov __D0main, __D0sens
+0	261	374	#line 261 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	262	374		acquire __TextOutMutex
+0	261	375	#line 261 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	262	375		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	261	378	#line 261 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	262	378		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	261	381	#line 261 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	262	381		set __TextOutArgs.Options, 0
+0	261	384	#line 261 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	262	384		numtostr __TextOutArgs.Text, __D0main
+0	261	387	#line 261 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	262	387		syscall 13, __TextOutArgs
+0	261	390	#line 261 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	262	390		mov __D0main, __TextOutArgs.Result
+0	261	393	#line 261 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	262	393		release __TextOutMutex
+0	261	394	#line 261 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	261	394	#line 261 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	262	394		set __signed_stack_001main, 1
+0	261	397	#line 261 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	261	397	#line 261 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	262	397		set __signed_stack_002main, 8
+0	261	400	#line 261 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	261	400	#line 261 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	262	400		strcat __strbufmain, __constStr0023
+0	262	404	#line 262 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	263	404		acquire __TextOutMutex
+0	262	405	#line 262 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	263	405		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	262	408	#line 262 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	263	408		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	262	411	#line 262 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	263	411		set __TextOutArgs.Options, 0
+0	262	414	#line 262 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	263	414		mov __TextOutArgs.Text, __strbufmain
+0	262	416	#line 262 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	263	416		syscall 13, __TextOutArgs
+0	262	419	#line 262 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	263	419		mov __D0main, __TextOutArgs.Result
+0	262	422	#line 262 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	263	422		release __TextOutMutex
+0	262	423	#line 262 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	262	423	#line 262 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	263	423		set __signed_stack_001main, 50
+0	262	426	#line 262 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	262	426	#line 262 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	263	426		set __signed_stack_002main, 8
+0	262	429	#line 262 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	262	429	#line 262 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	263	429		set __sens_7qG2_num_7qG2_000, 5
+0	262	432	#line 262 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	262	432	#line 262 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	263	432		subcall sens, __sens_return
+0	262	434	#line 262 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	263	434		mov __D0main, __D0sens
+0	263	436	#line 263 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	264	436		acquire __TextOutMutex
+0	263	437	#line 263 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	264	437		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	263	440	#line 263 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	264	440		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	263	443	#line 263 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	264	443		set __TextOutArgs.Options, 0
+0	263	446	#line 263 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	264	446		numtostr __TextOutArgs.Text, __D0main
+0	263	449	#line 263 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	264	449		syscall 13, __TextOutArgs
+0	263	452	#line 263 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	264	452		mov __D0main, __TextOutArgs.Result
+0	263	455	#line 263 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	264	455		release __TextOutMutex
+0	263	456	#line 263 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	263	456	#line 263 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	264	456		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	263	459	#line 263 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	8551	459	#line 8551 "NXCDefs.h"
+0	8552	459		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	462	#line 8551 "NXCDefs.h"
+0	268	462	#line 268 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	286	462	#line 286 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	287	462		jmp __ASM_Label_1533
+0	286	464	#line 286 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+0	287	464		exit -1, -1
+1	5476	0		setin __constVal1, __ResetSensorPort, 5
+1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5480	11		subret ____ResetSensorSubroutine_return
+2	6319	0	#pragma macro 25
+2	6319	0		acquire __CLSWMutex1
+2	6319	1		or __CLSWArgs1.Port, __constVal1, __LSWriteOptions1
+2	6319	5		mov __CLSWArgs1.ReturnLen, __RLSBytesCount1
+2	6319	7		mov __CLSWArgs1.Buffer, __RLSReadBuf1
+2	6319	9		syscall 21, __CLSWArgs1
+2	6319	12		mov __RLSBResult1, __CLSWArgs1.Result
+2	6319	14		release __CLSWMutex1
+2	6319	15	#line 6319 "NXTDefs.h"
+2	6320	15		brtst 5, __RLSBError1, __RLSBResult1
+2	6321	18		set __RLSBIterations1, 60
+2	6323	21	#pragma macro 23
+2	6323	21		acquire __CLSCSMutex1
+2	6323	22		set __CLSCSArgs1.Port, 1
+2	6323	25		syscall 23, __CLSCSArgs1
+2	6323	28		mov __RLSBytesCount1, __CLSCSArgs1.BytesReady
+2	6323	30		mov __RLSBResult1, __CLSCSArgs1.Result
+2	6323	32		release __CLSCSMutex1
+2	6323	33	#line 6323 "NXTDefs.h"
+2	6324	33		sub __RLSBIterations1, __RLSBIterations1, __constVal1
+2	6325	37		brtst 2, __RLSBError1, __RLSBIterations1
+2	6326	40		brtst 0, __RLSBError1, __RLSBResult1
+2	6327	43		brtst 4, __RLSBReadyToRead1, __RLSBResult1
+2	6329	46		wait2 NA, __constVal1
+2	6330	49		jmp __RLSBDoCheckStatus1
+2	6332	51		brtst 4, __RLSBReturn1, __RLSBytesCount1
+2	6333	54		arrinit __RLSReadBuf1, __constVal0, __RLSBytesCount1
+2	6335	58	#pragma macro 25
+2	6335	58		acquire __CLSRMutex1
+2	6335	59		set __CLSRArgs1.Port, 1
+2	6335	62		mov __CLSRArgs1.BufferLen, __RLSBytesCount1
+2	6335	64		syscall 22, __CLSRArgs1
+2	6335	67		mov __RLSReadBuf1, __CLSRArgs1.Buffer
+2	6335	69		mov __RLSBResult1, __CLSRArgs1.Result
+2	6335	71		release __CLSRMutex1
+2	6335	72	#line 6335 "NXTDefs.h"
+2	6336	72		brtst 5, __RLSBError1, __RLSBResult1
+2	6337	75		mov __RLSLastGoodRead1, __RLSReadBuf1
+2	6338	77		jmp __RLSBDone1
+2	6340	79		mov __RLSReadBuf1, __RLSLastGoodRead1
+2	6342	81		arrsize __RLSBytesCount1, __RLSReadBuf1
+2	6344	84		subret ____ReadLSBytes1_return
+3	6356	0	#pragma macro 25
+3	6356	0		acquire __CLSWMutex2
+3	6356	1		or __CLSWArgs2.Port, __constVal2, __LSWriteOptions2
+3	6356	5		mov __CLSWArgs2.ReturnLen, __RLSBytesCount2
+3	6356	7		mov __CLSWArgs2.Buffer, __RLSReadBuf2
+3	6356	9		syscall 21, __CLSWArgs2
+3	6356	12		mov __RLSBResult2, __CLSWArgs2.Result
+3	6356	14		release __CLSWMutex2
+3	6356	15	#line 6356 "NXTDefs.h"
+3	6357	15		brtst 5, __RLSBError2, __RLSBResult2
+3	6358	18		set __RLSBIterations2, 60
+3	6360	21	#pragma macro 23
+3	6360	21		acquire __CLSCSMutex2
+3	6360	22		set __CLSCSArgs2.Port, 2
+3	6360	25		syscall 23, __CLSCSArgs2
+3	6360	28		mov __RLSBytesCount2, __CLSCSArgs2.BytesReady
+3	6360	30		mov __RLSBResult2, __CLSCSArgs2.Result
+3	6360	32		release __CLSCSMutex2
+3	6360	33	#line 6360 "NXTDefs.h"
+3	6361	33		sub __RLSBIterations2, __RLSBIterations2, __constVal1
+3	6362	37		brtst 2, __RLSBError2, __RLSBIterations2
+3	6363	40		brtst 0, __RLSBError2, __RLSBResult2
+3	6364	43		brtst 4, __RLSBReadyToRead2, __RLSBResult2
+3	6366	46		wait2 NA, __constVal1
+3	6367	49		jmp __RLSBDoCheckStatus2
+3	6369	51		brtst 4, __RLSBReturn2, __RLSBytesCount2
+3	6370	54		arrinit __RLSReadBuf2, __constVal0, __RLSBytesCount2
+3	6372	58	#pragma macro 25
+3	6372	58		acquire __CLSRMutex2
+3	6372	59		set __CLSRArgs2.Port, 2
+3	6372	62		mov __CLSRArgs2.BufferLen, __RLSBytesCount2
+3	6372	64		syscall 22, __CLSRArgs2
+3	6372	67		mov __RLSReadBuf2, __CLSRArgs2.Buffer
+3	6372	69		mov __RLSBResult2, __CLSRArgs2.Result
+3	6372	71		release __CLSRMutex2
+3	6372	72	#line 6372 "NXTDefs.h"
+3	6373	72		brtst 5, __RLSBError2, __RLSBResult2
+3	6374	75		mov __RLSLastGoodRead2, __RLSReadBuf2
+3	6375	77		jmp __RLSBDone2
+3	6377	79		mov __RLSReadBuf2, __RLSLastGoodRead2
+3	6379	81		arrsize __RLSBytesCount2, __RLSReadBuf2
+3	6381	84		subret ____ReadLSBytes2_return
+4	6430	0	#pragma macro 25
+4	6430	0		acquire __CLSWMutex0
+4	6430	1		acquire __CLSWMutex1
+4	6430	2		acquire __CLSWMutex2
+4	6430	3		acquire __CLSWMutex3
+4	6430	4		or __CLSWArgs0.Port, __RLSReadPort, __LSWriteOptionsVar
+4	6430	8		mov __CLSWArgs0.ReturnLen, __RLSBytesCountVar
+4	6430	10		mov __CLSWArgs0.Buffer, __RLSReadBufVar
+4	6430	12		syscall 21, __CLSWArgs0
+4	6430	15		mov __RLSBResultVar, __CLSWArgs0.Result
+4	6430	17		release __CLSWMutex0
+4	6430	18		release __CLSWMutex1
+4	6430	19		release __CLSWMutex2
+4	6430	20		release __CLSWMutex3
+4	6430	21	#line 6430 "NXTDefs.h"
+4	6431	21		brtst 5, __RLSBErrorVar, __RLSBResultVar
+4	6432	24		set __RLSBIterationsVar, 60
+4	6434	27	#pragma macro 23
+4	6434	27		acquire __CLSCSMutex0
+4	6434	28		acquire __CLSCSMutex1
+4	6434	29		acquire __CLSCSMutex2
+4	6434	30		acquire __CLSCSMutex3
+4	6434	31		mov __CLSCSArgs0.Port, __RLSReadPort
+4	6434	33		syscall 23, __CLSCSArgs0
+4	6434	36		mov __RLSBytesCountVar, __CLSCSArgs0.BytesReady
+4	6434	38		mov __RLSBResultVar, __CLSCSArgs0.Result
+4	6434	40		release __CLSCSMutex0
+4	6434	41		release __CLSCSMutex1
+4	6434	42		release __CLSCSMutex2
+4	6434	43		release __CLSCSMutex3
+4	6434	44	#line 6434 "NXTDefs.h"
+4	6435	44		sub __RLSBIterationsVar, __RLSBIterationsVar, __constVal1
+4	6436	48		brtst 2, __RLSBErrorVar, __RLSBIterationsVar
+4	6437	51		brtst 0, __RLSBErrorVar, __RLSBResultVar
+4	6438	54		brtst 4, __RLSBReadyToReadVar, __RLSBResultVar
+4	6440	57		wait2 NA, __constVal1
+4	6441	60		jmp __RLSBDoCheckStatusVar
+4	6443	62		brtst 4, __RLSBReturnVar, __RLSBytesCountVar
+4	6444	65		arrinit __RLSReadBufVar, __constVal0, __RLSBytesCountVar
+4	6446	69	#pragma macro 25
+4	6446	69		acquire __CLSRMutex0
+4	6446	70		acquire __CLSRMutex1
+4	6446	71		acquire __CLSRMutex2
+4	6446	72		acquire __CLSRMutex3
+4	6446	73		mov __CLSRArgs0.Port, __RLSReadPort
+4	6446	75		mov __CLSRArgs0.BufferLen, __RLSBytesCountVar
+4	6446	77		syscall 22, __CLSRArgs0
+4	6446	80		mov __RLSReadBufVar, __CLSRArgs0.Buffer
+4	6446	82		mov __RLSBResultVar, __CLSRArgs0.Result
+4	6446	84		release __CLSRMutex0
+4	6446	85		release __CLSRMutex1
+4	6446	86		release __CLSRMutex2
+4	6446	87		release __CLSRMutex3
+4	6446	88	#line 6446 "NXTDefs.h"
+4	6447	88		brtst 5, __RLSBErrorVar, __RLSBResultVar
+4	6448	91		mov __RLSLastGoodReadVar, __RLSReadBufVar
+4	6449	93		jmp __RLSBDoneVar
+4	6451	95		mov __RLSReadBufVar, __RLSLastGoodReadVar
+4	6453	97		arrsize __RLSBytesCountVar, __RLSReadBufVar
+4	6455	100		subret ____ReadLSBytesVar_return
+5	245	0	#line 245 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	246	0		arrbuild ___HTSMUXsendCmd_7qG2_sendMsg_7qG2_000, __constVal16, __constVal32, ___HTSMUXsendCmd_7qG2_cmd_7qG2_000
+5	245	6	#line 245 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	245	6	#line 245 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	248	6	#line 248 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	249	6	#pragma macro 23
+5	249	6		acquire __CLSCSMutex0
+5	249	7		acquire __CLSCSMutex1
+5	249	8		acquire __CLSCSMutex2
+5	249	9		acquire __CLSCSMutex3
+5	249	10		mov __CLSCSArgs0.Port, ___HTSMUXsendCmd_7qG2_smux_7qG2_000
+5	249	12		syscall 23, __CLSCSArgs0
+5	249	15		mov __tmpsbyte_HTSMUXsendCmd, __CLSCSArgs0.BytesReady
+5	249	17		mov __D0_HTSMUXsendCmd, __CLSCSArgs0.Result
+5	249	20		release __CLSCSMutex0
+5	249	21		release __CLSCSMutex1
+5	249	22		release __CLSCSMutex2
+5	249	23		release __CLSCSMutex3
+5	6087	24	#line 6087 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	248	24	#line 248 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	249	24		mov __signed_stack_001_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+5	248	26	#line 248 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	249	26		set __D0_HTSMUXsendCmd, 32
+5	248	29	#line 248 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	249	29		cmp 4, __D0_HTSMUXsendCmd, __signed_stack_001_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+5	248	33	#line 248 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	249	33		brtst 4, __ASM_Label_490, __D0_HTSMUXsendCmd
+5	8557	36	#line 8557 "NXCDefs.h"
+5	8558	36		wait2 NA, __constVal1
+5	8557	39	#line 8557 "NXCDefs.h"
+5	249	39	#line 249 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	249	39	#line 249 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	250	39		jmp __ASM_Label_489
+5	249	41	#line 249 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	249	41	#line 249 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	250	41	#pragma macro 25
+5	250	41		acquire __CLSWMutex0
+5	250	42		acquire __CLSWMutex1
+5	250	43		acquire __CLSWMutex2
+5	250	44		acquire __CLSWMutex3
+5	250	45		or __CLSWArgs0.Port, ___HTSMUXsendCmd_7qG2_smux_7qG2_000, __LSWriteOptionsVar
+5	250	49		mov __CLSWArgs0.ReturnLen, __constVal0
+5	250	51		mov __CLSWArgs0.Buffer, ___HTSMUXsendCmd_7qG2_sendMsg_7qG2_000
+5	250	53		syscall 21, __CLSWArgs0
+5	250	56		mov __D0_HTSMUXsendCmd, __CLSWArgs0.Result
+5	250	59		release __CLSWMutex0
+5	250	60		release __CLSWMutex1
+5	250	61		release __CLSWMutex2
+5	250	62		release __CLSWMutex3
+5	6109	63	#line 6109 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	249	63	#line 249 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	249	63	#line 249 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	253	63	#line 253 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	254	63		mov __unsigned_stack_001_HTSMUXsendCmd, ___HTSMUXsendCmd_7qG2_cmd_7qG2_000
+5	253	65	#line 253 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	253	65	#line 253 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	254	65		set __D0_HTSMUXsendCmd, 1
+5	253	68	#line 253 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	254	68		cmp 4, __D0_HTSMUXsendCmd, __unsigned_stack_001_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+5	254	72	#line 254 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	255	72		brtst 4, __ASM_Label_495, __D0_HTSMUXsendCmd
+5	254	75	#line 254 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	255	75		set __Wait_7qG2_ms_7qG2_000_inline__HTSMUXsendCmd, 500
+5	254	78	#line 254 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	8551	78	#line 8551 "NXCDefs.h"
+5	8552	78		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline__HTSMUXsendCmd
+5	8551	81	#line 8551 "NXCDefs.h"
+5	257	81	#line 257 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	257	81	#line 257 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	258	81		jmp __ASM_Label_498
+5	257	83	#line 257 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	258	83		mov __unsigned_stack_001_HTSMUXsendCmd, ___HTSMUXsendCmd_7qG2_cmd_7qG2_000
+5	257	85	#line 257 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	257	85	#line 257 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	258	85		set __D0_HTSMUXsendCmd, 0
+5	257	88	#line 257 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	258	88		cmp 4, __D0_HTSMUXsendCmd, __unsigned_stack_001_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+5	258	92	#line 258 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	259	92		brtst 4, __ASM_Label_501, __D0_HTSMUXsendCmd
+5	258	95	#line 258 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	259	95		set __Wait_7qG2_ms_7qG2_000_inline__HTSMUXsendCmd, 50
+5	258	98	#line 258 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	8551	98	#line 8551 "NXCDefs.h"
+5	8552	98		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline__HTSMUXsendCmd
+5	8551	101	#line 8551 "NXCDefs.h"
+5	259	101	#line 259 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	262	101	#line 262 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	262	101	#line 262 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	262	101	#line 262 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	263	101		mov __DU0_HTSMUXsendCmd, ___HTSMUXsendCmd_7qG2_cmd_7qG2_000
+5	266	103		brcmp 4, __ASM_Label_507, __constVal0, __DU0_HTSMUXsendCmd
+5	267	107		brcmp 4, __ASM_Label_512, __constVal1, __DU0_HTSMUXsendCmd
+5	268	111		brcmp 4, __ASM_Label_517, __constVal2, __DU0_HTSMUXsendCmd
+5	269	115		jmp __ASM_Label_506
+5	264	117	#line 264 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	264	117	#line 264 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	265	117		mov __unsigned_stack_001_HTSMUXsendCmd, ___HTSMUXsendCmd_7qG2_smux_7qG2_000
+5	264	119	#line 264 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	265	119	#line 265 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	266	119		set __D0_HTSMUXsendCmd, 4
+5	265	122	#line 265 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	266	122		replace smuxStatus, smuxStatus, __unsigned_stack_001_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+5	265	127	#line 265 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	266	127	#line 266 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	267	127		jmp __ASM_Label_506
+5	266	129	#line 266 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	267	129	#line 267 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	267	129	#line 267 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	268	129		mov __unsigned_stack_001_HTSMUXsendCmd, ___HTSMUXsendCmd_7qG2_smux_7qG2_000
+5	267	131	#line 267 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	268	131	#line 268 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	269	131		set __D0_HTSMUXsendCmd, 2
+5	268	134	#line 268 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	269	134		replace smuxStatus, smuxStatus, __unsigned_stack_001_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+5	268	139	#line 268 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	269	139	#line 269 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	270	139		jmp __ASM_Label_506
+5	269	141	#line 269 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	270	141	#line 270 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	270	141	#line 270 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	271	141		mov __unsigned_stack_001_HTSMUXsendCmd, ___HTSMUXsendCmd_7qG2_smux_7qG2_000
+5	270	143	#line 270 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	271	143	#line 271 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	272	143		set __D0_HTSMUXsendCmd, 0
+5	271	146	#line 271 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	272	146		replace smuxStatus, smuxStatus, __unsigned_stack_001_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+5	271	151	#line 271 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	272	151	#line 272 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	272	151	#line 272 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	274	151	#line 274 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	274	151	#line 274 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	275	151	#pragma macro 23
+5	275	151		acquire __CLSCSMutex0
+5	275	152		acquire __CLSCSMutex1
+5	275	153		acquire __CLSCSMutex2
+5	275	154		acquire __CLSCSMutex3
+5	275	155		mov __CLSCSArgs0.Port, ___HTSMUXsendCmd_7qG2_smux_7qG2_000
+5	275	157		syscall 23, __CLSCSArgs0
+5	275	160		mov __tmpsbyte_HTSMUXsendCmd, __CLSCSArgs0.BytesReady
+5	275	162		mov __D0_HTSMUXsendCmd, __CLSCSArgs0.Result
+5	275	165		release __CLSCSMutex0
+5	275	166		release __CLSCSMutex1
+5	275	167		release __CLSCSMutex2
+5	275	168		release __CLSCSMutex3
+5	6233	169	#line 6233 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	274	169	#line 274 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	275	169		mov __signed_stack_001_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+5	274	171	#line 274 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	275	171		set __D0_HTSMUXsendCmd, 32
+5	274	174	#line 274 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	275	174		cmp 4, __D0_HTSMUXsendCmd, __signed_stack_001_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+5	274	178	#line 274 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	275	178		brtst 4, __ASM_Label_525, __D0_HTSMUXsendCmd
+5	274	181	#line 274 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	275	181	#pragma macro 23
+5	275	181		acquire __CLSCSMutex0
+5	275	182		acquire __CLSCSMutex1
+5	275	183		acquire __CLSCSMutex2
+5	275	184		acquire __CLSCSMutex3
+5	275	185		mov __CLSCSArgs0.Port, ___HTSMUXsendCmd_7qG2_smux_7qG2_000
+5	275	187		syscall 23, __CLSCSArgs0
+5	275	190		mov __tmpsbyte_HTSMUXsendCmd, __CLSCSArgs0.BytesReady
+5	275	192		mov __D0_HTSMUXsendCmd, __CLSCSArgs0.Result
+5	275	195		release __CLSCSMutex0
+5	275	196		release __CLSCSMutex1
+5	275	197		release __CLSCSMutex2
+5	275	198		release __CLSCSMutex3
+5	6247	199	#line 6247 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	274	199	#line 274 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	275	199		mov __signed_stack_001_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+5	274	201	#line 274 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	275	201		set __D0_HTSMUXsendCmd, 0
+5	274	204	#line 274 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	275	204		cmp 5, __D0_HTSMUXsendCmd, __signed_stack_001_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+5	274	208	#line 274 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	275	208		brtst 4, __ASM_Label_523, __D0_HTSMUXsendCmd
+5	8557	211	#line 8557 "NXCDefs.h"
+5	8558	211		wait2 NA, __constVal1
+5	8557	214	#line 8557 "NXCDefs.h"
+5	275	214	#line 275 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	275	214	#line 275 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	276	214		jmp __ASM_Label_522
+5	275	216	#line 275 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	275	216	#line 275 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	276	216	#pragma macro 23
+5	276	216		acquire __CLSCSMutex0
+5	276	217		acquire __CLSCSMutex1
+5	276	218		acquire __CLSCSMutex2
+5	276	219		acquire __CLSCSMutex3
+5	276	220		mov __CLSCSArgs0.Port, ___HTSMUXsendCmd_7qG2_smux_7qG2_000
+5	276	222		syscall 23, __CLSCSArgs0
+5	276	225		mov __tmpsbyte_HTSMUXsendCmd, __CLSCSArgs0.BytesReady
+5	276	227		mov __D0_HTSMUXsendCmd, __CLSCSArgs0.Result
+5	276	230		release __CLSCSMutex0
+5	276	231		release __CLSCSMutex1
+5	276	232		release __CLSCSMutex2
+5	276	233		release __CLSCSMutex3
+5	6271	234	#line 6271 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	275	234	#line 275 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	276	234		mov __signed_stack_001_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+5	275	236	#line 275 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	276	236		set __D0_HTSMUXsendCmd, 0
+5	275	239	#line 275 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	276	239		cmp 4, __D0_HTSMUXsendCmd, __signed_stack_001_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+5	276	243	#line 276 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	277	243		mov __DU0_HTSMUXsendCmd, __D0_HTSMUXsendCmd
+5	276	245	#line 276 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	277	245		subret ___HTSMUXsendCmd_return
+5	276	247	#line 276 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	276	247	#line 276 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	288	247	#line 288 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+5	289	247		subret ___HTSMUXsendCmd_return
+6	324	0	#line 324 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	325	0		arrinit __HTSMUXreadAnalogue_7qG2_sendMsg_7qG2_000, __constVal0, __constVal2
+6	325	4	#line 325 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	326	4		arrinit __HTSMUXreadAnalogue_7qG2_readMsg_7qG2_000, __constVal0, __constVal2
+6	328	8	#line 328 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	329	8		set __HTSMUXreadAnalogue_7qG2_count_7qG2_000, 2
+6	328	11	#line 328 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	328	11	#line 328 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	329	11		mov __unsigned_stack_001HTSMUXreadAnalogue, __HTSMUXreadAnalogue_7qG2_muxport_7qG2_000
+6	328	13	#line 328 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	329	13	#line 329 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	330	13		set __D0HTSMUXreadAnalogue, 4
+6	329	16	#line 329 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	330	16		div __HTSMUXreadAnalogue_7qG2_smux_7qG2_000, __unsigned_stack_001HTSMUXreadAnalogue, __D0HTSMUXreadAnalogue
+6	329	20	#line 329 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	329	20	#line 329 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	330	20		mov __unsigned_stack_001HTSMUXreadAnalogue, __HTSMUXreadAnalogue_7qG2_muxport_7qG2_000
+6	329	22	#line 329 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	331	22	#line 331 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	332	22		set __D0HTSMUXreadAnalogue, 4
+6	331	25	#line 331 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	332	25		mod __HTSMUXreadAnalogue_7qG2_channel_7qG2_000, __unsigned_stack_001HTSMUXreadAnalogue, __D0HTSMUXreadAnalogue
+6	331	29	#line 331 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	331	29	#line 331 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	332	29		mov __unsigned_stack_001HTSMUXreadAnalogue, __HTSMUXreadAnalogue_7qG2_smux_7qG2_000
+6	331	31	#line 331 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	331	31	#line 331 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	332	31		index __unsigned_stack_001HTSMUXreadAnalogue, smuxStatus, __unsigned_stack_001HTSMUXreadAnalogue
+6	331	35	#line 331 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	331	35	#line 331 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	331	35	#line 331 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	332	35		set __D0HTSMUXreadAnalogue, 2
+6	331	38	#line 331 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	332	38		cmp 4, __D0HTSMUXreadAnalogue, __unsigned_stack_001HTSMUXreadAnalogue, __D0HTSMUXreadAnalogue
+6	332	42	#line 332 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	333	42		brtst 4, __ASM_Label_586, __D0HTSMUXreadAnalogue
+6	334	45	#line 334 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	335	45		set __D0HTSMUXreadAnalogue, 0
+6	334	48	#line 334 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	335	48		subret __HTSMUXreadAnalogue_return
+6	334	50	#line 334 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	334	50	#line 334 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	335	50		jmp __ASM_Label_589
+6	334	52	#line 334 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	335	52		mov __unsigned_stack_001HTSMUXreadAnalogue, __HTSMUXreadAnalogue_7qG2_smux_7qG2_000
+6	334	54	#line 334 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	334	54	#line 334 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	335	54		index __unsigned_stack_001HTSMUXreadAnalogue, smuxStatus, __unsigned_stack_001HTSMUXreadAnalogue
+6	334	58	#line 334 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	334	58	#line 334 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	334	58	#line 334 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	335	58		set __D0HTSMUXreadAnalogue, 0
+6	334	61	#line 334 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	335	61		cmp 5, __D0HTSMUXreadAnalogue, __unsigned_stack_001HTSMUXreadAnalogue, __D0HTSMUXreadAnalogue
+6	335	65	#line 335 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	336	65		brtst 4, __ASM_Label_594, __D0HTSMUXreadAnalogue
+6	335	68	#line 335 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	336	68		mov ___HTSMUXsendCmd_7qG2_smux_7qG2_000, __HTSMUXreadAnalogue_7qG2_smux_7qG2_000
+6	335	70	#line 335 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	335	70	#line 335 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	336	70		set ___HTSMUXsendCmd_7qG2_cmd_7qG2_000, 2
+6	335	73	#line 335 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	336	73	#line 336 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	337	73		subcall _HTSMUXsendCmd, ___HTSMUXsendCmd_return
+6	336	75	#line 336 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	336	75	#line 336 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	337	75		not __DU0HTSMUXreadAnalogue, __DU0_HTSMUXsendCmd
+6	336	78	#line 336 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	337	78		tst 5, __D0HTSMUXreadAnalogue, __DU0HTSMUXreadAnalogue
+6	336	81	#line 336 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	337	81		brtst 4, __ASM_Label_601, __D0HTSMUXreadAnalogue
+6	337	84	#line 337 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	338	84		set __D0HTSMUXreadAnalogue, 0
+6	337	87	#line 337 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	338	87		subret __HTSMUXreadAnalogue_return
+6	337	89	#line 337 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	339	89	#line 339 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	339	89	#line 339 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	339	89	#line 339 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	339	89	#line 339 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	340	89		set __signed_stack_001HTSMUXreadAnalogue, 0
+6	339	92	#line 339 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	341	92	#line 341 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	342	92		set __D0HTSMUXreadAnalogue, 16
+6	341	95	#line 341 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	342	95		replace __HTSMUXreadAnalogue_7qG2_sendMsg_7qG2_000, __HTSMUXreadAnalogue_7qG2_sendMsg_7qG2_000, __signed_stack_001HTSMUXreadAnalogue, __D0HTSMUXreadAnalogue
+6	341	100	#line 341 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	341	100	#line 341 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	342	100		set __signed_stack_001HTSMUXreadAnalogue, 1
+6	341	103	#line 341 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	341	103	#line 341 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	342	103		set __signed_stack_002HTSMUXreadAnalogue, 54
+6	341	106	#line 341 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	341	106	#line 341 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	342	106		mov __unsigned_stack_003HTSMUXreadAnalogue, __HTSMUXreadAnalogue_7qG2_channel_7qG2_000
+6	341	108	#line 341 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	341	108	#line 341 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	342	108		set __D0HTSMUXreadAnalogue, 2
+6	341	111	#line 341 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	342	111		mul __D0HTSMUXreadAnalogue, __unsigned_stack_003HTSMUXreadAnalogue, __D0HTSMUXreadAnalogue
+6	344	115	#line 344 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	345	115		add __D0HTSMUXreadAnalogue, __signed_stack_002HTSMUXreadAnalogue, __D0HTSMUXreadAnalogue
+6	344	119	#line 344 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	345	119		replace __HTSMUXreadAnalogue_7qG2_sendMsg_7qG2_000, __HTSMUXreadAnalogue_7qG2_sendMsg_7qG2_000, __signed_stack_001HTSMUXreadAnalogue, __D0HTSMUXreadAnalogue
+6	344	124	#line 344 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	344	124	#line 344 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	345	124	#pragma macro 23
+6	345	124		acquire __CLSCSMutex0
+6	345	125		acquire __CLSCSMutex1
+6	345	126		acquire __CLSCSMutex2
+6	345	127		acquire __CLSCSMutex3
+6	345	128		mov __CLSCSArgs0.Port, __HTSMUXreadAnalogue_7qG2_smux_7qG2_000
+6	345	130		syscall 23, __CLSCSArgs0
+6	345	133		mov __D0HTSMUXreadAnalogue, __CLSCSArgs0.Result
+6	345	136		release __CLSCSMutex0
+6	345	137		release __CLSCSMutex1
+6	345	138		release __CLSCSMutex2
+6	345	139		release __CLSCSMutex3
+6	6721	140	#line 6721 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	344	140	#line 344 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	345	140		mov __signed_stack_001HTSMUXreadAnalogue, __D0HTSMUXreadAnalogue
+6	344	142	#line 344 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	345	142		set __D0HTSMUXreadAnalogue, 32
+6	344	145	#line 344 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	345	145		cmp 4, __D0HTSMUXreadAnalogue, __signed_stack_001HTSMUXreadAnalogue, __D0HTSMUXreadAnalogue
+6	344	149	#line 344 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	345	149		brtst 4, __ASM_Label_615, __D0HTSMUXreadAnalogue
+6	8557	152	#line 8557 "NXCDefs.h"
+6	8558	152		wait2 NA, __constVal1
+6	8557	155	#line 8557 "NXCDefs.h"
+6	345	155	#line 345 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	345	155	#line 345 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	346	155		jmp __ASM_Label_614
+6	345	157	#line 345 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	345	157	#line 345 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	346	157	#pragma macro 28
+6	346	157		acquire __RLSBmutex0
+6	346	158		acquire __RLSBmutex1
+6	346	159		acquire __RLSBmutex2
+6	346	160		acquire __RLSBmutex3
+6	346	161		mov __RLSReadPort, __HTSMUXreadAnalogue_7qG2_smux_7qG2_000
+6	346	163		mov __RLSReadBufVar, __HTSMUXreadAnalogue_7qG2_sendMsg_7qG2_000
+6	346	165		mov __RLSBytesCountVar, __HTSMUXreadAnalogue_7qG2_count_7qG2_000
+6	346	167		subcall __ReadLSBytesVar, ____ReadLSBytesVar_return
+6	346	169		tst 4, __D0HTSMUXreadAnalogue, __RLSBResultVar
+6	346	172		mov __HTSMUXreadAnalogue_7qG2_count_7qG2_000, __RLSBytesCountVar
+6	346	174		mov __HTSMUXreadAnalogue_7qG2_readMsg_7qG2_000, __RLSReadBufVar
+6	346	176		release __RLSBmutex0
+6	346	177		release __RLSBmutex1
+6	346	178		release __RLSBmutex2
+6	346	179		release __RLSBmutex3
+6	6743	180	#line 6743 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	346	180	#line 346 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	347	180		tst 5, __D0HTSMUXreadAnalogue, __D0HTSMUXreadAnalogue
+6	346	183	#line 346 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	347	183		brtst 4, __ASM_Label_620, __D0HTSMUXreadAnalogue
+6	346	186	#line 346 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	347	186		set __signed_stack_001HTSMUXreadAnalogue, 0
+6	346	189	#line 346 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	346	189	#line 346 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	347	189		index __unsigned_stack_001HTSMUXreadAnalogue, __HTSMUXreadAnalogue_7qG2_readMsg_7qG2_000, __signed_stack_001HTSMUXreadAnalogue
+6	346	193	#line 346 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	346	193	#line 346 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	346	193	#line 346 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	347	193		set __D0HTSMUXreadAnalogue, 255
+6	346	196	#line 346 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	347	196		and __signed_stack_001HTSMUXreadAnalogue, __unsigned_stack_001HTSMUXreadAnalogue, __D0HTSMUXreadAnalogue
+6	346	200	#line 346 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	346	200	#line 346 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	347	200		set __D0HTSMUXreadAnalogue, 4
+6	346	203	#line 346 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	347	203		mul __signed_stack_001HTSMUXreadAnalogue, __signed_stack_001HTSMUXreadAnalogue, __D0HTSMUXreadAnalogue
+6	346	207	#line 346 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	346	207	#line 346 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	347	207		set __signed_stack_002HTSMUXreadAnalogue, 1
+6	346	210	#line 346 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	346	210	#line 346 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	347	210		index __unsigned_stack_002HTSMUXreadAnalogue, __HTSMUXreadAnalogue_7qG2_readMsg_7qG2_000, __signed_stack_002HTSMUXreadAnalogue
+6	346	214	#line 346 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	346	214	#line 346 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	346	214	#line 346 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	347	214		set __D0HTSMUXreadAnalogue, 255
+6	346	217	#line 346 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	347	217		and __D0HTSMUXreadAnalogue, __unsigned_stack_002HTSMUXreadAnalogue, __D0HTSMUXreadAnalogue
+6	347	221	#line 347 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	348	221		add __D0HTSMUXreadAnalogue, __signed_stack_001HTSMUXreadAnalogue, __D0HTSMUXreadAnalogue
+6	347	225	#line 347 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	348	225		subret __HTSMUXreadAnalogue_return
+6	347	227	#line 347 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	348	227	#line 348 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	349	227		jmp __ASM_Label_633
+6	349	229	#line 349 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	350	229		set __D0HTSMUXreadAnalogue, 0
+6	349	232	#line 349 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	350	232		subret __HTSMUXreadAnalogue_return
+6	349	234	#line 349 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	349	234	#line 349 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	367	234	#line 367 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+6	368	234		subret __HTSMUXreadAnalogue_return
+7	396	0	#line 396 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	396	0	#line 396 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	399	0	#line 399 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	400	0		set __HTSMUXscanPorts_7qG2_size_7qG2_000, 1
+7	399	3	#line 399 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	399	3	#line 399 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	400	3		arrinit __HTSMUXscanPorts_7qG2_sendMsg_7qG2_000, __constVal0, __constVal2
+7	399	7	#line 399 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	399	7	#line 399 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	402	7	#line 402 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	403	7		mov __unsigned_stack_001HTSMUXscanPorts, __HTSMUXscanPorts_7qG2_smux_7qG2_000
+7	402	9	#line 402 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	402	9	#line 402 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	403	9		index __unsigned_stack_001HTSMUXscanPorts, smuxStatus, __unsigned_stack_001HTSMUXscanPorts
+7	402	13	#line 402 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	402	13	#line 402 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	403	13	#line 403 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	404	13		set __D0HTSMUXscanPorts, 2
+7	403	16	#line 403 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	404	16		cmp 4, __D0HTSMUXscanPorts, __unsigned_stack_001HTSMUXscanPorts, __D0HTSMUXscanPorts
+7	403	20	#line 403 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	404	20		brtst 4, __ASM_Label_660, __D0HTSMUXscanPorts
+7	406	23	#line 406 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	407	23		set __DU0HTSMUXscanPorts, 0
+7	406	26	#line 406 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	406	26	#line 406 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	407	26		subret __HTSMUXscanPorts_return
+7	406	28	#line 406 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	406	28	#line 406 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	406	28	#line 406 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	407	28		mov ___HTSMUXsendCmd_7qG2_smux_7qG2_000, __HTSMUXscanPorts_7qG2_smux_7qG2_000
+7	406	30	#line 406 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	406	30	#line 406 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	407	30		set ___HTSMUXsendCmd_7qG2_cmd_7qG2_000, 0
+7	406	33	#line 406 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	407	33	#line 407 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	408	33		subcall _HTSMUXsendCmd, ___HTSMUXsendCmd_return
+7	407	35	#line 407 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	407	35	#line 407 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	408	35		not __DU0HTSMUXscanPorts, __DU0_HTSMUXsendCmd
+7	407	38	#line 407 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	408	38		tst 5, __D0HTSMUXscanPorts, __DU0HTSMUXscanPorts
+7	407	41	#line 407 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	408	41		brtst 4, __ASM_Label_669, __D0HTSMUXscanPorts
+7	410	44	#line 410 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	411	44		set __DU0HTSMUXscanPorts, 0
+7	410	47	#line 410 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	410	47	#line 410 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	411	47		subret __HTSMUXscanPorts_return
+7	410	49	#line 410 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	410	49	#line 410 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	410	49	#line 410 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	411	49		mov ___HTSMUXsendCmd_7qG2_smux_7qG2_000, __HTSMUXscanPorts_7qG2_smux_7qG2_000
+7	410	51	#line 410 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	410	51	#line 410 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	411	51		set ___HTSMUXsendCmd_7qG2_cmd_7qG2_000, 1
+7	410	54	#line 410 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	411	54	#line 411 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	412	54		subcall _HTSMUXsendCmd, ___HTSMUXsendCmd_return
+7	411	56	#line 411 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	411	56	#line 411 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	412	56		not __DU0HTSMUXscanPorts, __DU0_HTSMUXsendCmd
+7	411	59	#line 411 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	412	59		tst 5, __D0HTSMUXscanPorts, __DU0HTSMUXscanPorts
+7	411	62	#line 411 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	412	62		brtst 4, __ASM_Label_678, __D0HTSMUXscanPorts
+7	412	65	#line 412 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	413	65		set __DU0HTSMUXscanPorts, 0
+7	412	68	#line 412 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	412	68	#line 412 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	413	68		subret __HTSMUXscanPorts_return
+7	412	70	#line 412 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	412	70	#line 412 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	412	70	#line 412 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	413	70		set __Wait_7qG2_ms_7qG2_000_inline_HTSMUXscanPorts, 500
+7	412	73	#line 412 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	8551	73	#line 8551 "NXCDefs.h"
+7	8552	73		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_HTSMUXscanPorts
+7	8551	76	#line 8551 "NXCDefs.h"
+7	415	76	#line 415 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	415	76	#line 415 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	416	76		mov __unsigned_stack_001HTSMUXscanPorts, __HTSMUXscanPorts_7qG2_smux_7qG2_000
+7	415	78	#line 415 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	418	78	#line 418 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	419	78		set __D0HTSMUXscanPorts, 4
+7	418	81	#line 418 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	419	81		replace smuxStatus, smuxStatus, __unsigned_stack_001HTSMUXscanPorts, __D0HTSMUXscanPorts
+7	418	86	#line 418 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	418	86	#line 418 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	419	86		set __HTSMUXscanPorts_7qG2_i_7qG2_001, 0
+7	418	89	#line 418 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	418	89	#line 418 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	419	89		mov __signed_stack_001HTSMUXscanPorts, __HTSMUXscanPorts_7qG2_i_7qG2_001
+7	418	91	#line 418 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	418	91	#line 418 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	419	91		set __D0HTSMUXscanPorts, 4
+7	418	94	#line 418 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	419	94		cmp 0, __D0HTSMUXscanPorts, __signed_stack_001HTSMUXscanPorts, __D0HTSMUXscanPorts
+7	418	98	#line 418 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	419	98		brtst 4, __ASM_Label_688, __D0HTSMUXscanPorts
+7	418	101	#line 418 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	419	101		jmp __ASM_Label_689
+7	418	103	#line 418 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	419	103		add __HTSMUXscanPorts_7qG2_i_7qG2_001, __HTSMUXscanPorts_7qG2_i_7qG2_001, __constVal1
+7	420	107	#line 420 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	421	107		jmp __ASM_Label_687
+7	420	109	#line 420 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	421	109	#pragma macro 23
+7	421	109		acquire __CLSCSMutex0
+7	421	110		acquire __CLSCSMutex1
+7	421	111		acquire __CLSCSMutex2
+7	421	112		acquire __CLSCSMutex3
+7	421	113		mov __CLSCSArgs0.Port, __HTSMUXscanPorts_7qG2_smux_7qG2_000
+7	421	115		syscall 23, __CLSCSArgs0
+7	421	118		mov __D0HTSMUXscanPorts, __CLSCSArgs0.Result
+7	421	121		release __CLSCSMutex0
+7	421	122		release __CLSCSMutex1
+7	421	123		release __CLSCSMutex2
+7	421	124		release __CLSCSMutex3
+7	7108	125	#line 7108 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	420	125	#line 420 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	421	125		mov __signed_stack_001HTSMUXscanPorts, __D0HTSMUXscanPorts
+7	420	127	#line 420 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	421	127		set __D0HTSMUXscanPorts, 32
+7	420	130	#line 420 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	421	130		cmp 4, __D0HTSMUXscanPorts, __signed_stack_001HTSMUXscanPorts, __D0HTSMUXscanPorts
+7	420	134	#line 420 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	421	134		brtst 4, __ASM_Label_696, __D0HTSMUXscanPorts
+7	8557	137	#line 8557 "NXCDefs.h"
+7	8558	137		wait2 NA, __constVal1
+7	8557	140	#line 8557 "NXCDefs.h"
+7	421	140	#line 421 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	421	140	#line 421 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	422	140		jmp __ASM_Label_695
+7	421	142	#line 421 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	421	142	#line 421 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	422	142		set __signed_stack_001HTSMUXscanPorts, 0
+7	421	145	#line 421 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	422	145	#line 422 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	423	145		set __D0HTSMUXscanPorts, 16
+7	422	148	#line 422 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	423	148		replace __HTSMUXscanPorts_7qG2_sendMsg_7qG2_000, __HTSMUXscanPorts_7qG2_sendMsg_7qG2_000, __signed_stack_001HTSMUXscanPorts, __D0HTSMUXscanPorts
+7	422	153	#line 422 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	422	153	#line 422 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	423	153		set __signed_stack_001HTSMUXscanPorts, 1
+7	422	156	#line 422 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	422	156	#line 422 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	423	156		set __signed_stack_002HTSMUXscanPorts, 34
+7	422	159	#line 422 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	422	159	#line 422 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	423	159		set __D0HTSMUXscanPorts, 1
+7	422	162	#line 422 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	423	162		add __signed_stack_002HTSMUXscanPorts, __signed_stack_002HTSMUXscanPorts, __D0HTSMUXscanPorts
+7	422	166	#line 422 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	422	166	#line 422 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	423	166		set __signed_stack_003HTSMUXscanPorts, 5
+7	422	169	#line 422 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	422	169	#line 422 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	423	169		mov __D0HTSMUXscanPorts, __HTSMUXscanPorts_7qG2_i_7qG2_001
+7	422	171	#line 422 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	423	171		mul __D0HTSMUXscanPorts, __signed_stack_003HTSMUXscanPorts, __D0HTSMUXscanPorts
+7	424	175	#line 424 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	425	175		add __D0HTSMUXscanPorts, __signed_stack_002HTSMUXscanPorts, __D0HTSMUXscanPorts
+7	424	179	#line 424 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	425	179		replace __HTSMUXscanPorts_7qG2_sendMsg_7qG2_000, __HTSMUXscanPorts_7qG2_sendMsg_7qG2_000, __signed_stack_001HTSMUXscanPorts, __D0HTSMUXscanPorts
+7	424	184	#line 424 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	424	184	#line 424 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	425	184	#pragma macro 28
+7	425	184		acquire __RLSBmutex0
+7	425	185		acquire __RLSBmutex1
+7	425	186		acquire __RLSBmutex2
+7	425	187		acquire __RLSBmutex3
+7	425	188		mov __RLSReadPort, __HTSMUXscanPorts_7qG2_smux_7qG2_000
+7	425	190		mov __RLSReadBufVar, __HTSMUXscanPorts_7qG2_sendMsg_7qG2_000
+7	425	192		mov __RLSBytesCountVar, __HTSMUXscanPorts_7qG2_size_7qG2_000
+7	425	194		subcall __ReadLSBytesVar, ____ReadLSBytesVar_return
+7	425	196		tst 4, __D0HTSMUXscanPorts, __RLSBResultVar
+7	425	199		mov __HTSMUXscanPorts_7qG2_size_7qG2_000, __RLSBytesCountVar
+7	425	201		mov __HTSMUXscanPorts_7qG2_readMsg_7qG2_000, __RLSReadBufVar
+7	425	203		release __RLSBmutex0
+7	425	204		release __RLSBmutex1
+7	425	205		release __RLSBmutex2
+7	425	206		release __RLSBmutex3
+7	7180	207	#line 7180 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	425	207	#line 425 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	426	207		tst 5, __D0HTSMUXscanPorts, __D0HTSMUXscanPorts
+7	425	210	#line 425 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	426	210		brtst 4, __ASM_Label_711, __D0HTSMUXscanPorts
+7	425	213	#line 425 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	426	213		mov __unsigned_stack_001HTSMUXscanPorts, __HTSMUXscanPorts_7qG2_smux_7qG2_000
+7	425	215	#line 425 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	425	215	#line 425 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	426	215		set __D0HTSMUXscanPorts, 4
+7	425	218	#line 425 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	426	218		mul __signed_stack_001HTSMUXscanPorts, __unsigned_stack_001HTSMUXscanPorts, __D0HTSMUXscanPorts
+7	425	222	#line 425 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	425	222	#line 425 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	426	222		mov __D0HTSMUXscanPorts, __HTSMUXscanPorts_7qG2_i_7qG2_001
+7	425	224	#line 425 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	426	224		add __signed_stack_001HTSMUXscanPorts, __signed_stack_001HTSMUXscanPorts, __D0HTSMUXscanPorts
+7	425	228	#line 425 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	425	228	#line 425 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	426	228		set __signed_stack_002HTSMUXscanPorts, 0
+7	425	231	#line 425 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	425	231	#line 425 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	426	231		index __DU0HTSMUXscanPorts, __HTSMUXscanPorts_7qG2_readMsg_7qG2_000, __signed_stack_002HTSMUXscanPorts
+7	425	235	#line 425 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	426	235	#line 426 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	427	235		replace smuxSensorTypes, smuxSensorTypes, __signed_stack_001HTSMUXscanPorts, __DU0HTSMUXscanPorts
+7	426	240	#line 426 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	427	240	#line 427 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	428	240		jmp __ASM_Label_718
+7	427	242	#line 427 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	428	242		mov __unsigned_stack_001HTSMUXscanPorts, __HTSMUXscanPorts_7qG2_smux_7qG2_000
+7	427	244	#line 427 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	427	244	#line 427 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	428	244		set __D0HTSMUXscanPorts, 4
+7	427	247	#line 427 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	428	247		mul __signed_stack_001HTSMUXscanPorts, __unsigned_stack_001HTSMUXscanPorts, __D0HTSMUXscanPorts
+7	427	251	#line 427 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	427	251	#line 427 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	428	251		mov __D0HTSMUXscanPorts, __HTSMUXscanPorts_7qG2_i_7qG2_001
+7	427	253	#line 427 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	428	253		add __signed_stack_001HTSMUXscanPorts, __signed_stack_001HTSMUXscanPorts, __D0HTSMUXscanPorts
+7	427	257	#line 427 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	428	257	#line 428 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	429	257		set __D0HTSMUXscanPorts, 255
+7	428	260	#line 428 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	429	260		replace smuxSensorTypes, smuxSensorTypes, __signed_stack_001HTSMUXscanPorts, __D0HTSMUXscanPorts
+7	428	265	#line 428 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	430	265	#line 430 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	430	265	#line 430 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	431	265		jmp __ASM_Label_690
+7	430	267	#line 430 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	431	267	#line 431 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	432	267		set __DU0HTSMUXscanPorts, 1
+7	431	270	#line 431 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	431	270	#line 431 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	432	270		subret __HTSMUXscanPorts_return
+7	431	272	#line 431 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	447	272	#line 447 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+7	448	272		subret __HTSMUXscanPorts_return
+8	449	0	#line 449 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	450	0		mov __unsigned_stack_001_HTSMUXsetMode, ___HTSMUXsetMode_7qG2_muxport_7qG2_000
+8	449	2	#line 449 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	450	2	#line 450 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	451	2		set __D0_HTSMUXsetMode, 4
+8	450	5	#line 450 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	451	5		div ___HTSMUXsetMode_7qG2_smux_7qG2_000, __unsigned_stack_001_HTSMUXsetMode, __D0_HTSMUXsetMode
+8	450	9	#line 450 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	450	9	#line 450 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	451	9		mov __unsigned_stack_001_HTSMUXsetMode, ___HTSMUXsetMode_7qG2_muxport_7qG2_000
+8	450	11	#line 450 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	452	11	#line 452 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	453	11		set __D0_HTSMUXsetMode, 4
+8	452	14	#line 452 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	453	14		mod ___HTSMUXsetMode_7qG2_channel_7qG2_000, __unsigned_stack_001_HTSMUXsetMode, __D0_HTSMUXsetMode
+8	452	18	#line 452 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	453	18	#line 453 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	454	18		set __signed_stack_001_HTSMUXsetMode, 34
+8	453	21	#line 453 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	453	21	#line 453 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	454	21		set __D0_HTSMUXsetMode, 0
+8	453	24	#line 453 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	454	24		add __signed_stack_001_HTSMUXsetMode, __signed_stack_001_HTSMUXsetMode, __D0_HTSMUXsetMode
+8	453	28	#line 453 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	453	28	#line 453 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	454	28		set __signed_stack_002_HTSMUXsetMode, 5
+8	453	31	#line 453 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	453	31	#line 453 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	454	31		mov __DU0_HTSMUXsetMode, ___HTSMUXsetMode_7qG2_channel_7qG2_000
+8	453	33	#line 453 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	454	33		mul __D0_HTSMUXsetMode, __signed_stack_002_HTSMUXsetMode, __DU0_HTSMUXsetMode
+8	455	37	#line 455 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	456	37		add ___HTSMUXsetMode_7qG2_regaddr_7qG2_000, __signed_stack_001_HTSMUXsetMode, __D0_HTSMUXsetMode
+8	455	41	#line 455 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	455	41	#line 455 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	456	41		arrbuild ___HTSMUXsetMode_7qG2_sendMsg_7qG2_000, __constVal16, ___HTSMUXsetMode_7qG2_regaddr_7qG2_000, ___HTSMUXsetMode_7qG2_mode_7qG2_000
+8	455	47	#line 455 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	455	47	#line 455 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	458	47	#line 458 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	459	47		mov __unsigned_stack_001_HTSMUXsetMode, ___HTSMUXsetMode_7qG2_smux_7qG2_000
+8	458	49	#line 458 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	458	49	#line 458 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	459	49		index __unsigned_stack_001_HTSMUXsetMode, smuxStatus, __unsigned_stack_001_HTSMUXsetMode
+8	458	53	#line 458 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	458	53	#line 458 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	458	53	#line 458 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	459	53		set __D0_HTSMUXsetMode, 2
+8	458	56	#line 458 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	459	56		cmp 4, __D0_HTSMUXsetMode, __unsigned_stack_001_HTSMUXsetMode, __D0_HTSMUXsetMode
+8	459	60	#line 459 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	460	60		brtst 4, __ASM_Label_737, __D0_HTSMUXsetMode
+8	460	63	#line 460 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	461	63		set __DU0_HTSMUXsetMode, 0
+8	460	66	#line 460 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	460	66	#line 460 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	461	66		subret ___HTSMUXsetMode_return
+8	460	68	#line 460 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	460	68	#line 460 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	461	68		jmp __ASM_Label_740
+8	460	70	#line 460 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	461	70		mov __unsigned_stack_001_HTSMUXsetMode, ___HTSMUXsetMode_7qG2_smux_7qG2_000
+8	460	72	#line 460 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	460	72	#line 460 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	461	72		index __unsigned_stack_001_HTSMUXsetMode, smuxStatus, __unsigned_stack_001_HTSMUXsetMode
+8	460	76	#line 460 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	460	76	#line 460 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	460	76	#line 460 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	461	76		set __D0_HTSMUXsetMode, 4
+8	460	79	#line 460 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	461	79		cmp 5, __D0_HTSMUXsetMode, __unsigned_stack_001_HTSMUXsetMode, __D0_HTSMUXsetMode
+8	462	83	#line 462 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	463	83		brtst 4, __ASM_Label_745, __D0_HTSMUXsetMode
+8	462	86	#line 462 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	463	86		mov ___HTSMUXsendCmd_7qG2_smux_7qG2_000, ___HTSMUXsetMode_7qG2_smux_7qG2_000
+8	462	88	#line 462 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	462	88	#line 462 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	463	88		set ___HTSMUXsendCmd_7qG2_cmd_7qG2_000, 0
+8	462	91	#line 462 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	463	91	#line 463 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	464	91		subcall _HTSMUXsendCmd, ___HTSMUXsendCmd_return
+8	463	93	#line 463 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	463	93	#line 463 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	464	93		not __DU0_HTSMUXsetMode, __DU0_HTSMUXsendCmd
+8	463	96	#line 463 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	464	96		tst 5, __D0_HTSMUXsetMode, __DU0_HTSMUXsetMode
+8	463	99	#line 463 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	464	99		brtst 4, __ASM_Label_752, __D0_HTSMUXsetMode
+8	464	102	#line 464 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	465	102		set __DU0_HTSMUXsetMode, 0
+8	464	105	#line 464 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	464	105	#line 464 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	465	105		subret ___HTSMUXsetMode_return
+8	464	107	#line 464 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	467	107	#line 467 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	467	107	#line 467 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	467	107	#line 467 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	467	107	#line 467 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	468	107	#pragma macro 23
+8	468	107		acquire __CLSCSMutex0
+8	468	108		acquire __CLSCSMutex1
+8	468	109		acquire __CLSCSMutex2
+8	468	110		acquire __CLSCSMutex3
+8	468	111		mov __CLSCSArgs0.Port, ___HTSMUXsetMode_7qG2_smux_7qG2_000
+8	468	113		syscall 23, __CLSCSArgs0
+8	468	116		mov __tmpsbyte_HTSMUXsetMode, __CLSCSArgs0.BytesReady
+8	468	118		mov __D0_HTSMUXsetMode, __CLSCSArgs0.Result
+8	468	121		release __CLSCSMutex0
+8	468	122		release __CLSCSMutex1
+8	468	123		release __CLSCSMutex2
+8	468	124		release __CLSCSMutex3
+8	7457	125	#line 7457 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	467	125	#line 467 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	468	125		mov __signed_stack_001_HTSMUXsetMode, __D0_HTSMUXsetMode
+8	467	127	#line 467 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	468	127		set __D0_HTSMUXsetMode, 32
+8	467	130	#line 467 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	468	130		cmp 4, __D0_HTSMUXsetMode, __signed_stack_001_HTSMUXsetMode, __D0_HTSMUXsetMode
+8	467	134	#line 467 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	468	134		brtst 4, __ASM_Label_756, __D0_HTSMUXsetMode
+8	8557	137	#line 8557 "NXCDefs.h"
+8	8558	137		wait2 NA, __constVal1
+8	8557	140	#line 8557 "NXCDefs.h"
+8	468	140	#line 468 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	468	140	#line 468 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	469	140		jmp __ASM_Label_755
+8	468	142	#line 468 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	468	142	#line 468 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	469	142	#pragma macro 25
+8	469	142		acquire __CLSWMutex0
+8	469	143		acquire __CLSWMutex1
+8	469	144		acquire __CLSWMutex2
+8	469	145		acquire __CLSWMutex3
+8	469	146		or __CLSWArgs0.Port, ___HTSMUXsetMode_7qG2_smux_7qG2_000, __LSWriteOptionsVar
+8	469	150		mov __CLSWArgs0.ReturnLen, __constVal0
+8	469	152		mov __CLSWArgs0.Buffer, ___HTSMUXsetMode_7qG2_sendMsg_7qG2_000
+8	469	154		syscall 21, __CLSWArgs0
+8	469	157		mov __D0_HTSMUXsetMode, __CLSWArgs0.Result
+8	469	160		release __CLSWMutex0
+8	469	161		release __CLSWMutex1
+8	469	162		release __CLSWMutex2
+8	469	163		release __CLSWMutex3
+8	7479	164	#line 7479 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	468	164	#line 468 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	468	164	#line 468 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	470	164	#line 470 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	471	164	#pragma macro 23
+8	471	164		acquire __CLSCSMutex0
+8	471	165		acquire __CLSCSMutex1
+8	471	166		acquire __CLSCSMutex2
+8	471	167		acquire __CLSCSMutex3
+8	471	168		mov __CLSCSArgs0.Port, ___HTSMUXsetMode_7qG2_smux_7qG2_000
+8	471	170		syscall 23, __CLSCSArgs0
+8	471	173		mov __tmpsbyte_HTSMUXsetMode, __CLSCSArgs0.BytesReady
+8	471	175		mov __D0_HTSMUXsetMode, __CLSCSArgs0.Result
+8	471	178		release __CLSCSMutex0
+8	471	179		release __CLSCSMutex1
+8	471	180		release __CLSCSMutex2
+8	471	181		release __CLSCSMutex3
+8	7484	182	#line 7484 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	470	182	#line 470 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	471	182		mov __signed_stack_001_HTSMUXsetMode, __D0_HTSMUXsetMode
+8	470	184	#line 470 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	471	184		set __D0_HTSMUXsetMode, 32
+8	470	187	#line 470 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	471	187		cmp 4, __D0_HTSMUXsetMode, __signed_stack_001_HTSMUXsetMode, __D0_HTSMUXsetMode
+8	470	191	#line 470 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	471	191		brtst 4, __ASM_Label_762, __D0_HTSMUXsetMode
+8	470	194	#line 470 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	471	194	#pragma macro 23
+8	471	194		acquire __CLSCSMutex0
+8	471	195		acquire __CLSCSMutex1
+8	471	196		acquire __CLSCSMutex2
+8	471	197		acquire __CLSCSMutex3
+8	471	198		mov __CLSCSArgs0.Port, ___HTSMUXsetMode_7qG2_smux_7qG2_000
+8	471	200		syscall 23, __CLSCSArgs0
+8	471	203		mov __tmpsbyte_HTSMUXsetMode, __CLSCSArgs0.BytesReady
+8	471	205		mov __D0_HTSMUXsetMode, __CLSCSArgs0.Result
+8	471	208		release __CLSCSMutex0
+8	471	209		release __CLSCSMutex1
+8	471	210		release __CLSCSMutex2
+8	471	211		release __CLSCSMutex3
+8	7498	212	#line 7498 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	470	212	#line 470 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	471	212		mov __signed_stack_001_HTSMUXsetMode, __D0_HTSMUXsetMode
+8	470	214	#line 470 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	471	214		set __D0_HTSMUXsetMode, 0
+8	470	217	#line 470 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	471	217		cmp 5, __D0_HTSMUXsetMode, __signed_stack_001_HTSMUXsetMode, __D0_HTSMUXsetMode
+8	470	221	#line 470 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	471	221		brtst 4, __ASM_Label_760, __D0_HTSMUXsetMode
+8	8557	224	#line 8557 "NXCDefs.h"
+8	8558	224		wait2 NA, __constVal1
+8	8557	227	#line 8557 "NXCDefs.h"
+8	471	227	#line 471 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	471	227	#line 471 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	472	227		jmp __ASM_Label_759
+8	471	229	#line 471 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	471	229	#line 471 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	472	229	#pragma macro 23
+8	472	229		acquire __CLSCSMutex0
+8	472	230		acquire __CLSCSMutex1
+8	472	231		acquire __CLSCSMutex2
+8	472	232		acquire __CLSCSMutex3
+8	472	233		mov __CLSCSArgs0.Port, ___HTSMUXsetMode_7qG2_smux_7qG2_000
+8	472	235		syscall 23, __CLSCSArgs0
+8	472	238		mov __tmpsbyte_HTSMUXsetMode, __CLSCSArgs0.BytesReady
+8	472	240		mov __D0_HTSMUXsetMode, __CLSCSArgs0.Result
+8	472	243		release __CLSCSMutex0
+8	472	244		release __CLSCSMutex1
+8	472	245		release __CLSCSMutex2
+8	472	246		release __CLSCSMutex3
+8	7522	247	#line 7522 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	471	247	#line 471 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	472	247		mov __signed_stack_001_HTSMUXsetMode, __D0_HTSMUXsetMode
+8	471	249	#line 471 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	472	249		set __D0_HTSMUXsetMode, 0
+8	471	252	#line 471 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	472	252		cmp 4, __D0_HTSMUXsetMode, __signed_stack_001_HTSMUXsetMode, __D0_HTSMUXsetMode
+8	472	256	#line 472 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	473	256		mov __DU0_HTSMUXsetMode, __D0_HTSMUXsetMode
+8	472	258	#line 472 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	473	258		subret ___HTSMUXsetMode_return
+8	472	260	#line 472 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	472	260	#line 472 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	480	260	#line 480 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+8	481	260		subret ___HTSMUXsetMode_return
+9	481	0	#line 481 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	482	0		mov __unsigned_stack_001HTSMUXsetAnalogueActive, __HTSMUXsetAnalogueActive_7qG2_muxport_7qG2_000
+9	481	2	#line 481 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	481	2	#line 481 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	482	2		set __D0HTSMUXsetAnalogueActive, 4
+9	481	5	#line 481 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	482	5		div __signed_stack_001HTSMUXsetAnalogueActive, __unsigned_stack_001HTSMUXsetAnalogueActive, __D0HTSMUXsetAnalogueActive
+9	481	9	#line 481 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	481	9	#line 481 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	482	9		set __D0HTSMUXsetAnalogueActive, 4
+9	481	12	#line 481 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	482	12		mul __signed_stack_001HTSMUXsetAnalogueActive, __signed_stack_001HTSMUXsetAnalogueActive, __D0HTSMUXsetAnalogueActive
+9	481	16	#line 481 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	481	16	#line 481 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	482	16		mov __unsigned_stack_002HTSMUXsetAnalogueActive, __HTSMUXsetAnalogueActive_7qG2_muxport_7qG2_000
+9	481	18	#line 481 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	481	18	#line 481 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	482	18		set __D0HTSMUXsetAnalogueActive, 4
+9	481	21	#line 481 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	482	21		mod __D0HTSMUXsetAnalogueActive, __unsigned_stack_002HTSMUXsetAnalogueActive, __D0HTSMUXsetAnalogueActive
+9	481	25	#line 481 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	482	25		add __signed_stack_001HTSMUXsetAnalogueActive, __signed_stack_001HTSMUXsetAnalogueActive, __D0HTSMUXsetAnalogueActive
+9	481	29	#line 481 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	481	29	#line 481 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	482	29		index __unsigned_stack_001HTSMUXsetAnalogueActive, smuxSensorTypes, __signed_stack_001HTSMUXsetAnalogueActive
+9	481	33	#line 481 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	481	33	#line 481 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	482	33	#line 482 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	483	33		set __D0HTSMUXsetAnalogueActive, 0
+9	482	36	#line 482 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	483	36		cmp 5, __D0HTSMUXsetAnalogueActive, __unsigned_stack_001HTSMUXsetAnalogueActive, __D0HTSMUXsetAnalogueActive
+9	482	40	#line 482 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	483	40		brtst 4, __ASM_Label_775, __D0HTSMUXsetAnalogueActive
+9	484	43	#line 484 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	485	43		set __DU0HTSMUXsetAnalogueActive, 0
+9	484	46	#line 484 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	484	46	#line 484 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	485	46		subret __HTSMUXsetAnalogueActive_return
+9	484	48	#line 484 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	484	48	#line 484 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	484	48	#line 484 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	485	48		mov ___HTSMUXsetMode_7qG2_muxport_7qG2_000, __HTSMUXsetAnalogueActive_7qG2_muxport_7qG2_000
+9	484	50	#line 484 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	484	50	#line 484 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	485	50		set ___HTSMUXsetMode_7qG2_mode_7qG2_000, 4
+9	484	53	#line 484 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	485	53	#line 485 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	486	53		subcall _HTSMUXsetMode, ___HTSMUXsetMode_return
+9	485	55	#line 485 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	485	55	#line 485 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	486	55		not __DU0HTSMUXsetAnalogueActive, __DU0_HTSMUXsetMode
+9	485	58	#line 485 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	486	58		tst 5, __D0HTSMUXsetAnalogueActive, __DU0HTSMUXsetAnalogueActive
+9	485	61	#line 485 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	486	61		brtst 4, __ASM_Label_784, __D0HTSMUXsetAnalogueActive
+9	487	64	#line 487 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	488	64		set __DU0HTSMUXsetAnalogueActive, 0
+9	487	67	#line 487 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	487	67	#line 487 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	488	67		subret __HTSMUXsetAnalogueActive_return
+9	487	69	#line 487 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	487	69	#line 487 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	487	69	#line 487 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	488	69		mov __unsigned_stack_001HTSMUXsetAnalogueActive, __HTSMUXsetAnalogueActive_7qG2_muxport_7qG2_000
+9	487	71	#line 487 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	487	71	#line 487 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	488	71		set __D0HTSMUXsetAnalogueActive, 4
+9	487	74	#line 487 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	488	74		div ___HTSMUXsendCmd_7qG2_smux_7qG2_000, __unsigned_stack_001HTSMUXsetAnalogueActive, __D0HTSMUXsetAnalogueActive
+9	487	78	#line 487 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	487	78	#line 487 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	488	78		set ___HTSMUXsendCmd_7qG2_cmd_7qG2_000, 2
+9	487	81	#line 487 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	488	81	#line 488 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	489	81		subcall _HTSMUXsendCmd, ___HTSMUXsendCmd_return
+9	488	83	#line 488 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	489	83		mov __DU0HTSMUXsetAnalogueActive, __DU0_HTSMUXsendCmd
+9	488	85	#line 488 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	489	85		subret __HTSMUXsetAnalogueActive_return
+9	488	87	#line 488 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	496	87	#line 496 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+9	497	87		subret __HTSMUXsetAnalogueActive_return
+10	497	0	#line 497 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	498	0		mov __unsigned_stack_001HTSMUXsetAnalogueInactive, __HTSMUXsetAnalogueInactive_7qG2_muxport_7qG2_000
+10	497	2	#line 497 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	497	2	#line 497 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	498	2		set __D0HTSMUXsetAnalogueInactive, 4
+10	497	5	#line 497 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	498	5		div __signed_stack_001HTSMUXsetAnalogueInactive, __unsigned_stack_001HTSMUXsetAnalogueInactive, __D0HTSMUXsetAnalogueInactive
+10	497	9	#line 497 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	497	9	#line 497 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	498	9		set __D0HTSMUXsetAnalogueInactive, 4
+10	497	12	#line 497 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	498	12		mul __signed_stack_001HTSMUXsetAnalogueInactive, __signed_stack_001HTSMUXsetAnalogueInactive, __D0HTSMUXsetAnalogueInactive
+10	497	16	#line 497 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	497	16	#line 497 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	498	16		mov __unsigned_stack_002HTSMUXsetAnalogueInactive, __HTSMUXsetAnalogueInactive_7qG2_muxport_7qG2_000
+10	497	18	#line 497 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	497	18	#line 497 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	498	18		set __D0HTSMUXsetAnalogueInactive, 4
+10	497	21	#line 497 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	498	21		mod __D0HTSMUXsetAnalogueInactive, __unsigned_stack_002HTSMUXsetAnalogueInactive, __D0HTSMUXsetAnalogueInactive
+10	497	25	#line 497 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	498	25		add __signed_stack_001HTSMUXsetAnalogueInactive, __signed_stack_001HTSMUXsetAnalogueInactive, __D0HTSMUXsetAnalogueInactive
+10	497	29	#line 497 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	497	29	#line 497 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	498	29		index __unsigned_stack_001HTSMUXsetAnalogueInactive, smuxSensorTypes, __signed_stack_001HTSMUXsetAnalogueInactive
+10	497	33	#line 497 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	497	33	#line 497 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	498	33	#line 498 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	499	33		set __D0HTSMUXsetAnalogueInactive, 0
+10	498	36	#line 498 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	499	36		cmp 5, __D0HTSMUXsetAnalogueInactive, __unsigned_stack_001HTSMUXsetAnalogueInactive, __D0HTSMUXsetAnalogueInactive
+10	498	40	#line 498 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	499	40		brtst 4, __ASM_Label_797, __D0HTSMUXsetAnalogueInactive
+10	500	43	#line 500 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	501	43		set __DU0HTSMUXsetAnalogueInactive, 0
+10	500	46	#line 500 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	500	46	#line 500 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	501	46		subret __HTSMUXsetAnalogueInactive_return
+10	500	48	#line 500 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	500	48	#line 500 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	500	48	#line 500 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	501	48		mov ___HTSMUXsetMode_7qG2_muxport_7qG2_000, __HTSMUXsetAnalogueInactive_7qG2_muxport_7qG2_000
+10	500	50	#line 500 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	500	50	#line 500 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	501	50		set ___HTSMUXsetMode_7qG2_mode_7qG2_000, 0
+10	500	53	#line 500 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	501	53	#line 501 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	502	53		subcall _HTSMUXsetMode, ___HTSMUXsetMode_return
+10	501	55	#line 501 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	501	55	#line 501 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	502	55		not __DU0HTSMUXsetAnalogueInactive, __DU0_HTSMUXsetMode
+10	501	58	#line 501 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	502	58		tst 5, __D0HTSMUXsetAnalogueInactive, __DU0HTSMUXsetAnalogueInactive
+10	501	61	#line 501 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	502	61		brtst 4, __ASM_Label_806, __D0HTSMUXsetAnalogueInactive
+10	503	64	#line 503 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	504	64		set __DU0HTSMUXsetAnalogueInactive, 0
+10	503	67	#line 503 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	503	67	#line 503 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	504	67		subret __HTSMUXsetAnalogueInactive_return
+10	503	69	#line 503 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	503	69	#line 503 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	503	69	#line 503 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	504	69		mov __unsigned_stack_001HTSMUXsetAnalogueInactive, __HTSMUXsetAnalogueInactive_7qG2_muxport_7qG2_000
+10	503	71	#line 503 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	503	71	#line 503 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	504	71		set __D0HTSMUXsetAnalogueInactive, 4
+10	503	74	#line 503 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	504	74		div ___HTSMUXsendCmd_7qG2_smux_7qG2_000, __unsigned_stack_001HTSMUXsetAnalogueInactive, __D0HTSMUXsetAnalogueInactive
+10	503	78	#line 503 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	503	78	#line 503 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	504	78		set ___HTSMUXsendCmd_7qG2_cmd_7qG2_000, 2
+10	503	81	#line 503 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	504	81	#line 504 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	505	81		subcall _HTSMUXsendCmd, ___HTSMUXsendCmd_return
+10	504	83	#line 504 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	505	83		mov __DU0HTSMUXsetAnalogueInactive, __DU0_HTSMUXsendCmd
+10	504	85	#line 504 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	505	85		subret __HTSMUXsetAnalogueInactive_return
+10	504	87	#line 504 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	514	87	#line 514 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+10	515	87		subret __HTSMUXsetAnalogueInactive_return
+11	869	0	#line 869 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+11	870	0		set __signed_stack_001smuxSensorLegoLightRaw, 1023
+11	869	3	#line 869 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+11	869	3	#line 869 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+11	870	3		mov __HTSMUXreadAnalogue_7qG2_muxport_7qG2_000, __smuxSensorLegoLightRaw_7qG2_muxport_7qG2_000
+11	869	5	#line 869 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+11	870	5	#line 870 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+11	871	5		subcall HTSMUXreadAnalogue, __HTSMUXreadAnalogue_return
+11	870	7	#line 870 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+11	870	7	#line 870 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+11	871	7		sub __D0smuxSensorLegoLightRaw, __signed_stack_001smuxSensorLegoLightRaw, __D0HTSMUXreadAnalogue
+11	870	11	#line 870 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+11	871	11		subret __smuxSensorLegoLightRaw_return
+11	870	13	#line 870 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+11	880	13	#line 880 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+11	881	13		subret __smuxSensorLegoLightRaw_return
+12	881	0	#line 881 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+12	882	0		mov __smuxSensorLegoLightRaw_7qG2_muxport_7qG2_000, __smuxSensorLegoLightNorm_7qG2_muxport_7qG2_000
+12	881	2	#line 881 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+12	882	2	#line 882 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+12	883	2		subcall smuxSensorLegoLightRaw, __smuxSensorLegoLightRaw_return
+12	882	4	#line 882 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+12	882	4	#line 882 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+12	882	4	#line 882 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+12	883	4		mov __signed_stack_001smuxSensorLegoLightNorm, __D0smuxSensorLegoLightRaw
+12	882	6	#line 882 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+12	882	6	#line 882 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+12	883	6		set __D0smuxSensorLegoLightNorm, 100
+12	882	9	#line 882 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+12	883	9		mul __signed_stack_001smuxSensorLegoLightNorm, __signed_stack_001smuxSensorLegoLightNorm, __D0smuxSensorLegoLightNorm
+12	882	13	#line 882 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+12	883	13	#line 883 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+12	884	13		set __D0smuxSensorLegoLightNorm, 1024
+12	883	16	#line 883 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+12	884	16		div __D0smuxSensorLegoLightNorm, __signed_stack_001smuxSensorLegoLightNorm, __D0smuxSensorLegoLightNorm
+12	883	20	#line 883 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+12	884	20		subret __smuxSensorLegoLightNorm_return
+12	883	22	#line 883 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+12	894	22	#line 894 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+12	895	22		subret __smuxSensorLegoLightNorm_return
+13	896	0	#line 896 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+13	897	0		mov __DU0smuxSetSensorLegoLight, __smuxSetSensorLegoLight_7qG2_active_7qG2_000
+13	896	2	#line 896 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+13	897	2		not __DU0smuxSetSensorLegoLight, __DU0smuxSetSensorLegoLight
+13	896	5	#line 896 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+13	897	5		tst 5, __D0smuxSetSensorLegoLight, __DU0smuxSetSensorLegoLight
+13	896	8	#line 896 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+13	897	8		brtst 4, __ASM_Label_1263, __D0smuxSetSensorLegoLight
+13	896	11	#line 896 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+13	897	11		mov __HTSMUXsetAnalogueInactive_7qG2_muxport_7qG2_000, __smuxSetSensorLegoLight_7qG2_muxport_7qG2_000
+13	896	13	#line 896 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+13	897	13	#line 897 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+13	898	13		subcall HTSMUXsetAnalogueInactive, __HTSMUXsetAnalogueInactive_return
+13	897	15	#line 897 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+13	898	15		mov __DU0smuxSetSensorLegoLight, __DU0HTSMUXsetAnalogueInactive
+13	897	17	#line 897 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+13	898	17		subret __smuxSetSensorLegoLight_return
+13	897	19	#line 897 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+13	898	19	#line 898 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+13	899	19		jmp __ASM_Label_1268
+13	898	21	#line 898 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+13	899	21		mov __HTSMUXsetAnalogueActive_7qG2_muxport_7qG2_000, __smuxSetSensorLegoLight_7qG2_muxport_7qG2_000
+13	898	23	#line 898 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+13	899	23	#line 899 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+13	900	23		subcall HTSMUXsetAnalogueActive, __HTSMUXsetAnalogueActive_return
+13	899	25	#line 899 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+13	900	25		mov __DU0smuxSetSensorLegoLight, __DU0HTSMUXsetAnalogueActive
+13	899	27	#line 899 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+13	900	27		subret __smuxSetSensorLegoLight_return
+13	899	29	#line 899 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+13	899	29	#line 899 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+13	909	29	#line 909 "C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h"
+13	910	29		subret __smuxSetSensorLegoLight_return
+14	11	0	#line 11 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	12	0		set __SetSensor_7qG2_port_7qG2_000_inline_init, 3
+14	11	3	#line 11 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	11	3	#line 11 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	4291	3	#line 4291 "NXCDefs.h"
+14	4292	3		setin __constVal10, __SetSensor_7qG2_port_7qG2_000_inline_init, 0
+14	4293	7		setin __constVal0, __SetSensor_7qG2_port_7qG2_000_inline_init, 1
+14	4294	11	#pragma macro 4
+14	4294	11		mov __ResetSensorPort, __SetSensor_7qG2_port_7qG2_000_inline_init
+14	4294	13		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+14	10592	16	#line 10592 "NXCDefs.h"
+14	4295	16	#line 4295 "NXCDefs.h"
+14	15	16	#line 15 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	15	16	#line 15 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	16	16		set __HTSMUXscanPorts_7qG2_smux_7qG2_000, 3
+14	15	19	#line 15 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	15	19	#line 15 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	16	19		subcall HTSMUXscanPorts, __HTSMUXscanPorts_return
+14	15	21	#line 15 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	15	21	#line 15 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	16	21		not __DU0init, __DU0HTSMUXscanPorts
+14	17	24	#line 17 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	18	24		tst 5, __D0init, __DU0init
+14	17	27	#line 17 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	18	27		brtst 4, __ASM_Label_1317, __D0init
+14	17	30	#line 17 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	18	30		set __signed_stack_001init, 0
+14	17	33	#line 17 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	17	33	#line 17 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	18	33		set __signed_stack_002init, 56
+14	17	36	#line 17 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	17	36	#line 17 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	18	36		strcat __strbufinit, __constStr0009
+14	18	40	#line 18 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	19	40		acquire __TextOutMutex
+14	18	41	#line 18 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	19	41		mov __TextOutArgs.Location.X, __signed_stack_001init
+14	18	44	#line 18 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	19	44		mov __TextOutArgs.Location.Y, __signed_stack_002init
+14	18	47	#line 18 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	19	47		set __TextOutArgs.Options, 0
+14	18	50	#line 18 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	19	50		mov __TextOutArgs.Text, __strbufinit
+14	18	52	#line 18 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	19	52		syscall 13, __TextOutArgs
+14	18	55	#line 18 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	19	55		mov __D0init, __TextOutArgs.Result
+14	18	58	#line 18 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	19	58		release __TextOutMutex
+14	18	59	#line 18 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	18	59	#line 18 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	19	59		set __Wait_7qG2_ms_7qG2_000_inline_init, 1000
+14	18	62	#line 18 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	8551	62	#line 8551 "NXCDefs.h"
+14	8552	62		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_init
+14	8551	65	#line 8551 "NXCDefs.h"
+14	19	65	#line 19 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	22	65	#line 22 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	22	65	#line 22 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	23	65		set __SetSensorType_7qG2_port_7qG2_000_inline_init, 0
+14	22	68	#line 22 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	22	68	#line 22 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	23	68		set __SetSensorType_7qG2_type_7qG2_000_inline_init, 5
+14	22	71	#line 22 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	4247	71	#line 4247 "NXCDefs.h"
+14	4248	71		setin __SetSensorType_7qG2_type_7qG2_000_inline_init, __SetSensorType_7qG2_port_7qG2_000_inline_init, 0
+14	4247	75	#line 4247 "NXCDefs.h"
+14	23	75	#line 23 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	23	75	#line 23 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	24	75		set __SetSensorType_7qG2_port_7qG2_000_inline_init, 1
+14	23	78	#line 23 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	23	78	#line 23 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	24	78		set __SetSensorType_7qG2_type_7qG2_000_inline_init, 10
+14	23	81	#line 23 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	4247	81	#line 4247 "NXCDefs.h"
+14	4248	81		setin __SetSensorType_7qG2_type_7qG2_000_inline_init, __SetSensorType_7qG2_port_7qG2_000_inline_init, 0
+14	4247	85	#line 4247 "NXCDefs.h"
+14	24	85	#line 24 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	24	85	#line 24 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	25	85		set __SetSensorType_7qG2_port_7qG2_000_inline_init, 2
+14	24	88	#line 24 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	24	88	#line 24 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	25	88		set __SetSensorType_7qG2_type_7qG2_000_inline_init, 10
+14	24	91	#line 24 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	4247	91	#line 4247 "NXCDefs.h"
+14	4248	91		setin __SetSensorType_7qG2_type_7qG2_000_inline_init, __SetSensorType_7qG2_port_7qG2_000_inline_init, 0
+14	4247	95	#line 4247 "NXCDefs.h"
+14	25	95	#line 25 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	25	95	#line 25 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	26	95		set __smuxSetSensorLegoLight_7qG2_muxport_7qG2_000, 12
+14	25	98	#line 25 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	25	98	#line 25 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	26	98		set __smuxSetSensorLegoLight_7qG2_active_7qG2_000, 1
+14	25	101	#line 25 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	25	101	#line 25 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	26	101		subcall smuxSetSensorLegoLight, __smuxSetSensorLegoLight_return
+14	25	103	#line 25 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	25	103	#line 25 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	26	103		not __DU0init, __DU0smuxSetSensorLegoLight
+14	26	106	#line 26 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	27	106		tst 5, __D0init, __DU0init
+14	26	109	#line 26 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	27	109		brtst 4, __ASM_Label_1342, __D0init
+14	26	112	#line 26 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	27	112		set __signed_stack_001init, 0
+14	26	115	#line 26 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	26	115	#line 26 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	27	115		set __signed_stack_002init, 56
+14	26	118	#line 26 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	26	118	#line 26 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	27	118		strcat __strbufinit, __constStr0010
+14	27	122	#line 27 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	28	122		acquire __TextOutMutex
+14	27	123	#line 27 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	28	123		mov __TextOutArgs.Location.X, __signed_stack_001init
+14	27	126	#line 27 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	28	126		mov __TextOutArgs.Location.Y, __signed_stack_002init
+14	27	129	#line 27 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	28	129		set __TextOutArgs.Options, 0
+14	27	132	#line 27 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	28	132		mov __TextOutArgs.Text, __strbufinit
+14	27	134	#line 27 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	28	134		syscall 13, __TextOutArgs
+14	27	137	#line 27 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	28	137		mov __D0init, __TextOutArgs.Result
+14	27	140	#line 27 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	28	140		release __TextOutMutex
+14	27	141	#line 27 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	27	141	#line 27 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	28	141		set __Wait_7qG2_ms_7qG2_000_inline_init, 1000
+14	27	144	#line 27 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	8551	144	#line 8551 "NXCDefs.h"
+14	8552	144		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_init
+14	8551	147	#line 8551 "NXCDefs.h"
+14	28	147	#line 28 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	29	147	#line 29 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	29	147	#line 29 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	30	147		set __smuxSetSensorLegoLight_7qG2_muxport_7qG2_000, 13
+14	29	150	#line 29 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	29	150	#line 29 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	30	150		set __smuxSetSensorLegoLight_7qG2_active_7qG2_000, 1
+14	29	153	#line 29 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	29	153	#line 29 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	30	153		subcall smuxSetSensorLegoLight, __smuxSetSensorLegoLight_return
+14	29	155	#line 29 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	29	155	#line 29 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	30	155		not __DU0init, __DU0smuxSetSensorLegoLight
+14	30	158	#line 30 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	31	158		tst 5, __D0init, __DU0init
+14	30	161	#line 30 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	31	161		brtst 4, __ASM_Label_1355, __D0init
+14	30	164	#line 30 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	31	164		set __signed_stack_001init, 0
+14	30	167	#line 30 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	30	167	#line 30 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	31	167		set __signed_stack_002init, 56
+14	30	170	#line 30 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	30	170	#line 30 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	31	170		strcat __strbufinit, __constStr0011
+14	31	174	#line 31 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	32	174		acquire __TextOutMutex
+14	31	175	#line 31 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	32	175		mov __TextOutArgs.Location.X, __signed_stack_001init
+14	31	178	#line 31 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	32	178		mov __TextOutArgs.Location.Y, __signed_stack_002init
+14	31	181	#line 31 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	32	181		set __TextOutArgs.Options, 0
+14	31	184	#line 31 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	32	184		mov __TextOutArgs.Text, __strbufinit
+14	31	186	#line 31 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	32	186		syscall 13, __TextOutArgs
+14	31	189	#line 31 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	32	189		mov __D0init, __TextOutArgs.Result
+14	31	192	#line 31 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	32	192		release __TextOutMutex
+14	31	193	#line 31 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	31	193	#line 31 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	32	193		set __Wait_7qG2_ms_7qG2_000_inline_init, 1000
+14	31	196	#line 31 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	8551	196	#line 8551 "NXCDefs.h"
+14	8552	196		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_init
+14	8551	199	#line 8551 "NXCDefs.h"
+14	32	199	#line 32 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	33	199	#line 33 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	33	199	#line 33 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	34	199		set __smuxSetSensorLegoLight_7qG2_muxport_7qG2_000, 14
+14	33	202	#line 33 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	33	202	#line 33 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	34	202		set __smuxSetSensorLegoLight_7qG2_active_7qG2_000, 1
+14	33	205	#line 33 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	33	205	#line 33 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	34	205		subcall smuxSetSensorLegoLight, __smuxSetSensorLegoLight_return
+14	33	207	#line 33 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	33	207	#line 33 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	34	207		not __DU0init, __DU0smuxSetSensorLegoLight
+14	34	210	#line 34 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	35	210		tst 5, __D0init, __DU0init
+14	34	213	#line 34 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	35	213		brtst 4, __ASM_Label_1368, __D0init
+14	34	216	#line 34 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	35	216		set __signed_stack_001init, 0
+14	34	219	#line 34 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	34	219	#line 34 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	35	219		set __signed_stack_002init, 56
+14	34	222	#line 34 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	34	222	#line 34 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	35	222		strcat __strbufinit, __constStr0012
+14	35	226	#line 35 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	36	226		acquire __TextOutMutex
+14	35	227	#line 35 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	36	227		mov __TextOutArgs.Location.X, __signed_stack_001init
+14	35	230	#line 35 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	36	230		mov __TextOutArgs.Location.Y, __signed_stack_002init
+14	35	233	#line 35 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	36	233		set __TextOutArgs.Options, 0
+14	35	236	#line 35 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	36	236		mov __TextOutArgs.Text, __strbufinit
+14	35	238	#line 35 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	36	238		syscall 13, __TextOutArgs
+14	35	241	#line 35 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	36	241		mov __D0init, __TextOutArgs.Result
+14	35	244	#line 35 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	36	244		release __TextOutMutex
+14	35	245	#line 35 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	35	245	#line 35 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	36	245		set __Wait_7qG2_ms_7qG2_000_inline_init, 1000
+14	35	248	#line 35 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	8551	248	#line 8551 "NXCDefs.h"
+14	8552	248		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_init
+14	8551	251	#line 8551 "NXCDefs.h"
+14	36	251	#line 36 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	37	251	#line 37 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	37	251	#line 37 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	38	251		set __smuxSetSensorLegoLight_7qG2_muxport_7qG2_000, 15
+14	37	254	#line 37 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	37	254	#line 37 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	38	254		set __smuxSetSensorLegoLight_7qG2_active_7qG2_000, 1
+14	37	257	#line 37 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	37	257	#line 37 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	38	257		subcall smuxSetSensorLegoLight, __smuxSetSensorLegoLight_return
+14	37	259	#line 37 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	37	259	#line 37 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	38	259		not __DU0init, __DU0smuxSetSensorLegoLight
+14	38	262	#line 38 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	39	262		tst 5, __D0init, __DU0init
+14	38	265	#line 38 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	39	265		brtst 4, __ASM_Label_1381, __D0init
+14	38	268	#line 38 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	39	268		set __signed_stack_001init, 0
+14	38	271	#line 38 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	38	271	#line 38 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	39	271		set __signed_stack_002init, 56
+14	38	274	#line 38 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	38	274	#line 38 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	39	274		strcat __strbufinit, __constStr0013
+14	39	278	#line 39 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	40	278		acquire __TextOutMutex
+14	39	279	#line 39 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	40	279		mov __TextOutArgs.Location.X, __signed_stack_001init
+14	39	282	#line 39 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	40	282		mov __TextOutArgs.Location.Y, __signed_stack_002init
+14	39	285	#line 39 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	40	285		set __TextOutArgs.Options, 0
+14	39	288	#line 39 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	40	288		mov __TextOutArgs.Text, __strbufinit
+14	39	290	#line 39 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	40	290		syscall 13, __TextOutArgs
+14	39	293	#line 39 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	40	293		mov __D0init, __TextOutArgs.Result
+14	39	296	#line 39 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	40	296		release __TextOutMutex
+14	39	297	#line 39 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	39	297	#line 39 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	40	297		set __Wait_7qG2_ms_7qG2_000_inline_init, 1000
+14	39	300	#line 39 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	8551	300	#line 8551 "NXCDefs.h"
+14	8552	300		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_init
+14	8551	303	#line 8551 "NXCDefs.h"
+14	40	303	#line 40 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	43	303	#line 43 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	43	303	#line 43 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+14	44	303		subret __init_return
+15	45	0	#line 45 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	46	0		mov __D0sens, __sens_7qG2_num_7qG2_000
+15	49	2		brcmp 4, __ASM_Label_1391, __constValNeg1, __D0sens
+15	50	6		brcmp 4, __ASM_Label_1394, __constVal0, __D0sens
+15	51	10		brcmp 4, __ASM_Label_1397, __constVal1, __D0sens
+15	52	14		brcmp 4, __ASM_Label_1402, __constVal2, __D0sens
+15	53	18		brcmp 4, __ASM_Label_1407, __constVal3, __D0sens
+15	54	22		brcmp 4, __ASM_Label_1410, __constVal4, __D0sens
+15	55	26		brcmp 4, __ASM_Label_1415, __constVal5, __D0sens
+15	56	30		jmp __ASM_Label_1420
+15	47	32	#line 47 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	47	32	#line 47 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	48	32	#pragma macro 26
+15	48	32		acquire __RLSBmutex2
+15	48	33		mov __RLSReadBuf2, __RLSBbufLSWrite1
+15	48	35		set __RLSBytesCount2, 1
+15	48	38		wait2 NA, __constVal15
+15	48	41		subcall __ReadLSBytes2, ____ReadLSBytes2_return
+15	48	43		index __D0sens, __RLSReadBuf2, 65535
+15	48	47		release __RLSBmutex2
+15	10972	48	#line 10972 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	47	48	#line 47 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	48	48		mov __sens_7qG2_ret_7qG2_000, __D0sens
+15	47	50	#line 47 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	47	50	#line 47 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	49	50	#line 49 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	50	50		jmp __ASM_Label_1390
+15	49	52	#line 49 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	50	52	#line 50 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	50	52	#line 50 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	51	52	#pragma macro 26
+15	51	52		acquire __RLSBmutex1
+15	51	53		mov __RLSReadBuf1, __RLSBbufLSWrite1
+15	51	55		set __RLSBytesCount1, 1
+15	51	58		wait2 NA, __constVal15
+15	51	61		subcall __ReadLSBytes1, ____ReadLSBytes1_return
+15	51	63		index __D0sens, __RLSReadBuf1, 65535
+15	51	67		release __RLSBmutex1
+15	10985	68	#line 10985 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	50	68	#line 50 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	51	68		mov __sens_7qG2_ret_7qG2_000, __D0sens
+15	50	70	#line 50 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	50	70	#line 50 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	52	70	#line 52 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	53	70		jmp __ASM_Label_1390
+15	52	72	#line 52 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	53	72	#line 53 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	53	72	#line 53 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	54	72		set __smuxSensorLegoLightNorm_7qG2_muxport_7qG2_000, 12
+15	53	75	#line 53 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	54	75	#line 54 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	55	75		subcall smuxSensorLegoLightNorm, __smuxSensorLegoLightNorm_return
+15	54	77	#line 54 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	55	77		mov __sens_7qG2_ret_7qG2_000, __D0smuxSensorLegoLightNorm
+15	54	79	#line 54 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	54	79	#line 54 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	55	79	#line 55 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	56	79		jmp __ASM_Label_1390
+15	55	81	#line 55 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	56	81	#line 56 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	56	81	#line 56 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	57	81		set __smuxSensorLegoLightNorm_7qG2_muxport_7qG2_000, 13
+15	56	84	#line 56 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	57	84	#line 57 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	58	84		subcall smuxSensorLegoLightNorm, __smuxSensorLegoLightNorm_return
+15	57	86	#line 57 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	58	86		mov __sens_7qG2_ret_7qG2_000, __D0smuxSensorLegoLightNorm
+15	57	88	#line 57 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	57	88	#line 57 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	58	88	#line 58 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	59	88		jmp __ASM_Label_1390
+15	58	90	#line 58 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	59	90	#line 59 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	59	90	#line 59 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	60	90		getin __sens_7qG2_ret_7qG2_000, __constVal0, 4
+15	59	94	#line 59 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	59	94	#line 59 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	59	94	#line 59 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	61	94	#line 61 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	62	94		jmp __ASM_Label_1390
+15	61	96	#line 61 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	62	96	#line 62 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	62	96	#line 62 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	63	96		set __smuxSensorLegoLightNorm_7qG2_muxport_7qG2_000, 15
+15	62	99	#line 62 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	63	99	#line 63 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	64	99		subcall smuxSensorLegoLightNorm, __smuxSensorLegoLightNorm_return
+15	63	101	#line 63 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	64	101		mov __sens_7qG2_ret_7qG2_000, __D0smuxSensorLegoLightNorm
+15	63	103	#line 63 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	63	103	#line 63 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	64	103	#line 64 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	65	103		jmp __ASM_Label_1390
+15	64	105	#line 64 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	65	105	#line 65 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	65	105	#line 65 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	66	105		set __smuxSensorLegoLightNorm_7qG2_muxport_7qG2_000, 14
+15	65	108	#line 65 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	66	108	#line 66 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	67	108		subcall smuxSensorLegoLightNorm, __smuxSensorLegoLightNorm_return
+15	66	110	#line 66 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	67	110		mov __sens_7qG2_ret_7qG2_000, __D0smuxSensorLegoLightNorm
+15	66	112	#line 66 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	66	112	#line 66 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	67	112	#line 67 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	68	112		jmp __ASM_Label_1390
+15	67	114	#line 67 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	68	114	#line 68 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	68	114	#line 68 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	69	114		set __signed_stack_001sens, 0
+15	68	117	#line 68 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	68	117	#line 68 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	69	117		set __signed_stack_002sens, 56
+15	68	120	#line 68 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	68	120	#line 68 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	69	120		strcat __strbufsens, __constStr0014
+15	69	124	#line 69 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	70	124		acquire __TextOutMutex
+15	69	125	#line 69 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	70	125		mov __TextOutArgs.Location.X, __signed_stack_001sens
+15	69	128	#line 69 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	70	128		mov __TextOutArgs.Location.Y, __signed_stack_002sens
+15	69	131	#line 69 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	70	131		set __TextOutArgs.Options, 0
+15	69	134	#line 69 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	70	134		mov __TextOutArgs.Text, __strbufsens
+15	69	136	#line 69 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	70	136		syscall 13, __TextOutArgs
+15	69	139	#line 69 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	70	139		mov __D0sens, __TextOutArgs.Result
+15	69	142	#line 69 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	70	142		release __TextOutMutex
+15	69	143	#line 69 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	69	143	#line 69 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	70	143		set __Wait_7qG2_ms_7qG2_000_inline_sens, 1000
+15	69	146	#line 69 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	8551	146	#line 8551 "NXCDefs.h"
+15	8552	146		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_sens
+15	8551	149	#line 8551 "NXCDefs.h"
+15	70	149	#line 70 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	71	149	#line 71 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	72	149	#line 72 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	73	149		mov __D0sens, __sens_7qG2_ret_7qG2_000
+15	72	151	#line 72 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	73	151		subret __sens_return
+15	72	153	#line 72 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	74	153	#line 74 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+15	75	153		subret __sens_return
+16	287	0	#line 287 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+16	288	0		arrinit smuxSensorTypes, __constVal0, __constVal16
+16	287	4	#line 287 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+16	288	4		arrinit smuxStatus, __constVal0, __constVal4
+16	287	8	#line 287 "C:\Users\Noah\Desktop\nxt\02_reading.nxc"
+16	288	8		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Noah\Desktop\nxt\02_reading.nxc
+1	__ResetSensorSubroutine	467	NXTDefs.h
+2	__ReadLSBytes1	480	NXTDefs.h
+3	__ReadLSBytes2	566	NXTDefs.h
+4	__ReadLSBytesVar	652	NXTDefs.h
+5	_HTSMUXsendCmd	754	C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h
+6	HTSMUXreadAnalogue	1003	C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h
+7	HTSMUXscanPorts	1239	C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h
+8	_HTSMUXsetMode	1513	C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h
+9	HTSMUXsetAnalogueActive	1775	C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h
+10	HTSMUXsetAnalogueInactive	1864	C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h
+11	smuxSensorLegoLightRaw	1953	C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h
+12	smuxSensorLegoLightNorm	1968	C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h
+13	smuxSetSensorLegoLight	1992	C:\Users\Noah\Desktop\nxt\.\HTSMUX-driver.h
+14	init	2023	C:\Users\Noah\Desktop\nxt\02_reading.nxc
+15	sens	2328	C:\Users\Noah\Desktop\nxt\02_reading.nxc
+16	__initialize_global_data	2483	C:\Users\Noah\Desktop\nxt\02_reading.nxc

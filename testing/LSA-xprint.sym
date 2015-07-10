@@ -1,0 +1,1818 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0seeLine	6	1	0	4	32
+1	__DU0seeLine	5	1	4	4	4
+2	__D0SetSensorLowspeed_inline_init	6	1	8	4	2
+3	__D0LSA_WakeUp	6	1	12	4	1
+4	__D0LSA_weighted_average	6	1	16	4	1
+5	__D0Move	6	1	20	4	36
+6	__signed_stack_001controller	6	1	24	4	16
+7	__signed_stack_002controller	6	1	28	4	12
+8	__float_stack_001controller	10	1	32	4	2
+9	__DU0SetSensorLowspeed_inline_init	5	1	36	4	5
+10	__D0StopAllTasks_inline_closinig	6	1	40	4	2
+11	__signed_stack_001closinig	6	1	44	4	2
+12	__D0LSA_Sleep	6	1	48	4	1
+13	__DU0getError	5	1	52	4	16
+14	__DF0getError	10	1	56	4	4
+15	__D0LSA_format_bin	6	1	60	4	1
+16	__D0CorrectSens	6	1	64	4	18
+17	__DU0CorrectSens	5	1	68	4	2
+18	__D0getError	6	1	72	4	64
+19	__D0LSA_ReadRaw_Calibrated	6	1	76	4	13
+20	__D0LSA_ReadRaw_Uncalibrated	6	1	80	4	2
+21	__D0LSA_SendCommand	6	1	84	4	17
+22	__D0LSA_format_hex	6	1	88	4	1
+23	__D0LSA_Read	6	1	92	4	10
+24	__DU0LSA_Read	5	1	96	4	3
+25	__signed_stack_001CorrectSens	6	1	100	4	12
+26	memory	10	1	104	4	5
+27	__Wait_7qG2_ms_7qG2_000_inline_init	5	1	108	4	2
+28	__Move_7qG2_change_7qG2_001	10	1	112	4	12
+29	__signed_stack_001Move	6	1	116	4	36
+30	__signed_stack_001seeLine	6	1	120	4	16
+31	__unsigned_stack_001seeLine	5	1	124	4	16
+32	__constValf0P14	10	0	128	4	1
+33	__constValf0P6666666667	10	0	132	4	1
+34	__Wait_7qG2_ms_7qG2_000_inline_closinig	5	1	136	4	2
+35	__controller_7qG2_error_7qG2_002	10	1	140	4	5
+36	__controller_7qG2_base_7qG2_002	10	1	144	4	3
+37	__controller_7qG2_turn_7qG2_002	10	1	148	4	4
+38	__signed_stack_001LSA_SendCommand	6	1	152	4	4
+39	__signed_stack_001getError	6	1	156	4	16
+40	__signed_stack_002getError	6	1	160	4	16
+41	__signed_stack_003getError	6	1	164	4	16
+42	__signed_stack_002CorrectSens	6	1	168	4	2
+43	__signed_stack_003CorrectSens	6	1	172	4	2
+44	__unsigned_stack_001CorrectSens	5	1	176	4	4
+45	__float_stack_001getError	10	1	180	4	4
+46	__signed_stack_001LSA_Read	6	1	184	4	4
+47	__signed_stack_001LSA_ReadRaw_Calibrated	6	1	188	4	2
+48	__signed_stack_004getError	6	1	192	4	14
+49	__unsigned_stack_002getError	5	1	196	4	2
+50	__unsigned_stack_003getError	5	1	200	4	28
+51	__DF0controller	10	1	204	4	6
+52	__CLSWMutex1	9	0	208	4	4
+53	__CLSCSMutex1	9	0	212	4	12
+54	__RBtnMutex	9	0	216	4	2
+55	__TextOutMutex	9	0	220	4	24
+56	__CLSCSMutex0	9	0	224	4	12
+57	__RLSBmutex0	9	0	228	4	4
+58	__CLSWMutex0	9	0	232	4	4
+59	__RLSBmutex3	9	0	236	4	4
+60	__CLSRMutex0	9	0	240	4	2
+61	__RLSBmutex1	9	0	244	4	4
+62	__RLSBmutex2	9	0	248	4	4
+63	__DU0closinig	5	1	252	4	6
+64	__D0closinig	6	1	256	4	10
+65	__D0controller	6	1	260	4	24
+66	__CLSCSMutex2	9	0	264	4	12
+67	__DU0controller	5	1	268	4	4
+68	__CLSWMutex2	9	0	272	4	4
+69	__CLSRMutex3	9	0	276	4	2
+70	__CLSRMutex1	9	0	280	4	2
+71	__CLSWMutex3	9	0	284	4	4
+72	__CLSRMutex2	9	0	288	4	2
+73	__CLSCSMutex3	9	0	292	4	12
+74	__getError_7qG2_error_7qG2_000	4	1	296	2	9
+75	__CorrectSens_7qG2_i_7qG2_001	4	1	298	2	10
+76	__Move_7qG2_right_7qG2_000	4	1	300	2	16
+77	__constValNeg350	4	0	302	2	1
+78	__constValNeg352	4	0	304	2	1
+79	__constValNeg351	4	0	306	2	1
+80	__constValNeg250	4	0	308	2	1
+81	__LSA_Read_7qG2_count_7qG2_000	4	1	310	2	3
+82	__LSA_Read_7qG2_reg_to_read_7qG2_000	4	1	312	2	2
+83	__LSA_SendCommand_7qG2_status_7qG2_000	4	1	314	2	4
+84	__LSA_ReadRaw_Calibrated_7qG2_count_7qG2_000	4	1	316	2	3
+85	__Move_7qG2_left_7qG2_000	4	1	318	2	16
+86	lastError	4	1	320	2	6
+87	i	4	1	322	2	5
+88	__constVal250	4	0	324	2	1
+89	__init_return	1	1	326	1	3
+90	__RLSReadPort	1	1	327	1	5
+91	__ResetSensorTmp	1	1	328	1	2
+92	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_init	1	1	329	1	4
+93	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init	1	1	330	1	2
+94	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_init	1	1	331	1	2
+95	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_init	1	1	332	1	2
+96	__ClearLine_7qG2_line_7qG2_000_inline_controller	1	1	333	1	12
+97	__constVal3	2	0	334	1	4
+98	__LSA_ReadRaw_Calibrated_return	1	1	335	1	5
+99	__constVal0	2	1	336	1	32
+100	__RLSBIterationsVar	1	1	337	1	4
+101	__ResetSensorPort	1	1	338	1	3
+102	needStop	1	1	339	1	4
+103	__LSA_ReadRaw_Calibrated_7qG2_nByteReady_7qG2_000	1	1	340	1	2
+104	__constVal66	2	0	341	1	1
+105	__constVal20	2	0	342	1	2
+106	__CorrectSens_return	1	1	343	1	3
+107	__seeLine_return	1	1	344	1	5
+108	__constVal8	2	0	345	1	1
+109	__PFTmp	1	1	346	1	1
+110	__getError_return	1	1	347	1	4
+111	__constVal63	2	0	348	1	4
+112	__tmpsbyteLSA_SendCommand	2	1	349	1	2
+113	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_init	1	1	350	1	2
+114	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init	1	1	351	1	2
+115	__constValNeg100	2	0	352	1	4
+116	__constVal96	2	0	353	1	4
+117	____ResetSensorSubroutine_return	1	1	354	1	3
+118	__Move_return	1	1	355	1	4
+119	__LSA_SendCommand_7qG2_nByteReady_7qG2_000	1	1	356	1	2
+120	__constVal32	2	0	357	1	12
+121	__LSA_SendCommand_return	1	1	358	1	4
+122	__constVal65	2	0	359	1	1
+123	__LSA_Sleep_return	1	1	360	1	4
+124	__LSA_Sleep_7qG2_addr_7qG2_000	1	1	361	1	2
+125	__LSA_Sleep_7qG2_port_7qG2_000	1	1	362	1	2
+126	__constVal2	2	0	363	1	2
+127	____initialize_global_data_return	1	1	364	1	3
+128	__LSWriteOptionsVar	1	1	365	1	2
+129	____ReadLSBytesVar_return	1	1	366	1	4
+130	__LSA_SendCommand_7qG2_cmd_7qG2_000	1	1	367	1	2
+131	__LSA_SendCommand_7qG2_addr_7qG2_000	1	1	368	1	2
+132	__LSA_SendCommand_7qG2_port_7qG2_000	1	1	369	1	5
+133	__LSA_Read_7qG2_nByteReady_7qG2_000	1	1	370	1	2
+134	__LSA_WakeUp_7qG2_port_7qG2_000	1	1	371	1	2
+135	__constVal1	2	0	372	1	7
+136	__RLSBytesCountVar	1	1	373	1	10
+137	__LSA_ReadRaw_Calibrated_7qG2_port_7qG2_000	1	1	374	1	3
+138	__LSA_ReadRaw_Calibrated_7qG2_i2cAddr_7qG2_000	1	1	375	1	2
+139	__LSA_WakeUp_7qG2_addr_7qG2_000	1	1	376	1	2
+140	__LSA_WakeUp_return	1	1	377	1	4
+141	__RLSBResultVar	2	1	378	1	9
+142	__LSA_Read_7qG2_i2cAddr_7qG2_000	1	1	379	1	2
+143	__LSA_Read_7qG2_port_7qG2_000	1	1	380	1	3
+144	__LSA_Read_return	1	1	381	1	5
+145	__CLSRArgs0	8	0	4	12	5
+146	__CLSRArgs0.Result	2	1	384	1	5
+147	__CLSRArgs0.Port	1	1	385	1	5
+148	__CLSRArgs0.Buffer	7	0	386	4	5
+149	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+150	__CLSRArgs0.BufferLen	1	1	388	1	5
+151	__TextOutArgs	8	0	4	16	66
+152	__TextOutArgs.Result	2	1	392	1	66
+153	__TextOutArgs.Location	8	0	2	4	66
+154	__TextOutArgs.Location.X	4	1	396	2	66
+155	__TextOutArgs.Location.Y	4	1	398	2	66
+156	__TextOutArgs.Text	7	0	400	4	66
+157	__TextOutArgs.Text.Text_type	1	0	0	1	0
+158	__TextOutArgs.Options	5	1	404	4	66
+159	__CLSCSArgs0	8	0	3	4	24
+160	__CLSCSArgs0.Result	2	1	408	1	24
+161	__CLSCSArgs0.Port	1	1	409	1	24
+162	__CLSCSArgs0.BytesReady	1	1	410	1	24
+163	__RBtnArgs	8	0	5	8	4
+164	__RBtnArgs.Result	2	1	412	1	4
+165	__RBtnArgs.Index	1	1	413	1	4
+166	__RBtnArgs.Pressed	1	1	414	1	4
+167	__RBtnArgs.Count	1	1	415	1	4
+168	__RBtnArgs.Reset	1	1	416	1	4
+169	__CLSWArgs0	8	0	4	12	10
+170	__CLSWArgs0.Result	2	1	420	1	10
+171	__CLSWArgs0.Port	1	1	421	1	10
+172	__CLSWArgs0.Buffer	7	0	422	4	10
+173	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+174	__CLSWArgs0.ReturnLen	1	1	424	1	10
+175	__constStr0026	7	0	426	4	1
+176	__constStr0026.__constStr0026_type	1	1	0	1	0
+177	__constStr0027	7	0	428	4	1
+178	__constStr0027.__constStr0027_type	1	1	0	1	0
+179	__strbufcontroller	7	0	430	4	4
+180	__strbufcontroller.__strbufcontroller_type	1	0	0	1	0
+181	__LSA_Read_7qG2_message_7qG2_000	7	0	432	4	2
+182	__LSA_Read_7qG2_message_7qG2_000.__LSA_Read_7qG2_message_7qG2_000_type	1	0	0	1	0
+183	__LSA_Read_7qG2_buf_7qG2_000	7	0	434	4	3
+184	__LSA_Read_7qG2_buf_7qG2_000.__LSA_Read_7qG2_buf_7qG2_000_type	1	0	0	1	0
+185	__LSA_ReadRaw_Calibrated_7qG2_returnValue_7qG2_000	7	0	436	4	3
+186	__LSA_ReadRaw_Calibrated_7qG2_returnValue_7qG2_000.__LSA_ReadRaw_Calibrated_7qG2_returnValue_7qG2_000_type	1	0	0	1	0
+187	__BlankLine	7	0	438	4	6
+188	__BlankLine.__BlankLine_type	1	0	0	1	0
+189	__LSA_SendCommand_7qG2_cmdBuf_7qG2_000	7	0	440	4	2
+190	__LSA_SendCommand_7qG2_cmdBuf_7qG2_000.__LSA_SendCommand_7qG2_cmdBuf_7qG2_000_type	1	0	0	1	0
+191	__RLSLastGoodReadVar	7	0	442	4	2
+192	__RLSLastGoodReadVar.__RLSLastGoodReadVar_type	1	0	0	1	0
+193	__LSA_ReadRaw_Calibrated_7qG2_message_7qG2_000	7	0	444	4	2
+194	__LSA_ReadRaw_Calibrated_7qG2_message_7qG2_000.__LSA_ReadRaw_Calibrated_7qG2_message_7qG2_000_type	1	0	0	1	0
+195	__CorrectSens_7qG2_array_7qG2_000	7	0	446	4	12
+196	__CorrectSens_7qG2_array_7qG2_000.__CorrectSens_7qG2_array_7qG2_000_type	1	0	0	1	0
+197	__seeLine_7qG2_sensor_7qG2_000	7	0	448	4	10
+198	__seeLine_7qG2_sensor_7qG2_000.__seeLine_7qG2_sensor_7qG2_000_type	1	0	0	1	0
+199	__getError_7qG2_sensor_7qG2_000	7	0	450	4	18
+200	__getError_7qG2_sensor_7qG2_000.__getError_7qG2_sensor_7qG2_000_type	1	0	0	1	0
+201	__RLSReadBufVar	7	0	452	4	10
+202	__RLSReadBufVar.__RLSReadBufVar_type	1	0	0	1	0
+203	buf	7	0	454	4	1
+204	buf.buf_type	1	0	0	1	0
+205	sens	7	0	456	4	8
+206	sens.sens_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	155	0	#line 155 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+0	156	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	155	2	#line 155 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+0	156	2	#line 156 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+0	157	2		subcall init, __init_return
+0	156	4	#line 156 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+0	157	4	#line 157 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+0	157	4	#line 157 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+0	158	4		exit 0, 1
+1	5476	0		setin __constVal1, __ResetSensorPort, 5
+1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5480	11		subret ____ResetSensorSubroutine_return
+2	6430	0	#pragma macro 25
+2	6430	0		acquire __CLSWMutex0
+2	6430	1		acquire __CLSWMutex1
+2	6430	2		acquire __CLSWMutex2
+2	6430	3		acquire __CLSWMutex3
+2	6430	4		or __CLSWArgs0.Port, __RLSReadPort, __LSWriteOptionsVar
+2	6430	8		mov __CLSWArgs0.ReturnLen, __RLSBytesCountVar
+2	6430	10		mov __CLSWArgs0.Buffer, __RLSReadBufVar
+2	6430	12		syscall 21, __CLSWArgs0
+2	6430	15		mov __RLSBResultVar, __CLSWArgs0.Result
+2	6430	17		release __CLSWMutex0
+2	6430	18		release __CLSWMutex1
+2	6430	19		release __CLSWMutex2
+2	6430	20		release __CLSWMutex3
+2	6430	21	#line 6430 "NXTDefs.h"
+2	6431	21		brtst 5, __RLSBErrorVar, __RLSBResultVar
+2	6432	24		set __RLSBIterationsVar, 60
+2	6434	27	#pragma macro 23
+2	6434	27		acquire __CLSCSMutex0
+2	6434	28		acquire __CLSCSMutex1
+2	6434	29		acquire __CLSCSMutex2
+2	6434	30		acquire __CLSCSMutex3
+2	6434	31		mov __CLSCSArgs0.Port, __RLSReadPort
+2	6434	33		syscall 23, __CLSCSArgs0
+2	6434	36		mov __RLSBytesCountVar, __CLSCSArgs0.BytesReady
+2	6434	38		mov __RLSBResultVar, __CLSCSArgs0.Result
+2	6434	40		release __CLSCSMutex0
+2	6434	41		release __CLSCSMutex1
+2	6434	42		release __CLSCSMutex2
+2	6434	43		release __CLSCSMutex3
+2	6434	44	#line 6434 "NXTDefs.h"
+2	6435	44		sub __RLSBIterationsVar, __RLSBIterationsVar, __constVal1
+2	6436	48		brtst 2, __RLSBErrorVar, __RLSBIterationsVar
+2	6437	51		brtst 0, __RLSBErrorVar, __RLSBResultVar
+2	6438	54		brtst 4, __RLSBReadyToReadVar, __RLSBResultVar
+2	6440	57		wait2 NA, __constVal1
+2	6441	60		jmp __RLSBDoCheckStatusVar
+2	6443	62		brtst 4, __RLSBReturnVar, __RLSBytesCountVar
+2	6444	65		arrinit __RLSReadBufVar, __constVal0, __RLSBytesCountVar
+2	6446	69	#pragma macro 25
+2	6446	69		acquire __CLSRMutex0
+2	6446	70		acquire __CLSRMutex1
+2	6446	71		acquire __CLSRMutex2
+2	6446	72		acquire __CLSRMutex3
+2	6446	73		mov __CLSRArgs0.Port, __RLSReadPort
+2	6446	75		mov __CLSRArgs0.BufferLen, __RLSBytesCountVar
+2	6446	77		syscall 22, __CLSRArgs0
+2	6446	80		mov __RLSReadBufVar, __CLSRArgs0.Buffer
+2	6446	82		mov __RLSBResultVar, __CLSRArgs0.Result
+2	6446	84		release __CLSRMutex0
+2	6446	85		release __CLSRMutex1
+2	6446	86		release __CLSRMutex2
+2	6446	87		release __CLSRMutex3
+2	6446	88	#line 6446 "NXTDefs.h"
+2	6447	88		brtst 5, __RLSBErrorVar, __RLSBResultVar
+2	6448	91		mov __RLSLastGoodReadVar, __RLSReadBufVar
+2	6449	93		jmp __RLSBDoneVar
+2	6451	95		mov __RLSReadBufVar, __RLSLastGoodReadVar
+2	6453	97		arrsize __RLSBytesCountVar, __RLSReadBufVar
+2	6455	100		subret ____ReadLSBytesVar_return
+3	178	0	#line 178 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	179	0		set __LSA_SendCommand_7qG2_nByteReady_7qG2_000, 0
+3	178	3	#line 178 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	178	3	#line 178 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	179	3		arrbuild __LSA_SendCommand_7qG2_cmdBuf_7qG2_000, __LSA_SendCommand_7qG2_addr_7qG2_000, __constVal65, __LSA_SendCommand_7qG2_cmd_7qG2_000
+3	178	9	#line 178 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	178	9	#line 178 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	179	9	#line 179 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	180	9	#pragma macro 25
+3	180	9		acquire __CLSWMutex0
+3	180	10		acquire __CLSWMutex1
+3	180	11		acquire __CLSWMutex2
+3	180	12		acquire __CLSWMutex3
+3	180	13		or __CLSWArgs0.Port, __LSA_SendCommand_7qG2_port_7qG2_000, __LSWriteOptionsVar
+3	180	17		mov __CLSWArgs0.ReturnLen, __constVal1
+3	180	19		mov __CLSWArgs0.Buffer, __LSA_SendCommand_7qG2_cmdBuf_7qG2_000
+3	180	21		syscall 21, __CLSWArgs0
+3	180	24		mov __D0LSA_SendCommand, __CLSWArgs0.Result
+3	180	27		release __CLSWMutex0
+3	180	28		release __CLSWMutex1
+3	180	29		release __CLSWMutex2
+3	180	30		release __CLSWMutex3
+3	5653	31	#line 5653 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	179	31	#line 179 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	179	31	#line 179 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	180	31	#line 180 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	181	31	#pragma macro 23
+3	181	31		acquire __CLSCSMutex0
+3	181	32		acquire __CLSCSMutex1
+3	181	33		acquire __CLSCSMutex2
+3	181	34		acquire __CLSCSMutex3
+3	181	35		mov __CLSCSArgs0.Port, __LSA_SendCommand_7qG2_port_7qG2_000
+3	181	37		syscall 23, __CLSCSArgs0
+3	181	40		mov __LSA_SendCommand_7qG2_nByteReady_7qG2_000, __CLSCSArgs0.BytesReady
+3	181	42		mov __D0LSA_SendCommand, __CLSCSArgs0.Result
+3	181	45		release __CLSCSMutex0
+3	181	46		release __CLSCSMutex1
+3	181	47		release __CLSCSMutex2
+3	181	48		release __CLSCSMutex3
+3	5658	49	#line 5658 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	180	49	#line 180 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	181	49		mov __signed_stack_001LSA_SendCommand, __D0LSA_SendCommand
+3	180	51	#line 180 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	181	51		set __D0LSA_SendCommand, 32
+3	180	54	#line 180 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	181	54		cmp 4, __D0LSA_SendCommand, __signed_stack_001LSA_SendCommand, __D0LSA_SendCommand
+3	181	58	#line 181 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	182	58		brtst 4, __ASM_Label_589, __D0LSA_SendCommand
+3	181	61	#line 181 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	181	61	#line 181 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	182	61		jmp __ASM_Label_588
+3	181	63	#line 181 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	181	63	#line 181 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	182	63	#pragma macro 23
+3	182	63		acquire __CLSCSMutex0
+3	182	64		acquire __CLSCSMutex1
+3	182	65		acquire __CLSCSMutex2
+3	182	66		acquire __CLSCSMutex3
+3	182	67		mov __CLSCSArgs0.Port, __LSA_SendCommand_7qG2_port_7qG2_000
+3	182	69		syscall 23, __CLSCSArgs0
+3	182	72		mov __tmpsbyteLSA_SendCommand, __CLSCSArgs0.BytesReady
+3	182	74		mov __D0LSA_SendCommand, __CLSCSArgs0.Result
+3	182	77		release __CLSCSMutex0
+3	182	78		release __CLSCSMutex1
+3	182	79		release __CLSCSMutex2
+3	182	80		release __CLSCSMutex3
+3	5681	81	#line 5681 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	181	81	#line 181 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	182	81		mov __LSA_SendCommand_7qG2_status_7qG2_000, __D0LSA_SendCommand
+3	182	83	#line 182 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	183	83		mov __signed_stack_001LSA_SendCommand, __LSA_SendCommand_7qG2_status_7qG2_000
+3	182	85	#line 182 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	183	85	#line 183 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	184	85		set __D0LSA_SendCommand, 0
+3	183	88	#line 183 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	184	88		cmp 1, __D0LSA_SendCommand, __signed_stack_001LSA_SendCommand, __D0LSA_SendCommand
+3	183	92	#line 183 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	184	92		brtst 4, __ASM_Label_595, __D0LSA_SendCommand
+3	183	95	#line 183 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	184	95	#pragma macro 23
+3	184	95		acquire __CLSCSMutex0
+3	184	96		acquire __CLSCSMutex1
+3	184	97		acquire __CLSCSMutex2
+3	184	98		acquire __CLSCSMutex3
+3	184	99		mov __CLSCSArgs0.Port, __LSA_SendCommand_7qG2_port_7qG2_000
+3	184	101		syscall 23, __CLSCSArgs0
+3	184	104		mov __tmpsbyteLSA_SendCommand, __CLSCSArgs0.BytesReady
+3	184	106		mov __D0LSA_SendCommand, __CLSCSArgs0.Result
+3	184	109		release __CLSCSMutex0
+3	184	110		release __CLSCSMutex1
+3	184	111		release __CLSCSMutex2
+3	184	112		release __CLSCSMutex3
+3	5702	113	#line 5702 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	183	113	#line 183 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	184	113		mov __LSA_SendCommand_7qG2_status_7qG2_000, __D0LSA_SendCommand
+3	183	115	#line 183 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	183	115	#line 183 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	184	115		jmp __ASM_Label_594
+3	183	117	#line 183 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	183	117	#line 183 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	185	117	#line 185 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	186	117		mov __D0LSA_SendCommand, __LSA_SendCommand_7qG2_status_7qG2_000
+3	185	119	#line 185 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	186	119		subret __LSA_SendCommand_return
+3	185	121	#line 185 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	194	121	#line 194 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+3	195	121		subret __LSA_SendCommand_return
+4	196	0	#line 196 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+4	197	0		mov __LSA_SendCommand_7qG2_port_7qG2_000, __LSA_Sleep_7qG2_port_7qG2_000
+4	196	2	#line 196 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+4	196	2	#line 196 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+4	197	2		mov __LSA_SendCommand_7qG2_addr_7qG2_000, __LSA_Sleep_7qG2_addr_7qG2_000
+4	196	4	#line 196 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+4	196	4	#line 196 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+4	197	4		set __LSA_SendCommand_7qG2_cmd_7qG2_000, 68
+4	196	7	#line 196 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+4	197	7	#line 197 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+4	198	7		subcall LSA_SendCommand, __LSA_SendCommand_return
+4	197	9	#line 197 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+4	198	9		mov __D0LSA_Sleep, __D0LSA_SendCommand
+4	197	11	#line 197 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+4	198	11		subret __LSA_Sleep_return
+4	197	13	#line 197 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+4	202	13	#line 202 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+4	203	13		subret __LSA_Sleep_return
+5	206	0	#line 206 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	207	0		arrinit __LSA_Read_7qG2_buf_7qG2_000, __constVal0, __constVal20
+5	209	4	#line 209 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	210	4		set __LSA_Read_7qG2_nByteReady_7qG2_000, 0
+5	209	7	#line 209 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	209	7	#line 209 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	210	7		arrbuild __LSA_Read_7qG2_message_7qG2_000, __LSA_Read_7qG2_i2cAddr_7qG2_000, __LSA_Read_7qG2_reg_to_read_7qG2_000
+5	209	12	#line 209 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	209	12	#line 209 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	210	12	#line 210 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	211	12	#pragma macro 23
+5	211	12		acquire __CLSCSMutex0
+5	211	13		acquire __CLSCSMutex1
+5	211	14		acquire __CLSCSMutex2
+5	211	15		acquire __CLSCSMutex3
+5	211	16		mov __CLSCSArgs0.Port, __LSA_Read_7qG2_port_7qG2_000
+5	211	18		syscall 23, __CLSCSArgs0
+5	211	21		mov __LSA_Read_7qG2_nByteReady_7qG2_000, __CLSCSArgs0.BytesReady
+5	211	23		mov __D0LSA_Read, __CLSCSArgs0.Result
+5	211	26		release __CLSCSMutex0
+5	211	27		release __CLSCSMutex1
+5	211	28		release __CLSCSMutex2
+5	211	29		release __CLSCSMutex3
+5	5807	30	#line 5807 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	210	30	#line 210 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	211	30		mov __signed_stack_001LSA_Read, __D0LSA_Read
+5	210	32	#line 210 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	211	32		set __D0LSA_Read, 32
+5	210	35	#line 210 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	211	35		cmp 4, __D0LSA_Read, __signed_stack_001LSA_Read, __D0LSA_Read
+5	211	39	#line 211 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	212	39		brtst 4, __ASM_Label_613, __D0LSA_Read
+5	211	42	#line 211 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	211	42	#line 211 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	212	42		jmp __ASM_Label_612
+5	211	44	#line 211 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	212	44	#line 212 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	213	44		set __LSA_Read_7qG2_count_7qG2_000, 1
+5	212	47	#line 212 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	212	47	#line 212 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	212	47	#line 212 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	213	47	#pragma macro 28
+5	213	47		acquire __RLSBmutex0
+5	213	48		acquire __RLSBmutex1
+5	213	49		acquire __RLSBmutex2
+5	213	50		acquire __RLSBmutex3
+5	213	51		mov __RLSReadPort, __LSA_Read_7qG2_port_7qG2_000
+5	213	53		mov __RLSReadBufVar, __LSA_Read_7qG2_message_7qG2_000
+5	213	55		mov __RLSBytesCountVar, __LSA_Read_7qG2_count_7qG2_000
+5	213	57		subcall __ReadLSBytesVar, ____ReadLSBytesVar_return
+5	213	59		tst 4, __D0LSA_Read, __RLSBResultVar
+5	213	62		mov __LSA_Read_7qG2_count_7qG2_000, __RLSBytesCountVar
+5	213	64		mov __LSA_Read_7qG2_buf_7qG2_000, __RLSReadBufVar
+5	213	66		release __RLSBmutex0
+5	213	67		release __RLSBmutex1
+5	213	68		release __RLSBmutex2
+5	213	69		release __RLSBmutex3
+5	5831	70	#line 5831 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	213	70	#line 213 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	214	70		tst 5, __D0LSA_Read, __D0LSA_Read
+5	213	73	#line 213 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	214	73		brtst 4, __ASM_Label_620, __D0LSA_Read
+5	213	76	#line 213 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	214	76		set __signed_stack_001LSA_Read, 0
+5	213	79	#line 213 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	213	79	#line 213 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	214	79		index __DU0LSA_Read, __LSA_Read_7qG2_buf_7qG2_000, __signed_stack_001LSA_Read
+5	213	83	#line 213 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	214	83	#line 214 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	215	83		subret __LSA_Read_return
+5	214	85	#line 214 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	215	85	#line 215 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	216	85	#line 216 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	217	85		set __DU0LSA_Read, 0
+5	216	88	#line 216 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	216	88	#line 216 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	217	88		subret __LSA_Read_return
+5	216	90	#line 216 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	225	90	#line 225 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+5	226	90		subret __LSA_Read_return
+6	227	0	#line 227 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+6	228	0		mov __LSA_Read_7qG2_port_7qG2_000, __LSA_WakeUp_7qG2_port_7qG2_000
+6	227	2	#line 227 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+6	227	2	#line 227 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+6	228	2		mov __LSA_Read_7qG2_i2cAddr_7qG2_000, __LSA_WakeUp_7qG2_addr_7qG2_000
+6	227	4	#line 227 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+6	227	4	#line 227 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+6	228	4		set __LSA_Read_7qG2_reg_to_read_7qG2_000, 66
+6	227	7	#line 227 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+6	228	7	#line 228 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+6	229	7		subcall LSA_Read, __LSA_Read_return
+6	228	10	#line 228 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+6	229	10		mov __D0LSA_WakeUp, __DU0LSA_Read
+6	228	12	#line 228 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+6	228	12	#line 228 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+6	229	12		subret __LSA_WakeUp_return
+6	228	14	#line 228 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+6	231	14	#line 231 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+6	232	14		subret __LSA_WakeUp_return
+7	235	0	#line 235 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	239	0	#line 239 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	240	0		set __LSA_ReadRaw_Calibrated_7qG2_nByteReady_7qG2_000, 0
+7	239	3	#line 239 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	239	3	#line 239 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	240	3		arrbuild __LSA_ReadRaw_Calibrated_7qG2_message_7qG2_000, __LSA_ReadRaw_Calibrated_7qG2_i2cAddr_7qG2_000, __constVal66
+7	239	8	#line 239 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	239	8	#line 239 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	240	8	#line 240 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	241	8	#pragma macro 23
+7	241	8		acquire __CLSCSMutex0
+7	241	9		acquire __CLSCSMutex1
+7	241	10		acquire __CLSCSMutex2
+7	241	11		acquire __CLSCSMutex3
+7	241	12		mov __CLSCSArgs0.Port, __LSA_ReadRaw_Calibrated_7qG2_port_7qG2_000
+7	241	14		syscall 23, __CLSCSArgs0
+7	241	17		mov __LSA_ReadRaw_Calibrated_7qG2_nByteReady_7qG2_000, __CLSCSArgs0.BytesReady
+7	241	19		mov __D0LSA_ReadRaw_Calibrated, __CLSCSArgs0.Result
+7	241	22		release __CLSCSMutex0
+7	241	23		release __CLSCSMutex1
+7	241	24		release __CLSCSMutex2
+7	241	25		release __CLSCSMutex3
+7	5953	26	#line 5953 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	240	26	#line 240 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	241	26		mov __signed_stack_001LSA_ReadRaw_Calibrated, __D0LSA_ReadRaw_Calibrated
+7	240	28	#line 240 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	241	28		set __D0LSA_ReadRaw_Calibrated, 32
+7	240	31	#line 240 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	241	31		cmp 4, __D0LSA_ReadRaw_Calibrated, __signed_stack_001LSA_ReadRaw_Calibrated, __D0LSA_ReadRaw_Calibrated
+7	241	35	#line 241 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	242	35		brtst 4, __ASM_Label_638, __D0LSA_ReadRaw_Calibrated
+7	241	38	#line 241 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	241	38	#line 241 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	242	38		jmp __ASM_Label_637
+7	241	40	#line 241 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	242	40	#line 242 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	243	40		set __LSA_ReadRaw_Calibrated_7qG2_count_7qG2_000, 8
+7	242	43	#line 242 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	242	43	#line 242 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	242	43	#line 242 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	243	43	#pragma macro 28
+7	243	43		acquire __RLSBmutex0
+7	243	44		acquire __RLSBmutex1
+7	243	45		acquire __RLSBmutex2
+7	243	46		acquire __RLSBmutex3
+7	243	47		mov __RLSReadPort, __LSA_ReadRaw_Calibrated_7qG2_port_7qG2_000
+7	243	49		mov __RLSReadBufVar, __LSA_ReadRaw_Calibrated_7qG2_message_7qG2_000
+7	243	51		mov __RLSBytesCountVar, __LSA_ReadRaw_Calibrated_7qG2_count_7qG2_000
+7	243	53		subcall __ReadLSBytesVar, ____ReadLSBytesVar_return
+7	243	55		tst 4, __D0LSA_ReadRaw_Calibrated, __RLSBResultVar
+7	243	58		mov __LSA_ReadRaw_Calibrated_7qG2_count_7qG2_000, __RLSBytesCountVar
+7	243	60		mov __LSA_ReadRaw_Calibrated_7qG2_returnValue_7qG2_000, __RLSReadBufVar
+7	243	62		release __RLSBmutex0
+7	243	63		release __RLSBmutex1
+7	243	64		release __RLSBmutex2
+7	243	65		release __RLSBmutex3
+7	5977	66	#line 5977 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	243	66	#line 243 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	244	66		tst 5, __D0LSA_ReadRaw_Calibrated, __D0LSA_ReadRaw_Calibrated
+7	243	69	#line 243 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	244	69		brtst 4, __ASM_Label_645, __D0LSA_ReadRaw_Calibrated
+7	244	72	#line 244 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	245	72		set __D0LSA_ReadRaw_Calibrated, 1
+7	244	75	#line 244 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	245	75		subret __LSA_ReadRaw_Calibrated_return
+7	244	77	#line 244 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	245	77	#line 245 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	246	77	#line 246 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	247	77		set __D0LSA_ReadRaw_Calibrated, 0
+7	246	80	#line 246 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	247	80		subret __LSA_ReadRaw_Calibrated_return
+7	246	82	#line 246 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	249	82	#line 249 "C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc"
+7	250	82		subret __LSA_ReadRaw_Calibrated_return
+8	19	0	#line 19 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+8	20	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_init, 0
+8	19	3	#line 19 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+8	20	3	#line 20 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+8	21	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_init, __constVal1
+8	4342	5	#line 4342 "NXCDefs.h"
+8	4343	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_init
+8	4342	7	#line 4342 "NXCDefs.h"
+8	4342	7	#line 4342 "NXCDefs.h"
+8	4343	7		mov __DU0SetSensorLowspeed_inline_init, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_init
+8	4342	9	#line 4342 "NXCDefs.h"
+8	4343	9		tst 5, __D0SetSensorLowspeed_inline_init, __DU0SetSensorLowspeed_inline_init
+8	4342	12	#line 4342 "NXCDefs.h"
+8	4343	12		brtst 4, __004__ASM_Label_36, __D0SetSensorLowspeed_inline_init
+8	4342	15	#line 4342 "NXCDefs.h"
+8	4343	15		set __DU0SetSensorLowspeed_inline_init, 11
+8	4342	18	#line 4342 "NXCDefs.h"
+8	4342	18	#line 4342 "NXCDefs.h"
+8	4343	18		jmp __004__ASM_Label_37
+8	4342	20	#line 4342 "NXCDefs.h"
+8	4343	20		set __DU0SetSensorLowspeed_inline_init, 10
+8	4342	23	#line 4342 "NXCDefs.h"
+8	4342	23	#line 4342 "NXCDefs.h"
+8	4343	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_init, __DU0SetSensorLowspeed_inline_init
+8	4247	25	#line 4247 "NXCDefs.h"
+8	4248	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_init, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init, 0
+8	4247	29	#line 4247 "NXCDefs.h"
+8	4343	29	#line 4343 "NXCDefs.h"
+8	4343	29	#line 4343 "NXCDefs.h"
+8	4344	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_init
+8	4343	31	#line 4343 "NXCDefs.h"
+8	4343	31	#line 4343 "NXCDefs.h"
+8	4344	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_init, 0
+8	4343	34	#line 4343 "NXCDefs.h"
+8	4260	34	#line 4260 "NXCDefs.h"
+8	4261	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_init, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init, 1
+8	4260	38	#line 4260 "NXCDefs.h"
+8	4344	38	#line 4344 "NXCDefs.h"
+8	4344	38	#line 4344 "NXCDefs.h"
+8	4344	38	#line 4344 "NXCDefs.h"
+8	4278	38	#line 4278 "NXCDefs.h"
+8	4279	38	#pragma macro 4
+8	4279	38		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_init
+8	4279	40		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+8	6617	42	#line 6617 "NXCDefs.h"
+8	4278	42	#line 4278 "NXCDefs.h"
+8	4345	42	#line 4345 "NXCDefs.h"
+8	20	42	#line 20 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+8	20	42	#line 20 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+8	21	42		set __LSA_WakeUp_7qG2_port_7qG2_000, 0
+8	20	45	#line 20 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+8	20	45	#line 20 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+8	21	45		set __LSA_WakeUp_7qG2_addr_7qG2_000, 20
+8	20	48	#line 20 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+8	21	48	#line 21 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+8	22	48		subcall LSA_WakeUp, __LSA_WakeUp_return
+8	21	51	#line 21 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+8	21	51	#line 21 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+8	21	51	#line 21 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+8	22	51		set __Wait_7qG2_ms_7qG2_000_inline_init, 50
+8	21	54	#line 21 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+8	8551	54	#line 8551 "NXCDefs.h"
+8	8552	54		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_init
+8	8551	57	#line 8551 "NXCDefs.h"
+8	22	57	#line 22 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+8	24	57	#line 24 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+8	25	57		subret __init_return
+9	25	0	#line 25 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	26	0		mov __signed_stack_001Move, __Move_7qG2_left_7qG2_000
+9	25	2	#line 25 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	25	2	#line 25 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	26	2		set __D0Move, 100
+9	25	5	#line 25 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	26	5		cmp 1, __D0Move, __signed_stack_001Move, __D0Move
+9	26	9	#line 26 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	27	9		brtst 4, __ASM_Label_739, __D0Move
+9	26	12	#line 26 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	27	12		mov __signed_stack_001Move, __Move_7qG2_left_7qG2_000
+9	26	14	#line 26 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	27	14	#line 27 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	28	14		set __D0Move, 100
+9	27	17	#line 27 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	28	17		div __Move_7qG2_change_7qG2_001, __signed_stack_001Move, __D0Move
+9	27	21	#line 27 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	27	21	#line 27 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	28	21		mov __signed_stack_001Move, __Move_7qG2_left_7qG2_000
+9	27	23	#line 27 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	28	23	#line 28 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	28	23	#line 28 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	29	23		div __Move_7qG2_left_7qG2_000, __signed_stack_001Move, __Move_7qG2_change_7qG2_001
+9	28	27	#line 28 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	28	27	#line 28 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	28	27	#line 28 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	29	27		mov __signed_stack_001Move, __Move_7qG2_right_7qG2_000
+9	28	29	#line 28 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	29	29	#line 29 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	29	29	#line 29 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	30	29		div __Move_7qG2_right_7qG2_000, __signed_stack_001Move, __Move_7qG2_change_7qG2_001
+9	29	33	#line 29 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	29	33	#line 29 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	30	33	#line 30 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	31	33		jmp __ASM_Label_746
+9	30	35	#line 30 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	31	35		mov __signed_stack_001Move, __Move_7qG2_left_7qG2_000
+9	30	37	#line 30 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	30	37	#line 30 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	31	37		mov __D0Move, __constValNeg100
+9	30	39	#line 30 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	31	39		cmp 0, __D0Move, __signed_stack_001Move, __D0Move
+9	31	43	#line 31 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	32	43		brtst 4, __ASM_Label_749, __D0Move
+9	31	46	#line 31 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	32	46		mov __signed_stack_001Move, __Move_7qG2_left_7qG2_000
+9	31	48	#line 31 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	31	48	#line 31 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	32	48		mov __D0Move, __constValNeg100
+9	32	50	#line 32 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	33	50		div __Move_7qG2_change_7qG2_001, __signed_stack_001Move, __D0Move
+9	32	54	#line 32 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	32	54	#line 32 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	33	54		mov __signed_stack_001Move, __Move_7qG2_left_7qG2_000
+9	32	56	#line 32 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	33	56	#line 33 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	33	56	#line 33 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	34	56		div __Move_7qG2_left_7qG2_000, __signed_stack_001Move, __Move_7qG2_change_7qG2_001
+9	33	60	#line 33 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	33	60	#line 33 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	33	60	#line 33 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	34	60		mov __signed_stack_001Move, __Move_7qG2_right_7qG2_000
+9	33	62	#line 33 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	34	62	#line 34 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	34	62	#line 34 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	35	62		div __Move_7qG2_right_7qG2_000, __signed_stack_001Move, __Move_7qG2_change_7qG2_001
+9	34	66	#line 34 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	34	66	#line 34 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	35	66	#line 35 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	35	66	#line 35 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	35	66	#line 35 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	36	66		mov __signed_stack_001Move, __Move_7qG2_right_7qG2_000
+9	35	68	#line 35 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	35	68	#line 35 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	36	68		set __D0Move, 100
+9	35	71	#line 35 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	36	71		cmp 1, __D0Move, __signed_stack_001Move, __D0Move
+9	36	75	#line 36 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	37	75		brtst 4, __ASM_Label_758, __D0Move
+9	36	78	#line 36 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	37	78		mov __signed_stack_001Move, __Move_7qG2_right_7qG2_000
+9	36	80	#line 36 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	37	80	#line 37 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	38	80		set __D0Move, 100
+9	37	83	#line 37 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	38	83		div __Move_7qG2_change_7qG2_001, __signed_stack_001Move, __D0Move
+9	37	87	#line 37 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	37	87	#line 37 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	38	87		mov __signed_stack_001Move, __Move_7qG2_left_7qG2_000
+9	37	89	#line 37 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	38	89	#line 38 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	38	89	#line 38 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	39	89		div __Move_7qG2_left_7qG2_000, __signed_stack_001Move, __Move_7qG2_change_7qG2_001
+9	38	93	#line 38 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	38	93	#line 38 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	38	93	#line 38 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	39	93		mov __signed_stack_001Move, __Move_7qG2_right_7qG2_000
+9	38	95	#line 38 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	39	95	#line 39 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	39	95	#line 39 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	40	95		div __Move_7qG2_right_7qG2_000, __signed_stack_001Move, __Move_7qG2_change_7qG2_001
+9	39	99	#line 39 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	39	99	#line 39 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	40	99	#line 40 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	41	99		jmp __ASM_Label_765
+9	40	101	#line 40 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	41	101		mov __signed_stack_001Move, __Move_7qG2_right_7qG2_000
+9	40	103	#line 40 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	40	103	#line 40 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	41	103		mov __D0Move, __constValNeg100
+9	40	105	#line 40 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	41	105		cmp 0, __D0Move, __signed_stack_001Move, __D0Move
+9	41	109	#line 41 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	42	109		brtst 4, __ASM_Label_768, __D0Move
+9	41	112	#line 41 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	42	112		mov __signed_stack_001Move, __Move_7qG2_right_7qG2_000
+9	41	114	#line 41 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	41	114	#line 41 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	42	114		mov __D0Move, __constValNeg100
+9	42	116	#line 42 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	43	116		div __Move_7qG2_change_7qG2_001, __signed_stack_001Move, __D0Move
+9	42	120	#line 42 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	42	120	#line 42 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	43	120		mov __signed_stack_001Move, __Move_7qG2_left_7qG2_000
+9	42	122	#line 42 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	43	122	#line 43 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	43	122	#line 43 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	44	122		div __Move_7qG2_left_7qG2_000, __signed_stack_001Move, __Move_7qG2_change_7qG2_001
+9	43	126	#line 43 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	43	126	#line 43 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	43	126	#line 43 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	44	126		mov __signed_stack_001Move, __Move_7qG2_right_7qG2_000
+9	43	128	#line 43 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	44	128	#line 44 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	44	128	#line 44 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	45	128		div __Move_7qG2_right_7qG2_000, __signed_stack_001Move, __Move_7qG2_change_7qG2_001
+9	44	132	#line 44 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	44	132	#line 44 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	46	132	#line 46 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	46	132	#line 46 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	46	132	#line 46 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	47	132		mov __signed_stack_001Move, __Move_7qG2_left_7qG2_000
+9	46	134	#line 46 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	46	134	#line 46 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	47	134		set __D0Move, 0
+9	46	137	#line 46 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	47	137		cmp 4, __D0Move, __signed_stack_001Move, __D0Move
+9	47	141	#line 47 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	48	141		brtst 4, __ASM_Label_777, __D0Move
+9	48	144	#line 48 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	49	144	#pragma macro 7
+9	49	144		setout __constVal2, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	6924	167	#line 6924 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	48	167	#line 48 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	50	167	#line 50 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	51	167		jmp __ASM_Label_778
+9	50	169	#line 50 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	51	169		mov __D0Move, __Move_7qG2_left_7qG2_000
+9	51	171	#line 51 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	52	171	#pragma macro 7
+9	52	171		setout __constVal2, 2, __D0Move, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	6934	194	#line 6934 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	51	194	#line 51 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	52	194	#line 52 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	52	194	#line 52 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	53	194		mov __signed_stack_001Move, __Move_7qG2_right_7qG2_000
+9	52	196	#line 52 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	52	196	#line 52 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	53	196		set __D0Move, 0
+9	52	199	#line 52 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	53	199		cmp 4, __D0Move, __signed_stack_001Move, __D0Move
+9	53	203	#line 53 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	54	203		brtst 4, __ASM_Label_783, __D0Move
+9	54	206	#line 54 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	55	206	#pragma macro 7
+9	55	206		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	6953	229	#line 6953 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	54	229	#line 54 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	56	229	#line 56 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	57	229		jmp __ASM_Label_784
+9	56	231	#line 56 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	57	231		mov __D0Move, __Move_7qG2_right_7qG2_000
+9	57	233	#line 57 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	58	233	#pragma macro 7
+9	58	233		setout __constVal0, 2, __D0Move, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+9	6963	256	#line 6963 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	57	256	#line 57 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	61	256	#line 61 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	61	256	#line 61 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+9	62	256		subret __Move_return
+10	62	0	#line 62 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	63	0		set __CorrectSens_7qG2_i_7qG2_001, 0
+10	62	3	#line 62 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	62	3	#line 62 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	63	3		mov __signed_stack_001CorrectSens, __CorrectSens_7qG2_i_7qG2_001
+10	62	5	#line 62 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	62	5	#line 62 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	63	5		set __D0CorrectSens, 8
+10	62	8	#line 62 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	63	8		cmp 0, __D0CorrectSens, __signed_stack_001CorrectSens, __D0CorrectSens
+10	62	12	#line 62 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	63	12		brtst 4, __ASM_Label_788, __D0CorrectSens
+10	62	15	#line 62 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	63	15		jmp __ASM_Label_789
+10	62	17	#line 62 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	63	17		add __CorrectSens_7qG2_i_7qG2_001, __CorrectSens_7qG2_i_7qG2_001, __constVal1
+10	63	21	#line 63 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	64	21		jmp __ASM_Label_787
+10	63	23	#line 63 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	64	23		mov __signed_stack_001CorrectSens, __CorrectSens_7qG2_i_7qG2_001
+10	63	25	#line 63 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	63	25	#line 63 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	64	25		index __unsigned_stack_001CorrectSens, __CorrectSens_7qG2_array_7qG2_000, __signed_stack_001CorrectSens
+10	63	29	#line 63 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	63	29	#line 63 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	63	29	#line 63 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	64	29		set __D0CorrectSens, 0
+10	63	32	#line 63 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	64	32		cmp 0, __D0CorrectSens, __unsigned_stack_001CorrectSens, __D0CorrectSens
+10	64	36	#line 64 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	65	36		brtst 4, __ASM_Label_799, __D0CorrectSens
+10	64	39	#line 64 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	65	39		mov __signed_stack_001CorrectSens, __CorrectSens_7qG2_i_7qG2_001
+10	64	41	#line 64 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	65	41	#line 65 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	66	41		set __D0CorrectSens, 0
+10	65	44	#line 65 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	66	44		replace __CorrectSens_7qG2_array_7qG2_000, __CorrectSens_7qG2_array_7qG2_000, __signed_stack_001CorrectSens, __D0CorrectSens
+10	65	49	#line 65 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	66	49	#line 66 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	67	49		jmp __ASM_Label_804
+10	66	51	#line 66 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	67	51		mov __signed_stack_001CorrectSens, __CorrectSens_7qG2_i_7qG2_001
+10	66	53	#line 66 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	66	53	#line 66 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	67	53		index __unsigned_stack_001CorrectSens, __CorrectSens_7qG2_array_7qG2_000, __signed_stack_001CorrectSens
+10	66	57	#line 66 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	66	57	#line 66 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	66	57	#line 66 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	67	57		set __D0CorrectSens, 100
+10	66	60	#line 66 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	67	60		cmp 1, __D0CorrectSens, __unsigned_stack_001CorrectSens, __D0CorrectSens
+10	67	64	#line 67 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	68	64		brtst 4, __ASM_Label_809, __D0CorrectSens
+10	67	67	#line 67 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	68	67		mov __signed_stack_001CorrectSens, __CorrectSens_7qG2_i_7qG2_001
+10	67	69	#line 67 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	68	69	#line 68 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	69	69		set __D0CorrectSens, 100
+10	68	72	#line 68 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	69	72		replace __CorrectSens_7qG2_array_7qG2_000, __CorrectSens_7qG2_array_7qG2_000, __signed_stack_001CorrectSens, __D0CorrectSens
+10	68	77	#line 68 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	69	77	#line 69 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	69	77	#line 69 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	69	77	#line 69 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	70	77		mov __signed_stack_001CorrectSens, __CorrectSens_7qG2_i_7qG2_001
+10	69	79	#line 69 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	69	79	#line 69 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	70	79		set __signed_stack_002CorrectSens, 100
+10	69	82	#line 69 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	69	82	#line 69 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	70	82		mov __signed_stack_003CorrectSens, __CorrectSens_7qG2_i_7qG2_001
+10	69	84	#line 69 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	69	84	#line 69 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	70	84		index __DU0CorrectSens, __CorrectSens_7qG2_array_7qG2_000, __signed_stack_003CorrectSens
+10	69	88	#line 69 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	70	88	#line 70 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	71	88		sub __D0CorrectSens, __signed_stack_002CorrectSens, __DU0CorrectSens
+10	70	92	#line 70 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	71	92		replace __CorrectSens_7qG2_array_7qG2_000, __CorrectSens_7qG2_array_7qG2_000, __signed_stack_001CorrectSens, __D0CorrectSens
+10	70	97	#line 70 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	73	97	#line 73 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	74	97		jmp __ASM_Label_790
+10	73	99	#line 73 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	73	99	#line 73 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+10	74	99		subret __CorrectSens_return
+11	74	0	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	0		set __signed_stack_001seeLine, 0
+11	74	3	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	74	3	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	3		index __unsigned_stack_001seeLine, __seeLine_7qG2_sensor_7qG2_000, __signed_stack_001seeLine
+11	74	7	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	74	7	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	74	7	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	7		set __D0seeLine, 20
+11	74	10	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	10		cmp 1, __D0seeLine, __unsigned_stack_001seeLine, __D0seeLine
+11	74	14	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	14		brtst 5, __ASM_Label_822, __D0seeLine
+11	74	17	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	17		set __signed_stack_001seeLine, 1
+11	74	20	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	74	20	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	20		index __unsigned_stack_001seeLine, __seeLine_7qG2_sensor_7qG2_000, __signed_stack_001seeLine
+11	74	24	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	74	24	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	74	24	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	24		set __D0seeLine, 20
+11	74	27	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	27		cmp 1, __D0seeLine, __unsigned_stack_001seeLine, __D0seeLine
+11	74	31	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	31		brtst 5, __ASM_Label_822, __D0seeLine
+11	74	34	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	34		set __signed_stack_001seeLine, 2
+11	74	37	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	74	37	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	37		index __unsigned_stack_001seeLine, __seeLine_7qG2_sensor_7qG2_000, __signed_stack_001seeLine
+11	74	41	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	74	41	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	74	41	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	41		set __D0seeLine, 20
+11	74	44	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	44		cmp 1, __D0seeLine, __unsigned_stack_001seeLine, __D0seeLine
+11	74	48	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	48		brtst 5, __ASM_Label_822, __D0seeLine
+11	74	51	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	51		set __signed_stack_001seeLine, 3
+11	74	54	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	74	54	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	54		index __unsigned_stack_001seeLine, __seeLine_7qG2_sensor_7qG2_000, __signed_stack_001seeLine
+11	74	58	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	74	58	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	74	58	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	58		set __D0seeLine, 20
+11	74	61	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	61		cmp 1, __D0seeLine, __unsigned_stack_001seeLine, __D0seeLine
+11	74	65	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	65		brtst 5, __ASM_Label_822, __D0seeLine
+11	74	68	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	68		set __signed_stack_001seeLine, 4
+11	74	71	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	74	71	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	71		index __unsigned_stack_001seeLine, __seeLine_7qG2_sensor_7qG2_000, __signed_stack_001seeLine
+11	74	75	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	74	75	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	74	75	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	75		set __D0seeLine, 20
+11	74	78	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	78		cmp 1, __D0seeLine, __unsigned_stack_001seeLine, __D0seeLine
+11	74	82	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	82		brtst 5, __ASM_Label_822, __D0seeLine
+11	74	85	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	85		set __signed_stack_001seeLine, 5
+11	74	88	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	74	88	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	88		index __unsigned_stack_001seeLine, __seeLine_7qG2_sensor_7qG2_000, __signed_stack_001seeLine
+11	74	92	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	74	92	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	74	92	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	92		set __D0seeLine, 20
+11	74	95	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	95		cmp 1, __D0seeLine, __unsigned_stack_001seeLine, __D0seeLine
+11	74	99	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	99		brtst 5, __ASM_Label_822, __D0seeLine
+11	74	102	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	102		set __signed_stack_001seeLine, 6
+11	74	105	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	74	105	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	105		index __unsigned_stack_001seeLine, __seeLine_7qG2_sensor_7qG2_000, __signed_stack_001seeLine
+11	74	109	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	74	109	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	74	109	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	109		set __D0seeLine, 20
+11	74	112	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	112		cmp 1, __D0seeLine, __unsigned_stack_001seeLine, __D0seeLine
+11	74	116	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	116		brtst 5, __ASM_Label_822, __D0seeLine
+11	74	119	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	119		set __signed_stack_001seeLine, 7
+11	74	122	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	74	122	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	122		index __unsigned_stack_001seeLine, __seeLine_7qG2_sensor_7qG2_000, __signed_stack_001seeLine
+11	74	126	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	74	126	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	74	126	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	126		set __D0seeLine, 20
+11	74	129	#line 74 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	75	129		cmp 1, __D0seeLine, __unsigned_stack_001seeLine, __D0seeLine
+11	75	133	#line 75 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	76	133		mov __DU0seeLine, __D0seeLine
+11	75	135	#line 75 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	76	135		subret __seeLine_return
+11	75	137	#line 75 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	77	137	#line 77 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+11	78	137		subret __seeLine_return
+12	79	0	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	0		set __signed_stack_001getError, 350
+12	79	3	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	3	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	3		set __signed_stack_002getError, 0
+12	79	6	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	6	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	6		index __unsigned_stack_002getError, __getError_7qG2_sensor_7qG2_000, __signed_stack_002getError
+12	79	10	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	10	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	10	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	10		set __signed_stack_003getError, 1
+12	79	13	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	13	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	13		index __unsigned_stack_003getError, __getError_7qG2_sensor_7qG2_000, __signed_stack_003getError
+12	79	17	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	17	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	17	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	17		set __D0getError, 100
+12	79	20	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	20		mul __D0getError, __unsigned_stack_003getError, __D0getError
+12	79	24	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	24		add __signed_stack_002getError, __unsigned_stack_002getError, __D0getError
+12	79	28	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	28	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	28		set __signed_stack_003getError, 2
+12	79	31	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	31	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	31		index __unsigned_stack_003getError, __getError_7qG2_sensor_7qG2_000, __signed_stack_003getError
+12	79	35	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	35	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	35	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	35		set __D0getError, 200
+12	79	38	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	38		mul __D0getError, __unsigned_stack_003getError, __D0getError
+12	79	42	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	42		add __signed_stack_002getError, __signed_stack_002getError, __D0getError
+12	79	46	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	46	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	46		set __signed_stack_003getError, 3
+12	79	49	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	49	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	49		index __unsigned_stack_003getError, __getError_7qG2_sensor_7qG2_000, __signed_stack_003getError
+12	79	53	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	53	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	53	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	53		set __D0getError, 300
+12	79	56	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	56		mul __D0getError, __unsigned_stack_003getError, __D0getError
+12	79	60	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	60		add __signed_stack_002getError, __signed_stack_002getError, __D0getError
+12	79	64	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	64	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	64		set __signed_stack_003getError, 4
+12	79	67	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	67	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	67		index __unsigned_stack_003getError, __getError_7qG2_sensor_7qG2_000, __signed_stack_003getError
+12	79	71	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	71	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	71	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	71		set __D0getError, 400
+12	79	74	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	74		mul __D0getError, __unsigned_stack_003getError, __D0getError
+12	79	78	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	78		add __signed_stack_002getError, __signed_stack_002getError, __D0getError
+12	79	82	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	82	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	82		set __signed_stack_003getError, 5
+12	79	85	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	85	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	85		index __unsigned_stack_003getError, __getError_7qG2_sensor_7qG2_000, __signed_stack_003getError
+12	79	89	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	89	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	89	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	89		set __D0getError, 500
+12	79	92	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	92		mul __D0getError, __unsigned_stack_003getError, __D0getError
+12	79	96	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	96		add __signed_stack_002getError, __signed_stack_002getError, __D0getError
+12	79	100	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	100	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	100		set __signed_stack_003getError, 6
+12	79	103	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	103	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	103		index __unsigned_stack_003getError, __getError_7qG2_sensor_7qG2_000, __signed_stack_003getError
+12	79	107	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	107	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	107	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	107		set __D0getError, 600
+12	79	110	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	110		mul __D0getError, __unsigned_stack_003getError, __D0getError
+12	79	114	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	114		add __signed_stack_002getError, __signed_stack_002getError, __D0getError
+12	79	118	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	118	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	118		set __signed_stack_003getError, 7
+12	79	121	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	121	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	121		index __unsigned_stack_003getError, __getError_7qG2_sensor_7qG2_000, __signed_stack_003getError
+12	79	125	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	125	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	125	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	125		set __D0getError, 700
+12	79	128	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	128		mul __D0getError, __unsigned_stack_003getError, __D0getError
+12	79	132	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	132		add __signed_stack_002getError, __signed_stack_002getError, __D0getError
+12	79	136	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	136	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	136		set __signed_stack_003getError, 0
+12	79	139	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	139	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	139		index __unsigned_stack_003getError, __getError_7qG2_sensor_7qG2_000, __signed_stack_003getError
+12	79	143	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	143	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	143	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	143		set __signed_stack_004getError, 1
+12	79	146	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	146	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	146		index __DU0getError, __getError_7qG2_sensor_7qG2_000, __signed_stack_004getError
+12	79	150	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	150	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	150		add __unsigned_stack_003getError, __unsigned_stack_003getError, __DU0getError
+12	79	154	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	154	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	154		set __signed_stack_004getError, 2
+12	79	157	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	157	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	157		index __DU0getError, __getError_7qG2_sensor_7qG2_000, __signed_stack_004getError
+12	79	161	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	161	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	161		add __unsigned_stack_003getError, __unsigned_stack_003getError, __DU0getError
+12	79	165	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	165	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	165		set __signed_stack_004getError, 3
+12	79	168	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	168	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	168		index __DU0getError, __getError_7qG2_sensor_7qG2_000, __signed_stack_004getError
+12	79	172	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	172	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	172		add __unsigned_stack_003getError, __unsigned_stack_003getError, __DU0getError
+12	79	176	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	176	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	176		set __signed_stack_004getError, 4
+12	79	179	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	179	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	179		index __DU0getError, __getError_7qG2_sensor_7qG2_000, __signed_stack_004getError
+12	79	183	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	183	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	183		add __unsigned_stack_003getError, __unsigned_stack_003getError, __DU0getError
+12	79	187	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	187	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	187		set __signed_stack_004getError, 5
+12	79	190	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	190	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	190		index __DU0getError, __getError_7qG2_sensor_7qG2_000, __signed_stack_004getError
+12	79	194	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	194	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	194		add __unsigned_stack_003getError, __unsigned_stack_003getError, __DU0getError
+12	79	198	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	198	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	198		set __signed_stack_004getError, 6
+12	79	201	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	201	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	201		index __DU0getError, __getError_7qG2_sensor_7qG2_000, __signed_stack_004getError
+12	79	205	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	205	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	205		add __unsigned_stack_003getError, __unsigned_stack_003getError, __DU0getError
+12	79	209	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	209	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	209		set __signed_stack_004getError, 7
+12	79	212	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	212	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	212		index __DU0getError, __getError_7qG2_sensor_7qG2_000, __signed_stack_004getError
+12	79	216	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	79	216	#line 79 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	216		add __D0getError, __unsigned_stack_003getError, __DU0getError
+12	80	220	#line 80 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	220	#line 80 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	81	220		div __D0getError, __signed_stack_002getError, __D0getError
+12	80	224	#line 80 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	81	224		sub __getError_7qG2_error_7qG2_000, __signed_stack_001getError, __D0getError
+12	80	228	#line 80 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	228	#line 80 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	228	#line 80 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	81	228		mov __signed_stack_001getError, __getError_7qG2_error_7qG2_000
+12	80	230	#line 80 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	230	#line 80 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	81	230		set __D0getError, 350
+12	80	233	#line 80 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	81	233		cmp 3, __D0getError, __signed_stack_001getError, __D0getError
+12	80	237	#line 80 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	81	237		brtst 5, __ASM_Label_885, __D0getError
+12	80	240	#line 80 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	81	240		mov __signed_stack_001getError, __getError_7qG2_error_7qG2_000
+12	80	242	#line 80 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	80	242	#line 80 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	81	242		mov __D0getError, __constValNeg350
+12	80	244	#line 80 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	81	244		cmp 2, __D0getError, __signed_stack_001getError, __D0getError
+12	81	248	#line 81 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	82	248		brtst 4, __ASM_Label_888, __D0getError
+12	81	251	#line 81 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	82	251		mov __seeLine_7qG2_sensor_7qG2_000, __getError_7qG2_sensor_7qG2_000
+12	81	253	#line 81 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	82	253		subcall seeLine, __seeLine_return
+12	81	255	#line 81 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	81	255	#line 81 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	82	255		not __DU0getError, __DU0seeLine
+12	81	258	#line 81 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	82	258		tst 5, __D0getError, __DU0getError
+12	81	261	#line 81 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	82	261		brtst 4, __ASM_Label_890, __D0getError
+12	81	264	#line 81 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	82	264		mov __float_stack_001getError, memory
+12	81	266	#line 81 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	81	266	#line 81 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	82	266		mov __DF0getError, __constValNeg250
+12	81	268	#line 81 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	82	268		cmp 1, __D0getError, __float_stack_001getError, __DF0getError
+12	81	272	#line 81 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	82	272		brtst 4, __ASM_Label_890, __D0getError
+12	81	275	#line 81 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	82	275		mov __float_stack_001getError, memory
+12	81	277	#line 81 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	81	277	#line 81 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	82	277		mov __DF0getError, __constVal250
+12	81	279	#line 81 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	82	279		cmp 0, __D0getError, __float_stack_001getError, __DF0getError
+12	82	283	#line 82 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	83	283		brtst 4, __ASM_Label_891, __D0getError
+12	83	286	#line 83 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	84	286		set __getError_7qG2_error_7qG2_000, 0
+12	83	289	#line 83 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	83	289	#line 83 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	84	289	#line 84 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	85	289		jmp __ASM_Label_894
+12	84	291	#line 84 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	85	291		mov __signed_stack_001getError, lastError
+12	84	293	#line 84 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	84	293	#line 84 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	85	293		set __D0getError, 351
+12	84	296	#line 84 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	85	296		cmp 1, __D0getError, __signed_stack_001getError, __D0getError
+12	85	300	#line 85 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	86	300		brtst 4, __ASM_Label_897, __D0getError
+12	85	303	#line 85 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	86	303		mov __signed_stack_001getError, lastError
+12	85	305	#line 85 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	86	305	#line 86 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	87	305		set __D0getError, 1
+12	86	308	#line 86 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	87	308		add __getError_7qG2_error_7qG2_000, __signed_stack_001getError, __D0getError
+12	86	312	#line 86 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	86	312	#line 86 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	87	312	#line 87 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	88	312		jmp __ASM_Label_900
+12	87	314	#line 87 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	88	314		mov __signed_stack_001getError, lastError
+12	87	316	#line 87 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	87	316	#line 87 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	88	316		mov __D0getError, __constValNeg351
+12	87	318	#line 87 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	88	318		cmp 0, __D0getError, __signed_stack_001getError, __D0getError
+12	88	322	#line 88 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	89	322		brtst 4, __ASM_Label_903, __D0getError
+12	88	325	#line 88 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	89	325		mov __signed_stack_001getError, lastError
+12	88	327	#line 88 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	89	327	#line 89 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	90	327		set __D0getError, 1
+12	89	330	#line 89 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	90	330		sub __getError_7qG2_error_7qG2_000, __signed_stack_001getError, __D0getError
+12	89	334	#line 89 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	89	334	#line 89 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	90	334	#line 90 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	91	334		jmp __ASM_Label_906
+12	90	336	#line 90 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	91	336		mov __signed_stack_001getError, lastError
+12	90	338	#line 90 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	90	338	#line 90 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	91	338		set __D0getError, 0
+12	90	341	#line 90 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	91	341		cmp 3, __D0getError, __signed_stack_001getError, __D0getError
+12	91	345	#line 91 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	92	345		brtst 4, __ASM_Label_909, __D0getError
+12	92	348	#line 92 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	93	348		set __getError_7qG2_error_7qG2_000, 352
+12	92	351	#line 92 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	92	351	#line 92 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	94	351	#line 94 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	95	351		jmp __ASM_Label_912
+12	95	353	#line 95 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	96	353		mov __getError_7qG2_error_7qG2_000, __constValNeg352
+12	95	355	#line 95 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	95	355	#line 95 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	97	355	#line 97 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	97	355	#line 97 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	97	355	#line 97 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	97	355	#line 97 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	97	355	#line 97 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	98	355	#line 98 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	99	355		mov __D0getError, __getError_7qG2_error_7qG2_000
+12	98	357	#line 98 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	99	357		subret __getError_return
+12	98	359	#line 98 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	100	359	#line 100 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+12	101	359		subret __getError_return
+13	105	0		exit -1, -1
+14	105	0	#line 105 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	106	0		set __D0controller, 1
+14	106	3	#line 106 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	107	3		tst 5, __D0controller, __D0controller
+14	106	6	#line 106 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	107	6		brtst 4, __ASM_Label_918, __D0controller
+14	106	9	#line 106 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	107	9		set i, 0
+14	106	12	#line 106 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	106	12	#line 106 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	107	12		mov __signed_stack_001controller, i
+14	106	14	#line 106 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	106	14	#line 106 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	107	14		set __D0controller, 8
+14	106	17	#line 106 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	107	17		cmp 0, __D0controller, __signed_stack_001controller, __D0controller
+14	106	21	#line 106 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	107	21		brtst 4, __ASM_Label_922, __D0controller
+14	106	24	#line 106 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	107	24		jmp __ASM_Label_923
+14	106	26	#line 106 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	107	26		add i, i, __constVal1
+14	107	30	#line 107 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	108	30		jmp __ASM_Label_921
+14	107	32	#line 107 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	108	32		mov __signed_stack_001controller, i
+14	107	34	#line 107 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	108	34	#line 108 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	109	34		set __D0controller, 0
+14	108	37	#line 108 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	109	37		replace sens, sens, __signed_stack_001controller, __D0controller
+14	108	42	#line 108 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	109	42	#line 109 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	110	42		jmp __ASM_Label_924
+14	109	44	#line 109 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	109	44	#line 109 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	110	44		set __LSA_ReadRaw_Calibrated_7qG2_port_7qG2_000, 0
+14	109	47	#line 109 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	109	47	#line 109 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	110	47		set __LSA_ReadRaw_Calibrated_7qG2_i2cAddr_7qG2_000, 20
+14	109	50	#line 109 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	109	50	#line 109 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	110	50		mov __LSA_ReadRaw_Calibrated_7qG2_returnValue_7qG2_000, sens
+14	109	52	#line 109 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	110	52		subcall LSA_ReadRaw_Calibrated, __LSA_ReadRaw_Calibrated_return
+14	109	54	#line 109 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	110	54		mov sens, __LSA_ReadRaw_Calibrated_7qG2_returnValue_7qG2_000
+14	109	56	#line 109 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	110	56		mov __D0controller, __D0LSA_ReadRaw_Calibrated
+14	110	58	#line 110 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	111	58		tst 5, __D0controller, __D0controller
+14	110	61	#line 110 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	111	61		brtst 4, __ASM_Label_939, __D0controller
+14	110	64	#line 110 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	111	64		mov __DU0controller, needStop
+14	111	66	#line 111 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	112	66		tst 5, __D0controller, __DU0controller
+14	111	69	#line 111 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	112	69		brtst 4, __ASM_Label_942, __D0controller
+14	111	72	#line 111 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	112	72		set __Move_7qG2_left_7qG2_000, 0
+14	111	75	#line 111 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	111	75	#line 111 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	112	75		set __Move_7qG2_right_7qG2_000, 0
+14	111	78	#line 111 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	112	78	#line 112 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	113	78		subcall Move, __Move_return
+14	112	80	#line 112 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	113	80	#line 113 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	114	80		set needStop, 0
+14	113	83	#line 113 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	113	83	#line 113 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	114	83	#line 114 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	115	83		exitto stopping
+14	114	85	#line 114 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	115	85	#line 115 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	115	85	#line 115 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	116	85		mov __CorrectSens_7qG2_array_7qG2_000, sens
+14	116	87	#line 116 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	117	87		subcall CorrectSens, __CorrectSens_return
+14	116	89	#line 116 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	117	89		mov sens, __CorrectSens_7qG2_array_7qG2_000
+14	116	91	#line 116 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	116	91	#line 116 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	117	91		mov __getError_7qG2_sensor_7qG2_000, __CorrectSens_7qG2_array_7qG2_000
+14	118	93	#line 118 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	119	93		subcall getError, __getError_return
+14	118	95	#line 118 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	119	95		mov __controller_7qG2_error_7qG2_002, __D0getError
+14	118	97	#line 118 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	118	97	#line 118 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	119	97		set __ClearLine_7qG2_line_7qG2_000_inline_controller, 56
+14	118	100	#line 118 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	6685	100	#line 6685 "NXCDefs.h"
+14	6686	100	#pragma macro 7
+14	6686	100		acquire __TextOutMutex
+14	6686	101		mov __TextOutArgs.Location.X, __constVal0
+14	6686	103		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_controller
+14	6686	105		mov __TextOutArgs.Options, __constVal0
+14	6686	107		mov __TextOutArgs.Text, __BlankLine
+14	6686	109		syscall 13, __TextOutArgs
+14	6686	112		release __TextOutMutex
+14	8021	113	#line 8021 "NXCDefs.h"
+14	6685	113	#line 6685 "NXCDefs.h"
+14	119	113	#line 119 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	119	113	#line 119 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	120	113		set __signed_stack_001controller, 0
+14	119	116	#line 119 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	119	116	#line 119 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	120	116		set __signed_stack_002controller, 56
+14	119	119	#line 119 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	119	119	#line 119 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	120	119		mov __DF0controller, __controller_7qG2_error_7qG2_002
+14	121	121	#line 121 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	122	121		acquire __TextOutMutex
+14	121	122	#line 121 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	122	122		mov __TextOutArgs.Location.X, __signed_stack_001controller
+14	121	125	#line 121 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	122	125		mov __TextOutArgs.Location.Y, __signed_stack_002controller
+14	121	128	#line 121 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	122	128		set __TextOutArgs.Options, 0
+14	121	131	#line 121 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	122	131		numtostr __TextOutArgs.Text, __DF0controller
+14	121	134	#line 121 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	122	134		syscall 13, __TextOutArgs
+14	121	137	#line 121 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	122	137		mov __D0controller, __TextOutArgs.Result
+14	121	139	#line 121 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	122	139		release __TextOutMutex
+14	121	140	#line 121 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	122	140	#line 122 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	123	140		set __D0controller, 50
+14	122	143	#line 122 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	123	143		mov __controller_7qG2_base_7qG2_002, __D0controller
+14	122	145	#line 122 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	122	145	#line 122 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	124	145	#line 124 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	124	145	#line 124 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	125	145		mul __controller_7qG2_turn_7qG2_002, __controller_7qG2_error_7qG2_002, __constValf0P14
+14	124	149	#line 124 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	124	149	#line 124 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	125	149		set __ClearLine_7qG2_line_7qG2_000_inline_controller, 48
+14	124	152	#line 124 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	6685	152	#line 6685 "NXCDefs.h"
+14	6686	152	#pragma macro 7
+14	6686	152		acquire __TextOutMutex
+14	6686	153		mov __TextOutArgs.Location.X, __constVal0
+14	6686	155		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_controller
+14	6686	157		mov __TextOutArgs.Options, __constVal0
+14	6686	159		mov __TextOutArgs.Text, __BlankLine
+14	6686	161		syscall 13, __TextOutArgs
+14	6686	164		release __TextOutMutex
+14	8088	165	#line 8088 "NXCDefs.h"
+14	6685	165	#line 6685 "NXCDefs.h"
+14	125	165	#line 125 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	125	165	#line 125 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	126	165		set __signed_stack_001controller, 0
+14	125	168	#line 125 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	125	168	#line 125 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	126	168		set __signed_stack_002controller, 48
+14	125	171	#line 125 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	125	171	#line 125 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	126	171		mov __DF0controller, __controller_7qG2_turn_7qG2_002
+14	127	173	#line 127 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	128	173		acquire __TextOutMutex
+14	127	174	#line 127 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	128	174		mov __TextOutArgs.Location.X, __signed_stack_001controller
+14	127	177	#line 127 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	128	177		mov __TextOutArgs.Location.Y, __signed_stack_002controller
+14	127	180	#line 127 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	128	180		set __TextOutArgs.Options, 0
+14	127	183	#line 127 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	128	183		numtostr __TextOutArgs.Text, __DF0controller
+14	127	186	#line 127 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	128	186		syscall 13, __TextOutArgs
+14	127	189	#line 127 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	128	189		mov __D0controller, __TextOutArgs.Result
+14	127	191	#line 127 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	128	191		release __TextOutMutex
+14	127	192	#line 127 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	127	192	#line 127 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	128	192		set __ClearLine_7qG2_line_7qG2_000_inline_controller, 40
+14	127	195	#line 127 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	6685	195	#line 6685 "NXCDefs.h"
+14	6686	195	#pragma macro 7
+14	6686	195		acquire __TextOutMutex
+14	6686	196		mov __TextOutArgs.Location.X, __constVal0
+14	6686	198		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_controller
+14	6686	200		mov __TextOutArgs.Options, __constVal0
+14	6686	202		mov __TextOutArgs.Text, __BlankLine
+14	6686	204		syscall 13, __TextOutArgs
+14	6686	207		release __TextOutMutex
+14	8129	208	#line 8129 "NXCDefs.h"
+14	6685	208	#line 6685 "NXCDefs.h"
+14	128	208	#line 128 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	128	208	#line 128 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	129	208		set __signed_stack_001controller, 0
+14	128	211	#line 128 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	128	211	#line 128 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	129	211		set __signed_stack_002controller, 40
+14	128	214	#line 128 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	128	214	#line 128 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	129	214		mov __seeLine_7qG2_sensor_7qG2_000, sens
+14	128	216	#line 128 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	129	216		subcall seeLine, __seeLine_return
+14	128	218	#line 128 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	129	218		mov __DU0controller, __DU0seeLine
+14	130	220	#line 130 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	131	220		acquire __TextOutMutex
+14	130	221	#line 130 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	131	221		mov __TextOutArgs.Location.X, __signed_stack_001controller
+14	130	224	#line 130 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	131	224		mov __TextOutArgs.Location.Y, __signed_stack_002controller
+14	130	227	#line 130 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	131	227		set __TextOutArgs.Options, 0
+14	130	230	#line 130 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	131	230		numtostr __TextOutArgs.Text, __DU0controller
+14	130	233	#line 130 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	131	233		syscall 13, __TextOutArgs
+14	130	236	#line 130 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	131	236		mov __D0controller, __TextOutArgs.Result
+14	130	238	#line 130 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	131	238		release __TextOutMutex
+14	130	239	#line 130 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	130	239	#line 130 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	130	239	#line 130 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	130	239	#line 130 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	130	239	#line 130 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	131	239		add __Move_7qG2_left_7qG2_000, __controller_7qG2_base_7qG2_002, __controller_7qG2_turn_7qG2_002
+14	130	243	#line 130 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	130	243	#line 130 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	130	243	#line 130 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	130	243	#line 130 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	130	243	#line 130 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	131	243		sub __Move_7qG2_right_7qG2_000, __controller_7qG2_base_7qG2_002, __controller_7qG2_turn_7qG2_002
+14	130	247	#line 130 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	131	247	#line 131 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	132	247		subcall Move, __Move_return
+14	131	249	#line 131 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	131	249	#line 131 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	131	249	#line 131 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	131	249	#line 131 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	131	249	#line 131 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	132	249		mul __float_stack_001controller, memory, __constValf0P6666666667
+14	131	253	#line 131 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	132	253	#line 132 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	132	253	#line 132 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	133	253		add memory, __float_stack_001controller, __controller_7qG2_error_7qG2_002
+14	132	257	#line 132 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	132	257	#line 132 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	132	257	#line 132 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	133	257		set __ClearLine_7qG2_line_7qG2_000_inline_controller, 32
+14	132	260	#line 132 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	6685	260	#line 6685 "NXCDefs.h"
+14	6686	260	#pragma macro 7
+14	6686	260		acquire __TextOutMutex
+14	6686	261		mov __TextOutArgs.Location.X, __constVal0
+14	6686	263		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_controller
+14	6686	265		mov __TextOutArgs.Options, __constVal0
+14	6686	267		mov __TextOutArgs.Text, __BlankLine
+14	6686	269		syscall 13, __TextOutArgs
+14	6686	272		release __TextOutMutex
+14	8228	273	#line 8228 "NXCDefs.h"
+14	6685	273	#line 6685 "NXCDefs.h"
+14	133	273	#line 133 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	133	273	#line 133 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	134	273		set __signed_stack_001controller, 0
+14	133	276	#line 133 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	133	276	#line 133 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	134	276		set __signed_stack_002controller, 32
+14	133	279	#line 133 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	133	279	#line 133 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	134	279		mov __DF0controller, memory
+14	134	281	#line 134 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	135	281		acquire __TextOutMutex
+14	134	282	#line 134 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	135	282		mov __TextOutArgs.Location.X, __signed_stack_001controller
+14	134	285	#line 134 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	135	285		mov __TextOutArgs.Location.Y, __signed_stack_002controller
+14	134	288	#line 134 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	135	288		set __TextOutArgs.Options, 0
+14	134	291	#line 134 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	135	291		numtostr __TextOutArgs.Text, __DF0controller
+14	134	294	#line 134 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	135	294		syscall 13, __TextOutArgs
+14	134	297	#line 134 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	135	297		mov __D0controller, __TextOutArgs.Result
+14	134	299	#line 134 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	135	299		release __TextOutMutex
+14	134	300	#line 134 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	135	300	#line 135 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	136	300		mov lastError, __controller_7qG2_error_7qG2_002
+14	135	302	#line 135 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	135	302	#line 135 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	137	302	#line 137 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	138	302		jmp __ASM_Label_997
+14	137	304	#line 137 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	138	304		set __ClearLine_7qG2_line_7qG2_000_inline_controller, 56
+14	137	307	#line 137 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	6685	307	#line 6685 "NXCDefs.h"
+14	6686	307	#pragma macro 7
+14	6686	307		acquire __TextOutMutex
+14	6686	308		mov __TextOutArgs.Location.X, __constVal0
+14	6686	310		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_controller
+14	6686	312		mov __TextOutArgs.Options, __constVal0
+14	6686	314		mov __TextOutArgs.Text, __BlankLine
+14	6686	316		syscall 13, __TextOutArgs
+14	6686	319		release __TextOutMutex
+14	8279	320	#line 8279 "NXCDefs.h"
+14	6685	320	#line 6685 "NXCDefs.h"
+14	138	320	#line 138 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	138	320	#line 138 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	139	320		set __signed_stack_001controller, 0
+14	138	323	#line 138 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	138	323	#line 138 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	139	323		set __signed_stack_002controller, 56
+14	138	326	#line 138 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	138	326	#line 138 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	139	326		strcat __strbufcontroller, __constStr0026
+14	139	330	#line 139 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	140	330		acquire __TextOutMutex
+14	139	331	#line 139 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	140	331		mov __TextOutArgs.Location.X, __signed_stack_001controller
+14	139	334	#line 139 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	140	334		mov __TextOutArgs.Location.Y, __signed_stack_002controller
+14	139	337	#line 139 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	140	337		set __TextOutArgs.Options, 0
+14	139	340	#line 139 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	140	340		mov __TextOutArgs.Text, __strbufcontroller
+14	139	342	#line 139 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	140	342		syscall 13, __TextOutArgs
+14	139	345	#line 139 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	140	345		mov __D0controller, __TextOutArgs.Result
+14	139	347	#line 139 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	140	347		release __TextOutMutex
+14	139	348	#line 139 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	139	348	#line 139 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	140	348		set __ClearLine_7qG2_line_7qG2_000_inline_controller, 48
+14	139	351	#line 139 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	6685	351	#line 6685 "NXCDefs.h"
+14	6686	351	#pragma macro 7
+14	6686	351		acquire __TextOutMutex
+14	6686	352		mov __TextOutArgs.Location.X, __constVal0
+14	6686	354		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_controller
+14	6686	356		mov __TextOutArgs.Options, __constVal0
+14	6686	358		mov __TextOutArgs.Text, __BlankLine
+14	6686	360		syscall 13, __TextOutArgs
+14	6686	363		release __TextOutMutex
+14	8318	364	#line 8318 "NXCDefs.h"
+14	6685	364	#line 6685 "NXCDefs.h"
+14	140	364	#line 140 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	140	364	#line 140 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	141	364		set __signed_stack_001controller, 0
+14	140	367	#line 140 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	140	367	#line 140 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	141	367		set __signed_stack_002controller, 48
+14	140	370	#line 140 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	140	370	#line 140 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	141	370		strcat __strbufcontroller, __constStr0027
+14	141	374	#line 141 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	142	374		acquire __TextOutMutex
+14	141	375	#line 141 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	142	375		mov __TextOutArgs.Location.X, __signed_stack_001controller
+14	141	378	#line 141 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	142	378		mov __TextOutArgs.Location.Y, __signed_stack_002controller
+14	141	381	#line 141 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	142	381		set __TextOutArgs.Options, 0
+14	141	384	#line 141 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	142	384		mov __TextOutArgs.Text, __strbufcontroller
+14	141	386	#line 141 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	142	386		syscall 13, __TextOutArgs
+14	141	389	#line 141 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	142	389		mov __D0controller, __TextOutArgs.Result
+14	141	391	#line 141 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	142	391		release __TextOutMutex
+14	141	392	#line 141 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	143	392	#line 143 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	145	392	#line 145 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	146	392		jmp __ASM_Label_917
+14	145	394	#line 145 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+14	146	394		exit -1, -1
+15	146	0	#line 146 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	147	0		set __signed_stack_001closinig, 3
+15	146	3	#line 146 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	146	3	#line 146 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	147	3		set __D0closinig, 0
+15	146	6	#line 146 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	147	6		acquire __RBtnMutex
+15	146	7	#line 146 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	147	7		mov __RBtnArgs.Index, __signed_stack_001closinig
+15	146	10	#line 146 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	147	10		mov __RBtnArgs.Reset, __D0closinig
+15	146	12	#line 146 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	147	12		syscall 20, __RBtnArgs
+15	146	15	#line 146 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	147	15		mov __D0closinig, __RBtnArgs.Pressed
+15	146	17	#line 146 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	147	17		release __RBtnMutex
+15	146	18	#line 146 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	147	18		not __D0closinig, __D0closinig
+15	147	21	#line 147 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	148	21		tst 5, __D0closinig, __D0closinig
+15	147	24	#line 147 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	148	24		brtst 4, __ASM_Label_1011, __D0closinig
+15	147	27	#line 147 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	147	27	#line 147 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	148	27		jmp __ASM_Label_1010
+15	147	29	#line 147 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	148	29	#line 148 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	149	29		set needStop, 1
+15	148	32	#line 148 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	148	32	#line 148 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	148	32	#line 148 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	149	32		mov __DU0closinig, needStop
+15	148	34	#line 148 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	149	34		not __DU0closinig, __DU0closinig
+15	148	37	#line 148 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	149	37		not __DU0closinig, __DU0closinig
+15	149	40	#line 149 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	150	40		tst 5, __D0closinig, __DU0closinig
+15	149	43	#line 149 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	150	43		brtst 4, __ASM_Label_1023, __D0closinig
+15	149	46	#line 149 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	149	46	#line 149 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	150	46		jmp __ASM_Label_1022
+15	149	48	#line 149 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	149	48	#line 149 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	150	48		set __LSA_Sleep_7qG2_port_7qG2_000, 0
+15	149	51	#line 149 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	149	51	#line 149 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	150	51		set __LSA_Sleep_7qG2_addr_7qG2_000, 20
+15	149	54	#line 149 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	150	54	#line 150 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	151	54		subcall LSA_Sleep, __LSA_Sleep_return
+15	150	56	#line 150 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	150	56	#line 150 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	150	56	#line 150 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	151	56		set __Wait_7qG2_ms_7qG2_000_inline_closinig, 200
+15	150	59	#line 150 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	8551	59	#line 8551 "NXCDefs.h"
+15	8552	59		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_closinig
+15	8551	62	#line 8551 "NXCDefs.h"
+15	151	62	#line 151 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	8564	62	#line 8564 "NXCDefs.h"
+15	8565	62		set __D0StopAllTasks_inline_closinig, 1
+15	8564	65	#line 8564 "NXCDefs.h"
+15	8565	65		stop __D0StopAllTasks_inline_closinig
+15	8564	67	#line 8564 "NXCDefs.h"
+15	152	67	#line 152 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+15	153	67		exit -1, -1
+16	160	0	#line 160 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+16	161	0		arrinit buf, __constVal0, __constVal20
+16	160	4	#line 160 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+16	161	4		arrinit sens, __constVal0, __constVal8
+16	160	8	#line 160 "C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc"
+16	161	8		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc
+1	__ResetSensorSubroutine	7	NXTDefs.h
+2	__ReadLSBytesVar	20	NXTDefs.h
+3	LSA_SendCommand	122	C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc
+4	LSA_Sleep	245	C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc
+5	LSA_Read	260	C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc
+6	LSA_WakeUp	352	C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc
+7	LSA_ReadRaw_Calibrated	368	C:\Users\Noah\Desktop\nxt\testing\.\LSA-lib.nxc
+8	init	452	C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc
+9	Move	511	C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc
+10	CorrectSens	769	C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc
+11	seeLine	870	C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc
+12	getError	1009	C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc
+13	stopping	1370	C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc
+14	controller	1373	C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc
+15	closinig	1770	C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc
+16	__initialize_global_data	1840	C:\Users\Noah\Desktop\nxt\testing\LSA-xprint.nxc

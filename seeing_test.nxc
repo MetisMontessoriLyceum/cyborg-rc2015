@@ -1,0 +1,86 @@
+#include "NXCDefs.h"
+
+int perfect;
+int error;
+int k = 9;
+int b = 40;
+
+void init () {
+
+  SetSensorType(IN_1, SENSOR_TYPE_LIGHT_ACTIVE);
+  SetSensorType(IN_2, SENSOR_TYPE_LIGHT_ACTIVE);
+  SetSensorType(IN_3, SENSOR_TYPE_LIGHT_ACTIVE);
+  SetSensorType(IN_4, SENSOR_TYPE_LIGHT_ACTIVE);
+}
+
+int sens (int num) {
+  int ret;
+  switch (num) {
+    case 1:
+      ret = Sensor(IN_1);
+      break;
+    case 2:
+      ret = Sensor(IN_2);
+      break;
+    case 3:
+      ret = Sensor(IN_3);;
+      break;
+    case 4:
+      ret = Sensor(IN_4);;
+      break;
+    default:
+      ClearScreen();
+      TextOut(0, LCD_LINE1, "Error:");
+      TextOut(0, LCD_LINE2, "num can only be 1 to 3");
+      Wait(1000);
+  }
+  return 1000-ret;
+}
+
+void Move (int motorL, int motorR) {
+  if (motorL == motorR && motorL != 0) {
+    OnFwdReg(OUT_AC,motorL,OUT_REGMODE_SPEED);
+  }
+  else {
+    if (motorL == 0) {
+      Off(OUT_A);
+    }
+    else if (motorL >= 0) {
+      OnFwdReg(OUT_A,motorL,OUT_REGMODE_SPEED);
+    }
+    else {
+      OnRevReg(OUT_A,0-motorL,OUT_REGMODE_SPEED);
+    }
+
+    if (motorR == 0) {
+      Off(OUT_C);
+    }
+    else if (motorR >= 0) {
+      OnFwdReg(OUT_C,motorR,OUT_REGMODE_SPEED);
+    }
+    else {
+      OnRevReg(OUT_C,0-motorR,OUT_REGMODE_SPEED);
+    }
+  }
+}
+
+int getCurrent () {
+  return ( sens(1) + sens(2)*1000 + sens(3)*2000 ) / (sens(1) + sens(2) + sens(3) );
+}
+
+void debugNum (int line, int num) {
+  ClearLine(line);
+  NumOut(0,line,num);
+}
+
+
+
+task main () {
+  init();
+  while (true) {
+    debugNum(LCD_LINE1,sens(1));
+    debugNum(LCD_LINE2,sens(2));
+    debugNum(LCD_LINE3,sens(3));
+    debugNum(LCD_LINE4,sens(4));
+  }
+}

@@ -1,0 +1,187 @@
+#include "NXCDefs.h"
+
+#define SNELHEID 100
+#define SCHERPEBOCHT 44
+#define BOCHT 65
+
+int gsensor1 = 0;
+int gsensor2 = 0;
+int gsensor3 = 0;
+int gsensor4 = 0;
+int zwart1 = 0;
+int zwart2 = 0;
+int zwart3 = 0;
+int zwart4 = 0;
+int wit1 = 0;
+int wit2 = 0;
+int wit3 = 0;
+int wit4 = 0;
+
+void saveCalibratedValues()
+{
+  string filename = "cali.txt";
+  DeleteFile(filename);
+  byte file = fopen(filename, "w");
+  if (file == NULL)
+  {
+    TextOut(0, LCD_LINE6, "Error, WRIGHT, file == NULL");
+  }
+
+  fputs(NumToStr(gsensor1), file);
+  fputs("\n", file);
+  fputs(NumToStr(gsensor2), file);
+  fputs("\n", file);
+  fputs(NumToStr(gsensor3), file);
+  fputs("\n", file);
+  fputs(NumToStr(gsensor4), file);
+  fputs("\n", file);
+
+  fflush(file);
+  fclose(file);
+}
+
+void readCalibratedValues()
+{
+  string buffer;
+  byte file = fopen("cali.txt", "r");
+  if (file == NULL)
+  {
+    TextOut(0, LCD_LINE6, "Error, READ, file == NULL");
+  }
+
+  fgets(buffer, 10, file);
+  gsensor1 = atoi(buffer);
+  fgets(buffer, 10, file);
+  gsensor2 = atoi(buffer);
+  fgets(buffer, 10, file);
+  gsensor3 = atoi(buffer);
+  fgets(buffer, 10, file);
+  gsensor4 = atoi(buffer);
+
+  fclose(file);
+}
+
+void calibrateSensors ()
+{
+  ClearScreen();
+  TextOut(0,0,"Sensoren op ZWART (ORANJE)");
+
+  zwart1 = Sensor(IN_1);
+  zwart2 = Sensor(IN_2);
+  zwart3 = Sensor(IN_3);
+  zwart4 = Sensor(IN_4);
+  until(ButtonPressed(BTNCENTER, false));
+  Wait(500);
+  ClearScreen();
+  TextOut(0,0,"Sensoren op WIT (ORANJE)");
+
+  wit1 = Sensor(IN_1);
+  wit2 = Sensor(IN_2);
+  wit3 = Sensor(IN_3);
+  wit4 = Sensor(IN_4);
+  until(ButtonPressed(BTNCENTER, false));
+  Wait(500);
+  ClearScreen();
+  TextOut(0,0,"Druk op de ORANJE knop");
+  
+  gsensor1 = (zwart1 + wit1)/2+20;
+  gsensor2 = (zwart2 + wit2)/2+20;
+  gsensor3 = (zwart3 + wit3)/2+20;
+  gsensor4 = (zwart4 + wit4)/2+20;
+  saveCalibratedValues();
+
+  until(ButtonPressed(BTNCENTER, false));
+  ClearScreen();
+
+}
+
+
+void startEngine ()
+{
+  while (true)
+  {
+    TextOut(0, LCD_LINE1, NumToStr(Sensor(IN_1)) + ":" + NumToStr(Sensor(IN_2)) + ":" + NumToStr(Sensor(IN_3)) + ":" + NumToStr(Sensor(IN_4)));
+    OnFwdReg(OUT_BC, SNELHEID, OUT_REGMODE_IDLE);
+
+    if((Sensor(IN_1) < gsensor1) && (Sensor(IN_2) < gsensor2))
+    {
+      OnFwdReg(OUT_B, SCHERPEBOCHT, OUT_REGMODE_IDLE);
+      OnFwdReg(OUT_C, SNELHEID, OUT_REGMODE_IDLE);
+      PlayTone(TONE_C4, MS_500);
+      until(Sensor(IN_3) < gsensor3);
+    }
+    else if((Sensor(IN_4) < gsensor4) && (Sensor(IN_3) < gsensor3))
+    {
+      OnFwdReg(OUT_C, SCHERPEBOCHT, OUT_REGMODE_IDLE);
+      OnFwdReg(OUT_B, SNELHEID, OUT_REGMODE_IDLE);
+      PlayTone(TONE_C4, MS_500);
+      until(Sensor(IN_2) < gsensor2);
+    }
+    if(Sensor(IN_1) < gsensor1)
+    {
+      OnFwdReg(OUT_B, SCHERPEBOCHT, OUT_REGMODE_IDLE);
+      OnFwdReg(OUT_C, SNELHEID, OUT_REGMODE_IDLE);
+      until(Sensor(IN_2) < gsensor2);
+    }
+    else if(Sensor(IN_4) < gsensor4)
+    {
+      OnFwdReg(OUT_C, SCHERPEBOCHT, OUT_REGMODE_IDLE);
+      OnFwdReg(OUT_B, SNELHEID, OUT_REGMODE_IDLE);
+      until(Sensor(IN_3) < gsensor3);
+    }
+    else if(Sensor(IN_2) < gsensor2)
+    {
+      OnFwdReg(OUT_B, BOCHT, OUT_REGMODE_IDLE);
+      OnFwdReg(OUT_C, SNELHEID, OUT_REGMODE_IDLE);
+      until(Sensor(IN_2) > gsensor2);
+    }
+    else if(Sensor(IN_3) < gsensor3)
+    {
+      OnFwdReg(OUT_C, BOCHT, OUT_REGMODE_IDLE);
+      OnFwdReg(OUT_B, SNELHEID, OUT_REGMODE_IDLE);
+      until(Sensor(IN_3) > gsensor3);
+    }
+  }
+}
+
+task main()
+{
+  SetSensorLight(IN_1);
+  SetSensorLight(IN_2);
+  SetSensorLight(IN_3);
+  SetSensorLight(IN_4);
+
+  while (true)
+  {
+    if (gsensor1 == 0)
+    {
+      readCalibratedValues();
+    }
+    NumOut(0,LCD_LINE1, gsensor1);
+    NumOut(0,LCD_LINE2, gsensor2);
+    NumOut(0,LCD_LINE3, gsensor3);
+    NumOut(0,LCD_LINE4, gsensor4);
+    TextOut(0,0,"Cal");
+    TextOut(65,0,"Start");
+
+
+    if (ButtonPressed(BTNRIGHT, false))
+    {
+      ClearScreen();
+      startEngine();
+      until(ButtonPressed(BTNCENTER, false));
+    }
+    if (ButtonPressed(BTNLEFT, false))
+    {
+      calibrateSensors();
+      saveCalibratedValues();
+      until(ButtonPressed(BTNCENTER, false));
+     }
+
+
+  }
+}
+
+
+
+

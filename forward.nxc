@@ -1,0 +1,136 @@
+#include "NXCDefs.h"
+#include "HTSMUX-driver.h"
+
+#define HalfChageVal 300
+#define FullChageVal 800
+typedef struct {
+  int light;
+  int dark;
+} CaliSens;
+// 13s
+// Define values
+/*
+float Kp = 0.4;
+float Ki = 0;//0.05;
+float Kd = 0.1;//0.2;
+float offset;
+float Tp = 75;
+float integral = 0;
+float lastError = 0;
+float derivative = 0;
+*/float error;
+float turn;
+
+int MoveA = 0;
+int MoveC = 0;
+long lastA = 0;
+long lastC = 0;
+long currentSpeedA;
+long currentSpeedC;
+long errorA;
+long errorC;
+
+long minBlack = 30;
+
+void init () {
+
+  SetSensorType(IN_1, SENSOR_TYPE_LIGHT_ACTIVE);
+  SetSensorType(IN_2, SENSOR_TYPE_LIGHT_ACTIVE);
+  SetSensorType(IN_3, SENSOR_TYPE_LIGHT_ACTIVE);
+  SetSensor(S4, SENSOR_LOWSPEED);
+
+  // Tell the SMUX to start scanning its ports.
+  // this takes 500ms
+  if (!HTSMUXscanPorts(S4)) {
+    // Scan failed, handle the error
+    TextOut(0, LCD_LINE1, "Scan failed!");
+    Wait(1000);
+    StopAllTasks();
+  }
+  
+  if (!smuxSetSensorLegoLight(msensor_S4_1, true)) {
+    TextOut(0, LCD_LINE1, "smux sens 1 failed!");
+    Wait(1000);
+    StopAllTasks();
+  }
+  if (!smuxSetSensorLegoLight(msensor_S4_2, true)) {
+    TextOut(0, LCD_LINE1, "smux sens 2 failed!");
+    Wait(1000);
+    StopAllTasks();
+  }
+  if (!smuxSetSensorLegoLight(msensor_S4_3, true)) {
+    TextOut(0, LCD_LINE1, "smux sens 3 failed!");
+    Wait(1000);
+    StopAllTasks();
+  }
+  if (!smuxSetSensorLegoLight(msensor_S4_4, true)) {
+    TextOut(0, LCD_LINE1, "smux sens 4 failed!");
+    Wait(1000);
+    StopAllTasks();
+  }
+
+}
+
+void debugNum (int line, int num) {
+  ClearLine(line);
+  NumOut(0,line,num);
+}
+
+void RealMove (int motorL, int motorR) {
+  debugNum(LCD_LINE7,motorL);
+  debugNum(LCD_LINE8,MoveC);
+  if (motorL == 0) {
+    Off(OUT_C);
+    TextOut(0,LCD_LINE4,"hey");
+  }
+  else {
+    OnFwd(OUT_C,motorL);
+    TextOut(0,LCD_LINE4,"hooo");
+  }
+  if (motorR == 0) {
+    Off(OUT_A);
+  }
+  else {
+    OnFwd(OUT_A,motorR);
+  }
+}
+
+void Move (int motorL, int motorR) {
+  motorL = -motorL;
+  motorR = -motorR;
+  MoveA = motorR;
+  MoveC = motorL;
+}
+
+task calulateMotor () {
+
+  while (true) {
+    currentSpeedA = -MotorRotationCount(OUT_A);
+    currentSpeedC = -MotorRotationCount(OUT_C);
+    errorA = currentSpeedA - lastA - 45;
+    errorC = currentSpeedC - lastC - 45;
+    debugNum(LCD_LINE1,errorA);
+    debugNum(LCD_LINE2,errorC);
+    lastA=currentSpeedA;
+    lastC=currentSpeedC;
+    Wait(100);
+  }
+}
+
+task perfectMotor () {
+  MoveC = -75;
+  RealMove(MoveC,MoveA);
+  until(false);
+}
+
+task moving () {
+  while (true) {
+    Move(75,75);
+  }
+
+}
+
+task main () {
+  init();
+  Precedes(moving,calulateMotor,perfectMotor);
+}

@@ -1,0 +1,290 @@
+/************************************************************************/
+/*                                                                      */
+/* Program Name: LSA-lib.nxc */
+/* =============================                                        */
+/*                                                                      */
+/* Copyright (c) 2008 by mindsensors.com                                */
+/* Email: info (<at>) mindsensors (<dot>) com                           */
+/*                                                                      */
+/* This program is free software. You can redistribute it and/or modify */
+/* it under the terms of the GNU General Public License as published by */
+/* the Free Software Foundation; version 3 of the License.              */
+/* Read the license at: http://www.gnu.org/licenses/gpl.txt             */
+/*                                                                      */
+/************************************************************************/
+/*
+ * When        Who             Comments
+ * 08/28/12    Deepak Patil    Initial authoring based on LL-lib.nxc
+ */
+
+string LSA_format_hex ( byte loop )
+{
+  int j;
+  string s;
+  int b = 0xF0;
+  int a = 0x0F;
+
+  j = (loop&b)>>4;
+
+  s = "";
+  switch ( j ) {
+  case 1:
+      s += "1";
+      break;
+  case 2:
+      s += "2";
+      break;
+  case 3:
+      s += "3";
+      break;
+  case 4:
+      s += "4";
+      break;
+  case 5:
+      s += "5";
+      break;
+  case 6:
+      s += "6";
+      break;
+  case 7:
+      s += "7";
+      break;
+  case 8:
+      s += "8";
+      break;
+  case 9:
+      s += "9";
+      break;
+  case 10:
+      s += "A";
+      break;
+  case 11:
+      s += "B";
+      break;
+  case 12:
+      s += "C";
+      break;
+  case 13:
+      s += "D";
+      break;
+  case 14:
+      s += "E";
+      break;
+  case 15:
+      s += "F";
+      break;
+  case 16:
+      s += "0";
+      break;
+  case 0:
+      s += "0";
+      break;
+  }
+
+  j = loop&a;
+
+  switch ( j ) {
+  case 1:
+      s += "1";
+      break;
+  case 2:
+      s += "2";
+      break;
+  case 3:
+      s += "3";
+      break;
+  case 4:
+      s += "4";
+      break;
+  case 5:
+      s += "5";
+      break;
+  case 6:
+      s += "6";
+      break;
+  case 7:
+      s += "7";
+      break;
+  case 8:
+      s += "8";
+      break;
+  case 9:
+      s += "9";
+      break;
+  case 10:
+      s += "A";
+      break;
+  case 11:
+      s += "B";
+      break;
+  case 12:
+      s += "C";
+      break;
+  case 13:
+      s += "D";
+      break;
+  case 14:
+      s += "E";
+      break;
+  case 15:
+      s += "F";
+      break;
+  case 16:
+      s += "0";
+      break;
+  case 0:
+      s += "0";
+      break;
+  } 
+  return (s);
+}
+
+int LSA_weighted_average (int i)
+{
+  int s, j, c;
+  int b = 0x80; s = 0;
+	c = 0;
+  for ( j = 0; j < 8; j++) {
+    if ( i&b ) {
+      s += (j+1) * 10;
+			c++;
+    } 
+    b = b>>1;
+  }
+	return (s/c);
+}
+
+string LSA_format_bin ( int i ) {
+  string s;
+
+  int j;
+  int b = 0x80;
+  s = "";
+  for ( j = 0; j < 8; j++) {
+    if ( i&b ) {
+      s += NumToStr(1);
+    } else {
+      s += NumToStr(0);
+    }
+    b = b>>1;
+  }
+  return (s);
+}
+
+int LSA_SendCommand(byte port, byte addr, byte cmd)
+{
+  byte cmdBuf[];
+  byte nByteReady = 0;
+
+  ArrayBuild(cmdBuf, addr, 0x41, cmd);
+  I2CWrite(port, 1, cmdBuf);
+  while (I2CStatus(port, nByteReady) ==  STAT_COMM_PENDING);
+  int status = I2CCheckStatus(port);
+  while (status > NO_ERR)
+    status = I2CCheckStatus(port);
+  return status;
+}
+
+/**
+ * The LightSensorAray sensor can be put to sleep, so that
+ * it's not consuming power when it is not required.
+ *
+ * It wakes up on it's own when any i2c communication happens.
+ * Or you can specifically wake it up by 'P' command.
+ */
+int LSA_Sleep(byte port, byte addr)
+{
+  return LSA_SendCommand(port, addr, 'D');
+}
+
+/**
+ * Read any byte from LSA
+ */
+byte LSA_Read (byte port, byte i2cAddr, int reg_to_read)
+{
+  byte message[];
+  unsigned byte buf[20];
+  int count, l;
+  byte nByteReady = 0;
+
+  ArrayBuild(message, i2cAddr, reg_to_read);
+  while (I2CStatus(port, nByteReady) ==  STAT_COMM_PENDING);
+  count = 1;
+  if(I2CBytes(port, message, count, buf)) {
+    return buf[0];
+	}
+	return 0;
+}
+
+/**
+ * The LightSensorAray sensor can be put to sleep, so that
+ * it's not consuming power when it is not required.
+ *
+ * It wakes up on it's own when any i2c communication happens.
+ * Or you can specifically wake it up by 'P' command.
+ */
+int LSA_WakeUp(byte port, byte addr)
+{
+  return LSA_Read(port, addr, 0x42);
+}
+
+
+int LSA_ReadRaw_Calibrated (byte port, byte i2cAddr, byte &returnValue[])
+{
+  byte message[];
+  unsigned byte buf[8];
+  int count, l;
+  byte nByteReady = 0;
+
+	// read calibrated readings
+  ArrayBuild(message, i2cAddr, 0x42);
+  while (I2CStatus(port, nByteReady) ==  STAT_COMM_PENDING);
+  count = 8;
+  if(I2CBytes(port, message, count, returnValue)) {
+	  return 1;
+	}
+	return 0;
+}
+
+// following function is supported in firmware version 1.15 and later.
+int LSA_ReadRaw_Uncalibrated (byte port, byte i2cAddr, int &returnValue[])
+{
+  byte message[];
+  unsigned byte buf[16];
+  int count, i;
+  byte nByteReady = 0;
+
+	// read uncalibrated readings 
+  ArrayBuild(message, i2cAddr, 0x6A);
+  while (I2CStatus(port, nByteReady) ==  STAT_COMM_PENDING);
+  count = 8;  // read 8 bytes at once.
+  if(I2CBytes(port, message, count, buf)) {
+		for ( i=0; i < 4; i++) {
+		  returnValue[i] = buf[i*2] + (buf[(i*2)+1]<<8);
+		}
+	}
+  ArrayBuild(message, i2cAddr, 0x72);
+  while (I2CStatus(port, nByteReady) ==  STAT_COMM_PENDING);
+  count = 8;  // read 8 bytes at once.
+  if(I2CBytes(port, message, count, buf)) {
+		for ( i=0; i < 4; i++) {
+		  returnValue[i+4] = buf[i*2] + (buf[(i*2)+1]<<8);
+		}
+	  return 1;
+	}
+
+	return 0;
+
+}
+
+int LSA_ReadInteger(byte port, byte addr, byte reg ) {
+  unsigned int result = 0;
+  byte outBuf[], cmdBuf[], count;
+  count = 2;
+  ArrayBuild(cmdBuf, addr, reg);
+  if (I2CBytes(port, cmdBuf, count, outBuf)) {
+    result = outBuf[1]*256 + outBuf[0];
+  }
+  return result;
+}
+

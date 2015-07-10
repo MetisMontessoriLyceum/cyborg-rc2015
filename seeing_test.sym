@@ -1,0 +1,343 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0sens	6	1	0	4	14
+1	__signed_stack_001debugNum	6	1	4	4	2
+2	__D0debugNum	6	1	8	4	3
+3	__D0main	6	1	12	4	4
+4	__signed_stack_002sens	6	1	16	4	4
+5	__Wait_7qG2_ms_7qG2_000_inline_sens	5	1	20	4	2
+6	__signed_stack_002debugNum	6	1	24	4	2
+7	__signed_stack_001sens	6	1	28	4	6
+8	__TextOutMutex	9	0	32	4	8
+9	__debugNum_7qG2_num_7qG2_000	4	1	36	2	5
+10	__debugNum_7qG2_line_7qG2_000	4	1	38	2	6
+11	__sens_7qG2_ret_7qG2_000	4	1	40	2	5
+12	__constVal200	4	0	42	2	2
+13	__sens_7qG2_num_7qG2_000	4	1	44	2	5
+14	__SetSensorType_7qG2_port_7qG2_000_inline_init	1	1	46	1	8
+15	__SetSensorType_7qG2_type_7qG2_000_inline_init	1	1	47	1	8
+16	__sens_return	1	1	48	1	7
+17	__ClearLine_7qG2_line_7qG2_000_inline_debugNum	1	1	49	1	2
+18	____initialize_global_data_return	1	1	50	1	3
+19	__constVal1	2	0	51	1	3
+20	__debugNum_return	1	1	52	1	6
+21	__constVal4	2	0	53	1	1
+22	__constVal2	2	0	54	1	2
+23	__PFTmp	1	1	55	1	1
+24	__init_return	1	1	56	1	3
+25	__constVal0	2	1	57	1	3
+26	__constVal3	2	0	58	1	2
+27	__PointOutArgs	8	0	3	12	4
+28	__PointOutArgs.Result	2	1	60	1	4
+29	__PointOutArgs.Location	8	0	2	4	4
+30	__PointOutArgs.Location.X	4	1	64	2	4
+31	__PointOutArgs.Location.Y	4	1	66	2	4
+32	__PointOutArgs.Options	5	1	68	4	4
+33	__TextOutArgs	8	0	4	16	23
+34	__TextOutArgs.Result	2	1	72	1	23
+35	__TextOutArgs.Location	8	0	2	4	23
+36	__TextOutArgs.Location.X	4	1	76	2	23
+37	__TextOutArgs.Location.Y	4	1	78	2	23
+38	__TextOutArgs.Text	7	0	80	4	23
+39	__TextOutArgs.Text.Text_type	1	0	0	1	0
+40	__TextOutArgs.Options	5	1	84	4	23
+41	__constStr0005	7	0	88	4	1
+42	__constStr0005.__constStr0005_type	1	1	0	1	0
+43	__strbufsens	7	0	90	4	4
+44	__strbufsens.__strbufsens_type	1	0	0	1	0
+45	__constStr0009	7	0	92	4	1
+46	__constStr0009.__constStr0009_type	1	1	0	1	0
+47	__BlankLine	7	0	94	4	1
+48	__BlankLine.__BlankLine_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	78	0	#line 78 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	79	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	78	2	#line 78 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	79	2	#line 79 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	80	2		subcall init, __init_return
+0	79	4	#line 79 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	79	4	#line 79 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	80	4		set __D0main, 1
+0	80	7	#line 80 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	81	7		tst 5, __D0main, __D0main
+0	80	10	#line 80 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	81	10		brtst 4, __ASM_Label_600, __D0main
+0	80	13	#line 80 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	81	13		set __debugNum_7qG2_line_7qG2_000, 56
+0	80	16	#line 80 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	80	16	#line 80 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	81	16		set __sens_7qG2_num_7qG2_000, 1
+0	80	19	#line 80 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	80	19	#line 80 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	81	19		subcall sens, __sens_return
+0	80	21	#line 80 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	81	21		mov __debugNum_7qG2_num_7qG2_000, __D0sens
+0	80	23	#line 80 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	81	23	#line 81 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	82	23		subcall debugNum, __debugNum_return
+0	81	25	#line 81 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	81	25	#line 81 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	82	25		set __debugNum_7qG2_line_7qG2_000, 48
+0	81	28	#line 81 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	81	28	#line 81 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	82	28		set __sens_7qG2_num_7qG2_000, 2
+0	81	31	#line 81 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	81	31	#line 81 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	82	31		subcall sens, __sens_return
+0	81	33	#line 81 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	82	33		mov __debugNum_7qG2_num_7qG2_000, __D0sens
+0	81	35	#line 81 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	82	35	#line 82 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	83	35		subcall debugNum, __debugNum_return
+0	82	37	#line 82 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	82	37	#line 82 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	83	37		set __debugNum_7qG2_line_7qG2_000, 40
+0	82	40	#line 82 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	82	40	#line 82 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	83	40		set __sens_7qG2_num_7qG2_000, 3
+0	82	43	#line 82 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	82	43	#line 82 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	83	43		subcall sens, __sens_return
+0	82	45	#line 82 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	83	45		mov __debugNum_7qG2_num_7qG2_000, __D0sens
+0	82	47	#line 82 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	83	47	#line 83 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	84	47		subcall debugNum, __debugNum_return
+0	83	49	#line 83 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	83	49	#line 83 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	84	49		set __debugNum_7qG2_line_7qG2_000, 32
+0	83	52	#line 83 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	83	52	#line 83 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	84	52		set __sens_7qG2_num_7qG2_000, 4
+0	83	55	#line 83 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	83	55	#line 83 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	84	55		subcall sens, __sens_return
+0	83	57	#line 83 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	84	57		mov __debugNum_7qG2_num_7qG2_000, __D0sens
+0	83	59	#line 83 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	84	59	#line 84 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	85	59		subcall debugNum, __debugNum_return
+0	84	61	#line 84 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	87	61	#line 87 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	88	61		jmp __ASM_Label_599
+0	87	63	#line 87 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+0	88	63		exit -1, -1
+1	9	0	#line 9 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+1	10	0		set __SetSensorType_7qG2_port_7qG2_000_inline_init, 0
+1	9	3	#line 9 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+1	9	3	#line 9 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+1	10	3		set __SetSensorType_7qG2_type_7qG2_000_inline_init, 5
+1	9	6	#line 9 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+1	4247	6	#line 4247 "NXCDefs.h"
+1	4248	6		setin __SetSensorType_7qG2_type_7qG2_000_inline_init, __SetSensorType_7qG2_port_7qG2_000_inline_init, 0
+1	4247	10	#line 4247 "NXCDefs.h"
+1	10	10	#line 10 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+1	10	10	#line 10 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+1	11	10		set __SetSensorType_7qG2_port_7qG2_000_inline_init, 1
+1	10	13	#line 10 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+1	10	13	#line 10 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+1	11	13		set __SetSensorType_7qG2_type_7qG2_000_inline_init, 5
+1	10	16	#line 10 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+1	4247	16	#line 4247 "NXCDefs.h"
+1	4248	16		setin __SetSensorType_7qG2_type_7qG2_000_inline_init, __SetSensorType_7qG2_port_7qG2_000_inline_init, 0
+1	4247	20	#line 4247 "NXCDefs.h"
+1	11	20	#line 11 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+1	11	20	#line 11 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+1	12	20		set __SetSensorType_7qG2_port_7qG2_000_inline_init, 2
+1	11	23	#line 11 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+1	11	23	#line 11 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+1	12	23		set __SetSensorType_7qG2_type_7qG2_000_inline_init, 5
+1	11	26	#line 11 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+1	4247	26	#line 4247 "NXCDefs.h"
+1	4248	26		setin __SetSensorType_7qG2_type_7qG2_000_inline_init, __SetSensorType_7qG2_port_7qG2_000_inline_init, 0
+1	4247	30	#line 4247 "NXCDefs.h"
+1	12	30	#line 12 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+1	12	30	#line 12 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+1	13	30		set __SetSensorType_7qG2_port_7qG2_000_inline_init, 3
+1	12	33	#line 12 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+1	12	33	#line 12 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+1	13	33		set __SetSensorType_7qG2_type_7qG2_000_inline_init, 5
+1	12	36	#line 12 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+1	4247	36	#line 4247 "NXCDefs.h"
+1	4248	36		setin __SetSensorType_7qG2_type_7qG2_000_inline_init, __SetSensorType_7qG2_port_7qG2_000_inline_init, 0
+1	4247	40	#line 4247 "NXCDefs.h"
+1	13	40	#line 13 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+1	15	40	#line 15 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+1	16	40		subret __init_return
+2	17	0	#line 17 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	18	0		mov __D0sens, __sens_7qG2_num_7qG2_000
+2	21	2		brcmp 4, __ASM_Label_508, __constVal1, __D0sens
+2	22	6		brcmp 4, __ASM_Label_511, __constVal2, __D0sens
+2	23	10		brcmp 4, __ASM_Label_514, __constVal3, __D0sens
+2	24	14		brcmp 4, __ASM_Label_517, __constVal4, __D0sens
+2	25	18		jmp __ASM_Label_520
+2	19	20	#line 19 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	19	20	#line 19 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	20	20		getin __sens_7qG2_ret_7qG2_000, __constVal0, 4
+2	19	24	#line 19 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	19	24	#line 19 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	19	24	#line 19 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	21	24	#line 21 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	22	24		jmp __ASM_Label_507
+2	21	26	#line 21 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	22	26	#line 22 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	22	26	#line 22 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	23	26		getin __sens_7qG2_ret_7qG2_000, __constVal1, 4
+2	22	30	#line 22 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	22	30	#line 22 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	22	30	#line 22 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	24	30	#line 24 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	25	30		jmp __ASM_Label_507
+2	24	32	#line 24 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	25	32	#line 25 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	25	32	#line 25 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	26	32		getin __sens_7qG2_ret_7qG2_000, __constVal2, 4
+2	25	36	#line 25 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	25	36	#line 25 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	25	36	#line 25 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	26	36	#line 26 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	27	36	#line 27 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	28	36		jmp __ASM_Label_507
+2	27	38	#line 27 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	28	38	#line 28 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	28	38	#line 28 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	29	38		getin __sens_7qG2_ret_7qG2_000, __constVal3, 4
+2	28	42	#line 28 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	28	42	#line 28 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	28	42	#line 28 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	29	42	#line 29 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	30	42	#line 30 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	31	42		jmp __ASM_Label_507
+2	30	44	#line 30 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	31	44	#line 31 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	6678	44	#line 6678 "NXCDefs.h"
+2	6679	44	#pragma macro 6
+2	6679	44		mov __PointOutArgs.Location.X, __constVal200
+2	6679	46		mov __PointOutArgs.Location.Y, __constVal200
+2	6679	48		mov __PointOutArgs.Options, __constVal1
+2	6679	50		syscall 14, __PointOutArgs
+2	4010	53	#line 4010 "NXCDefs.h"
+2	6678	53	#line 6678 "NXCDefs.h"
+2	32	53	#line 32 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	32	53	#line 32 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	33	53		set __signed_stack_001sens, 0
+2	32	56	#line 32 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	32	56	#line 32 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	33	56		set __signed_stack_002sens, 56
+2	32	59	#line 32 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	32	59	#line 32 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	33	59		strcat __strbufsens, __constStr0005
+2	33	63	#line 33 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	34	63		acquire __TextOutMutex
+2	33	64	#line 33 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	34	64		mov __TextOutArgs.Location.X, __signed_stack_001sens
+2	33	66	#line 33 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	34	66		mov __TextOutArgs.Location.Y, __signed_stack_002sens
+2	33	68	#line 33 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	34	68		set __TextOutArgs.Options, 0
+2	33	71	#line 33 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	34	71		mov __TextOutArgs.Text, __strbufsens
+2	33	73	#line 33 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	34	73		syscall 13, __TextOutArgs
+2	33	76	#line 33 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	34	76		mov __D0sens, __TextOutArgs.Result
+2	33	78	#line 33 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	34	78		release __TextOutMutex
+2	33	79	#line 33 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	33	79	#line 33 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	34	79		set __signed_stack_001sens, 0
+2	33	82	#line 33 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	33	82	#line 33 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	34	82		set __signed_stack_002sens, 48
+2	33	85	#line 33 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	33	85	#line 33 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	34	85		strcat __strbufsens, __constStr0009
+2	34	89	#line 34 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	35	89		acquire __TextOutMutex
+2	34	90	#line 34 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	35	90		mov __TextOutArgs.Location.X, __signed_stack_001sens
+2	34	92	#line 34 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	35	92		mov __TextOutArgs.Location.Y, __signed_stack_002sens
+2	34	94	#line 34 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	35	94		set __TextOutArgs.Options, 0
+2	34	97	#line 34 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	35	97		mov __TextOutArgs.Text, __strbufsens
+2	34	99	#line 34 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	35	99		syscall 13, __TextOutArgs
+2	34	102	#line 34 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	35	102		mov __D0sens, __TextOutArgs.Result
+2	34	104	#line 34 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	35	104		release __TextOutMutex
+2	34	105	#line 34 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	34	105	#line 34 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	35	105		set __Wait_7qG2_ms_7qG2_000_inline_sens, 1000
+2	34	108	#line 34 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	8551	108	#line 8551 "NXCDefs.h"
+2	8552	108		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_sens
+2	8551	111	#line 8551 "NXCDefs.h"
+2	35	111	#line 35 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	36	111	#line 36 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	36	111	#line 36 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	37	111		set __signed_stack_001sens, 1000
+2	36	114	#line 36 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	37	114	#line 37 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	38	114		mov __D0sens, __sens_7qG2_ret_7qG2_000
+2	37	116	#line 37 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	38	116		sub __D0sens, __signed_stack_001sens, __D0sens
+2	37	120	#line 37 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	38	120		subret __sens_return
+2	37	122	#line 37 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	39	122	#line 39 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+2	40	122		subret __sens_return
+3	71	0	#line 71 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+3	72	0		mov __ClearLine_7qG2_line_7qG2_000_inline_debugNum, __debugNum_7qG2_line_7qG2_000
+3	71	2	#line 71 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+3	6685	2	#line 6685 "NXCDefs.h"
+3	6686	2	#pragma macro 7
+3	6686	2		acquire __TextOutMutex
+3	6686	3		mov __TextOutArgs.Location.X, __constVal0
+3	6686	5		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_debugNum
+3	6686	7		mov __TextOutArgs.Options, __constVal0
+3	6686	9		mov __TextOutArgs.Text, __BlankLine
+3	6686	11		syscall 13, __TextOutArgs
+3	6686	14		release __TextOutMutex
+3	4443	15	#line 4443 "NXCDefs.h"
+3	6685	15	#line 6685 "NXCDefs.h"
+3	72	15	#line 72 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+3	72	15	#line 72 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+3	73	15		set __signed_stack_001debugNum, 0
+3	72	18	#line 72 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+3	72	18	#line 72 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+3	73	18		mov __signed_stack_002debugNum, __debugNum_7qG2_line_7qG2_000
+3	72	20	#line 72 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+3	72	20	#line 72 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+3	73	20		mov __D0debugNum, __debugNum_7qG2_num_7qG2_000
+3	73	22	#line 73 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+3	74	22		acquire __TextOutMutex
+3	73	23	#line 73 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+3	74	23		mov __TextOutArgs.Location.X, __signed_stack_001debugNum
+3	73	25	#line 73 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+3	74	25		mov __TextOutArgs.Location.Y, __signed_stack_002debugNum
+3	73	27	#line 73 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+3	74	27		set __TextOutArgs.Options, 0
+3	73	30	#line 73 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+3	74	30		numtostr __TextOutArgs.Text, __D0debugNum
+3	73	33	#line 73 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+3	74	33		syscall 13, __TextOutArgs
+3	73	36	#line 73 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+3	74	36		mov __D0debugNum, __TextOutArgs.Result
+3	73	38	#line 73 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+3	74	38		release __TextOutMutex
+3	73	39	#line 73 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+3	77	39	#line 77 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+3	78	39		subret __debugNum_return
+4	88	0	#line 88 "C:\Users\Noah\Desktop\nxt\seeing_test.nxc"
+4	89	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Noah\Desktop\nxt\seeing_test.nxc
+1	init	66	C:\Users\Noah\Desktop\nxt\seeing_test.nxc
+2	sens	108	C:\Users\Noah\Desktop\nxt\seeing_test.nxc
+3	debugNum	232	C:\Users\Noah\Desktop\nxt\seeing_test.nxc
+4	__initialize_global_data	273	C:\Users\Noah\Desktop\nxt\seeing_test.nxc

@@ -1,0 +1,10 @@
+#include "NXCDefs.h"
+#include "LSA-lib.nxc"
+
+void init () {
+
+}
+
+task main () {
+  init();
+}

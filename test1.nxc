@@ -1,0 +1,6 @@
+#include "NXCDefs.h"
+
+task main () {
+  OnFwd(OUT_C, 100);
+  until(false);
+}

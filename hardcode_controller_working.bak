@@ -1,0 +1,235 @@
+#include "NXCDefs.h"
+#include "HTSMUX-driver.h"
+
+
+
+#define MinS 20
+
+bool debug = true;
+
+typedef struct {
+  int light;
+  int dark;
+} CaliSens;
+
+
+CaliSens cali[7];
+
+void init () {
+
+  SetSensorType(IN_1, SENSOR_TYPE_LIGHT_ACTIVE);
+  SetSensorType(IN_2, SENSOR_TYPE_LIGHT_ACTIVE);
+  SetSensorType(IN_3, SENSOR_TYPE_LIGHT_ACTIVE);
+  SetSensor(S4, SENSOR_LOWSPEED);
+
+  // Tell the SMUX to start scanning its ports.
+  // this takes 500ms
+  if (!HTSMUXscanPorts(S4)) {
+    // Scan failed, handle the error
+    TextOut(0, LCD_LINE1, "Scan failed!");
+    Wait(1000);
+    StopAllTasks();
+  }
+  
+  if (!smuxSetSensorLegoLight(msensor_S4_1, true)) {
+    TextOut(0, LCD_LINE1, "smux sens 1 failed!");
+    Wait(1000);
+    StopAllTasks();
+  }
+  if (!smuxSetSensorLegoLight(msensor_S4_2, true)) {
+    TextOut(0, LCD_LINE1, "smux sens 2 failed!");
+    Wait(1000);
+    StopAllTasks();
+  }
+  if (!smuxSetSensorLegoLight(msensor_S4_3, true)) {
+    TextOut(0, LCD_LINE1, "smux sens 3 failed!");
+    Wait(1000);
+    StopAllTasks();
+  }
+  if (!smuxSetSensorLegoLight(msensor_S4_4, true)) {
+    TextOut(0, LCD_LINE1, "smux sens 4 failed!");
+    Wait(1000);
+    StopAllTasks();
+  }
+
+}
+
+int port (int pontNum) {
+  int ret;
+  switch (pontNum) {
+    case 1:
+      ret = IN_1;
+      break;
+    case 2:
+      ret = IN_1;
+      break;
+    case 3:
+      ret = IN_1;
+      break;
+    case 4:
+      ret = IN_1;
+      break;
+  }
+  return ret;
+}
+
+long sens (int num) {
+  long ret;
+  switch (num) {
+    case 0:
+      ret = smuxSensorLegoLightNorm(msensor_S4_2);
+      break;
+    case 1:
+      ret = smuxSensorLegoLightNorm(msensor_S4_1);
+      break;
+    case 2:
+      ret = Sensor(IN_3)/10;
+      break;
+    case 3:
+      ret = Sensor(IN_2)/10;
+      break;
+    case 4:
+      ret = Sensor(IN_1)/10;
+      break;
+    case 5:
+      ret = smuxSensorLegoLightNorm(msensor_S4_4);
+      break;
+    case 6:
+      ret = smuxSensorLegoLightNorm(msensor_S4_3);
+      break;
+    default:
+      ClearScreen();
+      TextOut(0, LCD_LINE1, "Error:");
+      TextOut(0, LCD_LINE2, "num can only be 1 to 3");
+      Wait(1000);
+  }
+  ret = 100-ret;
+  /*if (num == 5) {
+    ret = 100-ret;
+  }*/
+  ret = (ret - cali[num].light) * (100/(cali[num].dark-cali[num].light));
+  if (ret < 0) {
+    ret = 0;
+  }
+  if (ret > 100) {
+    ret = 100;
+  }
+  
+  return ret;
+}
+
+int line (int line) {
+  int ret;
+  switch (line) {
+    case 1:
+      ret = LCD_LINE1;
+      break;
+    case 2:
+      ret = LCD_LINE2;
+      break;
+    case 3:
+      ret = LCD_LINE3;
+      break;
+    case 4:
+      ret = LCD_LINE4;
+      break;
+    case 5:
+      ret = LCD_LINE5;
+      break;
+    case 6:
+      ret = LCD_LINE6;
+      break;
+    case 7:
+      ret = LCD_LINE7;
+      break;
+    case 8:
+      ret = LCD_LINE8;
+      break;
+  }
+  return ret;
+}
+
+void Move (float motorL, float motorR) {
+  if (motorL == 0) {
+    Off(OUT_C);
+  }
+  else {
+    OnRev(OUT_C,motorL);
+  }
+
+  if (motorR == 0) {
+    Off(OUT_A);
+  }
+  else {
+    OnRev(OUT_A,motorR);
+  }
+}
+
+
+void debugNum (int line, int num) {
+  ClearLine(line);
+  NumOut(0,line,num);
+}
+
+void readCali () {
+  CaliSens ret[7];
+  string buffer;
+  byte file = fopen("cali.txt", "r");
+  if (file == NULL) {
+    StopAllTasks();
+  }
+  for (int i=0; i<7; i++) {
+    fgets(buffer, 10, file);
+    ret[i].light = atol(buffer);
+
+    fgets(buffer, 10, file);
+    ret[i].dark = atol(buffer);
+  }
+  
+  fclose(file);
+  cali = ret;
+  
+  for (int i=0; i<7; i++) {
+    cali[i].light = cali[i].light + 5;
+    cali[i].dark = cali[i].dark - 5;
+  }
+}
+
+bool seeSomthing () {
+  return (
+    sens(2) > MinS
+    || sens(3) > MinS
+    || sens(4) > MinS
+  );
+}
+
+void Controler () {
+  while (true) {
+    if (sens(1) > MinS || sens(0) > MinS) {
+      Move(0,80);
+      until(seeSomthing() || sens(5) > MinS || sens(6) > MinS);
+      Move(40,40);
+    }
+    else if (sens(5) > MinS || sens(6) > MinS) {
+      Move(80,0);
+      until(seeSomthing() || sens(0) > MinS || sens(1) > MinS);
+      Move(40,40);
+    }
+    else if (sens(2) > MinS) {
+      Move(20,80);
+    }
+    else if (sens(4) > MinS) {
+      Move(80,20);
+    }
+    else {
+      Move(80,80);
+    }
+  }
+
+}
+
+task main () {
+  init();
+  readCali();
+  Controler();
+}
