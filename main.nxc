@@ -52,7 +52,7 @@
 #define SENS_PORT IN_2
 #define SENS_CODE 0x14
 
-// define Const
+// define const
 #define FOLLOW_LINE 0
 #define MOVE_LEFT 1
 #define MOVE_RIGHT 2

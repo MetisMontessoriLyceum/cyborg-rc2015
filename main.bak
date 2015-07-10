@@ -70,6 +70,10 @@
 #define LINE 1
 #define NOLINE 2
 #define MIDDLE 3
+#define COLOR_BLACK 0
+#define COLOR_GREEN 1
+#define COLOR_WHITE 2
+
 
 
 // for easy modifying
@@ -226,13 +230,13 @@ void Move (int left, int right, bool autofix = true) {
 
 void MoveTo(int dir, unsigned long waitTime = 0, int speed = 75) {
   if (dir == LEFT) {
-    OnRevSync(OUT_AB, speed, -100);
+    OnRevSync(OUT_AC, speed, -100);
   }
   else if (dir == RIGHT) {
-    OnRevSync(OUT_AB, speed, 100);
+    OnRevSync(OUT_AC, speed, 100);
   }
   else {
-    OnRevSync(OUT_AB, speed, 0);
+    OnRevSync(OUT_AC, speed, 0);
   }
   if (waitTime != 0) {
     Wait(waitTime);
@@ -454,8 +458,14 @@ int getStatus (unsigned byte &sensor[]) {
     }
 
     // right = 1 and left = 0, this way you can do !dir to get the other direction
+
+    // COLORS:
+    // black: 0-20
+    // green: 20-60
+    // white: 60-100
+
     bool lineFront;
-    if (getSens(IN_4_3) < 40) {
+    if (getSens(IN_4_3) <= 20) {
       lineFront = true;
     }
     else {
@@ -468,9 +478,31 @@ int getStatus (unsigned byte &sensor[]) {
     StopMove();
 
     int lineSide = getSens(IN_4_3);
+    int lineSideColor;
+    if (lineSide <= 60) {
+      lineSideColor = COLOR_GREEN;
+    }
+    else {
+      lineSideColor = COLOR_WHITE;
+    }
 
     int status;
-    if (lineSide >= 40 || !lineFront) {
+    if (lineSideColor == COLOR_WHITE) {
+      // scaned the wrong side
+      dir = !dir;
+      MoveTo(dir,600);
+      StopMove();
+
+      lineSide = getSens(IN_4_3);
+      if (lineSide <= 60) {
+        lineSideColor = COLOR_GREEN;
+      }
+      else {
+        lineSideColor = COLOR_WHITE;
+      }
+    }
+
+    if (lineSideColor == COLOR_GREEN || !lineFront) {
       if (dir) {
         Debug("right",1,1);
         status = MOVE_RIGHT;
@@ -496,13 +528,26 @@ int getStatus (unsigned byte &sensor[]) {
 }
 
 // returns true if the robot can see a line
-bool seeLine (byte sensor[], bool full = false) {
+bool seeLine (byte sensor[], int mode = 0) {
   bool ret;
-  if (full) {
+  switch (mode) {
+    case 0:
+      break;
+    case 1:
+      break;
+    case 2:
+      break;
+  }
+  // todo: give names to mode 1 and 0
+  
+  if (mode == 1) {
     ret = (sensor[0] > BLACK && sensor[1] > BLACK && sensor[2] > BLACK && sensor[3] > BLACK && sensor[4] > BLACK && sensor[5] > BLACK && sensor[6] > BLACK && sensor[7] > BLACK);
   }
-  else {
+  else if (mode == 0) {
     ret = (sensor[0] > BLACK || sensor[1] > BLACK || sensor[2] > BLACK || sensor[3] > BLACK || sensor[4] > BLACK || sensor[5] > BLACK || sensor[6] > BLACK || sensor[7] > BLACK);
+  }
+  else if (mode == MIDDLE) {
+    ret = (sensor[0] < 60 && sensor[1] < 60 && sensor[6] < 60 && sensor[7] < 60);
   }
   return ret;
 }
@@ -510,20 +555,33 @@ bool seeLine (byte sensor[], bool full = false) {
 // keeps running until a line is visible
 void untilSeeLine (int mode = 1) {
   int i;
-  if (mode == NOLINE_LINE || mode == NOLINE) {
+  if (mode == MIDDLE) {
     while (true) {
       for (i=0; i<8; i++) {
         sens[i] = 0;
       }
       if( LSA_ReadRaw_Calibrated (SENS_PORT, SENS_CODE, sens) ) {
         CorrectSens(sens);
-         if (!seeLine(sens)) {
+        if (seeLine(sens,MIDDLE)) {
           break;
         }
       }
     }
   }
-  if (mode == NOLINE_LINE || mode == LINE) {
+  else if (mode == NOLINE_LINE || mode == NOLINE) {
+    while (true) {
+      for (i=0; i<8; i++) {
+        sens[i] = 0;
+      }
+      if( LSA_ReadRaw_Calibrated (SENS_PORT, SENS_CODE, sens) ) {
+        CorrectSens(sens);
+        if (!seeLine(sens)) {
+          break;
+        }
+      }
+    }
+  }
+  else if (mode == NOLINE_LINE || mode == LINE) {
     while (true) {
       for (i=0; i<8; i++) {
         sens[i] = 0;
@@ -688,7 +746,7 @@ void Obstacle (byte dir) {
   MoveTo(dir,1600);
   StopMove();
   
-  Move(75,75,false);
+  MoveTo(FRONT);
   MoveUntilNoBlock(!dir,800);
   StopMove();
 
@@ -696,7 +754,7 @@ void Obstacle (byte dir) {
     MoveTo(!dir,1400);
     StopMove();
   
-    Move(75,75,false);
+    MoveTo(FRONT);
     if (MoveUntilNoBlock(!dir,800,true)) {
       // robot is on line
       Wait(200);
@@ -731,6 +789,8 @@ task main () {
         case MOVE_LEFT:
         case MOVE_RIGHT:
 
+          // TODO: return to the old ver.
+          // this one is worse
           int dir;
           if (status == MOVE_RIGHT) {
             dir = RIGHT;
@@ -740,7 +800,8 @@ task main () {
           }
 
           Move(75,75,false);
-          untilSeeLine(NOLINE);
+          Wait(200);
+          untilSeeLine(MIDDLE);
           MoveTo(dir);
           untilSeeLine(LINE);
           
