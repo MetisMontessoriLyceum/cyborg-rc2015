@@ -1,0 +1,846 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0LSA_ReadRaw_Calibrated	6	1	0	4	10
+1	__DU0LSA_Read	5	1	4	4	3
+2	__D0LSA_Read	6	1	8	4	7
+3	__D0LSA_ReadRaw_Uncalibrated	6	1	12	4	2
+4	__D0main	6	1	16	4	4
+5	__D0LSA_weighted_average	6	1	20	4	1
+6	__D0LSA_WakeUp	6	1	24	4	1
+7	__D0CorrectSens	6	1	28	4	15
+8	__RLSBmutex3	9	0	32	4	4
+9	__RLSBmutex2	9	0	36	4	4
+10	__D0Debug	6	1	40	4	12
+11	__D0LSA_format_hex	6	1	44	4	1
+12	__D0LSA_format_bin	6	1	48	4	1
+13	__DU0Debug	5	1	52	4	2
+14	__signed_stack_002Debug	6	1	56	4	2
+15	__signed_stack_001Debug	6	1	60	4	2
+16	__unsigned_stack_001CorrectSens	5	1	64	4	4
+17	__signed_stack_001LSA_Read	6	1	68	4	4
+18	__unsigned_stack_001needFix	5	1	72	4	2
+19	__signed_stack_001needFix	6	1	76	4	4
+20	__signed_stack_001LSA_ReadRaw_Calibrated	6	1	80	4	2
+21	__D0SetSensorLowspeed_inline_init	6	1	84	4	3
+22	__DU0needFix	5	1	88	4	2
+23	__D0needFix	6	1	92	4	6
+24	__DU0SetSensorLowspeed_inline_init	5	1	96	4	2
+25	__signed_stack_003CorrectSens	6	1	100	4	2
+26	__signed_stack_002CorrectSens	6	1	104	4	2
+27	__signed_stack_001CorrectSens	6	1	108	4	12
+28	__RLSBmutex1	9	0	112	4	4
+29	__CLSWMutex1	9	0	116	4	2
+30	__CLSRMutex1	9	0	120	4	2
+31	__CLSCSMutex0	9	0	124	4	6
+32	__CLSWMutex0	9	0	128	4	2
+33	__CLSRMutex0	9	0	132	4	2
+34	__CLSCSMutex1	9	0	136	4	6
+35	__CLSRMutex3	9	0	140	4	2
+36	__RLSBmutex0	9	0	144	4	4
+37	__CLSCSMutex3	9	0	148	4	6
+38	__CLSRMutex2	9	0	152	4	2
+39	__CLSWMutex3	9	0	156	4	2
+40	__CLSCSMutex2	9	0	160	4	6
+41	__CLSWMutex2	9	0	164	4	2
+42	__LSA_ReadRaw_Calibrated_7qG2_count_7qG2_000	4	1	168	2	3
+43	__LSA_Read_7qG2_count_7qG2_000	4	1	170	2	3
+44	__LSA_Read_7qG2_reg_to_read_7qG2_000	4	1	172	2	2
+45	__Debug_7qG2_num_7qG2_000	4	1	174	2	2
+46	__Debug_7qG2_line_7qG2_000	4	1	176	2	12
+47	__Debug_7qG2_x_7qG2_000	4	1	178	2	2
+48	__CorrectSens_7qG2_i_7qG2_001	4	1	180	2	10
+49	__needFix_7qG2_i_7qG2_001	4	1	182	2	5
+50	__constVal3	2	0	184	1	1
+51	__LSA_WakeUp_7qG2_port_7qG2_000	1	1	185	1	2
+52	__constVal6	2	0	186	1	1
+53	__constVal4	2	0	187	1	1
+54	__constVal0	2	1	188	1	6
+55	__LSA_Read_7qG2_i2cAddr_7qG2_000	1	1	189	1	2
+56	__LSA_Read_return	1	1	190	1	5
+57	__LSA_Read_7qG2_port_7qG2_000	1	1	191	1	3
+58	__constVal1	2	0	192	1	7
+59	__LSA_Read_7qG2_nByteReady_7qG2_000	1	1	193	1	2
+60	__CorrectSens_return	1	1	194	1	3
+61	__Debug_7qG2_clear_7qG2_000	1	1	195	1	2
+62	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_init	1	1	196	1	2
+63	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_init	1	1	197	1	2
+64	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init	1	1	198	1	2
+65	__needFix_7qG2_ret_7qG2_000	1	1	199	1	3
+66	____initialize_global_data_return	1	1	200	1	3
+67	__needFix_return	1	1	201	1	4
+68	__Debug_return	1	1	202	1	3
+69	__ClearLine_7qG2_line_7qG2_000_inline_Debug	1	1	203	1	2
+70	__LSA_ReadRaw_Calibrated_7qG2_i2cAddr_7qG2_000	1	1	204	1	2
+71	__LSA_ReadRaw_Calibrated_return	1	1	205	1	5
+72	__LSA_ReadRaw_Calibrated_7qG2_port_7qG2_000	1	1	206	1	3
+73	__LSA_WakeUp_7qG2_addr_7qG2_000	1	1	207	1	2
+74	__LSA_WakeUp_return	1	1	208	1	4
+75	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_init	1	1	209	1	2
+76	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init	1	1	210	1	2
+77	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_init	1	1	211	1	4
+78	__LSA_ReadRaw_Calibrated_7qG2_nByteReady_7qG2_000	1	1	212	1	2
+79	__init_return	1	1	213	1	3
+80	__constVal5	2	0	214	1	1
+81	__zfDebug	1	1	215	1	2
+82	__constVal66	2	0	216	1	1
+83	__ArrHelper__LSA_Read_98_0	1	1	217	1	2
+84	__zfLSA_Read	1	1	218	1	5
+85	____ReadLSBytesVar_return	1	1	219	1	4
+86	__constVal7	2	0	220	1	1
+87	__ArrHelper__needFix_98_0	1	1	221	1	2
+88	__RLSBIterationsVar	1	1	222	1	4
+89	__RLSBytesCountVar	1	1	223	1	10
+90	__zfCorrectSens	1	1	224	1	9
+91	__RLSBResultVar	2	1	225	1	9
+92	__ArrHelper__CorrectSens_98_0	1	1	226	1	6
+93	__zfLSA_ReadRaw_Calibrated	1	1	227	1	5
+94	__constVal20	2	0	228	1	1
+95	__zfSetSensorLowspeed_inline_init	1	1	229	1	2
+96	__PFTmp	1	1	230	1	1
+97	__ResetSensorPort	1	1	231	1	3
+98	__ResetSensorTmp	1	1	232	1	2
+99	____ResetSensorSubroutine_return	1	1	233	1	3
+100	__constVal15	2	0	234	1	1
+101	__constVal2	2	0	235	1	1
+102	__zfmain	1	1	236	1	3
+103	__zfneedFix	1	1	237	1	6
+104	__constVal8	2	0	238	1	2
+105	__RLSReadPort	1	1	239	1	5
+106	__CLSRArgs0	8	0	4	12	5
+107	__CLSRArgs0.Result	2	1	240	1	5
+108	__CLSRArgs0.Port	1	1	241	1	5
+109	__CLSRArgs0.Buffer	7	0	242	4	5
+110	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+111	__CLSRArgs0.BufferLen	1	1	244	1	5
+112	__TextOutArgs	8	0	4	16	11
+113	__TextOutArgs.Result	2	1	248	1	11
+114	__TextOutArgs.Location	8	0	2	4	11
+115	__TextOutArgs.Location.X	4	1	252	2	11
+116	__TextOutArgs.Location.Y	4	1	254	2	11
+117	__TextOutArgs.Text	7	0	256	4	11
+118	__TextOutArgs.Text.Text_type	1	0	0	1	0
+119	__TextOutArgs.Options	5	1	260	4	11
+120	__CLSCSArgs0	8	0	3	4	12
+121	__CLSCSArgs0.Result	2	1	264	1	12
+122	__CLSCSArgs0.Port	1	1	265	1	12
+123	__CLSCSArgs0.BytesReady	1	1	266	1	12
+124	__CLSWArgs0	8	0	4	12	5
+125	__CLSWArgs0.Result	2	1	268	1	5
+126	__CLSWArgs0.Port	1	1	269	1	5
+127	__CLSWArgs0.Buffer	7	0	270	4	5
+128	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+129	__CLSWArgs0.ReturnLen	1	1	272	1	5
+130	__constStr0026	7	0	274	4	1
+131	__constStr0026.__constStr0026_type	1	1	0	1	0
+132	__RLSReadBufVar	7	0	276	4	10
+133	__RLSReadBufVar.__RLSReadBufVar_type	1	0	0	1	0
+134	__Debug_7qG2_toDebug_7qG2_000	7	0	278	4	2
+135	__Debug_7qG2_toDebug_7qG2_000.__Debug_7qG2_toDebug_7qG2_000_type	1	0	0	1	0
+136	__needFix_7qG2_sensor_7qG2_000	7	0	280	4	2
+137	__needFix_7qG2_sensor_7qG2_000.__needFix_7qG2_sensor_7qG2_000_type	1	0	0	1	0
+138	__RLSLastGoodReadVar	7	0	282	4	2
+139	__RLSLastGoodReadVar.__RLSLastGoodReadVar_type	1	0	0	1	0
+140	__constStr0027	7	0	284	4	1
+141	__constStr0027.__constStr0027_type	1	1	0	1	0
+142	__strbufDebug	7	0	286	4	8
+143	__strbufDebug.__strbufDebug_type	1	0	0	1	0
+144	__LSA_ReadRaw_Calibrated_7qG2_returnValue_7qG2_000	7	0	288	4	3
+145	__LSA_ReadRaw_Calibrated_7qG2_returnValue_7qG2_000.__LSA_ReadRaw_Calibrated_7qG2_returnValue_7qG2_000_type	1	0	0	1	0
+146	__LSA_ReadRaw_Calibrated_7qG2_message_7qG2_000	7	0	290	4	2
+147	__LSA_ReadRaw_Calibrated_7qG2_message_7qG2_000.__LSA_ReadRaw_Calibrated_7qG2_message_7qG2_000_type	1	0	0	1	0
+148	__strretvalDebug	7	0	292	4	2
+149	__strretvalDebug.__strretvalDebug_type	1	0	0	1	0
+150	__strbufmain	7	0	294	4	2
+151	__strbufmain.__strbufmain_type	1	0	0	1	0
+152	__LSA_Read_7qG2_message_7qG2_000	7	0	296	4	2
+153	__LSA_Read_7qG2_message_7qG2_000.__LSA_Read_7qG2_message_7qG2_000_type	1	0	0	1	0
+154	__LSA_Read_7qG2_buf_7qG2_000	7	0	298	4	3
+155	__LSA_Read_7qG2_buf_7qG2_000.__LSA_Read_7qG2_buf_7qG2_000_type	1	0	0	1	0
+156	__ArrHelper__Debug_244_0	7	0	300	4	2
+157	__ArrHelper__Debug_244_0.__ArrHelper__Debug_244_0_type	1	0	0	1	0
+158	__CorrectSens_7qG2_array_7qG2_000	7	0	302	4	11
+159	__CorrectSens_7qG2_array_7qG2_000.__CorrectSens_7qG2_array_7qG2_000_type	1	0	0	1	0
+160	__Debug_7qG2_name_7qG2_000	7	0	304	4	2
+161	__Debug_7qG2_name_7qG2_000.__Debug_7qG2_name_7qG2_000_type	1	0	0	1	0
+162	__ArrHelper__Debug_244_1	7	0	306	4	4
+163	__ArrHelper__Debug_244_1.__ArrHelper__Debug_244_1_type	1	0	0	1	0
+164	__BlankLine	7	0	308	4	1
+165	__BlankLine.__BlankLine_type	1	0	0	1	0
+166	sens	7	0	310	4	6
+167	sens.sens_type	1	0	0	1	0
+168	__ArrHelper__Debug_244_2	7	0	312	4	2
+169	__ArrHelper__Debug_244_2.__ArrHelper__Debug_244_2_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	136	0	#line 136 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	137	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	136	2	#line 136 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	137	2	#line 137 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	138	2		subcall init, __init_return
+0	137	4	#line 137 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	137	4	#line 137 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	138	4		set __D0main, 1
+0	138	7	#line 138 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	139	7		tst 5, __zfmain, __D0main
+0	138	10	#line 138 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	139	10		brtst 4, __NXC_Label_920, __zfmain
+0	138	13	#line 138 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	139	13		set __LSA_ReadRaw_Calibrated_7qG2_port_7qG2_000, 1
+0	138	16	#line 138 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	138	16	#line 138 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	139	16		set __LSA_ReadRaw_Calibrated_7qG2_i2cAddr_7qG2_000, 20
+0	138	19	#line 138 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	138	19	#line 138 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	139	19		mov __LSA_ReadRaw_Calibrated_7qG2_returnValue_7qG2_000, sens
+0	138	21	#line 138 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	139	21		subcall LSA_ReadRaw_Calibrated, __LSA_ReadRaw_Calibrated_return
+0	138	23	#line 138 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	139	23		mov sens, __LSA_ReadRaw_Calibrated_7qG2_returnValue_7qG2_000
+0	138	25	#line 138 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	139	25		mov __D0main, __D0LSA_ReadRaw_Calibrated
+0	139	27	#line 139 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	140	27		tst 5, __zfmain, __D0main
+0	139	30	#line 139 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	139	30	#line 139 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	139	30	#line 139 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	139	30	#line 139 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	140	30		mov __CorrectSens_7qG2_array_7qG2_000, sens
+0	140	32	#line 140 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	141	32		subcall CorrectSens, __CorrectSens_return
+0	140	34	#line 140 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	141	34		mov sens, __CorrectSens_7qG2_array_7qG2_000
+0	140	36	#line 140 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	140	36	#line 140 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	141	36		strcat __strbufmain, __constStr0027
+0	140	40	#line 140 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	141	40		mov __Debug_7qG2_name_7qG2_000, __strbufmain
+0	140	42	#line 140 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	141	42		mov __needFix_7qG2_sensor_7qG2_000, sens
+0	140	44	#line 140 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	141	44		subcall needFix, __needFix_return
+0	140	46	#line 140 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	141	46		mov __Debug_7qG2_num_7qG2_000, __DU0needFix
+0	140	48	#line 140 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	140	48	#line 140 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	141	48		set __Debug_7qG2_line_7qG2_000, 1
+0	140	51	#line 140 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	142	51	#line 142 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	143	51		mov __Debug_7qG2_x_7qG2_000, __constVal0
+0	142	53	#line 142 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	143	53		mov __Debug_7qG2_clear_7qG2_000, __constVal1
+0	142	55	#line 142 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	143	55		subcall Debug, __Debug_return
+0	142	57	#line 142 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	144	57	#line 144 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	145	57		jmp __NXC_Label_919
+0	144	59	#line 144 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+0	145	59		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	5821	0	#pragma macro 25
+2	5821	0		acquire __CLSWMutex0
+2	5821	1		acquire __CLSWMutex1
+2	5821	2		acquire __CLSWMutex2
+2	5821	3		acquire __CLSWMutex3
+2	5821	4		mov __CLSWArgs0.Port, __RLSReadPort
+2	5821	6		mov __CLSWArgs0.ReturnLen, __RLSBytesCountVar
+2	5821	8		mov __CLSWArgs0.Buffer, __RLSReadBufVar
+2	5821	10		syscall 21, __CLSWArgs0
+2	5821	13		mov __RLSBResultVar, __CLSWArgs0.Result
+2	5821	15		release __CLSWMutex0
+2	5821	16		release __CLSWMutex1
+2	5821	17		release __CLSWMutex2
+2	5821	18		release __CLSWMutex3
+2	5821	19	#line 5821 "NXTDefs.h"
+2	5822	19		brtst 4, __RLSBReturnVar, __RLSBytesCountVar
+2	5823	22		arrinit __RLSReadBufVar, __constVal0, __RLSBytesCountVar
+2	5824	26		brtst 5, __RLSBErrorVar, __RLSBResultVar
+2	5825	29		set __RLSBIterationsVar, 4
+2	5827	32	#pragma macro 23
+2	5827	32		acquire __CLSCSMutex0
+2	5827	33		acquire __CLSCSMutex1
+2	5827	34		acquire __CLSCSMutex2
+2	5827	35		acquire __CLSCSMutex3
+2	5827	36		mov __CLSCSArgs0.Port, __RLSReadPort
+2	5827	38		syscall 23, __CLSCSArgs0
+2	5827	41		mov __RLSBytesCountVar, __CLSCSArgs0.BytesReady
+2	5827	43		mov __RLSBResultVar, __CLSCSArgs0.Result
+2	5827	45		release __CLSCSMutex0
+2	5827	46		release __CLSCSMutex1
+2	5827	47		release __CLSCSMutex2
+2	5827	48		release __CLSCSMutex3
+2	5827	49	#line 5827 "NXTDefs.h"
+2	5828	49		sub __RLSBIterationsVar, __RLSBIterationsVar, __constVal1
+2	5829	53		brtst 2, __RLSBErrorVar, __RLSBIterationsVar
+2	5830	56		brtst 0, __RLSBErrorVar, __RLSBResultVar
+2	5831	59		brtst 4, __RLSBReadyToReadVar, __RLSBResultVar
+2	5833	62		wait2 NA, __constVal15
+2	5834	65		jmp __RLSBDoCheckStatusVar
+2	5837	67	#pragma macro 25
+2	5837	67		acquire __CLSRMutex0
+2	5837	68		acquire __CLSRMutex1
+2	5837	69		acquire __CLSRMutex2
+2	5837	70		acquire __CLSRMutex3
+2	5837	71		mov __CLSRArgs0.Port, __RLSReadPort
+2	5837	73		mov __CLSRArgs0.BufferLen, __RLSBytesCountVar
+2	5837	75		syscall 22, __CLSRArgs0
+2	5837	78		mov __RLSReadBufVar, __CLSRArgs0.Buffer
+2	5837	80		mov __RLSBResultVar, __CLSRArgs0.Result
+2	5837	82		release __CLSRMutex0
+2	5837	83		release __CLSRMutex1
+2	5837	84		release __CLSRMutex2
+2	5837	85		release __CLSRMutex3
+2	5837	86	#line 5837 "NXTDefs.h"
+2	5838	86		brtst 5, __RLSBErrorVar, __RLSBResultVar
+2	5839	89		mov __RLSLastGoodReadVar, __RLSReadBufVar
+2	5840	91		jmp __RLSBDoneVar
+2	5842	93		mov __RLSReadBufVar, __RLSLastGoodReadVar
+2	5844	95		arrsize __RLSBytesCountVar, __RLSReadBufVar
+2	5846	98		subret ____ReadLSBytesVar_return
+3	206	0	#line 206 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	207	0		arrinit __LSA_Read_7qG2_buf_7qG2_000, __constVal0, __constVal20
+3	209	4	#line 209 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	210	4		set __LSA_Read_7qG2_nByteReady_7qG2_000, 0
+3	209	7	#line 209 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	209	7	#line 209 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	210	7		arrbuild __LSA_Read_7qG2_message_7qG2_000, __LSA_Read_7qG2_i2cAddr_7qG2_000, __LSA_Read_7qG2_reg_to_read_7qG2_000
+3	209	12	#line 209 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	209	12	#line 209 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	210	12	#line 210 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	211	12	#pragma macro 23
+3	211	12		acquire __CLSCSMutex0
+3	211	13		acquire __CLSCSMutex1
+3	211	14		acquire __CLSCSMutex2
+3	211	15		acquire __CLSCSMutex3
+3	211	16		mov __CLSCSArgs0.Port, __LSA_Read_7qG2_port_7qG2_000
+3	211	18		syscall 23, __CLSCSArgs0
+3	211	21		mov __LSA_Read_7qG2_nByteReady_7qG2_000, __CLSCSArgs0.BytesReady
+3	211	23		mov __D0LSA_Read, __CLSCSArgs0.Result
+3	211	25		release __CLSCSMutex0
+3	211	26		release __CLSCSMutex1
+3	211	27		release __CLSCSMutex2
+3	211	28		release __CLSCSMutex3
+3	5138	29	#line 5138 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	210	29	#line 210 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	211	29		mov __signed_stack_001LSA_Read, __D0LSA_Read
+3	210	31	#line 210 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	211	31		set __D0LSA_Read, 32
+3	210	34	#line 210 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	211	34		cmp 4, __zfLSA_Read, __signed_stack_001LSA_Read, __D0LSA_Read
+3	210	38	#line 210 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	211	38		mov __D0LSA_Read, __zfLSA_Read
+3	211	40	#line 211 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	212	40		brtst 4, __NXC_Label_613, __zfLSA_Read
+3	211	43	#line 211 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	211	43	#line 211 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	212	43		jmp __NXC_Label_612
+3	211	45	#line 211 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	212	45	#line 212 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	213	45		set __LSA_Read_7qG2_count_7qG2_000, 1
+3	212	48	#line 212 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	212	48	#line 212 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	212	48	#line 212 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	213	48	#pragma macro 28
+3	213	48		acquire __RLSBmutex0
+3	213	49		acquire __RLSBmutex1
+3	213	50		acquire __RLSBmutex2
+3	213	51		acquire __RLSBmutex3
+3	213	52		mov __RLSReadPort, __LSA_Read_7qG2_port_7qG2_000
+3	213	54		mov __RLSReadBufVar, __LSA_Read_7qG2_message_7qG2_000
+3	213	56		mov __RLSBytesCountVar, __LSA_Read_7qG2_count_7qG2_000
+3	213	58		subcall __ReadLSBytesVar, ____ReadLSBytesVar_return
+3	213	60		tst 4, __D0LSA_Read, __RLSBResultVar
+3	213	63		mov __LSA_Read_7qG2_count_7qG2_000, __RLSBytesCountVar
+3	213	65		mov __LSA_Read_7qG2_buf_7qG2_000, __RLSReadBufVar
+3	213	67		release __RLSBmutex0
+3	213	68		release __RLSBmutex1
+3	213	69		release __RLSBmutex2
+3	213	70		release __RLSBmutex3
+3	5164	71	#line 5164 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	213	71	#line 213 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	214	71		tst 5, __zfLSA_Read, __D0LSA_Read
+3	213	74	#line 213 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	214	74		brtst 4, __NXC_Label_620, __zfLSA_Read
+3	213	77	#line 213 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	214	77		set __signed_stack_001LSA_Read, 0
+3	213	80	#line 213 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	213	80	#line 213 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	214	80		index __ArrHelper__LSA_Read_98_0, __LSA_Read_7qG2_buf_7qG2_000, __signed_stack_001LSA_Read
+3	213	84	#line 213 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	214	84		mov __DU0LSA_Read, __ArrHelper__LSA_Read_98_0
+3	214	86	#line 214 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	215	86		subret __LSA_Read_return
+3	214	88	#line 214 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	215	88	#line 215 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	216	88	#line 216 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	217	88		set __DU0LSA_Read, 0
+3	216	91	#line 216 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	216	91	#line 216 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	217	91		subret __LSA_Read_return
+3	216	93	#line 216 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	225	93	#line 225 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+3	226	93		subret __LSA_Read_return
+4	227	0	#line 227 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+4	228	0		mov __LSA_Read_7qG2_port_7qG2_000, __LSA_WakeUp_7qG2_port_7qG2_000
+4	227	2	#line 227 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+4	227	2	#line 227 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+4	228	2		mov __LSA_Read_7qG2_i2cAddr_7qG2_000, __LSA_WakeUp_7qG2_addr_7qG2_000
+4	227	4	#line 227 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+4	227	4	#line 227 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+4	228	4		set __LSA_Read_7qG2_reg_to_read_7qG2_000, 66
+4	227	7	#line 227 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+4	228	7	#line 228 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+4	229	7		subcall LSA_Read, __LSA_Read_return
+4	228	9	#line 228 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+4	229	9		mov __D0LSA_WakeUp, __DU0LSA_Read
+4	228	11	#line 228 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+4	228	11	#line 228 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+4	229	11		subret __LSA_WakeUp_return
+4	228	13	#line 228 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+4	231	13	#line 231 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+4	232	13		subret __LSA_WakeUp_return
+5	235	0	#line 235 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	239	0	#line 239 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	240	0		set __LSA_ReadRaw_Calibrated_7qG2_nByteReady_7qG2_000, 0
+5	239	3	#line 239 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	239	3	#line 239 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	240	3		arrbuild __LSA_ReadRaw_Calibrated_7qG2_message_7qG2_000, __LSA_ReadRaw_Calibrated_7qG2_i2cAddr_7qG2_000, __constVal66
+5	239	8	#line 239 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	239	8	#line 239 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	240	8	#line 240 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	241	8	#pragma macro 23
+5	241	8		acquire __CLSCSMutex0
+5	241	9		acquire __CLSCSMutex1
+5	241	10		acquire __CLSCSMutex2
+5	241	11		acquire __CLSCSMutex3
+5	241	12		mov __CLSCSArgs0.Port, __LSA_ReadRaw_Calibrated_7qG2_port_7qG2_000
+5	241	14		syscall 23, __CLSCSArgs0
+5	241	17		mov __LSA_ReadRaw_Calibrated_7qG2_nByteReady_7qG2_000, __CLSCSArgs0.BytesReady
+5	241	19		mov __D0LSA_ReadRaw_Calibrated, __CLSCSArgs0.Result
+5	241	21		release __CLSCSMutex0
+5	241	22		release __CLSCSMutex1
+5	241	23		release __CLSCSMutex2
+5	241	24		release __CLSCSMutex3
+5	5290	25	#line 5290 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	240	25	#line 240 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	241	25		mov __signed_stack_001LSA_ReadRaw_Calibrated, __D0LSA_ReadRaw_Calibrated
+5	240	27	#line 240 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	241	27		set __D0LSA_ReadRaw_Calibrated, 32
+5	240	30	#line 240 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	241	30		cmp 4, __zfLSA_ReadRaw_Calibrated, __signed_stack_001LSA_ReadRaw_Calibrated, __D0LSA_ReadRaw_Calibrated
+5	240	34	#line 240 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	241	34		mov __D0LSA_ReadRaw_Calibrated, __zfLSA_ReadRaw_Calibrated
+5	241	36	#line 241 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	242	36		brtst 4, __NXC_Label_638, __zfLSA_ReadRaw_Calibrated
+5	241	39	#line 241 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	241	39	#line 241 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	242	39		jmp __NXC_Label_637
+5	241	41	#line 241 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	242	41	#line 242 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	243	41		set __LSA_ReadRaw_Calibrated_7qG2_count_7qG2_000, 8
+5	242	44	#line 242 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	242	44	#line 242 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	242	44	#line 242 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	243	44	#pragma macro 28
+5	243	44		acquire __RLSBmutex0
+5	243	45		acquire __RLSBmutex1
+5	243	46		acquire __RLSBmutex2
+5	243	47		acquire __RLSBmutex3
+5	243	48		mov __RLSReadPort, __LSA_ReadRaw_Calibrated_7qG2_port_7qG2_000
+5	243	50		mov __RLSReadBufVar, __LSA_ReadRaw_Calibrated_7qG2_message_7qG2_000
+5	243	52		mov __RLSBytesCountVar, __LSA_ReadRaw_Calibrated_7qG2_count_7qG2_000
+5	243	54		subcall __ReadLSBytesVar, ____ReadLSBytesVar_return
+5	243	56		tst 4, __D0LSA_ReadRaw_Calibrated, __RLSBResultVar
+5	243	59		mov __LSA_ReadRaw_Calibrated_7qG2_count_7qG2_000, __RLSBytesCountVar
+5	243	61		mov __LSA_ReadRaw_Calibrated_7qG2_returnValue_7qG2_000, __RLSReadBufVar
+5	243	63		release __RLSBmutex0
+5	243	64		release __RLSBmutex1
+5	243	65		release __RLSBmutex2
+5	243	66		release __RLSBmutex3
+5	5316	67	#line 5316 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	243	67	#line 243 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	244	67		tst 5, __zfLSA_ReadRaw_Calibrated, __D0LSA_ReadRaw_Calibrated
+5	243	70	#line 243 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	244	70		brtst 4, __NXC_Label_645, __zfLSA_ReadRaw_Calibrated
+5	244	73	#line 244 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	245	73		set __D0LSA_ReadRaw_Calibrated, 1
+5	244	76	#line 244 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	245	76		subret __LSA_ReadRaw_Calibrated_return
+5	244	78	#line 244 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	245	78	#line 245 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	246	78	#line 246 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	247	78		set __D0LSA_ReadRaw_Calibrated, 0
+5	246	81	#line 246 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	247	81		subret __LSA_ReadRaw_Calibrated_return
+5	246	83	#line 246 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	249	83	#line 249 "C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc"
+5	250	83		subret __LSA_ReadRaw_Calibrated_return
+6	10	0	#line 10 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+6	11	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_init, 1
+6	10	3	#line 10 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+6	11	3	#line 11 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+6	12	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_init, __constVal1
+6	3758	5	#line 3758 "NXCDefs.h"
+6	3759	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_init
+6	3758	7	#line 3758 "NXCDefs.h"
+6	3758	7	#line 3758 "NXCDefs.h"
+6	3759	7		mov __DU0SetSensorLowspeed_inline_init, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_init
+6	3758	9	#line 3758 "NXCDefs.h"
+6	3759	9		tst 5, __zfSetSensorLowspeed_inline_init, __DU0SetSensorLowspeed_inline_init
+6	3758	12	#line 3758 "NXCDefs.h"
+6	3759	12		brtst 4, __004__NXC_Label_36, __zfSetSensorLowspeed_inline_init
+6	3758	15	#line 3758 "NXCDefs.h"
+6	3759	15		set __D0SetSensorLowspeed_inline_init, 11
+6	3758	18	#line 3758 "NXCDefs.h"
+6	3759	18		jmp __004__NXC_Label_37
+6	3758	20	#line 3758 "NXCDefs.h"
+6	3759	20		set __D0SetSensorLowspeed_inline_init, 10
+6	3758	23	#line 3758 "NXCDefs.h"
+6	3759	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_init, __D0SetSensorLowspeed_inline_init
+6	3663	25	#line 3663 "NXCDefs.h"
+6	3664	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_init, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init, 0
+6	3663	29	#line 3663 "NXCDefs.h"
+6	3759	29	#line 3759 "NXCDefs.h"
+6	3759	29	#line 3759 "NXCDefs.h"
+6	3760	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_init
+6	3759	31	#line 3759 "NXCDefs.h"
+6	3759	31	#line 3759 "NXCDefs.h"
+6	3760	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_init, 0
+6	3759	34	#line 3759 "NXCDefs.h"
+6	3676	34	#line 3676 "NXCDefs.h"
+6	3677	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_init, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init, 1
+6	3676	38	#line 3676 "NXCDefs.h"
+6	3760	38	#line 3760 "NXCDefs.h"
+6	3760	38	#line 3760 "NXCDefs.h"
+6	3760	38	#line 3760 "NXCDefs.h"
+6	3694	38	#line 3694 "NXCDefs.h"
+6	3695	38	#pragma macro 4
+6	3695	38		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_init
+6	3695	40		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+6	5884	42	#line 5884 "NXCDefs.h"
+6	3694	42	#line 3694 "NXCDefs.h"
+6	3761	42	#line 3761 "NXCDefs.h"
+6	11	42	#line 11 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+6	11	42	#line 11 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+6	12	42		set __LSA_WakeUp_7qG2_port_7qG2_000, 1
+6	11	45	#line 11 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+6	11	45	#line 11 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+6	12	45		set __LSA_WakeUp_7qG2_addr_7qG2_000, 20
+6	11	48	#line 11 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+6	12	48	#line 12 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+6	13	48		subcall LSA_WakeUp, __LSA_WakeUp_return
+6	12	50	#line 12 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+6	12	50	#line 12 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+6	14	50	#line 14 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+6	15	50		subret __init_return
+7	15	0	#line 15 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	16	0		set __CorrectSens_7qG2_i_7qG2_001, 0
+7	15	3	#line 15 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	15	3	#line 15 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	16	3		mov __signed_stack_001CorrectSens, __CorrectSens_7qG2_i_7qG2_001
+7	15	5	#line 15 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	15	5	#line 15 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	16	5		set __D0CorrectSens, 8
+7	15	8	#line 15 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	16	8		cmp 0, __zfCorrectSens, __signed_stack_001CorrectSens, __D0CorrectSens
+7	15	12	#line 15 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	16	12		mov __D0CorrectSens, __zfCorrectSens
+7	15	14	#line 15 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	16	14		brtst 4, __NXC_Label_736, __zfCorrectSens
+7	15	17	#line 15 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	16	17		jmp __NXC_Label_737
+7	15	19	#line 15 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	16	19		add __CorrectSens_7qG2_i_7qG2_001, __CorrectSens_7qG2_i_7qG2_001, __constVal1
+7	16	23	#line 16 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	17	23		jmp __NXC_Label_735
+7	16	25	#line 16 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	17	25		mov __signed_stack_001CorrectSens, __CorrectSens_7qG2_i_7qG2_001
+7	16	27	#line 16 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	16	27	#line 16 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	17	27		index __ArrHelper__CorrectSens_98_0, __CorrectSens_7qG2_array_7qG2_000, __signed_stack_001CorrectSens
+7	16	31	#line 16 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	17	31		mov __unsigned_stack_001CorrectSens, __ArrHelper__CorrectSens_98_0
+7	16	33	#line 16 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	16	33	#line 16 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	17	33		set __D0CorrectSens, 0
+7	16	36	#line 16 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	17	36		cmp 0, __zfCorrectSens, __unsigned_stack_001CorrectSens, __D0CorrectSens
+7	16	40	#line 16 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	17	40		mov __D0CorrectSens, __zfCorrectSens
+7	17	42	#line 17 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	18	42		brtst 4, __NXC_Label_747, __zfCorrectSens
+7	17	45	#line 17 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	18	45		mov __signed_stack_001CorrectSens, __CorrectSens_7qG2_i_7qG2_001
+7	17	47	#line 17 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	18	47	#line 18 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	19	47		set __D0CorrectSens, 0
+7	18	50	#line 18 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	19	50		replace __CorrectSens_7qG2_array_7qG2_000, __CorrectSens_7qG2_array_7qG2_000, __signed_stack_001CorrectSens, __D0CorrectSens
+7	18	55	#line 18 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	19	55	#line 19 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	20	55		jmp __NXC_Label_752
+7	19	57	#line 19 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	20	57		mov __signed_stack_001CorrectSens, __CorrectSens_7qG2_i_7qG2_001
+7	19	59	#line 19 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	19	59	#line 19 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	20	59		index __ArrHelper__CorrectSens_98_0, __CorrectSens_7qG2_array_7qG2_000, __signed_stack_001CorrectSens
+7	19	63	#line 19 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	20	63		mov __unsigned_stack_001CorrectSens, __ArrHelper__CorrectSens_98_0
+7	19	65	#line 19 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	19	65	#line 19 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	20	65		set __D0CorrectSens, 100
+7	19	68	#line 19 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	20	68		cmp 1, __zfCorrectSens, __unsigned_stack_001CorrectSens, __D0CorrectSens
+7	19	72	#line 19 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	20	72		mov __D0CorrectSens, __zfCorrectSens
+7	20	74	#line 20 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	21	74		brtst 4, __NXC_Label_757, __zfCorrectSens
+7	20	77	#line 20 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	21	77		mov __signed_stack_001CorrectSens, __CorrectSens_7qG2_i_7qG2_001
+7	20	79	#line 20 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	21	79	#line 21 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	22	79		set __D0CorrectSens, 100
+7	21	82	#line 21 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	22	82		replace __CorrectSens_7qG2_array_7qG2_000, __CorrectSens_7qG2_array_7qG2_000, __signed_stack_001CorrectSens, __D0CorrectSens
+7	21	87	#line 21 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	22	87	#line 22 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	22	87	#line 22 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	22	87	#line 22 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	23	87		mov __signed_stack_001CorrectSens, __CorrectSens_7qG2_i_7qG2_001
+7	22	89	#line 22 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	22	89	#line 22 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	23	89		set __signed_stack_002CorrectSens, 100
+7	22	92	#line 22 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	22	92	#line 22 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	23	92		mov __signed_stack_003CorrectSens, __CorrectSens_7qG2_i_7qG2_001
+7	22	94	#line 22 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	22	94	#line 22 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	23	94		index __ArrHelper__CorrectSens_98_0, __CorrectSens_7qG2_array_7qG2_000, __signed_stack_003CorrectSens
+7	22	98	#line 22 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	23	98	#line 23 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	24	98		sub __D0CorrectSens, __signed_stack_002CorrectSens, __ArrHelper__CorrectSens_98_0
+7	23	102	#line 23 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	24	102		replace __CorrectSens_7qG2_array_7qG2_000, __CorrectSens_7qG2_array_7qG2_000, __signed_stack_001CorrectSens, __D0CorrectSens
+7	23	107	#line 23 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	26	107	#line 26 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	27	107		jmp __NXC_Label_738
+7	26	109	#line 26 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	26	109	#line 26 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+7	27	109		subret __CorrectSens_return
+8	27	0	#line 27 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	28	0		mov __D0Debug, __Debug_7qG2_line_7qG2_000
+8	31	2		brcmp 4, __NXC_Label_771, __constVal1, __D0Debug
+8	32	6		brcmp 4, __NXC_Label_774, __constVal2, __D0Debug
+8	33	10		brcmp 4, __NXC_Label_777, __constVal3, __D0Debug
+8	34	14		brcmp 4, __NXC_Label_780, __constVal4, __D0Debug
+8	35	18		brcmp 4, __NXC_Label_783, __constVal5, __D0Debug
+8	36	22		brcmp 4, __NXC_Label_786, __constVal6, __D0Debug
+8	37	26		brcmp 4, __NXC_Label_789, __constVal7, __D0Debug
+8	38	30		brcmp 4, __NXC_Label_792, __constVal8, __D0Debug
+8	39	34		jmp __NXC_Label_770
+8	29	36	#line 29 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	30	36	#line 30 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	31	36		set __Debug_7qG2_line_7qG2_000, 56
+8	30	39	#line 30 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	30	39	#line 30 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	31	39	#line 31 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	32	39		jmp __NXC_Label_770
+8	31	41	#line 31 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	32	41	#line 32 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	33	41	#line 33 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	34	41		set __Debug_7qG2_line_7qG2_000, 48
+8	33	44	#line 33 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	33	44	#line 33 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	34	44	#line 34 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	35	44		jmp __NXC_Label_770
+8	34	46	#line 34 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	35	46	#line 35 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	36	46	#line 36 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	37	46		set __Debug_7qG2_line_7qG2_000, 40
+8	36	49	#line 36 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	36	49	#line 36 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	37	49	#line 37 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	38	49		jmp __NXC_Label_770
+8	37	51	#line 37 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	38	51	#line 38 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	39	51	#line 39 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	40	51		set __Debug_7qG2_line_7qG2_000, 32
+8	39	54	#line 39 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	39	54	#line 39 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	40	54	#line 40 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	41	54		jmp __NXC_Label_770
+8	40	56	#line 40 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	41	56	#line 41 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	42	56	#line 42 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	43	56		set __Debug_7qG2_line_7qG2_000, 24
+8	42	59	#line 42 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	42	59	#line 42 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	43	59	#line 43 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	44	59		jmp __NXC_Label_770
+8	43	61	#line 43 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	44	61	#line 44 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	45	61	#line 45 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	46	61		set __Debug_7qG2_line_7qG2_000, 16
+8	45	64	#line 45 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	45	64	#line 45 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	46	64	#line 46 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	47	64		jmp __NXC_Label_770
+8	46	66	#line 46 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	47	66	#line 47 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	48	66	#line 48 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	49	66		set __Debug_7qG2_line_7qG2_000, 8
+8	48	69	#line 48 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	48	69	#line 48 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	49	69	#line 49 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	50	69		jmp __NXC_Label_770
+8	49	71	#line 49 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	50	71	#line 50 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	51	71	#line 51 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	52	71		set __Debug_7qG2_line_7qG2_000, 0
+8	51	74	#line 51 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	51	74	#line 51 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	52	74	#line 52 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	52	74	#line 52 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	53	74	#line 53 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	54	74	#line 54 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	55	74		mov __ArrHelper__Debug_244_0, __Debug_7qG2_name_7qG2_000
+8	54	76	#line 54 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	55	76		mov __ArrHelper__Debug_244_1, __constStr0026
+8	54	78	#line 54 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	55	78		mov __D0Debug, __Debug_7qG2_num_7qG2_000
+8	55	80	#line 55 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	56	80		numtostr __strretvalDebug, __D0Debug
+8	55	83	#line 55 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	56	83		strcat __strbufDebug, __strretvalDebug
+8	55	87	#line 55 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	56	87		mov __ArrHelper__Debug_244_2, __strbufDebug
+8	55	89	#line 55 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	56	89		strcat __strbufDebug, __ArrHelper__Debug_244_1, __ArrHelper__Debug_244_2
+8	55	94	#line 55 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	56	94		mov __ArrHelper__Debug_244_1, __strbufDebug
+8	55	96	#line 55 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	56	96		strcat __strbufDebug, __ArrHelper__Debug_244_0, __ArrHelper__Debug_244_1
+8	55	101	#line 55 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	56	101		mov __Debug_7qG2_toDebug_7qG2_000, __strbufDebug
+8	55	103	#line 55 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	55	103	#line 55 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	56	103		mov __DU0Debug, __Debug_7qG2_clear_7qG2_000
+8	56	105	#line 56 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	57	105		tst 5, __zfDebug, __DU0Debug
+8	56	108	#line 56 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	57	108		brtst 4, __NXC_Label_799, __zfDebug
+8	56	111	#line 56 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	57	111		mov __ClearLine_7qG2_line_7qG2_000_inline_Debug, __Debug_7qG2_line_7qG2_000
+8	56	113	#line 56 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	6076	113	#line 6076 "NXCDefs.h"
+8	6077	113	#pragma macro 7
+8	6077	113		mov __TextOutArgs.Location.X, __constVal0
+8	6077	115		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_Debug
+8	6077	117		mov __TextOutArgs.Options, __constVal0
+8	6077	119		mov __TextOutArgs.Text, __BlankLine
+8	6077	121		syscall 13, __TextOutArgs
+8	6237	124	#line 6237 "NXCDefs.h"
+8	6076	124	#line 6076 "NXCDefs.h"
+8	57	124	#line 57 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	58	124	#line 58 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	58	124	#line 58 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	59	124		mov __signed_stack_001Debug, __Debug_7qG2_x_7qG2_000
+8	58	126	#line 58 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	58	126	#line 58 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	59	126		mov __signed_stack_002Debug, __Debug_7qG2_line_7qG2_000
+8	58	128	#line 58 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	58	128	#line 58 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	59	128		strcat __strbufDebug, __Debug_7qG2_toDebug_7qG2_000
+8	59	132	#line 59 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	59	132	#line 59 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	60	132		mov __TextOutArgs.Location.X, __signed_stack_001Debug
+8	59	134	#line 59 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	60	134		mov __TextOutArgs.Location.Y, __signed_stack_002Debug
+8	59	136	#line 59 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	60	136		set __TextOutArgs.Options, 0
+8	59	139	#line 59 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	60	139		mov __TextOutArgs.Text, __strbufDebug
+8	59	141	#line 59 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	60	141		syscall 13, __TextOutArgs
+8	59	144	#line 59 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	60	144		mov __D0Debug, __TextOutArgs.Result
+8	59	146	#line 59 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	59	146	#line 59 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	61	146	#line 61 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+8	62	146		subret __Debug_return
+9	63	0	#line 63 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	64	0		set __needFix_7qG2_ret_7qG2_000, 1
+9	63	3	#line 63 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	64	3	#line 64 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	65	3		set __needFix_7qG2_i_7qG2_001, 0
+9	64	6	#line 64 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	64	6	#line 64 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	65	6		mov __signed_stack_001needFix, __needFix_7qG2_i_7qG2_001
+9	64	8	#line 64 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	64	8	#line 64 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	65	8		set __D0needFix, 8
+9	64	11	#line 64 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	65	11		cmp 0, __zfneedFix, __signed_stack_001needFix, __D0needFix
+9	64	15	#line 64 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	65	15		mov __D0needFix, __zfneedFix
+9	64	17	#line 64 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	65	17		brtst 4, __NXC_Label_809, __zfneedFix
+9	64	20	#line 64 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	65	20		jmp __NXC_Label_810
+9	64	22	#line 64 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	65	22		add __needFix_7qG2_i_7qG2_001, __needFix_7qG2_i_7qG2_001, __constVal1
+9	65	26	#line 65 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	66	26		jmp __NXC_Label_808
+9	65	28	#line 65 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	66	28		mov __signed_stack_001needFix, __needFix_7qG2_i_7qG2_001
+9	65	30	#line 65 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	65	30	#line 65 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	66	30		index __ArrHelper__needFix_98_0, __needFix_7qG2_sensor_7qG2_000, __signed_stack_001needFix
+9	65	34	#line 65 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	66	34		mov __unsigned_stack_001needFix, __ArrHelper__needFix_98_0
+9	65	36	#line 65 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	65	36	#line 65 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	66	36		set __D0needFix, 0
+9	65	39	#line 65 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	66	39		cmp 4, __zfneedFix, __unsigned_stack_001needFix, __D0needFix
+9	65	43	#line 65 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	66	43		mov __D0needFix, __zfneedFix
+9	66	45	#line 66 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	67	45		brtst 4, __NXC_Label_820, __zfneedFix
+9	67	48	#line 67 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	68	48		set __needFix_7qG2_ret_7qG2_000, 0
+9	67	51	#line 67 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	67	51	#line 67 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	68	51	#line 68 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	69	51		jmp __NXC_Label_809
+9	68	53	#line 68 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	70	53	#line 70 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	70	53	#line 70 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	71	53		jmp __NXC_Label_811
+9	70	55	#line 70 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	71	55	#line 71 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	72	55		mov __DU0needFix, __needFix_7qG2_ret_7qG2_000
+9	71	57	#line 71 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	72	57		subret __needFix_return
+9	71	59	#line 71 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	73	59	#line 73 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+9	74	59		subret __needFix_return
+10	146	0	#line 146 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+10	147	0		arrinit sens, __constVal0, __constVal8
+10	146	4	#line 146 "C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc"
+10	147	4		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc
+1	__ResetSensorSubroutine	62	NXTDefs.h
+2	__ReadLSBytesVar	75	NXTDefs.h
+3	LSA_Read	175	C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc
+4	LSA_WakeUp	270	C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc
+5	LSA_ReadRaw_Calibrated	285	C:\Users\Administrator.FEQ\Desktop\nxt\china\lib/LSA-lib.nxc
+6	init	370	C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc
+7	CorrectSens	422	C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc
+8	Debug	533	C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc
+9	needFix	681	C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc
+10	__initialize_global_data	742	C:\Users\ADMINI~1.FEQ\AppData\Local\Temp\temp.nxc

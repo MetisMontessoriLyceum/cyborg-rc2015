@@ -1,0 +1,1327 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0line	6	1	0	4	9
+1	__DU0line	5	1	4	4	9
+2	__DU0main	5	1	8	4	2
+3	__D0_display	6	1	12	4	32
+4	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	16	4	2
+5	__D0_len	6	1	20	4	10
+6	__D0Select	6	1	24	4	60
+7	__signed_stack_002main	6	1	28	4	2
+8	__signed_stack_001Select	6	1	32	4	20
+9	__signed_stack_002Select	6	1	36	4	6
+10	__signed_stack_001_display	6	1	40	4	32
+11	__signed_stack_002_display	6	1	44	4	16
+12	__signed_stack_001main	6	1	48	4	2
+13	__PointOutMutex	9	0	52	4	4
+14	__TextOutMutex	9	0	56	4	18
+15	__Select_7qG2_select_7qG2_000	4	1	60	2	11
+16	__Select_7qG2_top_7qG2_000	4	1	62	2	2
+17	__constVal200	4	0	64	2	4
+18	__line_7qG2_ret_7qG2_000	4	1	66	2	9
+19	__Select_7qG2_len_7qG2_000	4	1	68	2	3
+20	___display_7qG2_select_7qG2_000	4	1	70	2	9
+21	___display_7qG2_top_7qG2_000	4	1	72	2	9
+22	___len_7qG2_len_7qG2_000	4	1	74	2	10
+23	__line_return	1	1	76	1	11
+24	__constVal0	2	1	77	1	2
+25	__constVal1	2	0	78	1	8
+26	__line_7qG2_num_7qG2_000	1	1	79	1	9
+27	___len_return	1	1	80	1	4
+28	__Select_return	1	1	81	1	4
+29	____initialize_global_data_return	1	1	82	1	3
+30	___display_return	1	1	83	1	3
+31	__main_7qG2_foo_7qG2_000	1	1	84	1	2
+32	__constVal3	2	0	85	1	2
+33	__constVal2	2	0	86	1	2
+34	__zf_len	1	1	87	1	24
+35	__zf_display	1	1	88	1	24
+36	__constVal7	2	0	89	1	2
+37	__PFTmp	1	1	90	1	1
+38	__zfSelect	1	1	91	1	33
+39	__constVal5	2	0	92	1	2
+40	__constVal4	2	0	93	1	2
+41	__constVal6	2	0	94	1	2
+42	__TextOutArgs	8	0	4	16	53
+43	__TextOutArgs.Result	2	1	96	1	53
+44	__TextOutArgs.Location	8	0	2	4	53
+45	__TextOutArgs.Location.X	4	1	100	2	53
+46	__TextOutArgs.Location.Y	4	1	102	2	53
+47	__TextOutArgs.Text	7	0	104	4	53
+48	__TextOutArgs.Text.Text_type	1	0	0	1	0
+49	__TextOutArgs.Options	5	1	108	4	53
+50	__RBtnArgs	8	0	5	8	32
+51	__RBtnArgs.Result	2	1	112	1	32
+52	__RBtnArgs.Index	1	1	113	1	32
+53	__RBtnArgs.Pressed	1	1	114	1	32
+54	__RBtnArgs.Count	1	1	115	1	32
+55	__RBtnArgs.Reset	1	1	116	1	32
+56	__PointOutArgs	8	0	3	12	8
+57	__PointOutArgs.Result	2	1	120	1	8
+58	__PointOutArgs.Location	8	0	2	4	8
+59	__PointOutArgs.Location.X	4	1	124	2	8
+60	__PointOutArgs.Location.Y	4	1	126	2	8
+61	__PointOutArgs.Options	5	1	128	4	8
+62	__Select_7qG2_item3_7qG2_000	7	0	132	4	3
+63	__Select_7qG2_item3_7qG2_000.__Select_7qG2_item3_7qG2_000_type	1	0	0	1	0
+64	__Select_7qG2_item4_7qG2_000	7	0	134	4	3
+65	__Select_7qG2_item4_7qG2_000.__Select_7qG2_item4_7qG2_000_type	1	0	0	1	0
+66	__constStr0010	7	0	136	4	8
+67	__constStr0010.__constStr0010_type	1	1	0	1	0
+68	__Select_7qG2_item0_7qG2_000	7	0	138	4	3
+69	__Select_7qG2_item0_7qG2_000.__Select_7qG2_item0_7qG2_000_type	1	0	0	1	0
+70	__constStr0011	7	0	140	4	8
+71	__constStr0011.__constStr0011_type	1	1	0	1	0
+72	__Select_7qG2_item2_7qG2_000	7	0	142	4	3
+73	__Select_7qG2_item2_7qG2_000.__Select_7qG2_item2_7qG2_000_type	1	0	0	1	0
+74	__Select_7qG2_item1_7qG2_000	7	0	144	4	3
+75	__Select_7qG2_item1_7qG2_000.__Select_7qG2_item1_7qG2_000_type	1	0	0	1	0
+76	__constStr0015	7	0	146	4	1
+77	__constStr0015.__constStr0015_type	1	1	0	1	0
+78	__constStr0016	7	0	148	4	1
+79	__constStr0016.__constStr0016_type	1	1	0	1	0
+80	__constStr0012	7	0	150	4	1
+81	__constStr0012.__constStr0012_type	1	1	0	1	0
+82	__constStr0014	7	0	152	4	1
+83	__constStr0014.__constStr0014_type	1	1	0	1	0
+84	__Select_7qG2_item6_7qG2_000	7	0	154	4	3
+85	__Select_7qG2_item6_7qG2_000.__Select_7qG2_item6_7qG2_000_type	1	0	0	1	0
+86	__Select_7qG2_item5_7qG2_000	7	0	156	4	3
+87	__Select_7qG2_item5_7qG2_000.__Select_7qG2_item5_7qG2_000_type	1	0	0	1	0
+88	__Select_7qG2_item7_7qG2_000	7	0	158	4	3
+89	__Select_7qG2_item7_7qG2_000.__Select_7qG2_item7_7qG2_000_type	1	0	0	1	0
+90	__constStr0013	7	0	160	4	1
+91	__constStr0013.__constStr0013_type	1	1	0	1	0
+92	___display_7qG2_msg_7qG2_000	7	0	162	4	40
+93	___display_7qG2_msg_7qG2_000.___display_7qG2_msg_7qG2_000_type	1	0	0	1	0
+94	___len_7qG2_item2_7qG2_000	7	0	164	4	2
+95	___len_7qG2_item2_7qG2_000.___len_7qG2_item2_7qG2_000_type	1	0	0	1	0
+96	___len_7qG2_item1_7qG2_000	7	0	166	4	2
+97	___len_7qG2_item1_7qG2_000.___len_7qG2_item1_7qG2_000_type	1	0	0	1	0
+98	___len_7qG2_item3_7qG2_000	7	0	168	4	2
+99	___len_7qG2_item3_7qG2_000.___len_7qG2_item3_7qG2_000_type	1	0	0	1	0
+100	___len_7qG2_item5_7qG2_000	7	0	170	4	2
+101	___len_7qG2_item5_7qG2_000.___len_7qG2_item5_7qG2_000_type	1	0	0	1	0
+102	___len_7qG2_item4_7qG2_000	7	0	172	4	2
+103	___len_7qG2_item4_7qG2_000.___len_7qG2_item4_7qG2_000_type	1	0	0	1	0
+104	___len_7qG2_item0_7qG2_000	7	0	174	4	2
+105	___len_7qG2_item0_7qG2_000.___len_7qG2_item0_7qG2_000_type	1	0	0	1	0
+106	__strtmpbuf_len	7	0	176	4	16
+107	__strtmpbuf_len.__strtmpbuf_len_type	1	0	0	1	0
+108	__strbuf_display	7	0	178	4	64
+109	__strbuf_display.__strbuf_display_type	1	0	0	1	0
+110	__strbuf_len	7	0	180	4	32
+111	__strbuf_len.__strbuf_len_type	1	0	0	1	0
+112	__strbufSelect	7	0	182	4	32
+113	__strbufSelect.__strbufSelect_type	1	0	0	1	0
+114	__strbufmain	7	0	184	4	10
+115	__strbufmain.__strbufmain_type	1	0	0	1	0
+116	___display_7qG2_item4_7qG2_000	7	0	186	4	2
+117	___display_7qG2_item4_7qG2_000.___display_7qG2_item4_7qG2_000_type	1	0	0	1	0
+118	___display_7qG2_item3_7qG2_000	7	0	188	4	2
+119	___display_7qG2_item3_7qG2_000.___display_7qG2_item3_7qG2_000_type	1	0	0	1	0
+120	___display_7qG2_item5_7qG2_000	7	0	190	4	2
+121	___display_7qG2_item5_7qG2_000.___display_7qG2_item5_7qG2_000_type	1	0	0	1	0
+122	___display_7qG2_item7_7qG2_000	7	0	192	4	2
+123	___display_7qG2_item7_7qG2_000.___display_7qG2_item7_7qG2_000_type	1	0	0	1	0
+124	___display_7qG2_item6_7qG2_000	7	0	194	4	2
+125	___display_7qG2_item6_7qG2_000.___display_7qG2_item6_7qG2_000_type	1	0	0	1	0
+126	___display_7qG2_item2_7qG2_000	7	0	196	4	2
+127	___display_7qG2_item2_7qG2_000.___display_7qG2_item2_7qG2_000_type	1	0	0	1	0
+128	___len_7qG2_item7_7qG2_000	7	0	198	4	2
+129	___len_7qG2_item7_7qG2_000.___len_7qG2_item7_7qG2_000_type	1	0	0	1	0
+130	___len_7qG2_item6_7qG2_000	7	0	200	4	2
+131	___len_7qG2_item6_7qG2_000.___len_7qG2_item6_7qG2_000_type	1	0	0	1	0
+132	__constStr0009	7	0	202	4	11
+133	__constStr0009.__constStr0009_type	1	1	0	1	0
+134	___display_7qG2_item1_7qG2_000	7	0	204	4	2
+135	___display_7qG2_item1_7qG2_000.___display_7qG2_item1_7qG2_000_type	1	0	0	1	0
+136	___display_7qG2_item0_7qG2_000	7	0	206	4	2
+137	___display_7qG2_item0_7qG2_000.___display_7qG2_item0_7qG2_000_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	4	0	#line 4 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	5	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	4	2	#line 4 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	4	2	#line 4 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	5	2		strcat __strbufmain, __constStr0012
+0	4	6	#line 4 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	5	6		mov __Select_7qG2_item0_7qG2_000, __strbufmain
+0	4	8	#line 4 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	5	8		strcat __strbufmain, __constStr0013
+0	4	12	#line 4 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	5	12		mov __Select_7qG2_item1_7qG2_000, __strbufmain
+0	4	14	#line 4 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	5	14		strcat __strbufmain, __constStr0014
+0	4	18	#line 4 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	5	18		mov __Select_7qG2_item2_7qG2_000, __strbufmain
+0	4	20	#line 4 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	5	20		strcat __strbufmain, __constStr0015
+0	4	24	#line 4 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	5	24		mov __Select_7qG2_item3_7qG2_000, __strbufmain
+0	4	26	#line 4 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	5	26		strcat __strbufmain, __constStr0016
+0	4	30	#line 4 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	5	30		mov __Select_7qG2_item4_7qG2_000, __strbufmain
+0	5	32	#line 5 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	6	32		mov __Select_7qG2_item5_7qG2_000, __constStr0009
+0	5	34	#line 5 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	6	34		mov __Select_7qG2_item6_7qG2_000, __constStr0009
+0	5	36	#line 5 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	6	36		mov __Select_7qG2_item7_7qG2_000, __constStr0009
+0	5	38	#line 5 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	6	38		subcall Select, __Select_return
+0	5	40	#line 5 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	6	40		mov __main_7qG2_foo_7qG2_000, __D0Select
+0	5	42	#line 5 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	5	42	#line 5 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	6	42		set __signed_stack_001main, 0
+0	5	45	#line 5 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	5	45	#line 5 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	6	45		set __signed_stack_002main, 56
+0	5	48	#line 5 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	5	48	#line 5 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	6	48		mov __DU0main, __main_7qG2_foo_7qG2_000
+0	6	50	#line 6 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	7	50		acquire __TextOutMutex
+0	6	51	#line 6 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	7	51		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	6	53	#line 6 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	7	53		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	6	55	#line 6 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	7	55		set __TextOutArgs.Options, 0
+0	6	58	#line 6 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	7	58		numtostr __TextOutArgs.Text, __DU0main
+0	6	61	#line 6 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	7	61		syscall 13, __TextOutArgs
+0	6	64	#line 6 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	6	64	#line 6 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	7	64		release __TextOutMutex
+0	6	65	#line 6 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	6	65	#line 6 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	7	65		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	6	68	#line 6 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	7921	68	#line 7921 "NXCDefs.h"
+0	7922	68		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	71	#line 7921 "NXCDefs.h"
+0	7	71	#line 7 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+0	8	71		exit -1, -1
+1	22	0	#line 22 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	23	0		mov __DU0line, __line_7qG2_num_7qG2_000
+1	26	2		brcmp 4, __NXC_Label_492, __constVal0, __DU0line
+1	27	6		brcmp 4, __NXC_Label_495, __constVal1, __DU0line
+1	28	10		brcmp 4, __NXC_Label_498, __constVal2, __DU0line
+1	29	14		brcmp 4, __NXC_Label_501, __constVal3, __DU0line
+1	30	18		brcmp 4, __NXC_Label_504, __constVal4, __DU0line
+1	31	22		brcmp 4, __NXC_Label_507, __constVal5, __DU0line
+1	32	26		brcmp 4, __NXC_Label_510, __constVal6, __DU0line
+1	33	30		brcmp 4, __NXC_Label_513, __constVal7, __DU0line
+1	34	34		jmp __NXC_Label_491
+1	24	36	#line 24 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	25	36	#line 25 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	26	36		set __line_7qG2_ret_7qG2_000, 56
+1	25	39	#line 25 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	25	39	#line 25 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	26	39	#line 26 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	27	39		jmp __NXC_Label_491
+1	26	41	#line 26 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	27	41	#line 27 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	28	41	#line 28 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	29	41		set __line_7qG2_ret_7qG2_000, 48
+1	28	44	#line 28 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	28	44	#line 28 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	29	44	#line 29 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	30	44		jmp __NXC_Label_491
+1	29	46	#line 29 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	30	46	#line 30 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	31	46	#line 31 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	32	46		set __line_7qG2_ret_7qG2_000, 40
+1	31	49	#line 31 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	31	49	#line 31 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	32	49	#line 32 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	33	49		jmp __NXC_Label_491
+1	32	51	#line 32 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	33	51	#line 33 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	34	51	#line 34 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	35	51		set __line_7qG2_ret_7qG2_000, 32
+1	34	54	#line 34 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	34	54	#line 34 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	35	54	#line 35 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	36	54		jmp __NXC_Label_491
+1	35	56	#line 35 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	36	56	#line 36 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	37	56	#line 37 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	38	56		set __line_7qG2_ret_7qG2_000, 24
+1	37	59	#line 37 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	37	59	#line 37 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	38	59	#line 38 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	39	59		jmp __NXC_Label_491
+1	38	61	#line 38 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	39	61	#line 39 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	40	61	#line 40 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	41	61		set __line_7qG2_ret_7qG2_000, 16
+1	40	64	#line 40 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	40	64	#line 40 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	41	64	#line 41 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	42	64		jmp __NXC_Label_491
+1	41	66	#line 41 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	42	66	#line 42 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	43	66	#line 43 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	44	66		set __line_7qG2_ret_7qG2_000, 8
+1	43	69	#line 43 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	43	69	#line 43 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	44	69	#line 44 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	45	69		jmp __NXC_Label_491
+1	44	71	#line 44 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	45	71	#line 45 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	46	71	#line 46 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	47	71		set __line_7qG2_ret_7qG2_000, 0
+1	46	74	#line 46 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	46	74	#line 46 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	47	74	#line 47 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	47	74	#line 47 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	48	74	#line 48 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	49	74	#line 49 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	50	74		mov __D0line, __line_7qG2_ret_7qG2_000
+1	49	76	#line 49 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	50	76		subret __line_return
+1	49	78	#line 49 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	51	78	#line 51 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+1	52	78		subret __line_return
+2	53	0	#line 53 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	54	0		set ___len_7qG2_len_7qG2_000, 8
+2	53	3	#line 53 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	53	3	#line 53 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	54	3		strcat __strbuf_len, ___len_7qG2_item0_7qG2_000
+2	53	7	#line 53 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	54	7		mov __strtmpbuf_len, __strbuf_len
+2	53	9	#line 53 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	54	9		strcat __strbuf_len, __constStr0009
+2	53	13	#line 53 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	54	13		cmp 4, __zf_len, __strtmpbuf_len, __strbuf_len
+2	53	17	#line 53 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	54	17		mov __D0_len, __zf_len
+2	54	19	#line 54 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	55	19		brtst 4, __NXC_Label_522, __zf_len
+2	55	22	#line 55 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	56	22		set ___len_7qG2_len_7qG2_000, 0
+2	55	25	#line 55 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	55	25	#line 55 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	56	25	#line 56 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	57	25		jmp __NXC_Label_525
+2	56	27	#line 56 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	57	27		strcat __strbuf_len, ___len_7qG2_item1_7qG2_000
+2	56	31	#line 56 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	57	31		mov __strtmpbuf_len, __strbuf_len
+2	56	33	#line 56 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	57	33		strcat __strbuf_len, __constStr0009
+2	56	37	#line 56 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	57	37		cmp 4, __zf_len, __strtmpbuf_len, __strbuf_len
+2	56	41	#line 56 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	57	41		mov __D0_len, __zf_len
+2	57	43	#line 57 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	58	43		brtst 4, __NXC_Label_528, __zf_len
+2	58	46	#line 58 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	59	46		set ___len_7qG2_len_7qG2_000, 1
+2	58	49	#line 58 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	58	49	#line 58 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	59	49	#line 59 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	60	49		jmp __NXC_Label_531
+2	59	51	#line 59 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	60	51		strcat __strbuf_len, ___len_7qG2_item2_7qG2_000
+2	59	55	#line 59 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	60	55		mov __strtmpbuf_len, __strbuf_len
+2	59	57	#line 59 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	60	57		strcat __strbuf_len, __constStr0009
+2	59	61	#line 59 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	60	61		cmp 4, __zf_len, __strtmpbuf_len, __strbuf_len
+2	59	65	#line 59 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	60	65		mov __D0_len, __zf_len
+2	60	67	#line 60 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	61	67		brtst 4, __NXC_Label_534, __zf_len
+2	61	70	#line 61 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	62	70		set ___len_7qG2_len_7qG2_000, 2
+2	61	73	#line 61 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	61	73	#line 61 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	62	73	#line 62 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	63	73		jmp __NXC_Label_537
+2	62	75	#line 62 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	63	75		strcat __strbuf_len, ___len_7qG2_item3_7qG2_000
+2	62	79	#line 62 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	63	79		mov __strtmpbuf_len, __strbuf_len
+2	62	81	#line 62 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	63	81		strcat __strbuf_len, __constStr0009
+2	62	85	#line 62 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	63	85		cmp 4, __zf_len, __strtmpbuf_len, __strbuf_len
+2	62	89	#line 62 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	63	89		mov __D0_len, __zf_len
+2	63	91	#line 63 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	64	91		brtst 4, __NXC_Label_540, __zf_len
+2	64	94	#line 64 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	65	94		set ___len_7qG2_len_7qG2_000, 3
+2	64	97	#line 64 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	64	97	#line 64 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	65	97	#line 65 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	66	97		jmp __NXC_Label_543
+2	65	99	#line 65 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	66	99		strcat __strbuf_len, ___len_7qG2_item4_7qG2_000
+2	65	103	#line 65 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	66	103		mov __strtmpbuf_len, __strbuf_len
+2	65	105	#line 65 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	66	105		strcat __strbuf_len, __constStr0009
+2	65	109	#line 65 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	66	109		cmp 4, __zf_len, __strtmpbuf_len, __strbuf_len
+2	65	113	#line 65 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	66	113		mov __D0_len, __zf_len
+2	66	115	#line 66 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	67	115		brtst 4, __NXC_Label_546, __zf_len
+2	67	118	#line 67 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	68	118		set ___len_7qG2_len_7qG2_000, 4
+2	67	121	#line 67 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	67	121	#line 67 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	68	121	#line 68 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	69	121		jmp __NXC_Label_549
+2	68	123	#line 68 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	69	123		strcat __strbuf_len, ___len_7qG2_item5_7qG2_000
+2	68	127	#line 68 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	69	127		mov __strtmpbuf_len, __strbuf_len
+2	68	129	#line 68 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	69	129		strcat __strbuf_len, __constStr0009
+2	68	133	#line 68 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	69	133		cmp 4, __zf_len, __strtmpbuf_len, __strbuf_len
+2	68	137	#line 68 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	69	137		mov __D0_len, __zf_len
+2	69	139	#line 69 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	70	139		brtst 4, __NXC_Label_552, __zf_len
+2	70	142	#line 70 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	71	142		set ___len_7qG2_len_7qG2_000, 5
+2	70	145	#line 70 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	70	145	#line 70 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	71	145	#line 71 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	72	145		jmp __NXC_Label_555
+2	71	147	#line 71 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	72	147		strcat __strbuf_len, ___len_7qG2_item6_7qG2_000
+2	71	151	#line 71 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	72	151		mov __strtmpbuf_len, __strbuf_len
+2	71	153	#line 71 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	72	153		strcat __strbuf_len, __constStr0009
+2	71	157	#line 71 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	72	157		cmp 4, __zf_len, __strtmpbuf_len, __strbuf_len
+2	71	161	#line 71 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	72	161		mov __D0_len, __zf_len
+2	72	163	#line 72 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	73	163		brtst 4, __NXC_Label_558, __zf_len
+2	73	166	#line 73 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	74	166		set ___len_7qG2_len_7qG2_000, 6
+2	73	169	#line 73 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	73	169	#line 73 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	74	169	#line 74 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	75	169		jmp __NXC_Label_561
+2	74	171	#line 74 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	75	171		strcat __strbuf_len, ___len_7qG2_item7_7qG2_000
+2	74	175	#line 74 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	75	175		mov __strtmpbuf_len, __strbuf_len
+2	74	177	#line 74 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	75	177		strcat __strbuf_len, __constStr0009
+2	74	181	#line 74 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	75	181		cmp 4, __zf_len, __strtmpbuf_len, __strbuf_len
+2	74	185	#line 74 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	75	185		mov __D0_len, __zf_len
+2	75	187	#line 75 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	76	187		brtst 4, __NXC_Label_564, __zf_len
+2	76	190	#line 76 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	77	190		set ___len_7qG2_len_7qG2_000, 7
+2	76	193	#line 76 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	76	193	#line 76 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	77	193	#line 77 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	77	193	#line 77 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	77	193	#line 77 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	77	193	#line 77 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	77	193	#line 77 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	77	193	#line 77 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	77	193	#line 77 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	77	193	#line 77 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	78	193	#line 78 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	79	193		mov __D0_len, ___len_7qG2_len_7qG2_000
+2	78	195	#line 78 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	79	195		subret ___len_return
+2	78	197	#line 78 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	80	197	#line 80 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+2	81	197		subret ___len_return
+3	6069	0	#line 6069 "NXCDefs.h"
+3	6070	0	#pragma macro 6
+3	6070	0		acquire __PointOutMutex
+3	6070	1		mov __PointOutArgs.Location.X, __constVal200
+3	6070	3		mov __PointOutArgs.Location.Y, __constVal200
+3	6070	5		mov __PointOutArgs.Options, __constVal1
+3	6070	7		syscall 14, __PointOutArgs
+3	6070	10		release __PointOutMutex
+3	4211	11	#line 4211 "NXCDefs.h"
+3	6069	11	#line 6069 "NXCDefs.h"
+3	85	11	#line 85 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	85	11	#line 85 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	86	11		mov __signed_stack_001_display, ___display_7qG2_select_7qG2_000
+3	85	13	#line 85 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	85	13	#line 85 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	86	13		set __D0_display, 0
+3	85	16	#line 85 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	86	16		cmp 4, __zf_display, __signed_stack_001_display, __D0_display
+3	85	20	#line 85 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	86	20		mov __D0_display, __zf_display
+3	86	22	#line 86 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	87	22		brtst 4, __NXC_Label_571, __zf_display
+3	87	25	#line 87 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	88	25		strcat __strbuf_display, __constStr0010
+3	87	29	#line 87 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	88	29		mov ___display_7qG2_msg_7qG2_000, __strbuf_display
+3	87	31	#line 87 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	89	31	#line 89 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	90	31		jmp __NXC_Label_572
+3	90	33	#line 90 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	91	33		strcat __strbuf_display, __constStr0011
+3	90	37	#line 90 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	91	37		mov ___display_7qG2_msg_7qG2_000, __strbuf_display
+3	90	39	#line 90 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	91	39	#line 91 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	92	39	#line 92 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	93	39		strcat __strbuf_display, ___display_7qG2_msg_7qG2_000, ___display_7qG2_item0_7qG2_000
+3	92	44	#line 92 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	93	44		mov ___display_7qG2_msg_7qG2_000, __strbuf_display
+3	92	46	#line 92 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	92	46	#line 92 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	93	46		set __signed_stack_001_display, 0
+3	92	49	#line 92 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	92	49	#line 92 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	92	49	#line 92 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	92	49	#line 92 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	92	49	#line 92 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	93	49		add __line_7qG2_num_7qG2_000, __constVal0, ___display_7qG2_top_7qG2_000
+3	92	53	#line 92 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	92	53	#line 92 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	93	53		subcall line, __line_return
+3	92	55	#line 92 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	93	55		mov __signed_stack_002_display, __D0line
+3	92	57	#line 92 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	92	57	#line 92 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	93	57		strcat __strbuf_display, ___display_7qG2_msg_7qG2_000
+3	95	61	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	96	61		acquire __TextOutMutex
+3	95	62	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	96	62		mov __TextOutArgs.Location.X, __signed_stack_001_display
+3	95	64	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	96	64		mov __TextOutArgs.Location.Y, __signed_stack_002_display
+3	95	66	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	96	66		set __TextOutArgs.Options, 0
+3	95	69	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	96	69		mov __TextOutArgs.Text, __strbuf_display
+3	95	71	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	96	71		syscall 13, __TextOutArgs
+3	95	74	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	96	74		mov __D0_display, __TextOutArgs.Result
+3	95	76	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	96	76		release __TextOutMutex
+3	95	77	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	95	77	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	96	77		mov __signed_stack_001_display, ___display_7qG2_select_7qG2_000
+3	95	79	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	95	79	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	96	79		set __D0_display, 1
+3	95	82	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	96	82		cmp 4, __zf_display, __signed_stack_001_display, __D0_display
+3	95	86	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	96	86		mov __D0_display, __zf_display
+3	96	88	#line 96 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	97	88		brtst 4, __NXC_Label_581, __zf_display
+3	97	91	#line 97 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	98	91		strcat __strbuf_display, __constStr0010
+3	97	95	#line 97 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	98	95		mov ___display_7qG2_msg_7qG2_000, __strbuf_display
+3	97	97	#line 97 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	99	97	#line 99 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	100	97		jmp __NXC_Label_582
+3	100	99	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	101	99		strcat __strbuf_display, __constStr0011
+3	100	103	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	101	103		mov ___display_7qG2_msg_7qG2_000, __strbuf_display
+3	100	105	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	101	105	#line 101 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	102	105	#line 102 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	103	105		strcat __strbuf_display, ___display_7qG2_msg_7qG2_000, ___display_7qG2_item1_7qG2_000
+3	102	110	#line 102 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	103	110		mov ___display_7qG2_msg_7qG2_000, __strbuf_display
+3	102	112	#line 102 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	102	112	#line 102 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	103	112		set __signed_stack_001_display, 0
+3	102	115	#line 102 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	102	115	#line 102 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	102	115	#line 102 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	102	115	#line 102 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	102	115	#line 102 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	103	115		add __line_7qG2_num_7qG2_000, __constVal1, ___display_7qG2_top_7qG2_000
+3	102	119	#line 102 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	102	119	#line 102 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	103	119		subcall line, __line_return
+3	102	121	#line 102 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	103	121		mov __signed_stack_002_display, __D0line
+3	102	123	#line 102 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	102	123	#line 102 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	103	123		strcat __strbuf_display, ___display_7qG2_msg_7qG2_000
+3	105	127	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	106	127		acquire __TextOutMutex
+3	105	128	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	106	128		mov __TextOutArgs.Location.X, __signed_stack_001_display
+3	105	130	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	106	130		mov __TextOutArgs.Location.Y, __signed_stack_002_display
+3	105	132	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	106	132		set __TextOutArgs.Options, 0
+3	105	135	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	106	135		mov __TextOutArgs.Text, __strbuf_display
+3	105	137	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	106	137		syscall 13, __TextOutArgs
+3	105	140	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	106	140		mov __D0_display, __TextOutArgs.Result
+3	105	142	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	106	142		release __TextOutMutex
+3	105	143	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	105	143	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	106	143		mov __signed_stack_001_display, ___display_7qG2_select_7qG2_000
+3	105	145	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	105	145	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	106	145		set __D0_display, 2
+3	105	148	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	106	148		cmp 4, __zf_display, __signed_stack_001_display, __D0_display
+3	105	152	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	106	152		mov __D0_display, __zf_display
+3	106	154	#line 106 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	107	154		brtst 4, __NXC_Label_591, __zf_display
+3	107	157	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	108	157		strcat __strbuf_display, __constStr0010
+3	107	161	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	108	161		mov ___display_7qG2_msg_7qG2_000, __strbuf_display
+3	107	163	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	109	163	#line 109 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	110	163		jmp __NXC_Label_592
+3	110	165	#line 110 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	111	165		strcat __strbuf_display, __constStr0011
+3	110	169	#line 110 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	111	169		mov ___display_7qG2_msg_7qG2_000, __strbuf_display
+3	110	171	#line 110 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	111	171	#line 111 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	112	171	#line 112 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	113	171		strcat __strbuf_display, ___display_7qG2_msg_7qG2_000, ___display_7qG2_item2_7qG2_000
+3	112	176	#line 112 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	113	176		mov ___display_7qG2_msg_7qG2_000, __strbuf_display
+3	112	178	#line 112 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	112	178	#line 112 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	113	178		set __signed_stack_001_display, 0
+3	112	181	#line 112 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	112	181	#line 112 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	112	181	#line 112 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	112	181	#line 112 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	112	181	#line 112 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	113	181		add __line_7qG2_num_7qG2_000, __constVal2, ___display_7qG2_top_7qG2_000
+3	112	185	#line 112 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	112	185	#line 112 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	113	185		subcall line, __line_return
+3	112	187	#line 112 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	113	187		mov __signed_stack_002_display, __D0line
+3	112	189	#line 112 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	112	189	#line 112 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	113	189		strcat __strbuf_display, ___display_7qG2_msg_7qG2_000
+3	115	193	#line 115 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	116	193		acquire __TextOutMutex
+3	115	194	#line 115 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	116	194		mov __TextOutArgs.Location.X, __signed_stack_001_display
+3	115	196	#line 115 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	116	196		mov __TextOutArgs.Location.Y, __signed_stack_002_display
+3	115	198	#line 115 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	116	198		set __TextOutArgs.Options, 0
+3	115	201	#line 115 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	116	201		mov __TextOutArgs.Text, __strbuf_display
+3	115	203	#line 115 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	116	203		syscall 13, __TextOutArgs
+3	115	206	#line 115 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	116	206		mov __D0_display, __TextOutArgs.Result
+3	115	208	#line 115 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	116	208		release __TextOutMutex
+3	115	209	#line 115 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	115	209	#line 115 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	116	209		mov __signed_stack_001_display, ___display_7qG2_select_7qG2_000
+3	115	211	#line 115 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	115	211	#line 115 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	116	211		set __D0_display, 3
+3	115	214	#line 115 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	116	214		cmp 4, __zf_display, __signed_stack_001_display, __D0_display
+3	115	218	#line 115 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	116	218		mov __D0_display, __zf_display
+3	116	220	#line 116 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	117	220		brtst 4, __NXC_Label_601, __zf_display
+3	117	223	#line 117 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	118	223		strcat __strbuf_display, __constStr0010
+3	117	227	#line 117 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	118	227		mov ___display_7qG2_msg_7qG2_000, __strbuf_display
+3	117	229	#line 117 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	119	229	#line 119 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	120	229		jmp __NXC_Label_602
+3	120	231	#line 120 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	121	231		strcat __strbuf_display, __constStr0011
+3	120	235	#line 120 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	121	235		mov ___display_7qG2_msg_7qG2_000, __strbuf_display
+3	120	237	#line 120 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	121	237	#line 121 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	122	237	#line 122 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	123	237		strcat __strbuf_display, ___display_7qG2_msg_7qG2_000, ___display_7qG2_item3_7qG2_000
+3	122	242	#line 122 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	123	242		mov ___display_7qG2_msg_7qG2_000, __strbuf_display
+3	122	244	#line 122 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	122	244	#line 122 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	123	244		set __signed_stack_001_display, 0
+3	122	247	#line 122 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	122	247	#line 122 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	122	247	#line 122 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	122	247	#line 122 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	122	247	#line 122 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	123	247		add __line_7qG2_num_7qG2_000, __constVal3, ___display_7qG2_top_7qG2_000
+3	122	251	#line 122 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	122	251	#line 122 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	123	251		subcall line, __line_return
+3	122	253	#line 122 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	123	253		mov __signed_stack_002_display, __D0line
+3	122	255	#line 122 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	122	255	#line 122 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	123	255		strcat __strbuf_display, ___display_7qG2_msg_7qG2_000
+3	125	259	#line 125 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	126	259		acquire __TextOutMutex
+3	125	260	#line 125 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	126	260		mov __TextOutArgs.Location.X, __signed_stack_001_display
+3	125	262	#line 125 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	126	262		mov __TextOutArgs.Location.Y, __signed_stack_002_display
+3	125	264	#line 125 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	126	264		set __TextOutArgs.Options, 0
+3	125	267	#line 125 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	126	267		mov __TextOutArgs.Text, __strbuf_display
+3	125	269	#line 125 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	126	269		syscall 13, __TextOutArgs
+3	125	272	#line 125 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	126	272		mov __D0_display, __TextOutArgs.Result
+3	125	274	#line 125 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	126	274		release __TextOutMutex
+3	125	275	#line 125 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	125	275	#line 125 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	126	275		mov __signed_stack_001_display, ___display_7qG2_select_7qG2_000
+3	125	277	#line 125 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	125	277	#line 125 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	126	277		set __D0_display, 4
+3	125	280	#line 125 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	126	280		cmp 4, __zf_display, __signed_stack_001_display, __D0_display
+3	125	284	#line 125 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	126	284		mov __D0_display, __zf_display
+3	126	286	#line 126 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	127	286		brtst 4, __NXC_Label_611, __zf_display
+3	127	289	#line 127 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	128	289		strcat __strbuf_display, __constStr0010
+3	127	293	#line 127 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	128	293		mov ___display_7qG2_msg_7qG2_000, __strbuf_display
+3	127	295	#line 127 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	129	295	#line 129 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	130	295		jmp __NXC_Label_612
+3	130	297	#line 130 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	131	297		strcat __strbuf_display, __constStr0011
+3	130	301	#line 130 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	131	301		mov ___display_7qG2_msg_7qG2_000, __strbuf_display
+3	130	303	#line 130 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	131	303	#line 131 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	132	303	#line 132 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	133	303		strcat __strbuf_display, ___display_7qG2_msg_7qG2_000, ___display_7qG2_item4_7qG2_000
+3	132	308	#line 132 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	133	308		mov ___display_7qG2_msg_7qG2_000, __strbuf_display
+3	132	310	#line 132 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	132	310	#line 132 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	133	310		set __signed_stack_001_display, 0
+3	132	313	#line 132 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	132	313	#line 132 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	132	313	#line 132 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	132	313	#line 132 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	132	313	#line 132 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	133	313		add __line_7qG2_num_7qG2_000, __constVal4, ___display_7qG2_top_7qG2_000
+3	132	317	#line 132 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	132	317	#line 132 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	133	317		subcall line, __line_return
+3	132	319	#line 132 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	133	319		mov __signed_stack_002_display, __D0line
+3	132	321	#line 132 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	132	321	#line 132 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	133	321		strcat __strbuf_display, ___display_7qG2_msg_7qG2_000
+3	135	325	#line 135 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	136	325		acquire __TextOutMutex
+3	135	326	#line 135 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	136	326		mov __TextOutArgs.Location.X, __signed_stack_001_display
+3	135	328	#line 135 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	136	328		mov __TextOutArgs.Location.Y, __signed_stack_002_display
+3	135	330	#line 135 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	136	330		set __TextOutArgs.Options, 0
+3	135	333	#line 135 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	136	333		mov __TextOutArgs.Text, __strbuf_display
+3	135	335	#line 135 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	136	335		syscall 13, __TextOutArgs
+3	135	338	#line 135 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	136	338		mov __D0_display, __TextOutArgs.Result
+3	135	340	#line 135 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	136	340		release __TextOutMutex
+3	135	341	#line 135 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	135	341	#line 135 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	136	341		mov __signed_stack_001_display, ___display_7qG2_select_7qG2_000
+3	135	343	#line 135 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	135	343	#line 135 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	136	343		set __D0_display, 5
+3	135	346	#line 135 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	136	346		cmp 4, __zf_display, __signed_stack_001_display, __D0_display
+3	135	350	#line 135 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	136	350		mov __D0_display, __zf_display
+3	136	352	#line 136 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	137	352		brtst 4, __NXC_Label_621, __zf_display
+3	137	355	#line 137 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	138	355		strcat __strbuf_display, __constStr0010
+3	137	359	#line 137 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	138	359		mov ___display_7qG2_msg_7qG2_000, __strbuf_display
+3	137	361	#line 137 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	139	361	#line 139 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	140	361		jmp __NXC_Label_622
+3	140	363	#line 140 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	141	363		strcat __strbuf_display, __constStr0011
+3	140	367	#line 140 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	141	367		mov ___display_7qG2_msg_7qG2_000, __strbuf_display
+3	140	369	#line 140 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	141	369	#line 141 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	142	369	#line 142 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	143	369		strcat __strbuf_display, ___display_7qG2_msg_7qG2_000, ___display_7qG2_item5_7qG2_000
+3	142	374	#line 142 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	143	374		mov ___display_7qG2_msg_7qG2_000, __strbuf_display
+3	142	376	#line 142 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	142	376	#line 142 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	143	376		set __signed_stack_001_display, 0
+3	142	379	#line 142 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	142	379	#line 142 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	142	379	#line 142 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	142	379	#line 142 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	142	379	#line 142 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	143	379		add __line_7qG2_num_7qG2_000, __constVal5, ___display_7qG2_top_7qG2_000
+3	142	383	#line 142 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	142	383	#line 142 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	143	383		subcall line, __line_return
+3	142	385	#line 142 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	143	385		mov __signed_stack_002_display, __D0line
+3	142	387	#line 142 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	142	387	#line 142 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	143	387		strcat __strbuf_display, ___display_7qG2_msg_7qG2_000
+3	145	391	#line 145 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	146	391		acquire __TextOutMutex
+3	145	392	#line 145 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	146	392		mov __TextOutArgs.Location.X, __signed_stack_001_display
+3	145	394	#line 145 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	146	394		mov __TextOutArgs.Location.Y, __signed_stack_002_display
+3	145	396	#line 145 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	146	396		set __TextOutArgs.Options, 0
+3	145	399	#line 145 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	146	399		mov __TextOutArgs.Text, __strbuf_display
+3	145	401	#line 145 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	146	401		syscall 13, __TextOutArgs
+3	145	404	#line 145 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	146	404		mov __D0_display, __TextOutArgs.Result
+3	145	406	#line 145 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	146	406		release __TextOutMutex
+3	145	407	#line 145 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	145	407	#line 145 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	146	407		mov __signed_stack_001_display, ___display_7qG2_select_7qG2_000
+3	145	409	#line 145 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	145	409	#line 145 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	146	409		set __D0_display, 6
+3	145	412	#line 145 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	146	412		cmp 4, __zf_display, __signed_stack_001_display, __D0_display
+3	145	416	#line 145 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	146	416		mov __D0_display, __zf_display
+3	146	418	#line 146 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	147	418		brtst 4, __NXC_Label_631, __zf_display
+3	147	421	#line 147 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	148	421		strcat __strbuf_display, __constStr0010
+3	147	425	#line 147 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	148	425		mov ___display_7qG2_msg_7qG2_000, __strbuf_display
+3	147	427	#line 147 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	149	427	#line 149 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	150	427		jmp __NXC_Label_632
+3	150	429	#line 150 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	151	429		strcat __strbuf_display, __constStr0011
+3	150	433	#line 150 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	151	433		mov ___display_7qG2_msg_7qG2_000, __strbuf_display
+3	150	435	#line 150 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	151	435	#line 151 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	152	435	#line 152 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	153	435		strcat __strbuf_display, ___display_7qG2_msg_7qG2_000, ___display_7qG2_item6_7qG2_000
+3	152	440	#line 152 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	153	440		mov ___display_7qG2_msg_7qG2_000, __strbuf_display
+3	152	442	#line 152 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	152	442	#line 152 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	153	442		set __signed_stack_001_display, 0
+3	152	445	#line 152 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	152	445	#line 152 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	152	445	#line 152 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	152	445	#line 152 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	152	445	#line 152 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	153	445		add __line_7qG2_num_7qG2_000, __constVal6, ___display_7qG2_top_7qG2_000
+3	152	449	#line 152 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	152	449	#line 152 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	153	449		subcall line, __line_return
+3	152	451	#line 152 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	153	451		mov __signed_stack_002_display, __D0line
+3	152	453	#line 152 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	152	453	#line 152 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	153	453		strcat __strbuf_display, ___display_7qG2_msg_7qG2_000
+3	155	457	#line 155 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	156	457		acquire __TextOutMutex
+3	155	458	#line 155 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	156	458		mov __TextOutArgs.Location.X, __signed_stack_001_display
+3	155	460	#line 155 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	156	460		mov __TextOutArgs.Location.Y, __signed_stack_002_display
+3	155	462	#line 155 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	156	462		set __TextOutArgs.Options, 0
+3	155	465	#line 155 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	156	465		mov __TextOutArgs.Text, __strbuf_display
+3	155	467	#line 155 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	156	467		syscall 13, __TextOutArgs
+3	155	470	#line 155 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	156	470		mov __D0_display, __TextOutArgs.Result
+3	155	472	#line 155 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	156	472		release __TextOutMutex
+3	155	473	#line 155 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	155	473	#line 155 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	156	473		mov __signed_stack_001_display, ___display_7qG2_select_7qG2_000
+3	155	475	#line 155 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	155	475	#line 155 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	156	475		set __D0_display, 7
+3	155	478	#line 155 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	156	478		cmp 4, __zf_display, __signed_stack_001_display, __D0_display
+3	155	482	#line 155 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	156	482		mov __D0_display, __zf_display
+3	156	484	#line 156 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	157	484		brtst 4, __NXC_Label_641, __zf_display
+3	157	487	#line 157 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	158	487		strcat __strbuf_display, __constStr0010
+3	157	491	#line 157 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	158	491		mov ___display_7qG2_msg_7qG2_000, __strbuf_display
+3	157	493	#line 157 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	159	493	#line 159 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	160	493		jmp __NXC_Label_642
+3	160	495	#line 160 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	161	495		strcat __strbuf_display, __constStr0011
+3	160	499	#line 160 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	161	499		mov ___display_7qG2_msg_7qG2_000, __strbuf_display
+3	160	501	#line 160 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	161	501	#line 161 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	162	501	#line 162 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	163	501		strcat __strbuf_display, ___display_7qG2_msg_7qG2_000, ___display_7qG2_item7_7qG2_000
+3	162	506	#line 162 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	163	506		mov ___display_7qG2_msg_7qG2_000, __strbuf_display
+3	162	508	#line 162 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	162	508	#line 162 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	163	508		set __signed_stack_001_display, 0
+3	162	511	#line 162 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	162	511	#line 162 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	162	511	#line 162 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	162	511	#line 162 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	162	511	#line 162 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	163	511		add __line_7qG2_num_7qG2_000, __constVal7, ___display_7qG2_top_7qG2_000
+3	162	515	#line 162 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	162	515	#line 162 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	163	515		subcall line, __line_return
+3	162	517	#line 162 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	163	517		mov __signed_stack_002_display, __D0line
+3	162	519	#line 162 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	162	519	#line 162 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	163	519		strcat __strbuf_display, ___display_7qG2_msg_7qG2_000
+3	163	523	#line 163 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	164	523		acquire __TextOutMutex
+3	163	524	#line 163 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	164	524		mov __TextOutArgs.Location.X, __signed_stack_001_display
+3	163	526	#line 163 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	164	526		mov __TextOutArgs.Location.Y, __signed_stack_002_display
+3	163	528	#line 163 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	164	528		set __TextOutArgs.Options, 0
+3	163	531	#line 163 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	164	531		mov __TextOutArgs.Text, __strbuf_display
+3	163	533	#line 163 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	164	533		syscall 13, __TextOutArgs
+3	163	536	#line 163 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	164	536		mov __D0_display, __TextOutArgs.Result
+3	163	538	#line 163 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	164	538		release __TextOutMutex
+3	163	539	#line 163 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	165	539	#line 165 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+3	166	539		subret ___display_return
+4	167	0	#line 167 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	168	0		set __Select_7qG2_top_7qG2_000, 0
+4	167	3	#line 167 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	168	3	#line 168 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	169	3		set __Select_7qG2_select_7qG2_000, 0
+4	168	6	#line 168 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	168	6	#line 168 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	169	6		strcat __strbufSelect, __Select_7qG2_item0_7qG2_000
+4	168	10	#line 168 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	169	10		mov ___len_7qG2_item0_7qG2_000, __strbufSelect
+4	168	12	#line 168 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	169	12		strcat __strbufSelect, __Select_7qG2_item1_7qG2_000
+4	168	16	#line 168 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	169	16		mov ___len_7qG2_item1_7qG2_000, __strbufSelect
+4	168	18	#line 168 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	169	18		strcat __strbufSelect, __Select_7qG2_item2_7qG2_000
+4	168	22	#line 168 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	169	22		mov ___len_7qG2_item2_7qG2_000, __strbufSelect
+4	168	24	#line 168 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	169	24		strcat __strbufSelect, __Select_7qG2_item3_7qG2_000
+4	168	28	#line 168 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	169	28		mov ___len_7qG2_item3_7qG2_000, __strbufSelect
+4	168	30	#line 168 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	169	30		strcat __strbufSelect, __Select_7qG2_item4_7qG2_000
+4	168	34	#line 168 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	169	34		mov ___len_7qG2_item4_7qG2_000, __strbufSelect
+4	168	36	#line 168 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	169	36		strcat __strbufSelect, __Select_7qG2_item5_7qG2_000
+4	168	40	#line 168 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	169	40		mov ___len_7qG2_item5_7qG2_000, __strbufSelect
+4	168	42	#line 168 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	169	42		strcat __strbufSelect, __Select_7qG2_item6_7qG2_000
+4	168	46	#line 168 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	169	46		mov ___len_7qG2_item6_7qG2_000, __strbufSelect
+4	168	48	#line 168 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	169	48		strcat __strbufSelect, __Select_7qG2_item7_7qG2_000
+4	168	52	#line 168 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	169	52		mov ___len_7qG2_item7_7qG2_000, __strbufSelect
+4	169	54	#line 169 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	170	54		subcall _len, ___len_return
+4	169	56	#line 169 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	170	56		mov __Select_7qG2_len_7qG2_000, __D0_len
+4	169	58	#line 169 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	169	58	#line 169 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	170	58		set __D0Select, 1
+4	170	61	#line 170 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	61		tst 5, __zfSelect, __D0Select
+4	170	64	#line 170 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	64		brtst 4, __NXC_Label_656, __zfSelect
+4	170	67	#line 170 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	67		mov ___display_7qG2_select_7qG2_000, __Select_7qG2_select_7qG2_000
+4	170	69	#line 170 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	170	69	#line 170 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	69		mov ___display_7qG2_top_7qG2_000, __Select_7qG2_top_7qG2_000
+4	170	71	#line 170 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	170	71	#line 170 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	71		strcat __strbufSelect, __Select_7qG2_item0_7qG2_000
+4	170	75	#line 170 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	75		mov ___display_7qG2_item0_7qG2_000, __strbufSelect
+4	170	77	#line 170 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	77		strcat __strbufSelect, __Select_7qG2_item1_7qG2_000
+4	170	81	#line 170 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	81		mov ___display_7qG2_item1_7qG2_000, __strbufSelect
+4	170	83	#line 170 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	83		strcat __strbufSelect, __Select_7qG2_item2_7qG2_000
+4	170	87	#line 170 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	87		mov ___display_7qG2_item2_7qG2_000, __strbufSelect
+4	170	89	#line 170 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	89		strcat __strbufSelect, __Select_7qG2_item3_7qG2_000
+4	170	93	#line 170 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	93		mov ___display_7qG2_item3_7qG2_000, __strbufSelect
+4	170	95	#line 170 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	95		strcat __strbufSelect, __Select_7qG2_item4_7qG2_000
+4	170	99	#line 170 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	99		mov ___display_7qG2_item4_7qG2_000, __strbufSelect
+4	170	101	#line 170 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	101		strcat __strbufSelect, __Select_7qG2_item5_7qG2_000
+4	170	105	#line 170 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	105		mov ___display_7qG2_item5_7qG2_000, __strbufSelect
+4	170	107	#line 170 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	107		strcat __strbufSelect, __Select_7qG2_item6_7qG2_000
+4	170	111	#line 170 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	111		mov ___display_7qG2_item6_7qG2_000, __strbufSelect
+4	170	113	#line 170 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	113		strcat __strbufSelect, __Select_7qG2_item7_7qG2_000
+4	170	117	#line 170 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	117		mov ___display_7qG2_item7_7qG2_000, __strbufSelect
+4	171	119	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	119		subcall _display, ___display_return
+4	171	121	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	121	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	121		set __signed_stack_001Select, 2
+4	171	124	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	124	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	124		set __D0Select, 0
+4	171	127	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	127	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	127		mov __RBtnArgs.Index, __signed_stack_001Select
+4	171	129	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	129		mov __RBtnArgs.Reset, __D0Select
+4	171	131	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	131		syscall 20, __RBtnArgs
+4	171	134	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	134		mov __D0Select, __RBtnArgs.Pressed
+4	171	136	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	136	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	136		tst 5, __zfSelect, __D0Select
+4	171	139	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	139		mov __D0Select, __zfSelect
+4	171	141	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	141		brtst 5, __NXC_Label_669, __zfSelect
+4	171	144	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	144		mov __signed_stack_001Select, __D0Select
+4	171	146	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	146		set __signed_stack_002Select, 1
+4	171	149	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	149	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	149		set __D0Select, 0
+4	171	152	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	152	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	152		mov __RBtnArgs.Index, __signed_stack_002Select
+4	171	154	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	154		mov __RBtnArgs.Reset, __D0Select
+4	171	156	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	156		syscall 20, __RBtnArgs
+4	171	159	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	159		mov __D0Select, __RBtnArgs.Pressed
+4	171	161	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	161	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	161		tst 5, __zfSelect, __D0Select
+4	171	164	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	171	164	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	164		or __D0Select, __signed_stack_001Select, __zfSelect
+4	171	168	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	168		not __D0Select, __D0Select
+4	171	171	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	171		not __D0Select, __D0Select
+4	172	174	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	174		tst 5, __zfSelect, __D0Select
+4	172	177	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	177		brtst 4, __NXC_Label_664, __zfSelect
+4	172	180	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	180	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	180		jmp __NXC_Label_663
+4	172	182	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	182	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	182		set __signed_stack_001Select, 2
+4	172	185	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	185	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	185		set __D0Select, 0
+4	172	188	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	188	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	188		mov __RBtnArgs.Index, __signed_stack_001Select
+4	172	190	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	190		mov __RBtnArgs.Reset, __D0Select
+4	172	192	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	192		syscall 20, __RBtnArgs
+4	172	195	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	195		mov __D0Select, __RBtnArgs.Pressed
+4	172	197	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	197	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	197		tst 5, __zfSelect, __D0Select
+4	172	200	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	200		mov __D0Select, __zfSelect
+4	172	202	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	202		brtst 5, __NXC_Label_684, __zfSelect
+4	172	205	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	205		mov __signed_stack_001Select, __D0Select
+4	172	207	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	207		set __signed_stack_002Select, 1
+4	172	210	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	210	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	210		set __D0Select, 0
+4	172	213	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	213	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	213		mov __RBtnArgs.Index, __signed_stack_002Select
+4	172	215	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	215		mov __RBtnArgs.Reset, __D0Select
+4	172	217	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	217		syscall 20, __RBtnArgs
+4	172	220	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	220		mov __D0Select, __RBtnArgs.Pressed
+4	172	222	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	222	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	222		tst 5, __zfSelect, __D0Select
+4	172	225	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	225	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	225		or __D0Select, __signed_stack_001Select, __zfSelect
+4	172	229	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	229		tst 5, __zfSelect, __D0Select
+4	172	232	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	232		mov __D0Select, __zfSelect
+4	172	234	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	234		brtst 5, __NXC_Label_684, __zfSelect
+4	172	237	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	237		mov __signed_stack_001Select, __D0Select
+4	172	239	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	239		set __signed_stack_002Select, 3
+4	172	242	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	242	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	242		set __D0Select, 0
+4	172	245	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	245	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	245		mov __RBtnArgs.Index, __signed_stack_002Select
+4	172	247	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	247		mov __RBtnArgs.Reset, __D0Select
+4	172	249	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	249		syscall 20, __RBtnArgs
+4	172	252	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	252		mov __D0Select, __RBtnArgs.Pressed
+4	172	254	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	254	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	254		tst 5, __zfSelect, __D0Select
+4	172	257	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	172	257	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	257		or __D0Select, __signed_stack_001Select, __zfSelect
+4	172	261	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	173	261		not __D0Select, __D0Select
+4	174	264	#line 174 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	175	264		tst 5, __zfSelect, __D0Select
+4	174	267	#line 174 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	175	267		brtst 4, __NXC_Label_681, __zfSelect
+4	174	270	#line 174 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	174	270	#line 174 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	175	270		jmp __NXC_Label_680
+4	174	272	#line 174 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	174	272	#line 174 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	175	272		set __signed_stack_001Select, 3
+4	174	275	#line 174 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	174	275	#line 174 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	175	275		set __D0Select, 0
+4	174	278	#line 174 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	174	278	#line 174 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	175	278		mov __RBtnArgs.Index, __signed_stack_001Select
+4	174	280	#line 174 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	175	280		mov __RBtnArgs.Reset, __D0Select
+4	174	282	#line 174 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	175	282		syscall 20, __RBtnArgs
+4	174	285	#line 174 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	175	285		mov __D0Select, __RBtnArgs.Pressed
+4	174	287	#line 174 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	175	287	#line 175 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	176	287		tst 5, __zfSelect, __D0Select
+4	175	290	#line 175 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	176	290		brtst 4, __NXC_Label_706, __zfSelect
+4	176	293	#line 176 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	177	293		jmp __NXC_Label_656
+4	176	295	#line 176 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	177	295	#line 177 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	178	295		jmp __NXC_Label_707
+4	177	297	#line 177 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	178	297		set __signed_stack_001Select, 2
+4	177	300	#line 177 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	177	300	#line 177 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	178	300		set __D0Select, 0
+4	177	303	#line 177 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	177	303	#line 177 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	178	303		mov __RBtnArgs.Index, __signed_stack_001Select
+4	177	305	#line 177 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	178	305		mov __RBtnArgs.Reset, __D0Select
+4	177	307	#line 177 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	178	307		syscall 20, __RBtnArgs
+4	177	310	#line 177 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	178	310		mov __D0Select, __RBtnArgs.Pressed
+4	177	312	#line 177 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	178	312	#line 178 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	179	312		tst 5, __zfSelect, __D0Select
+4	178	315	#line 178 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	179	315		brtst 4, __NXC_Label_714, __zfSelect
+4	179	318	#line 179 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	180	318		sub __Select_7qG2_select_7qG2_000, __Select_7qG2_select_7qG2_000, __constVal1
+4	179	322	#line 179 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	179	322	#line 179 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	180	322		mov __signed_stack_001Select, __Select_7qG2_select_7qG2_000
+4	179	324	#line 179 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	179	324	#line 179 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	180	324		set __D0Select, 0
+4	179	327	#line 179 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	180	327		cmp 0, __zfSelect, __signed_stack_001Select, __D0Select
+4	179	331	#line 179 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	180	331		mov __D0Select, __zfSelect
+4	180	333	#line 180 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	181	333		brtst 4, __NXC_Label_717, __zfSelect
+4	180	336	#line 180 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	180	336	#line 180 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	181	336	#line 181 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	181	336	#line 181 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	182	336		sub __Select_7qG2_select_7qG2_000, __Select_7qG2_len_7qG2_000, __constVal1
+4	181	340	#line 181 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	181	340	#line 181 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	183	340	#line 183 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	183	340	#line 183 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	184	340		jmp __NXC_Label_720
+4	183	342	#line 183 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	184	342		set __signed_stack_001Select, 1
+4	183	345	#line 183 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	183	345	#line 183 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	184	345		set __D0Select, 0
+4	183	348	#line 183 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	183	348	#line 183 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	184	348		mov __RBtnArgs.Index, __signed_stack_001Select
+4	183	350	#line 183 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	184	350		mov __RBtnArgs.Reset, __D0Select
+4	183	352	#line 183 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	184	352		syscall 20, __RBtnArgs
+4	183	355	#line 183 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	184	355		mov __D0Select, __RBtnArgs.Pressed
+4	183	357	#line 183 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	184	357	#line 184 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	185	357		tst 5, __zfSelect, __D0Select
+4	184	360	#line 184 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	185	360		brtst 4, __NXC_Label_727, __zfSelect
+4	185	363	#line 185 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	186	363		add __Select_7qG2_select_7qG2_000, __Select_7qG2_select_7qG2_000, __constVal1
+4	185	367	#line 185 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	185	367	#line 185 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	186	367		mov __signed_stack_001Select, __Select_7qG2_select_7qG2_000
+4	185	369	#line 185 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	185	369	#line 185 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	185	369	#line 185 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	185	369	#line 185 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	185	369	#line 185 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	186	369		sub __D0Select, __Select_7qG2_len_7qG2_000, __constVal1
+4	185	373	#line 185 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	186	373		cmp 1, __zfSelect, __signed_stack_001Select, __D0Select
+4	185	377	#line 185 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	186	377		mov __D0Select, __zfSelect
+4	186	379	#line 186 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	187	379		brtst 4, __NXC_Label_730, __zfSelect
+4	187	382	#line 187 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	188	382		set __Select_7qG2_select_7qG2_000, 0
+4	187	385	#line 187 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	187	385	#line 187 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	189	385	#line 189 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	190	385	#line 190 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	190	385	#line 190 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	190	385	#line 190 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	190	385	#line 190 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	191	385		jmp __NXC_Label_655
+4	190	387	#line 190 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	6069	387	#line 6069 "NXCDefs.h"
+4	6070	387	#pragma macro 6
+4	6070	387		acquire __PointOutMutex
+4	6070	388		mov __PointOutArgs.Location.X, __constVal200
+4	6070	390		mov __PointOutArgs.Location.Y, __constVal200
+4	6070	392		mov __PointOutArgs.Options, __constVal1
+4	6070	394		syscall 14, __PointOutArgs
+4	6070	397		release __PointOutMutex
+4	5362	398	#line 5362 "NXCDefs.h"
+4	6069	398	#line 6069 "NXCDefs.h"
+4	191	398	#line 191 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	192	398	#line 192 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	193	398		mov __D0Select, __Select_7qG2_select_7qG2_000
+4	192	400	#line 192 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	193	400		subret __Select_return
+4	192	402	#line 192 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	193	402	#line 193 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc"
+4	194	402		subret __Select_return
+5	10	0	#line 10 "C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc"
+5	11	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc
+1	line	74	C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc
+2	_len	154	C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc
+3	_display	353	C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc
+4	Select	894	C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/menu.nxc
+5	__initialize_global_data	1298	C:\Users\Administrator.FEQ\Desktop\nxt\china\test.nxc

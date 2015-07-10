@@ -1,0 +1,997 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__signed_stack_001Move	6	1	0	4	20
+1	__float_stack_001Move	10	1	4	4	8
+2	__signed_stack_001TurnDeg	6	1	8	4	14
+3	__D0IMU_MLBToInteger	6	1	12	4	1
+4	__unsigned_stack_002IMU_ReadInteger	5	1	16	4	2
+5	__signed_stack_001IMU_SendCommand	6	1	20	4	2
+6	__RLSBmutex3	9	0	24	4	2
+7	__RLSBmutex2	9	0	28	4	2
+8	__RLSBmutex1	9	0	32	4	2
+9	__signed_stack_002TurnDeg	6	1	36	4	10
+10	__signed_stack_003TurnDeg	6	1	40	4	4
+11	__constValf0P4	10	0	44	4	4
+12	__IMU_ReadInteger_shift_tmp	6	1	48	4	4
+13	__DU0Move	5	1	52	4	2
+14	__D0Move	6	1	56	4	30
+15	__D0SetSensorLowspeed_inline_IMU_Init	6	1	60	4	3
+16	__DU0SetSensorLowspeed_inline_IMU_Init	5	1	64	4	2
+17	__D0TurnDeg	6	1	68	4	45
+18	__unsigned_stack_001IMU_ReadInteger	5	1	72	4	2
+19	__D0IMU_ReadInteger	6	1	76	4	10
+20	__D0IMU_ReadCompassHeading	6	1	80	4	5
+21	__signed_stack_001IMU_ReadInteger	6	1	84	4	4
+22	__D0IMU_SendCommand	6	1	88	4	8
+23	__signed_stack_002IMU_ReadInteger	6	1	92	4	2
+24	__RLSBmutex0	9	0	96	4	2
+25	__CLSWMutex1	9	0	100	4	4
+26	__CLSCSMutex1	9	0	104	4	8
+27	__CLSRMutex1	9	0	108	4	2
+28	__CLSWMutex2	9	0	112	4	4
+29	__CLSCSMutex2	9	0	116	4	8
+30	__ResetSensorMutex	9	0	120	4	2
+31	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	124	4	2
+32	__CLSCSMutex0	9	0	128	4	8
+33	__CLSRMutex0	9	0	132	4	2
+34	__CLSWMutex0	9	0	136	4	4
+35	__CLSCSMutex3	9	0	140	4	8
+36	__CLSRMutex2	9	0	144	4	2
+37	__CLSRMutex3	9	0	148	4	2
+38	__CLSWMutex3	9	0	152	4	4
+39	__TurnDeg_7qG2_lowGoal_7qG2_000	4	1	156	2	3
+40	__Move_7qG2_left_7qG2_000	4	1	158	2	16
+41	__TurnDeg_7qG2_heading_7qG2_000	4	1	160	2	7
+42	__TurnDeg_7qG2_goal_7qG2_000	4	1	162	2	11
+43	__IMU_SendCommand_7qG2_status_7qG2_000	4	1	164	2	3
+44	__IMU_ReadInteger_7qG2_count_7qG2_000	4	1	166	2	3
+45	__TurnDeg_7qG2_highGoal_7qG2_000	4	1	168	2	3
+46	__TurnDeg_7qG2_dir_7qG2_000	4	1	170	2	3
+47	__IMU_ReadInteger_7qG2_result_7qG2_000	4	1	172	2	3
+48	__constVal360	4	0	174	2	4
+49	__TurnDeg_7qG2_deg_7qG2_000	4	1	176	2	3
+50	__IMU_ReadInteger_7qG2_reg_to_read_7qG2_000	4	1	178	2	2
+51	__Move_7qG2_right_7qG2_000	4	1	180	2	16
+52	__IMU_ReadInteger_7qG2_i2cAddr_7qG2_000	1	1	182	1	2
+53	__IMU_ReadInteger_7qG2_nByteReady_7qG2_000	1	1	183	1	2
+54	__IMU_ReadInteger_return	1	1	184	1	4
+55	__IMU_ReadInteger_shift_cnt	2	1	185	1	4
+56	__Move_return	1	1	186	1	5
+57	__constVal60	2	0	187	1	4
+58	__Move_7qG2_autofix_7qG2_000	1	1	188	1	4
+59	__IMU_ReadCompassHeading_7qG2_i2cAddr_7qG2_000	1	1	189	1	3
+60	__IMU_ReadCompassHeading_return	1	1	190	1	5
+61	__constValNeg75	2	0	191	1	2
+62	____initialize_global_data_return	1	1	192	1	3
+63	__TurnDeg_return	1	1	193	1	3
+64	__constVal96	2	0	194	1	4
+65	__constVal63	2	0	195	1	4
+66	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_IMU_Init	1	1	196	1	2
+67	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_IMU_Init	1	1	197	1	2
+68	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_IMU_Init	1	1	198	1	4
+69	__IMU_Init_7qG2_port_7qG2_000	1	1	199	1	2
+70	__IMU_Init_return	1	1	200	1	3
+71	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_IMU_Init	1	1	201	1	2
+72	__IMU_ReadCompassHeading_7qG2_port_7qG2_000	1	1	202	1	3
+73	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_IMU_Init	1	1	203	1	2
+74	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_IMU_Init	1	1	204	1	2
+75	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_IMU_Init	1	1	205	1	2
+76	__RLSBResultVar	2	1	206	1	8
+77	__RLSBytesCountVar	1	1	207	1	8
+78	__constVal2	2	0	208	1	3
+79	____ReadLSBytesVar_return	1	1	209	1	3
+80	__constVal10	2	0	210	1	6
+81	__constValNeg100	2	0	211	1	4
+82	__RLSBIterationsVar	1	1	212	1	4
+83	__RLSReadPort	1	1	213	1	4
+84	__constVal15	2	0	214	1	1
+85	__constVal1	2	0	215	1	5
+86	__constVal0	2	1	216	1	19
+87	__OnRev_Tmp	2	1	217	1	4
+88	__constVal32	2	0	218	1	12
+89	__ResetSensorTmp	1	1	219	1	2
+90	____ResetSensorSubroutine_return	1	1	220	1	3
+91	__constVal3	2	0	221	1	4
+92	__ResetSensorPort	1	1	222	1	3
+93	__constVal20	2	0	223	1	1
+94	__IMU_SendCommand_7qG2_port_7qG2_000	1	1	224	1	4
+95	__IMU_SendCommand_7qG2_i2cAddr_7qG2_000	1	1	225	1	2
+96	__zfTurnDeg	1	1	226	1	40
+97	__zfSetSensorLowspeed_inline_IMU_Init	1	1	227	1	2
+98	__constVal65	2	0	228	1	1
+99	__IMU_ReadInteger_7qG2_port_7qG2_000	1	1	229	1	3
+100	__IMU_SendCommand_7qG2_cmd_7qG2_000	1	1	230	1	2
+101	__IMU_SendCommand_return	1	1	231	1	3
+102	__zfIMU_ReadInteger	1	1	232	1	5
+103	__tmpsbyteIMU_SendCommand	2	1	233	1	2
+104	__PFTmp	1	1	234	1	1
+105	__ArrHelper__IMU_ReadInteger_98_0	1	1	235	1	4
+106	__zfIMU_SendCommand	1	1	236	1	3
+107	__zfMove	1	1	237	1	32
+108	__CLSCSArgs0	8	0	3	4	16
+109	__CLSCSArgs0.Result	2	1	240	1	16
+110	__CLSCSArgs0.Port	1	1	241	1	16
+111	__CLSCSArgs0.BytesReady	1	1	242	1	16
+112	__CLSWArgs0	8	0	4	12	10
+113	__CLSWArgs0.Result	2	1	244	1	10
+114	__CLSWArgs0.Port	1	1	245	1	10
+115	__CLSWArgs0.Buffer	7	0	246	4	10
+116	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+117	__CLSWArgs0.ReturnLen	1	1	248	1	10
+118	__CLSRArgs0	8	0	4	12	5
+119	__CLSRArgs0.Result	2	1	252	1	5
+120	__CLSRArgs0.Port	1	1	253	1	5
+121	__CLSRArgs0.Buffer	7	0	254	4	5
+122	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+123	__CLSRArgs0.BufferLen	1	1	256	1	5
+124	__IMU_SendCommand_7qG2_cmdBuf_7qG2_000	7	0	258	4	2
+125	__IMU_SendCommand_7qG2_cmdBuf_7qG2_000.__IMU_SendCommand_7qG2_cmdBuf_7qG2_000_type	1	0	0	1	0
+126	__RLSLastGoodReadVar	7	0	260	4	2
+127	__RLSLastGoodReadVar.__RLSLastGoodReadVar_type	1	0	0	1	0
+128	__RLSReadBufVar	7	0	262	4	8
+129	__RLSReadBufVar.__RLSReadBufVar_type	1	0	0	1	0
+130	__IMU_ReadInteger_7qG2_buf_7qG2_000	7	0	264	4	4
+131	__IMU_ReadInteger_7qG2_buf_7qG2_000.__IMU_ReadInteger_7qG2_buf_7qG2_000_type	1	0	0	1	0
+132	__IMU_ReadInteger_7qG2_message_7qG2_000	7	0	266	4	2
+133	__IMU_ReadInteger_7qG2_message_7qG2_000.__IMU_ReadInteger_7qG2_message_7qG2_000_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	102	0	#line 102 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+0	103	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	102	2	#line 102 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+0	102	2	#line 102 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+0	103	2		set __IMU_Init_7qG2_port_7qG2_000, 0
+0	102	5	#line 102 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+0	103	5	#line 103 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+0	104	5		subcall IMU_Init, __IMU_Init_return
+0	103	7	#line 103 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+0	103	7	#line 103 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+0	104	7		set __IMU_SendCommand_7qG2_port_7qG2_000, 0
+0	103	10	#line 103 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+0	103	10	#line 103 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+0	104	10		set __IMU_SendCommand_7qG2_i2cAddr_7qG2_000, 34
+0	103	13	#line 103 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+0	103	13	#line 103 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+0	104	13		set __IMU_SendCommand_7qG2_cmd_7qG2_000, 52
+0	103	16	#line 103 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+0	104	16	#line 104 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+0	105	16		subcall IMU_SendCommand, __IMU_SendCommand_return
+0	104	18	#line 104 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+0	104	18	#line 104 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+0	105	18		set __Wait_7qG2_ms_7qG2_000_inline_main, 100
+0	104	21	#line 104 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+0	7921	21	#line 7921 "NXCDefs.h"
+0	7922	21		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	24	#line 7921 "NXCDefs.h"
+0	106	24	#line 106 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+0	106	24	#line 106 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+0	107	24		set __TurnDeg_7qG2_deg_7qG2_000, 90
+0	106	27	#line 106 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+0	107	27	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+0	108	27		subcall TurnDeg, __TurnDeg_return
+0	107	29	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+0	108	29		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	5821	0	#pragma macro 25
+2	5821	0		acquire __CLSWMutex0
+2	5821	1		acquire __CLSWMutex1
+2	5821	2		acquire __CLSWMutex2
+2	5821	3		acquire __CLSWMutex3
+2	5821	4		mov __CLSWArgs0.Port, __RLSReadPort
+2	5821	6		mov __CLSWArgs0.ReturnLen, __RLSBytesCountVar
+2	5821	8		mov __CLSWArgs0.Buffer, __RLSReadBufVar
+2	5821	10		syscall 21, __CLSWArgs0
+2	5821	13		mov __RLSBResultVar, __CLSWArgs0.Result
+2	5821	15		release __CLSWMutex0
+2	5821	16		release __CLSWMutex1
+2	5821	17		release __CLSWMutex2
+2	5821	18		release __CLSWMutex3
+2	5821	19	#line 5821 "NXTDefs.h"
+2	5822	19		brtst 4, __RLSBReturnVar, __RLSBytesCountVar
+2	5823	22		arrinit __RLSReadBufVar, __constVal0, __RLSBytesCountVar
+2	5824	26		brtst 5, __RLSBErrorVar, __RLSBResultVar
+2	5825	29		set __RLSBIterationsVar, 4
+2	5827	32	#pragma macro 23
+2	5827	32		acquire __CLSCSMutex0
+2	5827	33		acquire __CLSCSMutex1
+2	5827	34		acquire __CLSCSMutex2
+2	5827	35		acquire __CLSCSMutex3
+2	5827	36		mov __CLSCSArgs0.Port, __RLSReadPort
+2	5827	38		syscall 23, __CLSCSArgs0
+2	5827	41		mov __RLSBytesCountVar, __CLSCSArgs0.BytesReady
+2	5827	43		mov __RLSBResultVar, __CLSCSArgs0.Result
+2	5827	45		release __CLSCSMutex0
+2	5827	46		release __CLSCSMutex1
+2	5827	47		release __CLSCSMutex2
+2	5827	48		release __CLSCSMutex3
+2	5827	49	#line 5827 "NXTDefs.h"
+2	5828	49		sub __RLSBIterationsVar, __RLSBIterationsVar, __constVal1
+2	5829	53		brtst 2, __RLSBErrorVar, __RLSBIterationsVar
+2	5830	56		brtst 0, __RLSBErrorVar, __RLSBResultVar
+2	5831	59		brtst 4, __RLSBReadyToReadVar, __RLSBResultVar
+2	5833	62		wait2 NA, __constVal15
+2	5834	65		jmp __RLSBDoCheckStatusVar
+2	5837	67	#pragma macro 25
+2	5837	67		acquire __CLSRMutex0
+2	5837	68		acquire __CLSRMutex1
+2	5837	69		acquire __CLSRMutex2
+2	5837	70		acquire __CLSRMutex3
+2	5837	71		mov __CLSRArgs0.Port, __RLSReadPort
+2	5837	73		mov __CLSRArgs0.BufferLen, __RLSBytesCountVar
+2	5837	75		syscall 22, __CLSRArgs0
+2	5837	78		mov __RLSReadBufVar, __CLSRArgs0.Buffer
+2	5837	80		mov __RLSBResultVar, __CLSRArgs0.Result
+2	5837	82		release __CLSRMutex0
+2	5837	83		release __CLSRMutex1
+2	5837	84		release __CLSRMutex2
+2	5837	85		release __CLSRMutex3
+2	5837	86	#line 5837 "NXTDefs.h"
+2	5838	86		brtst 5, __RLSBErrorVar, __RLSBResultVar
+2	5839	89		mov __RLSLastGoodReadVar, __RLSReadBufVar
+2	5840	91		jmp __RLSBDoneVar
+2	5842	93		mov __RLSReadBufVar, __RLSLastGoodReadVar
+2	5844	95		arrsize __RLSBytesCountVar, __RLSReadBufVar
+2	5846	98		subret ____ReadLSBytesVar_return
+3	107	0	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+3	108	0		arrbuild __IMU_SendCommand_7qG2_cmdBuf_7qG2_000, __IMU_SendCommand_7qG2_i2cAddr_7qG2_000, __constVal65, __IMU_SendCommand_7qG2_cmd_7qG2_000
+3	107	6	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+3	107	6	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+3	108	6	#line 108 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+3	109	6	#pragma macro 25
+3	109	6		acquire __CLSWMutex0
+3	109	7		acquire __CLSWMutex1
+3	109	8		acquire __CLSWMutex2
+3	109	9		acquire __CLSWMutex3
+3	109	10		mov __CLSWArgs0.Port, __IMU_SendCommand_7qG2_port_7qG2_000
+3	109	12		mov __CLSWArgs0.ReturnLen, __constVal0
+3	109	14		mov __CLSWArgs0.Buffer, __IMU_SendCommand_7qG2_cmdBuf_7qG2_000
+3	109	16		syscall 21, __CLSWArgs0
+3	109	19		mov __D0IMU_SendCommand, __CLSWArgs0.Result
+3	109	21		release __CLSWMutex0
+3	109	22		release __CLSWMutex1
+3	109	23		release __CLSWMutex2
+3	109	24		release __CLSWMutex3
+3	5112	25	#line 5112 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+3	108	25	#line 108 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+3	108	25	#line 108 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+3	109	25	#line 109 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+3	110	25	#pragma macro 23
+3	110	25		acquire __CLSCSMutex0
+3	110	26		acquire __CLSCSMutex1
+3	110	27		acquire __CLSCSMutex2
+3	110	28		acquire __CLSCSMutex3
+3	110	29		mov __CLSCSArgs0.Port, __IMU_SendCommand_7qG2_port_7qG2_000
+3	110	31		syscall 23, __CLSCSArgs0
+3	110	34		mov __tmpsbyteIMU_SendCommand, __CLSCSArgs0.BytesReady
+3	110	36		mov __D0IMU_SendCommand, __CLSCSArgs0.Result
+3	110	38		release __CLSCSMutex0
+3	110	39		release __CLSCSMutex1
+3	110	40		release __CLSCSMutex2
+3	110	41		release __CLSCSMutex3
+3	5120	42	#line 5120 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+3	109	42	#line 109 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+3	110	42		mov __IMU_SendCommand_7qG2_status_7qG2_000, __D0IMU_SendCommand
+3	110	44	#line 110 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+3	111	44		mov __signed_stack_001IMU_SendCommand, __IMU_SendCommand_7qG2_status_7qG2_000
+3	110	46	#line 110 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+3	111	46	#line 111 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+3	112	46		set __D0IMU_SendCommand, 0
+3	111	49	#line 111 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+3	112	49		cmp 1, __zfIMU_SendCommand, __signed_stack_001IMU_SendCommand, __D0IMU_SendCommand
+3	111	53	#line 111 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+3	112	53		mov __D0IMU_SendCommand, __zfIMU_SendCommand
+3	111	55	#line 111 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+3	112	55		brtst 4, __NXC_Label_523, __zfIMU_SendCommand
+3	111	58	#line 111 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+3	112	58	#pragma macro 23
+3	112	58		acquire __CLSCSMutex0
+3	112	59		acquire __CLSCSMutex1
+3	112	60		acquire __CLSCSMutex2
+3	112	61		acquire __CLSCSMutex3
+3	112	62		mov __CLSCSArgs0.Port, __IMU_SendCommand_7qG2_port_7qG2_000
+3	112	64		syscall 23, __CLSCSArgs0
+3	112	67		mov __tmpsbyteIMU_SendCommand, __CLSCSArgs0.BytesReady
+3	112	69		mov __D0IMU_SendCommand, __CLSCSArgs0.Result
+3	112	71		release __CLSCSMutex0
+3	112	72		release __CLSCSMutex1
+3	112	73		release __CLSCSMutex2
+3	112	74		release __CLSCSMutex3
+3	5141	75	#line 5141 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+3	111	75	#line 111 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+3	112	75		mov __IMU_SendCommand_7qG2_status_7qG2_000, __D0IMU_SendCommand
+3	111	77	#line 111 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+3	111	77	#line 111 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+3	112	77		jmp __NXC_Label_522
+3	111	79	#line 111 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+3	111	79	#line 111 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+3	118	79	#line 118 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+3	119	79		subret __IMU_SendCommand_return
+4	122	0	#line 122 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	123	0		arrinit __IMU_ReadInteger_7qG2_buf_7qG2_000, __constVal0, __constVal20
+4	124	4	#line 124 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	125	4		set __IMU_ReadInteger_7qG2_result_7qG2_000, 0
+4	124	7	#line 124 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	126	7	#line 126 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	127	7		set __IMU_ReadInteger_7qG2_nByteReady_7qG2_000, 0
+4	126	10	#line 126 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	126	10	#line 126 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	127	10		arrbuild __IMU_ReadInteger_7qG2_message_7qG2_000, __IMU_ReadInteger_7qG2_i2cAddr_7qG2_000, __IMU_ReadInteger_7qG2_reg_to_read_7qG2_000
+4	126	15	#line 126 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	126	15	#line 126 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	127	15	#line 127 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	128	15	#pragma macro 23
+4	128	15		acquire __CLSCSMutex0
+4	128	16		acquire __CLSCSMutex1
+4	128	17		acquire __CLSCSMutex2
+4	128	18		acquire __CLSCSMutex3
+4	128	19		mov __CLSCSArgs0.Port, __IMU_ReadInteger_7qG2_port_7qG2_000
+4	128	21		syscall 23, __CLSCSArgs0
+4	128	24		mov __IMU_ReadInteger_7qG2_nByteReady_7qG2_000, __CLSCSArgs0.BytesReady
+4	128	26		mov __D0IMU_ReadInteger, __CLSCSArgs0.Result
+4	128	28		release __CLSCSMutex0
+4	128	29		release __CLSCSMutex1
+4	128	30		release __CLSCSMutex2
+4	128	31		release __CLSCSMutex3
+4	5213	32	#line 5213 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	127	32	#line 127 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	128	32		mov __signed_stack_001IMU_ReadInteger, __D0IMU_ReadInteger
+4	127	34	#line 127 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	128	34		set __D0IMU_ReadInteger, 32
+4	127	37	#line 127 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	128	37		cmp 4, __zfIMU_ReadInteger, __signed_stack_001IMU_ReadInteger, __D0IMU_ReadInteger
+4	127	41	#line 127 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	128	41		mov __D0IMU_ReadInteger, __zfIMU_ReadInteger
+4	128	43	#line 128 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	129	43		brtst 4, __NXC_Label_533, __zfIMU_ReadInteger
+4	128	46	#line 128 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	128	46	#line 128 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	129	46		jmp __NXC_Label_532
+4	128	48	#line 128 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	129	48	#line 129 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	130	48		set __IMU_ReadInteger_7qG2_count_7qG2_000, 2
+4	129	51	#line 129 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	129	51	#line 129 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	129	51	#line 129 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	130	51	#pragma macro 28
+4	130	51		acquire __RLSBmutex0
+4	130	52		acquire __RLSBmutex1
+4	130	53		acquire __RLSBmutex2
+4	130	54		acquire __RLSBmutex3
+4	130	55		mov __RLSReadPort, __IMU_ReadInteger_7qG2_port_7qG2_000
+4	130	57		mov __RLSReadBufVar, __IMU_ReadInteger_7qG2_message_7qG2_000
+4	130	59		mov __RLSBytesCountVar, __IMU_ReadInteger_7qG2_count_7qG2_000
+4	130	61		subcall __ReadLSBytesVar, ____ReadLSBytesVar_return
+4	130	63		tst 4, __D0IMU_ReadInteger, __RLSBResultVar
+4	130	66		mov __IMU_ReadInteger_7qG2_count_7qG2_000, __RLSBytesCountVar
+4	130	68		mov __IMU_ReadInteger_7qG2_buf_7qG2_000, __RLSReadBufVar
+4	130	70		release __RLSBmutex0
+4	130	71		release __RLSBmutex1
+4	130	72		release __RLSBmutex2
+4	130	73		release __RLSBmutex3
+4	5239	74	#line 5239 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	130	74	#line 130 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	131	74		tst 5, __zfIMU_ReadInteger, __D0IMU_ReadInteger
+4	130	77	#line 130 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	131	77		brtst 4, __NXC_Label_540, __zfIMU_ReadInteger
+4	130	80	#line 130 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	131	80		set __signed_stack_001IMU_ReadInteger, 0
+4	130	83	#line 130 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	130	83	#line 130 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	131	83		index __ArrHelper__IMU_ReadInteger_98_0, __IMU_ReadInteger_7qG2_buf_7qG2_000, __signed_stack_001IMU_ReadInteger
+4	130	87	#line 130 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	131	87		mov __unsigned_stack_001IMU_ReadInteger, __ArrHelper__IMU_ReadInteger_98_0
+4	130	89	#line 130 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	130	89	#line 130 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	131	89		set __signed_stack_002IMU_ReadInteger, 1
+4	130	92	#line 130 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	130	92	#line 130 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	131	92		index __ArrHelper__IMU_ReadInteger_98_0, __IMU_ReadInteger_7qG2_buf_7qG2_000, __signed_stack_002IMU_ReadInteger
+4	130	96	#line 130 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	131	96		mov __unsigned_stack_002IMU_ReadInteger, __ArrHelper__IMU_ReadInteger_98_0
+4	130	98	#line 130 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	130	98	#line 130 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	131	98		set __IMU_ReadInteger_shift_cnt, 8
+4	130	101	#line 130 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	131	101		mov __IMU_ReadInteger_shift_tmp, __unsigned_stack_002IMU_ReadInteger
+4	131	103	__shiftstart_2:	brtst LTEQ, __shiftdone_2, __IMU_ReadInteger_shift_cnt
+4	131	106		mul __IMU_ReadInteger_shift_tmp, __IMU_ReadInteger_shift_tmp, __constVal2
+4	131	110		sub __IMU_ReadInteger_shift_cnt, __IMU_ReadInteger_shift_cnt, __constVal1
+4	131	114		jmp __shiftstart_2
+4	131	116	#line 131 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	132	116		add __IMU_ReadInteger_7qG2_result_7qG2_000, __unsigned_stack_001IMU_ReadInteger, __IMU_ReadInteger_shift_tmp
+4	131	120	#line 131 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	131	120	#line 131 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	132	120	#line 132 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	133	120	#line 133 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	134	120		mov __D0IMU_ReadInteger, __IMU_ReadInteger_7qG2_result_7qG2_000
+4	133	122	#line 133 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	134	122		subret __IMU_ReadInteger_return
+4	133	124	#line 133 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	135	124	#line 135 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+4	136	124		subret __IMU_ReadInteger_return
+5	277	0	#line 277 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+5	278	0		mov __SetSensorLowspeed_7qG2_port_7qG2_000_inline_IMU_Init, __IMU_Init_7qG2_port_7qG2_000
+5	277	2	#line 277 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+5	278	2	#line 278 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+5	279	2		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_IMU_Init, __constVal1
+5	3758	4	#line 3758 "NXCDefs.h"
+5	3759	4		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_IMU_Init, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_IMU_Init
+5	3758	6	#line 3758 "NXCDefs.h"
+5	3758	6	#line 3758 "NXCDefs.h"
+5	3759	6		mov __DU0SetSensorLowspeed_inline_IMU_Init, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_IMU_Init
+5	3758	8	#line 3758 "NXCDefs.h"
+5	3759	8		tst 5, __zfSetSensorLowspeed_inline_IMU_Init, __DU0SetSensorLowspeed_inline_IMU_Init
+5	3758	11	#line 3758 "NXCDefs.h"
+5	3759	11		brtst 4, __005__NXC_Label_36, __zfSetSensorLowspeed_inline_IMU_Init
+5	3758	14	#line 3758 "NXCDefs.h"
+5	3759	14		set __D0SetSensorLowspeed_inline_IMU_Init, 11
+5	3758	17	#line 3758 "NXCDefs.h"
+5	3759	17		jmp __005__NXC_Label_37
+5	3758	19	#line 3758 "NXCDefs.h"
+5	3759	19		set __D0SetSensorLowspeed_inline_IMU_Init, 10
+5	3758	22	#line 3758 "NXCDefs.h"
+5	3759	22		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_IMU_Init, __D0SetSensorLowspeed_inline_IMU_Init
+5	3663	24	#line 3663 "NXCDefs.h"
+5	3664	24		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_IMU_Init, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_IMU_Init, 0
+5	3663	28	#line 3663 "NXCDefs.h"
+5	3759	28	#line 3759 "NXCDefs.h"
+5	3759	28	#line 3759 "NXCDefs.h"
+5	3760	28		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_IMU_Init, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_IMU_Init
+5	3759	30	#line 3759 "NXCDefs.h"
+5	3759	30	#line 3759 "NXCDefs.h"
+5	3760	30		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_IMU_Init, 0
+5	3759	33	#line 3759 "NXCDefs.h"
+5	3676	33	#line 3676 "NXCDefs.h"
+5	3677	33		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_IMU_Init, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_IMU_Init, 1
+5	3676	37	#line 3676 "NXCDefs.h"
+5	3760	37	#line 3760 "NXCDefs.h"
+5	3760	37	#line 3760 "NXCDefs.h"
+5	3761	37		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_IMU_Init, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_IMU_Init
+5	3760	39	#line 3760 "NXCDefs.h"
+5	3694	39	#line 3694 "NXCDefs.h"
+5	3695	39	#pragma macro 4
+5	3695	39		acquire __ResetSensorMutex
+5	3695	40		mov __ResetSensorPort, __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_IMU_Init
+5	3695	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+5	3695	44		release __ResetSensorMutex
+5	6766	45	#line 6766 "NXCDefs.h"
+5	3694	45	#line 3694 "NXCDefs.h"
+5	3761	45	#line 3761 "NXCDefs.h"
+5	278	45	#line 278 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+5	280	45	#line 280 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+5	281	45		subret __IMU_Init_return
+6	282	0	#line 282 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+6	283	0		mov __IMU_ReadInteger_7qG2_port_7qG2_000, __IMU_ReadCompassHeading_7qG2_port_7qG2_000
+6	282	2	#line 282 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+6	282	2	#line 282 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+6	283	2		mov __IMU_ReadInteger_7qG2_i2cAddr_7qG2_000, __IMU_ReadCompassHeading_7qG2_i2cAddr_7qG2_000
+6	282	4	#line 282 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+6	282	4	#line 282 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+6	283	4		set __IMU_ReadInteger_7qG2_reg_to_read_7qG2_000, 75
+6	282	7	#line 282 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+6	282	7	#line 282 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+6	283	7		subcall IMU_ReadInteger, __IMU_ReadInteger_return
+6	282	9	#line 282 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+6	283	9		mov __D0IMU_ReadCompassHeading, __D0IMU_ReadInteger
+6	283	11	#line 283 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+6	284	11		subret __IMU_ReadCompassHeading_return
+6	283	13	#line 283 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+6	285	13	#line 285 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc"
+6	286	13		subret __IMU_ReadCompassHeading_return
+7	6	0	#line 6 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	7	0		mov __DU0Move, __Move_7qG2_autofix_7qG2_000
+7	8	2	#line 8 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	9	2		tst 5, __zfMove, __DU0Move
+7	8	5	#line 8 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	9	5		brtst 4, __NXC_Label_884, __zfMove
+7	8	8	#line 8 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	9	8		mov __signed_stack_001Move, __Move_7qG2_left_7qG2_000
+7	8	10	#line 8 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	8	10	#line 8 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	9	10		set __D0Move, 0
+7	8	13	#line 8 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	9	13		cmp 1, __zfMove, __signed_stack_001Move, __D0Move
+7	8	17	#line 8 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	9	17		mov __D0Move, __zfMove
+7	9	19	#line 9 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	10	19		brtst 4, __NXC_Label_887, __zfMove
+7	9	22	#line 9 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	9	22	#line 9 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	9	22	#line 9 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	9	22	#line 9 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	10	22		mul __float_stack_001Move, __Move_7qG2_left_7qG2_000, __constValf0P4
+7	9	26	#line 9 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	10	26	#line 10 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	10	26	#line 10 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	11	26		add __Move_7qG2_left_7qG2_000, __float_stack_001Move, __constVal60
+7	10	30	#line 10 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	10	30	#line 10 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	11	30	#line 11 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	12	30		jmp __NXC_Label_890
+7	11	32	#line 11 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	12	32		mov __signed_stack_001Move, __Move_7qG2_left_7qG2_000
+7	11	34	#line 11 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	11	34	#line 11 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	12	34		set __D0Move, 0
+7	11	37	#line 11 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	12	37		cmp 0, __zfMove, __signed_stack_001Move, __D0Move
+7	11	41	#line 11 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	12	41		mov __D0Move, __zfMove
+7	12	43	#line 12 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	13	43		brtst 4, __NXC_Label_893, __zfMove
+7	12	46	#line 12 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	12	46	#line 12 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	12	46	#line 12 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	12	46	#line 12 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	13	46		mul __float_stack_001Move, __Move_7qG2_left_7qG2_000, __constValf0P4
+7	12	50	#line 12 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	13	50	#line 13 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	13	50	#line 13 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	14	50		sub __Move_7qG2_left_7qG2_000, __float_stack_001Move, __constVal60
+7	13	54	#line 13 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	13	54	#line 13 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	14	54	#line 14 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	14	54	#line 14 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	14	54	#line 14 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	15	54		mov __signed_stack_001Move, __Move_7qG2_right_7qG2_000
+7	14	56	#line 14 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	14	56	#line 14 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	15	56		set __D0Move, 0
+7	14	59	#line 14 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	15	59		cmp 1, __zfMove, __signed_stack_001Move, __D0Move
+7	14	63	#line 14 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	15	63		mov __D0Move, __zfMove
+7	15	65	#line 15 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	16	65		brtst 4, __NXC_Label_898, __zfMove
+7	15	68	#line 15 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	15	68	#line 15 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	15	68	#line 15 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	15	68	#line 15 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	16	68		mul __float_stack_001Move, __Move_7qG2_right_7qG2_000, __constValf0P4
+7	15	72	#line 15 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	16	72	#line 16 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	16	72	#line 16 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	17	72		add __Move_7qG2_right_7qG2_000, __float_stack_001Move, __constVal60
+7	16	76	#line 16 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	16	76	#line 16 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	17	76	#line 17 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	18	76		jmp __NXC_Label_901
+7	17	78	#line 17 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	18	78		mov __signed_stack_001Move, __Move_7qG2_right_7qG2_000
+7	17	80	#line 17 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	17	80	#line 17 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	18	80		set __D0Move, 0
+7	17	83	#line 17 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	18	83		cmp 0, __zfMove, __signed_stack_001Move, __D0Move
+7	17	87	#line 17 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	18	87		mov __D0Move, __zfMove
+7	18	89	#line 18 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	19	89		brtst 4, __NXC_Label_904, __zfMove
+7	18	92	#line 18 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	18	92	#line 18 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	18	92	#line 18 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	18	92	#line 18 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	19	92		mul __float_stack_001Move, __Move_7qG2_right_7qG2_000, __constValf0P4
+7	18	96	#line 18 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	19	96	#line 19 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	19	96	#line 19 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	20	96		sub __Move_7qG2_right_7qG2_000, __float_stack_001Move, __constVal60
+7	19	100	#line 19 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	19	100	#line 19 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	22	100	#line 22 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	22	100	#line 22 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	22	100	#line 22 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	22	100	#line 22 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	23	100		mov __signed_stack_001Move, __Move_7qG2_left_7qG2_000
+7	22	102	#line 22 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	22	102	#line 22 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	23	102		set __D0Move, 100
+7	22	105	#line 22 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	23	105		cmp 1, __zfMove, __signed_stack_001Move, __D0Move
+7	22	109	#line 22 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	23	109		mov __D0Move, __zfMove
+7	23	111	#line 23 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	24	111		brtst 4, __NXC_Label_909, __zfMove
+7	24	114	#line 24 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	25	114		set __Move_7qG2_left_7qG2_000, 100
+7	24	117	#line 24 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	24	117	#line 24 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	25	117	#line 25 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	26	117		jmp __NXC_Label_912
+7	25	119	#line 25 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	26	119		mov __signed_stack_001Move, __Move_7qG2_left_7qG2_000
+7	25	121	#line 25 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	25	121	#line 25 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	26	121		mov __D0Move, __constValNeg100
+7	25	123	#line 25 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	26	123		cmp 0, __zfMove, __signed_stack_001Move, __D0Move
+7	25	127	#line 25 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	26	127		mov __D0Move, __zfMove
+7	26	129	#line 26 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	27	129		brtst 4, __NXC_Label_915, __zfMove
+7	27	132	#line 27 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	28	132		mov __Move_7qG2_left_7qG2_000, __constValNeg100
+7	27	134	#line 27 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	27	134	#line 27 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	29	134	#line 29 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	29	134	#line 29 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	29	134	#line 29 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	30	134		mov __signed_stack_001Move, __Move_7qG2_right_7qG2_000
+7	29	136	#line 29 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	29	136	#line 29 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	30	136		set __D0Move, 100
+7	29	139	#line 29 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	30	139		cmp 1, __zfMove, __signed_stack_001Move, __D0Move
+7	29	143	#line 29 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	30	143		mov __D0Move, __zfMove
+7	30	145	#line 30 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	31	145		brtst 4, __NXC_Label_920, __zfMove
+7	31	148	#line 31 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	32	148		set __Move_7qG2_right_7qG2_000, 100
+7	31	151	#line 31 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	31	151	#line 31 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	32	151	#line 32 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	33	151		jmp __NXC_Label_923
+7	32	153	#line 32 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	33	153		mov __signed_stack_001Move, __Move_7qG2_right_7qG2_000
+7	32	155	#line 32 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	32	155	#line 32 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	33	155		mov __D0Move, __constValNeg100
+7	32	157	#line 32 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	33	157		cmp 0, __zfMove, __signed_stack_001Move, __D0Move
+7	32	161	#line 32 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	33	161		mov __D0Move, __zfMove
+7	33	163	#line 33 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	34	163		brtst 4, __NXC_Label_926, __zfMove
+7	34	166	#line 34 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	35	166		mov __Move_7qG2_right_7qG2_000, __constValNeg100
+7	34	168	#line 34 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	34	168	#line 34 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	36	168	#line 36 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	36	168	#line 36 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	36	168	#line 36 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	37	168		mov __signed_stack_001Move, __Move_7qG2_left_7qG2_000
+7	36	170	#line 36 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	36	170	#line 36 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	37	170		set __D0Move, 0
+7	36	173	#line 36 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	37	173		cmp 4, __zfMove, __signed_stack_001Move, __D0Move
+7	36	177	#line 36 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	37	177		mov __D0Move, __zfMove
+7	37	179	#line 37 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	38	179		brtst 4, __NXC_Label_931, __zfMove
+7	38	182	#line 38 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	39	182	#pragma macro 7
+7	39	182		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	7292	205	#line 7292 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	38	205	#line 38 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	40	205	#line 40 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	41	205		jmp __NXC_Label_932
+7	40	207	#line 40 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	41	207	#line 41 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	42	207	#pragma macro 10
+7	42	207		neg __OnRev_Tmp, __Move_7qG2_left_7qG2_000
+7	42	210		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	7302	233	#line 7302 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	41	233	#line 41 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	42	233	#line 42 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	42	233	#line 42 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	43	233		mov __signed_stack_001Move, __Move_7qG2_right_7qG2_000
+7	42	235	#line 42 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	42	235	#line 42 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	43	235		set __D0Move, 0
+7	42	238	#line 42 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	43	238		cmp 4, __zfMove, __signed_stack_001Move, __D0Move
+7	42	242	#line 42 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	43	242		mov __D0Move, __zfMove
+7	43	244	#line 43 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	44	244		brtst 4, __NXC_Label_937, __zfMove
+7	44	247	#line 44 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	45	247	#pragma macro 7
+7	45	247		setout __constVal2, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	7321	270	#line 7321 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	44	270	#line 44 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	46	270	#line 46 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	47	270		jmp __NXC_Label_938
+7	46	272	#line 46 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	47	272	#line 47 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	48	272	#pragma macro 10
+7	48	272		neg __OnRev_Tmp, __Move_7qG2_right_7qG2_000
+7	48	275		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+7	7331	298	#line 7331 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	47	298	#line 47 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	50	298	#line 50 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	50	298	#line 50 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+7	51	298		subret __Move_return
+8	51	0	#line 51 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	52	0		set __IMU_ReadCompassHeading_7qG2_port_7qG2_000, 0
+8	51	3	#line 51 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	51	3	#line 51 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	52	3		set __IMU_ReadCompassHeading_7qG2_i2cAddr_7qG2_000, 34
+8	51	6	#line 51 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	52	6	#line 52 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	53	6		subcall IMU_ReadCompassHeading, __IMU_ReadCompassHeading_return
+8	52	8	#line 52 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	53	8		mov __TurnDeg_7qG2_heading_7qG2_000, __D0IMU_ReadCompassHeading
+8	52	10	#line 52 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	52	10	#line 52 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	52	10	#line 52 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	53	10	#line 53 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	53	10	#line 53 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	54	10		sub __TurnDeg_7qG2_goal_7qG2_000, __D0IMU_ReadCompassHeading, __TurnDeg_7qG2_deg_7qG2_000
+8	53	14	#line 53 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	57	14	#line 57 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	58	14		mov __signed_stack_001TurnDeg, __TurnDeg_7qG2_goal_7qG2_000
+8	57	16	#line 57 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	57	16	#line 57 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	58	16		set __D0TurnDeg, 0
+8	57	19	#line 57 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	58	19		cmp 0, __zfTurnDeg, __signed_stack_001TurnDeg, __D0TurnDeg
+8	57	23	#line 57 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	58	23		mov __D0TurnDeg, __zfTurnDeg
+8	58	25	#line 58 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	59	25		brtst 4, __NXC_Label_951, __zfTurnDeg
+8	59	28	#line 59 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	59	28	#line 59 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	60	28		add __TurnDeg_7qG2_goal_7qG2_000, __TurnDeg_7qG2_goal_7qG2_000, __constVal360
+8	59	32	#line 59 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	60	32	#line 60 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	61	32		jmp __NXC_Label_954
+8	60	34	#line 60 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	61	34		mov __signed_stack_001TurnDeg, __TurnDeg_7qG2_goal_7qG2_000
+8	60	36	#line 60 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	60	36	#line 60 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	61	36		set __D0TurnDeg, 360
+8	60	39	#line 60 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	61	39		cmp 1, __zfTurnDeg, __signed_stack_001TurnDeg, __D0TurnDeg
+8	60	43	#line 60 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	61	43		mov __D0TurnDeg, __zfTurnDeg
+8	61	45	#line 61 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	62	45		brtst 4, __NXC_Label_957, __zfTurnDeg
+8	62	48	#line 62 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	62	48	#line 62 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	63	48		sub __TurnDeg_7qG2_goal_7qG2_000, __TurnDeg_7qG2_goal_7qG2_000, __constVal360
+8	62	52	#line 62 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	63	52	#line 63 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	63	52	#line 63 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	63	52	#line 63 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	63	52	#line 63 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	64	52	#line 64 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	64	52	#line 64 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	65	52		sub __TurnDeg_7qG2_lowGoal_7qG2_000, __TurnDeg_7qG2_goal_7qG2_000, __constVal360
+8	64	56	#line 64 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	64	56	#line 64 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	64	56	#line 64 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	64	56	#line 64 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	65	56	#line 65 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	65	56	#line 65 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	66	56		add __TurnDeg_7qG2_highGoal_7qG2_000, __TurnDeg_7qG2_goal_7qG2_000, __constVal360
+8	65	60	#line 65 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	65	60	#line 65 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	65	60	#line 65 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	66	60		mov __signed_stack_001TurnDeg, __TurnDeg_7qG2_deg_7qG2_000
+8	65	62	#line 65 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	65	62	#line 65 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	66	62		set __D0TurnDeg, 0
+8	65	65	#line 65 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	66	65		cmp 0, __zfTurnDeg, __signed_stack_001TurnDeg, __D0TurnDeg
+8	65	69	#line 65 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	66	69		mov __D0TurnDeg, __zfTurnDeg
+8	66	71	#line 66 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	67	71		brtst 4, __NXC_Label_966, __zfTurnDeg
+8	67	74	#line 67 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	68	74		set __TurnDeg_7qG2_dir_7qG2_000, 0
+8	67	77	#line 67 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	67	77	#line 67 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	69	77	#line 69 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	70	77		jmp __NXC_Label_969
+8	70	79	#line 70 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	71	79		set __TurnDeg_7qG2_dir_7qG2_000, 1
+8	70	82	#line 70 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	70	82	#line 70 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	72	82	#line 72 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	72	82	#line 72 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	73	82		mov __D0TurnDeg, __TurnDeg_7qG2_dir_7qG2_000
+8	74	84	#line 74 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	75	84		tst 5, __zfTurnDeg, __D0TurnDeg
+8	74	87	#line 74 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	75	87		brtst 4, __NXC_Label_974, __zfTurnDeg
+8	74	90	#line 74 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	75	90		set __Move_7qG2_left_7qG2_000, 75
+8	74	93	#line 74 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	74	93	#line 74 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	75	93		mov __Move_7qG2_right_7qG2_000, __constValNeg75
+8	74	95	#line 74 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	74	95	#line 74 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	75	95		set __Move_7qG2_autofix_7qG2_000, 0
+8	74	98	#line 74 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	75	98	#line 75 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	76	98		subcall Move, __Move_return
+8	75	100	#line 75 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	78	100	#line 78 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	79	100		jmp __NXC_Label_981
+8	78	102	#line 78 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	79	102		mov __Move_7qG2_left_7qG2_000, __constValNeg75
+8	78	104	#line 78 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	78	104	#line 78 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	79	104		set __Move_7qG2_right_7qG2_000, 75
+8	78	107	#line 78 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	78	107	#line 78 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	79	107		set __Move_7qG2_autofix_7qG2_000, 0
+8	78	110	#line 78 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	79	110	#line 79 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	80	110		subcall Move, __Move_return
+8	79	112	#line 79 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	81	112	#line 81 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	81	112	#line 81 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	82	112		set __D0TurnDeg, 1
+8	82	115	#line 82 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	83	115		tst 5, __zfTurnDeg, __D0TurnDeg
+8	82	118	#line 82 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	83	118		brtst 4, __NXC_Label_989, __zfTurnDeg
+8	82	121	#line 82 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	83	121		set __IMU_ReadCompassHeading_7qG2_port_7qG2_000, 0
+8	82	124	#line 82 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	82	124	#line 82 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	83	124		set __IMU_ReadCompassHeading_7qG2_i2cAddr_7qG2_000, 34
+8	82	127	#line 82 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	83	127	#line 83 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	84	127		subcall IMU_ReadCompassHeading, __IMU_ReadCompassHeading_return
+8	83	129	#line 83 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	84	129		mov __TurnDeg_7qG2_heading_7qG2_000, __D0IMU_ReadCompassHeading
+8	83	131	#line 83 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	83	131	#line 83 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	84	131	#line 84 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	85	131		mov __signed_stack_001TurnDeg, __D0IMU_ReadCompassHeading
+8	84	133	#line 84 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	84	133	#line 84 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	84	133	#line 84 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	84	133	#line 84 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	84	133	#line 84 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	85	133		sub __D0TurnDeg, __TurnDeg_7qG2_goal_7qG2_000, __constVal10
+8	84	137	#line 84 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	85	137		cmp 1, __zfTurnDeg, __signed_stack_001TurnDeg, __D0TurnDeg
+8	84	141	#line 84 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	85	141		mov __D0TurnDeg, __zfTurnDeg
+8	85	143	#line 85 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	86	143		brtst 4, __NXC_Label_1001, __zfTurnDeg
+8	85	146	#line 85 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	86	146		mov __signed_stack_001TurnDeg, __D0TurnDeg
+8	85	148	#line 85 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	86	148		mov __signed_stack_002TurnDeg, __TurnDeg_7qG2_heading_7qG2_000
+8	85	150	#line 85 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	85	150	#line 85 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	85	150	#line 85 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	86	150	#line 86 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	86	150	#line 86 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	87	150		add __D0TurnDeg, __TurnDeg_7qG2_goal_7qG2_000, __constVal10
+8	86	154	#line 86 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	87	154		cmp 0, __zfTurnDeg, __signed_stack_002TurnDeg, __D0TurnDeg
+8	86	158	#line 86 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	86	158	#line 86 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	87	158		and __D0TurnDeg, __signed_stack_001TurnDeg, __zfTurnDeg
+8	87	162	#line 87 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	88	162		tst 5, __zfTurnDeg, __D0TurnDeg
+8	87	165	#line 87 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	88	165		mov __D0TurnDeg, __zfTurnDeg
+8	87	167	#line 87 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	88	167		brtst 5, __NXC_Label_998, __zfTurnDeg
+8	87	170	#line 87 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	88	170		mov __signed_stack_001TurnDeg, __D0TurnDeg
+8	87	172	#line 87 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	88	172		mov __signed_stack_002TurnDeg, __TurnDeg_7qG2_heading_7qG2_000
+8	87	174	#line 87 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	87	174	#line 87 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	87	174	#line 87 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	87	174	#line 87 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	87	174	#line 87 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	88	174		sub __D0TurnDeg, __TurnDeg_7qG2_lowGoal_7qG2_000, __constVal10
+8	87	178	#line 87 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	88	178		cmp 1, __zfTurnDeg, __signed_stack_002TurnDeg, __D0TurnDeg
+8	87	182	#line 87 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	88	182		mov __D0TurnDeg, __zfTurnDeg
+8	88	184	#line 88 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	89	184		brtst 4, __NXC_Label_1004, __zfTurnDeg
+8	88	187	#line 88 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	89	187		mov __signed_stack_002TurnDeg, __D0TurnDeg
+8	88	189	#line 88 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	89	189		mov __signed_stack_003TurnDeg, __TurnDeg_7qG2_heading_7qG2_000
+8	88	191	#line 88 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	88	191	#line 88 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	88	191	#line 88 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	89	191	#line 89 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	89	191	#line 89 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	90	191		add __D0TurnDeg, __TurnDeg_7qG2_lowGoal_7qG2_000, __constVal10
+8	89	195	#line 89 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	90	195		cmp 0, __zfTurnDeg, __signed_stack_003TurnDeg, __D0TurnDeg
+8	89	199	#line 89 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	89	199	#line 89 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	90	199		and __D0TurnDeg, __signed_stack_002TurnDeg, __zfTurnDeg
+8	89	203	#line 89 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	90	203		tst 5, __zfTurnDeg, __D0TurnDeg
+8	89	206	#line 89 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	89	206	#line 89 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	90	206		or __D0TurnDeg, __signed_stack_001TurnDeg, __zfTurnDeg
+8	90	210	#line 90 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	91	210		tst 5, __zfTurnDeg, __D0TurnDeg
+8	90	213	#line 90 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	91	213		mov __D0TurnDeg, __zfTurnDeg
+8	90	215	#line 90 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	91	215		brtst 5, __NXC_Label_998, __zfTurnDeg
+8	90	218	#line 90 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	91	218		mov __signed_stack_001TurnDeg, __D0TurnDeg
+8	90	220	#line 90 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	91	220		mov __signed_stack_002TurnDeg, __TurnDeg_7qG2_heading_7qG2_000
+8	90	222	#line 90 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	90	222	#line 90 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	90	222	#line 90 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	90	222	#line 90 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	90	222	#line 90 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	91	222		sub __D0TurnDeg, __TurnDeg_7qG2_highGoal_7qG2_000, __constVal10
+8	90	226	#line 90 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	91	226		cmp 1, __zfTurnDeg, __signed_stack_002TurnDeg, __D0TurnDeg
+8	90	230	#line 90 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	91	230		mov __D0TurnDeg, __zfTurnDeg
+8	91	232	#line 91 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	92	232		brtst 4, __NXC_Label_1007, __zfTurnDeg
+8	91	235	#line 91 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	92	235		mov __signed_stack_002TurnDeg, __D0TurnDeg
+8	91	237	#line 91 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	92	237		mov __signed_stack_003TurnDeg, __TurnDeg_7qG2_heading_7qG2_000
+8	91	239	#line 91 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	91	239	#line 91 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	91	239	#line 91 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	93	239	#line 93 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	93	239	#line 93 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	94	239		add __D0TurnDeg, __TurnDeg_7qG2_highGoal_7qG2_000, __constVal10
+8	93	243	#line 93 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	94	243		cmp 0, __zfTurnDeg, __signed_stack_003TurnDeg, __D0TurnDeg
+8	93	247	#line 93 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	93	247	#line 93 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	94	247		and __D0TurnDeg, __signed_stack_002TurnDeg, __zfTurnDeg
+8	93	251	#line 93 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	94	251		tst 5, __zfTurnDeg, __D0TurnDeg
+8	93	254	#line 93 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	93	254	#line 93 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	94	254		or __D0TurnDeg, __signed_stack_001TurnDeg, __zfTurnDeg
+8	94	258	#line 94 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	95	258		tst 5, __zfTurnDeg, __D0TurnDeg
+8	94	261	#line 94 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	95	261		brtst 4, __NXC_Label_1008, __zfTurnDeg
+8	94	264	#line 94 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	95	264		set __Move_7qG2_left_7qG2_000, 0
+8	94	267	#line 94 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	94	267	#line 94 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	95	267		set __Move_7qG2_right_7qG2_000, 0
+8	94	270	#line 94 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	95	270	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	96	270		mov __Move_7qG2_autofix_7qG2_000, __constVal1
+8	95	272	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	96	272		subcall Move, __Move_return
+8	95	274	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	96	274	#line 96 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	97	274		jmp __NXC_Label_989
+8	96	276	#line 96 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	99	276	#line 99 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	101	276	#line 101 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	102	276		jmp __NXC_Label_988
+8	101	278	#line 101 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	101	278	#line 101 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+8	102	278		subret __TurnDeg_return
+9	110	0	#line 110 "C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc"
+9	111	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc
+1	__ResetSensorSubroutine	32	NXTDefs.h
+2	__ReadLSBytesVar	45	NXTDefs.h
+3	IMU_SendCommand	145	C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc
+4	IMU_ReadInteger	226	C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc
+5	IMU_Init	352	C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc
+6	IMU_ReadCompassHeading	399	C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/IMU-lib.nxc
+7	Move	414	C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc
+8	TurnDeg	714	C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc
+9	__initialize_global_data	994	C:\Users\Administrator.FEQ\Desktop\nxt\china\turn.nxc

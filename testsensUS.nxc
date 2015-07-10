@@ -1,0 +1,50 @@
+#define IN_1_1 msensor_S1_1
+#define IN_1_2 msensor_S1_2
+#define IN_1_3 msensor_S1_3
+#define IN_1_4 msensor_S1_4
+#define IN_2_1 msensor_S2_1
+#define IN_2_2 msensor_S2_2
+#define IN_2_3 msensor_S2_3
+#include "lib/HTSMUX-driver.h"
+#define IN_2_4 msensor_S2_4
+#define IN_3_1 msensor_S3_1
+#define IN_3_2 msensor_S3_2
+#define IN_3_3 msensor_S3_3
+#define IN_3_4 msensor_S3_4
+#define IN_4_1 msensor_S4_1
+#define IN_4_2 msensor_S4_2
+#define IN_4_3 msensor_S4_3
+#define IN_4_4 msensor_S4_4
+#define LEFT 0
+#define RIGHT 1
+#define FRONT 2
+
+int sensUS (int port) {
+  if (port == LEFT) {
+    port = IN_4_4;
+  }
+  else if (port == RIGHT) {
+    port = IN_4_1;
+  }
+  else if (port == FRONT) {
+    port = IN_4_2;
+  }
+  return smuxSensorLegoUS(port);
+}
+
+task main () {
+
+  SetSensor(S4, SENSOR_LOWSPEED);
+  if (!HTSMUXscanPorts(S4)) {
+    TextOut(0, LCD_LINE1, "Splitter not");
+    TextOut(0, LCD_LINE2, "Working!");
+    Wait(1000);
+    StopAllTasks();
+  }
+
+  while (true) {
+    ClearScreen();
+    NumOut(0,LCD_LINE1,sensUS(LEFT));
+    Wait(500);
+  }
+}

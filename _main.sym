@@ -1,0 +1,1541 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0Move	6	1	0	4	6
+1	__D0seeLine	6	1	4	4	44
+2	__DU0seeLine	5	1	8	4	4
+3	__D0LSA_ReadRaw_Uncalibrated	6	1	12	4	2
+4	__D0LSA_WakeUp	6	1	16	4	1
+5	__D0LSA_weighted_average	6	1	20	4	1
+6	__signed_stack_002controller	6	1	24	4	12
+7	__float_stack_001controller	10	1	28	4	2
+8	__signed_stack_001CorrectSens	6	1	32	4	12
+9	__D0SetSensorLowspeed_inline_init	6	1	36	4	3
+10	__DU0SetSensorLowspeed_inline_init	5	1	40	4	2
+11	__signed_stack_001controller	6	1	44	4	16
+12	__D0CorrectSens	6	1	48	4	15
+13	__D0getError	6	1	52	4	45
+14	__DU0getError	5	1	56	4	2
+15	__D0controller	6	1	60	4	12
+16	__DU0controller	5	1	64	4	2
+17	__DF0controller	10	1	68	4	6
+18	__D0LSA_Read	6	1	72	4	7
+19	__DU0LSA_Read	5	1	76	4	3
+20	__D0LSA_ReadRaw_Calibrated	6	1	80	4	10
+21	__DF0getError	10	1	84	4	4
+22	__D0LSA_format_bin	6	1	88	4	1
+23	__D0LSA_format_hex	6	1	92	4	1
+24	__unsigned_stack_001seeLine	5	1	96	4	2
+25	__unsigned_stack_002seeLine	5	1	100	4	14
+26	memory	10	1	104	4	5
+27	__signed_stack_001Move	6	1	108	4	4
+28	__signed_stack_001seeLine	6	1	112	4	16
+29	__signed_stack_002seeLine	6	1	116	4	14
+30	__constValf0P14	10	0	120	4	1
+31	__constValf0P6666666667	10	0	124	4	1
+32	__Wait_7qG2_ms_7qG2_000_inline_init	5	1	128	4	2
+33	__controller_7qG2_error_7qG2_002	10	1	132	4	5
+34	__controller_7qG2_base_7qG2_002	10	1	136	4	3
+35	__controller_7qG2_turn_7qG2_002	10	1	140	4	4
+36	__signed_stack_001getError	6	1	144	4	16
+37	__signed_stack_002getError	6	1	148	4	18
+38	__signed_stack_003getError	6	1	152	4	16
+39	__signed_stack_002CorrectSens	6	1	156	4	2
+40	__signed_stack_003CorrectSens	6	1	160	4	2
+41	__unsigned_stack_001CorrectSens	5	1	164	4	4
+42	__float_stack_002getError	10	1	168	4	4
+43	__signed_stack_001LSA_Read	6	1	172	4	4
+44	__signed_stack_001LSA_ReadRaw_Calibrated	6	1	176	4	2
+45	__signed_stack_004getError	6	1	180	4	14
+46	__unsigned_stack_002getError	5	1	184	4	2
+47	__unsigned_stack_003getError	5	1	188	4	14
+48	__CLSRMutex3	9	0	192	4	2
+49	__RLSBmutex0	9	0	196	4	4
+50	__CLSCSMutex3	9	0	200	4	6
+51	__CLSWMutex3	9	0	204	4	2
+52	__RLSBmutex2	9	0	208	4	4
+53	__RLSBmutex3	9	0	212	4	4
+54	__RLSBmutex1	9	0	216	4	4
+55	__CLSCSMutex0	9	0	220	4	6
+56	__CLSRMutex2	9	0	224	4	2
+57	__CLSCSMutex1	9	0	228	4	6
+58	__CLSWMutex1	9	0	232	4	2
+59	__CLSWMutex0	9	0	236	4	2
+60	__CLSRMutex0	9	0	240	4	2
+61	__CLSCSMutex2	9	0	244	4	6
+62	__CLSWMutex2	9	0	248	4	2
+63	__CLSRMutex1	9	0	252	4	2
+64	__CorrectSens_7qG2_i_7qG2_001	4	1	256	2	10
+65	__constVal500	4	0	258	2	1
+66	lastError	4	1	260	2	6
+67	__constVal300	4	0	262	2	1
+68	__Move_7qG2_right_7qG2_000	4	1	264	2	4
+69	__Move_7qG2_left_7qG2_000	4	1	266	2	4
+70	__constVal400	4	0	268	2	1
+71	__LSA_ReadRaw_Calibrated_7qG2_count_7qG2_000	4	1	270	2	3
+72	__constVal250	4	0	272	2	1
+73	__constValNeg351	4	0	274	2	1
+74	__constValNeg352	4	0	276	2	1
+75	__LSA_Read_7qG2_count_7qG2_000	4	1	278	2	3
+76	__controller_7qG2_moveLeft_7qG2_002	4	1	280	2	2
+77	__controller_7qG2_moveRight_7qG2_002	4	1	282	2	2
+78	__constVal200	4	0	284	2	1
+79	__constVal700	4	0	286	2	1
+80	__constValNeg250	4	0	288	2	1
+81	__constVal600	4	0	290	2	1
+82	i	4	1	292	2	5
+83	__getError_7qG2_error_7qG2_000	4	1	294	2	9
+84	__LSA_Read_7qG2_reg_to_read_7qG2_000	4	1	296	2	2
+85	__constValNeg350	4	0	298	2	1
+86	__LSA_ReadRaw_Calibrated_7qG2_i2cAddr_7qG2_000	1	1	300	1	2
+87	__LSA_ReadRaw_Calibrated_7qG2_port_7qG2_000	1	1	301	1	3
+88	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_init	1	1	302	1	2
+89	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_init	1	1	303	1	2
+90	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init	1	1	304	1	2
+91	__ResetSensorTmp	1	1	305	1	2
+92	__LSA_ReadRaw_Calibrated_7qG2_nByteReady_7qG2_000	1	1	306	1	2
+93	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init	1	1	307	1	2
+94	__LSA_ReadRaw_Calibrated_return	1	1	308	1	5
+95	__ResetSensorPort	1	1	309	1	3
+96	__ClearLine_7qG2_line_7qG2_000_inline_controller	1	1	310	1	12
+97	__getError_return	1	1	311	1	4
+98	__controller_return	1	1	312	1	3
+99	__constVal1	2	0	313	1	7
+100	__constVal32	2	0	314	1	12
+101	__constVal3	2	0	315	1	4
+102	__constVal0	2	1	316	1	32
+103	__constVal63	2	0	317	1	4
+104	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_init	1	1	318	1	2
+105	__Move_return	1	1	319	1	3
+106	__constVal96	2	0	320	1	4
+107	__seeLine_return	1	1	321	1	5
+108	__init_return	1	1	322	1	3
+109	__CorrectSens_return	1	1	323	1	3
+110	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_init	1	1	324	1	4
+111	__RLSReadPort	1	1	325	1	5
+112	__zfLSA_Read	1	1	326	1	5
+113	__constVal20	2	0	327	1	2
+114	__constVal100	2	0	328	1	1
+115	__zfLSA_ReadRaw_Calibrated	1	1	329	1	5
+116	__RLSBResultVar	2	1	330	1	9
+117	__zfMove	1	1	331	1	6
+118	__RLSBIterationsVar	1	1	332	1	4
+119	__RLSBytesCountVar	1	1	333	1	10
+120	__PFTmp	1	1	334	1	1
+121	__ArrHelper__CorrectSens_98_0	1	1	335	1	6
+122	__zfcontroller	1	1	336	1	7
+123	__ArrHelper__getError_98_0	1	1	337	1	32
+124	__ArrHelper__seeLine_98_0	1	1	338	1	16
+125	__ArrHelper__LSA_Read_98_0	1	1	339	1	2
+126	__zfgetError	1	1	340	1	28
+127	__constVal8	2	0	341	1	1
+128	__zfCorrectSens	1	1	342	1	9
+129	__constVal66	2	0	343	1	1
+130	__LSA_Read_return	1	1	344	1	5
+131	____initialize_global_data_return	1	1	345	1	3
+132	__LSA_Read_7qG2_port_7qG2_000	1	1	346	1	3
+133	__LSA_Read_7qG2_i2cAddr_7qG2_000	1	1	347	1	2
+134	__OnRev_Tmp	2	1	348	1	4
+135	__LSA_WakeUp_7qG2_addr_7qG2_000	1	1	349	1	2
+136	__LSA_WakeUp_return	1	1	350	1	4
+137	__LSA_Read_7qG2_nByteReady_7qG2_000	1	1	351	1	2
+138	__LSA_WakeUp_7qG2_port_7qG2_000	1	1	352	1	2
+139	____ResetSensorSubroutine_return	1	1	353	1	3
+140	__constVal2	2	0	354	1	2
+141	__zfSetSensorLowspeed_inline_init	1	1	355	1	2
+142	____ReadLSBytesVar_return	1	1	356	1	4
+143	__zfseeLine	1	1	357	1	35
+144	__constVal15	2	0	358	1	1
+145	__CLSWArgs0	8	0	4	12	5
+146	__CLSWArgs0.Result	2	1	360	1	5
+147	__CLSWArgs0.Port	1	1	361	1	5
+148	__CLSWArgs0.Buffer	7	0	362	4	5
+149	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+150	__CLSWArgs0.ReturnLen	1	1	364	1	5
+151	__CLSCSArgs0	8	0	3	4	12
+152	__CLSCSArgs0.Result	2	1	368	1	12
+153	__CLSCSArgs0.Port	1	1	369	1	12
+154	__CLSCSArgs0.BytesReady	1	1	370	1	12
+155	__TextOutArgs	8	0	4	16	63
+156	__TextOutArgs.Result	2	1	372	1	63
+157	__TextOutArgs.Location	8	0	2	4	63
+158	__TextOutArgs.Location.X	4	1	376	2	63
+159	__TextOutArgs.Location.Y	4	1	378	2	63
+160	__TextOutArgs.Text	7	0	380	4	63
+161	__TextOutArgs.Text.Text_type	1	0	0	1	0
+162	__TextOutArgs.Options	5	1	384	4	63
+163	__CLSRArgs0	8	0	4	12	5
+164	__CLSRArgs0.Result	2	1	388	1	5
+165	__CLSRArgs0.Port	1	1	389	1	5
+166	__CLSRArgs0.Buffer	7	0	390	4	5
+167	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+168	__CLSRArgs0.BufferLen	1	1	392	1	5
+169	__constStr0027	7	0	394	4	1
+170	__constStr0027.__constStr0027_type	1	1	0	1	0
+171	__LSA_Read_7qG2_message_7qG2_000	7	0	396	4	2
+172	__LSA_Read_7qG2_message_7qG2_000.__LSA_Read_7qG2_message_7qG2_000_type	1	0	0	1	0
+173	__LSA_Read_7qG2_buf_7qG2_000	7	0	398	4	3
+174	__LSA_Read_7qG2_buf_7qG2_000.__LSA_Read_7qG2_buf_7qG2_000_type	1	0	0	1	0
+175	__LSA_ReadRaw_Calibrated_7qG2_returnValue_7qG2_000	7	0	400	4	3
+176	__LSA_ReadRaw_Calibrated_7qG2_returnValue_7qG2_000.__LSA_ReadRaw_Calibrated_7qG2_returnValue_7qG2_000_type	1	0	0	1	0
+177	__BlankLine	7	0	402	4	6
+178	__BlankLine.__BlankLine_type	1	0	0	1	0
+179	__strbufcontroller	7	0	404	4	4
+180	__strbufcontroller.__strbufcontroller_type	1	0	0	1	0
+181	__RLSReadBufVar	7	0	406	4	10
+182	__RLSReadBufVar.__RLSReadBufVar_type	1	0	0	1	0
+183	__RLSLastGoodReadVar	7	0	408	4	2
+184	__RLSLastGoodReadVar.__RLSLastGoodReadVar_type	1	0	0	1	0
+185	__seeLine_7qG2_sensor_7qG2_000	7	0	410	4	10
+186	__seeLine_7qG2_sensor_7qG2_000.__seeLine_7qG2_sensor_7qG2_000_type	1	0	0	1	0
+187	__getError_7qG2_sensor_7qG2_000	7	0	412	4	18
+188	__getError_7qG2_sensor_7qG2_000.__getError_7qG2_sensor_7qG2_000_type	1	0	0	1	0
+189	__constStr0026	7	0	414	4	1
+190	__constStr0026.__constStr0026_type	1	1	0	1	0
+191	__CorrectSens_7qG2_array_7qG2_000	7	0	416	4	12
+192	__CorrectSens_7qG2_array_7qG2_000.__CorrectSens_7qG2_array_7qG2_000_type	1	0	0	1	0
+193	__LSA_ReadRaw_Calibrated_7qG2_message_7qG2_000	7	0	418	4	2
+194	__LSA_ReadRaw_Calibrated_7qG2_message_7qG2_000.__LSA_ReadRaw_Calibrated_7qG2_message_7qG2_000_type	1	0	0	1	0
+195	buf	7	0	420	4	1
+196	buf.buf_type	1	0	0	1	0
+197	sens	7	0	422	4	8
+198	sens.sens_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	175	0	#line 175 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+0	176	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	175	2	#line 175 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+0	176	2	#line 176 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+0	177	2		subcall init, __init_return
+0	176	4	#line 176 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+0	180	4	#line 180 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+0	181	4		subcall controller, __controller_return
+0	180	6	#line 180 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+0	181	6		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	5821	0	#pragma macro 25
+2	5821	0		acquire __CLSWMutex0
+2	5821	1		acquire __CLSWMutex1
+2	5821	2		acquire __CLSWMutex2
+2	5821	3		acquire __CLSWMutex3
+2	5821	4		mov __CLSWArgs0.Port, __RLSReadPort
+2	5821	6		mov __CLSWArgs0.ReturnLen, __RLSBytesCountVar
+2	5821	8		mov __CLSWArgs0.Buffer, __RLSReadBufVar
+2	5821	10		syscall 21, __CLSWArgs0
+2	5821	13		mov __RLSBResultVar, __CLSWArgs0.Result
+2	5821	15		release __CLSWMutex0
+2	5821	16		release __CLSWMutex1
+2	5821	17		release __CLSWMutex2
+2	5821	18		release __CLSWMutex3
+2	5821	19	#line 5821 "NXTDefs.h"
+2	5822	19		brtst 4, __RLSBReturnVar, __RLSBytesCountVar
+2	5823	22		arrinit __RLSReadBufVar, __constVal0, __RLSBytesCountVar
+2	5824	26		brtst 5, __RLSBErrorVar, __RLSBResultVar
+2	5825	29		set __RLSBIterationsVar, 4
+2	5827	32	#pragma macro 23
+2	5827	32		acquire __CLSCSMutex0
+2	5827	33		acquire __CLSCSMutex1
+2	5827	34		acquire __CLSCSMutex2
+2	5827	35		acquire __CLSCSMutex3
+2	5827	36		mov __CLSCSArgs0.Port, __RLSReadPort
+2	5827	38		syscall 23, __CLSCSArgs0
+2	5827	41		mov __RLSBytesCountVar, __CLSCSArgs0.BytesReady
+2	5827	43		mov __RLSBResultVar, __CLSCSArgs0.Result
+2	5827	45		release __CLSCSMutex0
+2	5827	46		release __CLSCSMutex1
+2	5827	47		release __CLSCSMutex2
+2	5827	48		release __CLSCSMutex3
+2	5827	49	#line 5827 "NXTDefs.h"
+2	5828	49		sub __RLSBIterationsVar, __RLSBIterationsVar, __constVal1
+2	5829	53		brtst 2, __RLSBErrorVar, __RLSBIterationsVar
+2	5830	56		brtst 0, __RLSBErrorVar, __RLSBResultVar
+2	5831	59		brtst 4, __RLSBReadyToReadVar, __RLSBResultVar
+2	5833	62		wait2 NA, __constVal15
+2	5834	65		jmp __RLSBDoCheckStatusVar
+2	5837	67	#pragma macro 25
+2	5837	67		acquire __CLSRMutex0
+2	5837	68		acquire __CLSRMutex1
+2	5837	69		acquire __CLSRMutex2
+2	5837	70		acquire __CLSRMutex3
+2	5837	71		mov __CLSRArgs0.Port, __RLSReadPort
+2	5837	73		mov __CLSRArgs0.BufferLen, __RLSBytesCountVar
+2	5837	75		syscall 22, __CLSRArgs0
+2	5837	78		mov __RLSReadBufVar, __CLSRArgs0.Buffer
+2	5837	80		mov __RLSBResultVar, __CLSRArgs0.Result
+2	5837	82		release __CLSRMutex0
+2	5837	83		release __CLSRMutex1
+2	5837	84		release __CLSRMutex2
+2	5837	85		release __CLSRMutex3
+2	5837	86	#line 5837 "NXTDefs.h"
+2	5838	86		brtst 5, __RLSBErrorVar, __RLSBResultVar
+2	5839	89		mov __RLSLastGoodReadVar, __RLSReadBufVar
+2	5840	91		jmp __RLSBDoneVar
+2	5842	93		mov __RLSReadBufVar, __RLSLastGoodReadVar
+2	5844	95		arrsize __RLSBytesCountVar, __RLSReadBufVar
+2	5846	98		subret ____ReadLSBytesVar_return
+3	206	0	#line 206 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	207	0		arrinit __LSA_Read_7qG2_buf_7qG2_000, __constVal0, __constVal20
+3	209	4	#line 209 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	210	4		set __LSA_Read_7qG2_nByteReady_7qG2_000, 0
+3	209	7	#line 209 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	209	7	#line 209 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	210	7		arrbuild __LSA_Read_7qG2_message_7qG2_000, __LSA_Read_7qG2_i2cAddr_7qG2_000, __LSA_Read_7qG2_reg_to_read_7qG2_000
+3	209	12	#line 209 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	209	12	#line 209 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	210	12	#line 210 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	211	12	#pragma macro 23
+3	211	12		acquire __CLSCSMutex0
+3	211	13		acquire __CLSCSMutex1
+3	211	14		acquire __CLSCSMutex2
+3	211	15		acquire __CLSCSMutex3
+3	211	16		mov __CLSCSArgs0.Port, __LSA_Read_7qG2_port_7qG2_000
+3	211	18		syscall 23, __CLSCSArgs0
+3	211	21		mov __LSA_Read_7qG2_nByteReady_7qG2_000, __CLSCSArgs0.BytesReady
+3	211	23		mov __D0LSA_Read, __CLSCSArgs0.Result
+3	211	26		release __CLSCSMutex0
+3	211	27		release __CLSCSMutex1
+3	211	28		release __CLSCSMutex2
+3	211	29		release __CLSCSMutex3
+3	5612	30	#line 5612 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	210	30	#line 210 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	211	30		mov __signed_stack_001LSA_Read, __D0LSA_Read
+3	210	32	#line 210 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	211	32		set __D0LSA_Read, 32
+3	210	35	#line 210 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	211	35		cmp 4, __zfLSA_Read, __signed_stack_001LSA_Read, __D0LSA_Read
+3	210	39	#line 210 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	211	39		mov __D0LSA_Read, __zfLSA_Read
+3	211	41	#line 211 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	212	41		brtst 4, __NXC_Label_613, __zfLSA_Read
+3	211	44	#line 211 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	211	44	#line 211 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	212	44		jmp __NXC_Label_612
+3	211	46	#line 211 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	212	46	#line 212 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	213	46		set __LSA_Read_7qG2_count_7qG2_000, 1
+3	212	49	#line 212 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	212	49	#line 212 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	212	49	#line 212 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	213	49	#pragma macro 28
+3	213	49		acquire __RLSBmutex0
+3	213	50		acquire __RLSBmutex1
+3	213	51		acquire __RLSBmutex2
+3	213	52		acquire __RLSBmutex3
+3	213	53		mov __RLSReadPort, __LSA_Read_7qG2_port_7qG2_000
+3	213	55		mov __RLSReadBufVar, __LSA_Read_7qG2_message_7qG2_000
+3	213	57		mov __RLSBytesCountVar, __LSA_Read_7qG2_count_7qG2_000
+3	213	59		subcall __ReadLSBytesVar, ____ReadLSBytesVar_return
+3	213	62		tst 4, __D0LSA_Read, __RLSBResultVar
+3	213	65		mov __LSA_Read_7qG2_count_7qG2_000, __RLSBytesCountVar
+3	213	67		mov __LSA_Read_7qG2_buf_7qG2_000, __RLSReadBufVar
+3	213	69		release __RLSBmutex0
+3	213	70		release __RLSBmutex1
+3	213	71		release __RLSBmutex2
+3	213	72		release __RLSBmutex3
+3	5638	73	#line 5638 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	213	73	#line 213 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	214	73		tst 5, __zfLSA_Read, __D0LSA_Read
+3	213	76	#line 213 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	214	76		brtst 4, __NXC_Label_620, __zfLSA_Read
+3	213	79	#line 213 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	214	79		set __signed_stack_001LSA_Read, 0
+3	213	82	#line 213 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	213	82	#line 213 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	214	82		index __ArrHelper__LSA_Read_98_0, __LSA_Read_7qG2_buf_7qG2_000, __signed_stack_001LSA_Read
+3	213	86	#line 213 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	214	86		mov __DU0LSA_Read, __ArrHelper__LSA_Read_98_0
+3	214	88	#line 214 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	215	88		subret __LSA_Read_return
+3	214	90	#line 214 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	215	90	#line 215 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	216	90	#line 216 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	217	90		set __DU0LSA_Read, 0
+3	216	93	#line 216 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	216	93	#line 216 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	217	93		subret __LSA_Read_return
+3	216	95	#line 216 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	225	95	#line 225 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+3	226	95		subret __LSA_Read_return
+4	227	0	#line 227 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+4	228	0		mov __LSA_Read_7qG2_port_7qG2_000, __LSA_WakeUp_7qG2_port_7qG2_000
+4	227	2	#line 227 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+4	227	2	#line 227 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+4	228	2		mov __LSA_Read_7qG2_i2cAddr_7qG2_000, __LSA_WakeUp_7qG2_addr_7qG2_000
+4	227	4	#line 227 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+4	227	4	#line 227 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+4	228	4		set __LSA_Read_7qG2_reg_to_read_7qG2_000, 66
+4	227	7	#line 227 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+4	228	7	#line 228 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+4	229	7		subcall LSA_Read, __LSA_Read_return
+4	228	9	#line 228 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+4	229	9		mov __D0LSA_WakeUp, __DU0LSA_Read
+4	228	11	#line 228 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+4	228	11	#line 228 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+4	229	11		subret __LSA_WakeUp_return
+4	228	13	#line 228 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+4	231	13	#line 231 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+4	232	13		subret __LSA_WakeUp_return
+5	235	0	#line 235 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	239	0	#line 239 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	240	0		set __LSA_ReadRaw_Calibrated_7qG2_nByteReady_7qG2_000, 0
+5	239	3	#line 239 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	239	3	#line 239 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	240	3		arrbuild __LSA_ReadRaw_Calibrated_7qG2_message_7qG2_000, __LSA_ReadRaw_Calibrated_7qG2_i2cAddr_7qG2_000, __constVal66
+5	239	8	#line 239 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	239	8	#line 239 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	240	8	#line 240 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	241	8	#pragma macro 23
+5	241	8		acquire __CLSCSMutex0
+5	241	9		acquire __CLSCSMutex1
+5	241	10		acquire __CLSCSMutex2
+5	241	11		acquire __CLSCSMutex3
+5	241	12		mov __CLSCSArgs0.Port, __LSA_ReadRaw_Calibrated_7qG2_port_7qG2_000
+5	241	14		syscall 23, __CLSCSArgs0
+5	241	17		mov __LSA_ReadRaw_Calibrated_7qG2_nByteReady_7qG2_000, __CLSCSArgs0.BytesReady
+5	241	19		mov __D0LSA_ReadRaw_Calibrated, __CLSCSArgs0.Result
+5	241	22		release __CLSCSMutex0
+5	241	23		release __CLSCSMutex1
+5	241	24		release __CLSCSMutex2
+5	241	25		release __CLSCSMutex3
+5	5764	26	#line 5764 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	240	26	#line 240 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	241	26		mov __signed_stack_001LSA_ReadRaw_Calibrated, __D0LSA_ReadRaw_Calibrated
+5	240	28	#line 240 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	241	28		set __D0LSA_ReadRaw_Calibrated, 32
+5	240	31	#line 240 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	241	31		cmp 4, __zfLSA_ReadRaw_Calibrated, __signed_stack_001LSA_ReadRaw_Calibrated, __D0LSA_ReadRaw_Calibrated
+5	240	35	#line 240 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	241	35		mov __D0LSA_ReadRaw_Calibrated, __zfLSA_ReadRaw_Calibrated
+5	241	37	#line 241 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	242	37		brtst 4, __NXC_Label_638, __zfLSA_ReadRaw_Calibrated
+5	241	40	#line 241 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	241	40	#line 241 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	242	40		jmp __NXC_Label_637
+5	241	42	#line 241 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	242	42	#line 242 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	243	42		set __LSA_ReadRaw_Calibrated_7qG2_count_7qG2_000, 8
+5	242	45	#line 242 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	242	45	#line 242 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	242	45	#line 242 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	243	45	#pragma macro 28
+5	243	45		acquire __RLSBmutex0
+5	243	46		acquire __RLSBmutex1
+5	243	47		acquire __RLSBmutex2
+5	243	48		acquire __RLSBmutex3
+5	243	49		mov __RLSReadPort, __LSA_ReadRaw_Calibrated_7qG2_port_7qG2_000
+5	243	51		mov __RLSReadBufVar, __LSA_ReadRaw_Calibrated_7qG2_message_7qG2_000
+5	243	53		mov __RLSBytesCountVar, __LSA_ReadRaw_Calibrated_7qG2_count_7qG2_000
+5	243	55		subcall __ReadLSBytesVar, ____ReadLSBytesVar_return
+5	243	58		tst 4, __D0LSA_ReadRaw_Calibrated, __RLSBResultVar
+5	243	61		mov __LSA_ReadRaw_Calibrated_7qG2_count_7qG2_000, __RLSBytesCountVar
+5	243	63		mov __LSA_ReadRaw_Calibrated_7qG2_returnValue_7qG2_000, __RLSReadBufVar
+5	243	65		release __RLSBmutex0
+5	243	66		release __RLSBmutex1
+5	243	67		release __RLSBmutex2
+5	243	68		release __RLSBmutex3
+5	5790	69	#line 5790 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	243	69	#line 243 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	244	69		tst 5, __zfLSA_ReadRaw_Calibrated, __D0LSA_ReadRaw_Calibrated
+5	243	72	#line 243 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	244	72		brtst 4, __NXC_Label_645, __zfLSA_ReadRaw_Calibrated
+5	244	75	#line 244 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	245	75		set __D0LSA_ReadRaw_Calibrated, 1
+5	244	78	#line 244 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	245	78		subret __LSA_ReadRaw_Calibrated_return
+5	244	80	#line 244 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	245	80	#line 245 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	246	80	#line 246 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	247	80		set __D0LSA_ReadRaw_Calibrated, 0
+5	246	83	#line 246 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	247	83		subret __LSA_ReadRaw_Calibrated_return
+5	246	85	#line 246 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	249	85	#line 249 "C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc"
+5	250	85		subret __LSA_ReadRaw_Calibrated_return
+6	72	0	#line 72 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	73	0		mov __signed_stack_001Move, __Move_7qG2_left_7qG2_000
+6	72	2	#line 72 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	72	2	#line 72 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	73	2		set __D0Move, 0
+6	72	5	#line 72 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	73	5		cmp 4, __zfMove, __signed_stack_001Move, __D0Move
+6	72	9	#line 72 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	73	9		mov __D0Move, __zfMove
+6	73	11	#line 73 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	74	11		brtst 4, __NXC_Label_731, __zfMove
+6	74	14	#line 74 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	75	14	#pragma macro 7
+6	75	14		setout __constVal2, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	6334	37	#line 6334 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	74	37	#line 74 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	76	37	#line 76 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	77	37		jmp __NXC_Label_732
+6	76	39	#line 76 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	77	39	#line 77 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	78	39	#pragma macro 10
+6	78	39		neg __OnRev_Tmp, __Move_7qG2_left_7qG2_000
+6	78	42		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	6344	65	#line 6344 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	77	65	#line 77 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	78	65	#line 78 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	78	65	#line 78 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	79	65		mov __signed_stack_001Move, __Move_7qG2_right_7qG2_000
+6	78	67	#line 78 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	78	67	#line 78 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	79	67		set __D0Move, 0
+6	78	70	#line 78 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	79	70		cmp 4, __zfMove, __signed_stack_001Move, __D0Move
+6	78	74	#line 78 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	79	74		mov __D0Move, __zfMove
+6	79	76	#line 79 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	80	76		brtst 4, __NXC_Label_737, __zfMove
+6	80	79	#line 80 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	81	79	#pragma macro 7
+6	81	79		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	6363	102	#line 6363 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	80	102	#line 80 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	82	102	#line 82 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	83	102		jmp __NXC_Label_738
+6	82	104	#line 82 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	83	104	#line 83 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	84	104	#pragma macro 10
+6	84	104		neg __OnRev_Tmp, __Move_7qG2_right_7qG2_000
+6	84	107		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+6	6373	130	#line 6373 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	83	130	#line 83 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	87	130	#line 87 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	87	130	#line 87 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+6	88	130		subret __Move_return
+7	88	0	#line 88 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	89	0		set __CorrectSens_7qG2_i_7qG2_001, 0
+7	88	3	#line 88 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	88	3	#line 88 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	89	3		mov __signed_stack_001CorrectSens, __CorrectSens_7qG2_i_7qG2_001
+7	88	5	#line 88 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	88	5	#line 88 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	89	5		set __D0CorrectSens, 8
+7	88	8	#line 88 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	89	8		cmp 0, __zfCorrectSens, __signed_stack_001CorrectSens, __D0CorrectSens
+7	88	12	#line 88 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	89	12		mov __D0CorrectSens, __zfCorrectSens
+7	88	14	#line 88 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	89	14		brtst 4, __NXC_Label_742, __zfCorrectSens
+7	88	17	#line 88 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	89	17		jmp __NXC_Label_743
+7	88	19	#line 88 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	89	19		add __CorrectSens_7qG2_i_7qG2_001, __CorrectSens_7qG2_i_7qG2_001, __constVal1
+7	89	23	#line 89 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	90	23		jmp __NXC_Label_741
+7	89	25	#line 89 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	90	25		mov __signed_stack_001CorrectSens, __CorrectSens_7qG2_i_7qG2_001
+7	89	27	#line 89 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	89	27	#line 89 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	90	27		index __ArrHelper__CorrectSens_98_0, __CorrectSens_7qG2_array_7qG2_000, __signed_stack_001CorrectSens
+7	89	31	#line 89 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	90	31		mov __unsigned_stack_001CorrectSens, __ArrHelper__CorrectSens_98_0
+7	89	33	#line 89 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	89	33	#line 89 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	90	33		set __D0CorrectSens, 0
+7	89	36	#line 89 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	90	36		cmp 0, __zfCorrectSens, __unsigned_stack_001CorrectSens, __D0CorrectSens
+7	89	40	#line 89 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	90	40		mov __D0CorrectSens, __zfCorrectSens
+7	90	42	#line 90 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	91	42		brtst 4, __NXC_Label_753, __zfCorrectSens
+7	90	45	#line 90 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	91	45		mov __signed_stack_001CorrectSens, __CorrectSens_7qG2_i_7qG2_001
+7	90	47	#line 90 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	91	47	#line 91 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	92	47		set __D0CorrectSens, 0
+7	91	50	#line 91 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	92	50		replace __CorrectSens_7qG2_array_7qG2_000, __CorrectSens_7qG2_array_7qG2_000, __signed_stack_001CorrectSens, __D0CorrectSens
+7	91	55	#line 91 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	92	55	#line 92 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	93	55		jmp __NXC_Label_758
+7	92	57	#line 92 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	93	57		mov __signed_stack_001CorrectSens, __CorrectSens_7qG2_i_7qG2_001
+7	92	59	#line 92 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	92	59	#line 92 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	93	59		index __ArrHelper__CorrectSens_98_0, __CorrectSens_7qG2_array_7qG2_000, __signed_stack_001CorrectSens
+7	92	63	#line 92 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	93	63		mov __unsigned_stack_001CorrectSens, __ArrHelper__CorrectSens_98_0
+7	92	65	#line 92 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	92	65	#line 92 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	93	65		set __D0CorrectSens, 100
+7	92	68	#line 92 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	93	68		cmp 1, __zfCorrectSens, __unsigned_stack_001CorrectSens, __D0CorrectSens
+7	92	72	#line 92 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	93	72		mov __D0CorrectSens, __zfCorrectSens
+7	93	74	#line 93 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	94	74		brtst 4, __NXC_Label_763, __zfCorrectSens
+7	93	77	#line 93 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	94	77		mov __signed_stack_001CorrectSens, __CorrectSens_7qG2_i_7qG2_001
+7	93	79	#line 93 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	94	79	#line 94 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	95	79		set __D0CorrectSens, 100
+7	94	82	#line 94 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	95	82		replace __CorrectSens_7qG2_array_7qG2_000, __CorrectSens_7qG2_array_7qG2_000, __signed_stack_001CorrectSens, __D0CorrectSens
+7	94	87	#line 94 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	95	87	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	95	87	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	95	87	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	96	87		mov __signed_stack_001CorrectSens, __CorrectSens_7qG2_i_7qG2_001
+7	95	89	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	95	89	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	96	89		set __signed_stack_002CorrectSens, 100
+7	95	92	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	95	92	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	96	92		mov __signed_stack_003CorrectSens, __CorrectSens_7qG2_i_7qG2_001
+7	95	94	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	95	94	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	96	94		index __ArrHelper__CorrectSens_98_0, __CorrectSens_7qG2_array_7qG2_000, __signed_stack_003CorrectSens
+7	95	98	#line 95 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	96	98	#line 96 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	97	98		sub __D0CorrectSens, __signed_stack_002CorrectSens, __ArrHelper__CorrectSens_98_0
+7	96	102	#line 96 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	97	102		replace __CorrectSens_7qG2_array_7qG2_000, __CorrectSens_7qG2_array_7qG2_000, __signed_stack_001CorrectSens, __D0CorrectSens
+7	96	107	#line 96 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	99	107	#line 99 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	100	107		jmp __NXC_Label_744
+7	99	109	#line 99 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	99	109	#line 99 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+7	100	109		subret __CorrectSens_return
+8	100	0	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	0		set __signed_stack_001seeLine, 0
+8	100	3	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	100	3	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	3		index __ArrHelper__seeLine_98_0, __seeLine_7qG2_sensor_7qG2_000, __signed_stack_001seeLine
+8	100	7	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	7		mov __unsigned_stack_001seeLine, __ArrHelper__seeLine_98_0
+8	100	9	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	100	9	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	9		set __D0seeLine, 20
+8	100	12	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	12		cmp 1, __zfseeLine, __unsigned_stack_001seeLine, __D0seeLine
+8	100	16	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	16		mov __D0seeLine, __zfseeLine
+8	100	19	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	19		brtst 5, __NXC_Label_776, __zfseeLine
+8	100	22	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	22		mov __signed_stack_001seeLine, __D0seeLine
+8	100	24	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	24		set __signed_stack_002seeLine, 1
+8	100	27	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	100	27	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	27		index __ArrHelper__seeLine_98_0, __seeLine_7qG2_sensor_7qG2_000, __signed_stack_002seeLine
+8	100	31	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	31		mov __unsigned_stack_002seeLine, __ArrHelper__seeLine_98_0
+8	100	33	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	100	33	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	33		set __D0seeLine, 20
+8	100	36	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	36		cmp 1, __zfseeLine, __unsigned_stack_002seeLine, __D0seeLine
+8	100	40	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	100	40	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	40		or __D0seeLine, __signed_stack_001seeLine, __zfseeLine
+8	100	44	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	44		tst 5, __zfseeLine, __D0seeLine
+8	100	47	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	47		mov __D0seeLine, __zfseeLine
+8	100	50	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	50		brtst 5, __NXC_Label_776, __zfseeLine
+8	100	53	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	53		mov __signed_stack_001seeLine, __D0seeLine
+8	100	55	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	55		set __signed_stack_002seeLine, 2
+8	100	58	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	100	58	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	58		index __ArrHelper__seeLine_98_0, __seeLine_7qG2_sensor_7qG2_000, __signed_stack_002seeLine
+8	100	62	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	62		mov __unsigned_stack_002seeLine, __ArrHelper__seeLine_98_0
+8	100	64	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	100	64	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	64		set __D0seeLine, 20
+8	100	67	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	67		cmp 1, __zfseeLine, __unsigned_stack_002seeLine, __D0seeLine
+8	100	71	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	100	71	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	71		or __D0seeLine, __signed_stack_001seeLine, __zfseeLine
+8	100	75	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	75		tst 5, __zfseeLine, __D0seeLine
+8	100	78	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	78		mov __D0seeLine, __zfseeLine
+8	100	81	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	81		brtst 5, __NXC_Label_776, __zfseeLine
+8	100	84	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	84		mov __signed_stack_001seeLine, __D0seeLine
+8	100	86	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	86		set __signed_stack_002seeLine, 3
+8	100	89	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	100	89	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	89		index __ArrHelper__seeLine_98_0, __seeLine_7qG2_sensor_7qG2_000, __signed_stack_002seeLine
+8	100	93	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	93		mov __unsigned_stack_002seeLine, __ArrHelper__seeLine_98_0
+8	100	95	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	100	95	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	95		set __D0seeLine, 20
+8	100	98	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	98		cmp 1, __zfseeLine, __unsigned_stack_002seeLine, __D0seeLine
+8	100	102	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	100	102	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	102		or __D0seeLine, __signed_stack_001seeLine, __zfseeLine
+8	100	106	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	106		tst 5, __zfseeLine, __D0seeLine
+8	100	109	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	109		mov __D0seeLine, __zfseeLine
+8	100	112	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	112		brtst 5, __NXC_Label_776, __zfseeLine
+8	100	115	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	115		mov __signed_stack_001seeLine, __D0seeLine
+8	100	117	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	117		set __signed_stack_002seeLine, 4
+8	100	120	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	100	120	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	120		index __ArrHelper__seeLine_98_0, __seeLine_7qG2_sensor_7qG2_000, __signed_stack_002seeLine
+8	100	124	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	124		mov __unsigned_stack_002seeLine, __ArrHelper__seeLine_98_0
+8	100	126	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	100	126	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	126		set __D0seeLine, 20
+8	100	129	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	129		cmp 1, __zfseeLine, __unsigned_stack_002seeLine, __D0seeLine
+8	100	133	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	100	133	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	133		or __D0seeLine, __signed_stack_001seeLine, __zfseeLine
+8	100	137	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	137		tst 5, __zfseeLine, __D0seeLine
+8	100	140	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	140		mov __D0seeLine, __zfseeLine
+8	100	143	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	143		brtst 5, __NXC_Label_776, __zfseeLine
+8	100	146	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	146		mov __signed_stack_001seeLine, __D0seeLine
+8	100	148	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	148		set __signed_stack_002seeLine, 5
+8	100	151	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	100	151	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	151		index __ArrHelper__seeLine_98_0, __seeLine_7qG2_sensor_7qG2_000, __signed_stack_002seeLine
+8	100	155	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	155		mov __unsigned_stack_002seeLine, __ArrHelper__seeLine_98_0
+8	100	157	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	100	157	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	157		set __D0seeLine, 20
+8	100	160	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	160		cmp 1, __zfseeLine, __unsigned_stack_002seeLine, __D0seeLine
+8	100	164	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	100	164	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	164		or __D0seeLine, __signed_stack_001seeLine, __zfseeLine
+8	100	168	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	168		tst 5, __zfseeLine, __D0seeLine
+8	100	171	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	171		mov __D0seeLine, __zfseeLine
+8	100	174	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	174		brtst 5, __NXC_Label_776, __zfseeLine
+8	100	177	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	177		mov __signed_stack_001seeLine, __D0seeLine
+8	100	179	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	179		set __signed_stack_002seeLine, 6
+8	100	182	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	100	182	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	182		index __ArrHelper__seeLine_98_0, __seeLine_7qG2_sensor_7qG2_000, __signed_stack_002seeLine
+8	100	186	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	186		mov __unsigned_stack_002seeLine, __ArrHelper__seeLine_98_0
+8	100	188	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	100	188	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	188		set __D0seeLine, 20
+8	100	191	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	191		cmp 1, __zfseeLine, __unsigned_stack_002seeLine, __D0seeLine
+8	100	195	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	100	195	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	195		or __D0seeLine, __signed_stack_001seeLine, __zfseeLine
+8	100	199	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	199		tst 5, __zfseeLine, __D0seeLine
+8	100	202	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	202		mov __D0seeLine, __zfseeLine
+8	100	205	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	205		brtst 5, __NXC_Label_776, __zfseeLine
+8	100	208	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	208		mov __signed_stack_001seeLine, __D0seeLine
+8	100	210	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	210		set __signed_stack_002seeLine, 7
+8	100	213	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	100	213	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	213		index __ArrHelper__seeLine_98_0, __seeLine_7qG2_sensor_7qG2_000, __signed_stack_002seeLine
+8	100	217	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	217		mov __unsigned_stack_002seeLine, __ArrHelper__seeLine_98_0
+8	100	219	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	100	219	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	219		set __D0seeLine, 20
+8	100	222	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	222		cmp 1, __zfseeLine, __unsigned_stack_002seeLine, __D0seeLine
+8	100	226	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	100	226	#line 100 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	101	226		or __D0seeLine, __signed_stack_001seeLine, __zfseeLine
+8	101	230	#line 101 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	102	230		mov __DU0seeLine, __D0seeLine
+8	101	232	#line 101 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	102	232		subret __seeLine_return
+8	101	234	#line 101 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	103	234	#line 103 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+8	104	234		subret __seeLine_return
+9	105	0	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	0		set __signed_stack_001getError, 350
+9	105	3	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	3	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	3		set __signed_stack_002getError, 0
+9	105	6	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	6	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	6		index __ArrHelper__getError_98_0, __getError_7qG2_sensor_7qG2_000, __signed_stack_002getError
+9	105	10	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	10		mov __unsigned_stack_002getError, __ArrHelper__getError_98_0
+9	105	12	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	12	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	12		set __signed_stack_003getError, 1
+9	105	15	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	15	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	15		index __ArrHelper__getError_98_0, __getError_7qG2_sensor_7qG2_000, __signed_stack_003getError
+9	105	19	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	19	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	19	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	19	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	19		mul __D0getError, __ArrHelper__getError_98_0, __constVal100
+9	105	23	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	23		add __signed_stack_002getError, __unsigned_stack_002getError, __D0getError
+9	105	27	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	27	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	27		set __signed_stack_003getError, 2
+9	105	30	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	30	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	30		index __ArrHelper__getError_98_0, __getError_7qG2_sensor_7qG2_000, __signed_stack_003getError
+9	105	34	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	34	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	34	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	34	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	34		mul __D0getError, __ArrHelper__getError_98_0, __constVal200
+9	105	38	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	38		add __signed_stack_002getError, __signed_stack_002getError, __D0getError
+9	105	42	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	42	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	42		set __signed_stack_003getError, 3
+9	105	45	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	45	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	45		index __ArrHelper__getError_98_0, __getError_7qG2_sensor_7qG2_000, __signed_stack_003getError
+9	105	49	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	49	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	49	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	49	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	49		mul __D0getError, __ArrHelper__getError_98_0, __constVal300
+9	105	53	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	53		add __signed_stack_002getError, __signed_stack_002getError, __D0getError
+9	105	57	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	57	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	57		set __signed_stack_003getError, 4
+9	105	60	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	60	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	60		index __ArrHelper__getError_98_0, __getError_7qG2_sensor_7qG2_000, __signed_stack_003getError
+9	105	64	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	64	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	64	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	64	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	64		mul __D0getError, __ArrHelper__getError_98_0, __constVal400
+9	105	68	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	68		add __signed_stack_002getError, __signed_stack_002getError, __D0getError
+9	105	72	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	72	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	72		set __signed_stack_003getError, 5
+9	105	75	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	75	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	75		index __ArrHelper__getError_98_0, __getError_7qG2_sensor_7qG2_000, __signed_stack_003getError
+9	105	79	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	79	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	79	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	79	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	79		mul __D0getError, __ArrHelper__getError_98_0, __constVal500
+9	105	83	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	83		add __signed_stack_002getError, __signed_stack_002getError, __D0getError
+9	105	87	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	87	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	87		set __signed_stack_003getError, 6
+9	105	90	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	90	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	90		index __ArrHelper__getError_98_0, __getError_7qG2_sensor_7qG2_000, __signed_stack_003getError
+9	105	94	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	94	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	94	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	94	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	94		mul __D0getError, __ArrHelper__getError_98_0, __constVal600
+9	105	98	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	98		add __signed_stack_002getError, __signed_stack_002getError, __D0getError
+9	105	102	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	102	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	102		set __signed_stack_003getError, 7
+9	105	105	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	105	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	105		index __ArrHelper__getError_98_0, __getError_7qG2_sensor_7qG2_000, __signed_stack_003getError
+9	105	109	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	109	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	109	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	109	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	109		mul __D0getError, __ArrHelper__getError_98_0, __constVal700
+9	105	113	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	113		add __signed_stack_002getError, __signed_stack_002getError, __D0getError
+9	105	117	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	117	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	117		set __signed_stack_003getError, 0
+9	105	120	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	120	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	120		index __ArrHelper__getError_98_0, __getError_7qG2_sensor_7qG2_000, __signed_stack_003getError
+9	105	124	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	124		mov __unsigned_stack_003getError, __ArrHelper__getError_98_0
+9	105	126	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	126	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	126		set __signed_stack_004getError, 1
+9	105	129	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	129	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	129		index __ArrHelper__getError_98_0, __getError_7qG2_sensor_7qG2_000, __signed_stack_004getError
+9	105	133	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	133	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	133		add __unsigned_stack_003getError, __unsigned_stack_003getError, __ArrHelper__getError_98_0
+9	105	137	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	137	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	137		set __signed_stack_004getError, 2
+9	105	140	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	140	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	140		index __ArrHelper__getError_98_0, __getError_7qG2_sensor_7qG2_000, __signed_stack_004getError
+9	105	144	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	144	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	144		add __unsigned_stack_003getError, __unsigned_stack_003getError, __ArrHelper__getError_98_0
+9	105	148	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	148	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	148		set __signed_stack_004getError, 3
+9	105	151	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	151	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	151		index __ArrHelper__getError_98_0, __getError_7qG2_sensor_7qG2_000, __signed_stack_004getError
+9	105	155	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	155	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	155		add __unsigned_stack_003getError, __unsigned_stack_003getError, __ArrHelper__getError_98_0
+9	105	159	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	159	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	159		set __signed_stack_004getError, 4
+9	105	162	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	162	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	162		index __ArrHelper__getError_98_0, __getError_7qG2_sensor_7qG2_000, __signed_stack_004getError
+9	105	166	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	166	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	166		add __unsigned_stack_003getError, __unsigned_stack_003getError, __ArrHelper__getError_98_0
+9	105	170	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	170	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	170		set __signed_stack_004getError, 5
+9	105	173	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	173	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	173		index __ArrHelper__getError_98_0, __getError_7qG2_sensor_7qG2_000, __signed_stack_004getError
+9	105	177	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	177	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	177		add __unsigned_stack_003getError, __unsigned_stack_003getError, __ArrHelper__getError_98_0
+9	105	181	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	181	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	181		set __signed_stack_004getError, 6
+9	105	184	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	184	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	184		index __ArrHelper__getError_98_0, __getError_7qG2_sensor_7qG2_000, __signed_stack_004getError
+9	105	188	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	188	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	188		add __unsigned_stack_003getError, __unsigned_stack_003getError, __ArrHelper__getError_98_0
+9	105	192	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	192	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	192		set __signed_stack_004getError, 7
+9	105	195	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	195	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	195		index __ArrHelper__getError_98_0, __getError_7qG2_sensor_7qG2_000, __signed_stack_004getError
+9	105	199	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	105	199	#line 105 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	199		add __D0getError, __unsigned_stack_003getError, __ArrHelper__getError_98_0
+9	106	203	#line 106 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	203	#line 106 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	107	203		div __D0getError, __signed_stack_002getError, __D0getError
+9	106	207	#line 106 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	107	207		sub __getError_7qG2_error_7qG2_000, __signed_stack_001getError, __D0getError
+9	106	211	#line 106 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	211	#line 106 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	211	#line 106 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	107	211		mov __signed_stack_001getError, __getError_7qG2_error_7qG2_000
+9	106	213	#line 106 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	213	#line 106 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	107	213		set __D0getError, 350
+9	106	216	#line 106 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	107	216		cmp 3, __zfgetError, __signed_stack_001getError, __D0getError
+9	106	220	#line 106 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	107	220		mov __D0getError, __zfgetError
+9	106	222	#line 106 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	107	222		brtst 5, __NXC_Label_839, __zfgetError
+9	106	225	#line 106 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	107	225		mov __signed_stack_001getError, __D0getError
+9	106	227	#line 106 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	107	227		mov __signed_stack_002getError, __getError_7qG2_error_7qG2_000
+9	106	229	#line 106 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	229	#line 106 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	107	229		mov __D0getError, __constValNeg350
+9	106	231	#line 106 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	107	231		cmp 2, __zfgetError, __signed_stack_002getError, __D0getError
+9	106	235	#line 106 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	106	235	#line 106 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	107	235		or __D0getError, __signed_stack_001getError, __zfgetError
+9	107	239	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	108	239		tst 5, __zfgetError, __D0getError
+9	107	242	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	108	242		brtst 4, __NXC_Label_842, __zfgetError
+9	107	245	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	108	245		mov __seeLine_7qG2_sensor_7qG2_000, __getError_7qG2_sensor_7qG2_000
+9	107	247	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	108	247		subcall seeLine, __seeLine_return
+9	107	249	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	107	249	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	108	249		not __DU0getError, __DU0seeLine
+9	107	252	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	108	252		tst 5, __zfgetError, __DU0getError
+9	107	255	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	108	255		mov __D0getError, __zfgetError
+9	107	257	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	108	257		brtst 4, __NXC_Label_844, __zfgetError
+9	107	260	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	108	260		mov __signed_stack_001getError, __D0getError
+9	107	262	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	108	262		mov __float_stack_002getError, memory
+9	107	264	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	107	264	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	108	264		mov __DF0getError, __constValNeg250
+9	107	266	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	108	266		cmp 1, __zfgetError, __float_stack_002getError, __DF0getError
+9	107	270	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	107	270	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	108	270		and __D0getError, __signed_stack_001getError, __zfgetError
+9	107	274	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	108	274		tst 5, __zfgetError, __D0getError
+9	107	277	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	108	277		mov __D0getError, __zfgetError
+9	107	279	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	108	279		brtst 4, __NXC_Label_844, __zfgetError
+9	107	282	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	108	282		mov __signed_stack_001getError, __D0getError
+9	107	284	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	108	284		mov __float_stack_002getError, memory
+9	107	286	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	107	286	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	108	286		mov __DF0getError, __constVal250
+9	107	288	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	108	288		cmp 0, __zfgetError, __float_stack_002getError, __DF0getError
+9	107	292	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	107	292	#line 107 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	108	292		and __D0getError, __signed_stack_001getError, __zfgetError
+9	108	296	#line 108 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	109	296		tst 5, __zfgetError, __D0getError
+9	108	299	#line 108 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	109	299		brtst 4, __NXC_Label_845, __zfgetError
+9	109	302	#line 109 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	110	302		set __getError_7qG2_error_7qG2_000, 0
+9	109	305	#line 109 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	109	305	#line 109 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	110	305	#line 110 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	111	305		jmp __NXC_Label_848
+9	110	307	#line 110 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	111	307		mov __signed_stack_001getError, lastError
+9	110	309	#line 110 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	110	309	#line 110 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	111	309		set __D0getError, 351
+9	110	312	#line 110 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	111	312		cmp 1, __zfgetError, __signed_stack_001getError, __D0getError
+9	110	316	#line 110 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	111	316		mov __D0getError, __zfgetError
+9	111	318	#line 111 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	112	318		brtst 4, __NXC_Label_851, __zfgetError
+9	111	321	#line 111 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	111	321	#line 111 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	112	321	#line 112 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	112	321	#line 112 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	113	321		add __getError_7qG2_error_7qG2_000, lastError, __constVal1
+9	112	325	#line 112 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	112	325	#line 112 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	113	325	#line 113 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	114	325		jmp __NXC_Label_854
+9	113	327	#line 113 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	114	327		mov __signed_stack_001getError, lastError
+9	113	329	#line 113 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	113	329	#line 113 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	114	329		mov __D0getError, __constValNeg351
+9	113	331	#line 113 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	114	331		cmp 0, __zfgetError, __signed_stack_001getError, __D0getError
+9	113	335	#line 113 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	114	335		mov __D0getError, __zfgetError
+9	114	337	#line 114 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	115	337		brtst 4, __NXC_Label_857, __zfgetError
+9	114	340	#line 114 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	114	340	#line 114 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	115	340	#line 115 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	115	340	#line 115 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	116	340		sub __getError_7qG2_error_7qG2_000, lastError, __constVal1
+9	115	344	#line 115 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	115	344	#line 115 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	116	344	#line 116 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	117	344		jmp __NXC_Label_860
+9	116	346	#line 116 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	117	346		mov __signed_stack_001getError, lastError
+9	116	348	#line 116 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	116	348	#line 116 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	117	348		set __D0getError, 0
+9	116	351	#line 116 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	117	351		cmp 3, __zfgetError, __signed_stack_001getError, __D0getError
+9	116	355	#line 116 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	117	355		mov __D0getError, __zfgetError
+9	117	357	#line 117 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	118	357		brtst 4, __NXC_Label_863, __zfgetError
+9	118	360	#line 118 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	119	360		set __getError_7qG2_error_7qG2_000, 352
+9	118	363	#line 118 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	118	363	#line 118 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	120	363	#line 120 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	121	363		jmp __NXC_Label_866
+9	121	365	#line 121 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	122	365		mov __getError_7qG2_error_7qG2_000, __constValNeg352
+9	121	367	#line 121 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	121	367	#line 121 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	123	367	#line 123 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	123	367	#line 123 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	123	367	#line 123 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	123	367	#line 123 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	123	367	#line 123 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	124	367	#line 124 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	125	367		mov __D0getError, __getError_7qG2_error_7qG2_000
+9	124	369	#line 124 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	125	369		subret __getError_return
+9	124	371	#line 124 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	126	371	#line 126 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+9	127	371		subret __getError_return
+10	127	0	#line 127 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	128	0		set __D0controller, 1
+10	128	3	#line 128 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	129	3		tst 5, __zfcontroller, __D0controller
+10	128	6	#line 128 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	129	6		brtst 4, __NXC_Label_872, __zfcontroller
+10	128	9	#line 128 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	129	9		set i, 0
+10	128	12	#line 128 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	128	12	#line 128 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	129	12		mov __signed_stack_001controller, i
+10	128	14	#line 128 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	128	14	#line 128 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	129	14		set __D0controller, 8
+10	128	17	#line 128 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	129	17		cmp 0, __zfcontroller, __signed_stack_001controller, __D0controller
+10	128	21	#line 128 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	129	21		mov __D0controller, __zfcontroller
+10	128	23	#line 128 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	129	23		brtst 4, __NXC_Label_876, __zfcontroller
+10	128	26	#line 128 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	129	26		jmp __NXC_Label_877
+10	128	28	#line 128 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	129	28		add i, i, __constVal1
+10	129	32	#line 129 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	130	32		jmp __NXC_Label_875
+10	129	34	#line 129 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	130	34		mov __signed_stack_001controller, i
+10	129	36	#line 129 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	130	36	#line 130 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	131	36		set __D0controller, 0
+10	130	39	#line 130 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	131	39		replace sens, sens, __signed_stack_001controller, __D0controller
+10	130	44	#line 130 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	131	44	#line 131 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	132	44		jmp __NXC_Label_878
+10	131	46	#line 131 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	131	46	#line 131 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	132	46		set __LSA_ReadRaw_Calibrated_7qG2_port_7qG2_000, 1
+10	131	49	#line 131 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	131	49	#line 131 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	132	49		set __LSA_ReadRaw_Calibrated_7qG2_i2cAddr_7qG2_000, 20
+10	131	52	#line 131 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	131	52	#line 131 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	132	52		mov __LSA_ReadRaw_Calibrated_7qG2_returnValue_7qG2_000, sens
+10	131	54	#line 131 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	132	54		subcall LSA_ReadRaw_Calibrated, __LSA_ReadRaw_Calibrated_return
+10	131	56	#line 131 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	132	56		mov sens, __LSA_ReadRaw_Calibrated_7qG2_returnValue_7qG2_000
+10	131	58	#line 131 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	132	58		mov __D0controller, __D0LSA_ReadRaw_Calibrated
+10	132	60	#line 132 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	133	60		tst 5, __zfcontroller, __D0controller
+10	132	63	#line 132 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	133	63		brtst 4, __NXC_Label_893, __zfcontroller
+10	132	66	#line 132 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	133	66		mov __CorrectSens_7qG2_array_7qG2_000, sens
+10	133	68	#line 133 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	134	68		subcall CorrectSens, __CorrectSens_return
+10	133	70	#line 133 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	134	70		mov sens, __CorrectSens_7qG2_array_7qG2_000
+10	133	72	#line 133 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	133	72	#line 133 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	134	72		mov __getError_7qG2_sensor_7qG2_000, __CorrectSens_7qG2_array_7qG2_000
+10	135	74	#line 135 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	136	74		subcall getError, __getError_return
+10	135	76	#line 135 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	136	76		mov __controller_7qG2_error_7qG2_002, __D0getError
+10	135	78	#line 135 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	135	78	#line 135 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	136	78		set __ClearLine_7qG2_line_7qG2_000_inline_controller, 56
+10	135	81	#line 135 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	6076	81	#line 6076 "NXCDefs.h"
+10	6077	81	#pragma macro 7
+10	6077	81		mov __TextOutArgs.Location.X, __constVal0
+10	6077	83		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_controller
+10	6077	85		mov __TextOutArgs.Options, __constVal0
+10	6077	87		mov __TextOutArgs.Text, __BlankLine
+10	6077	89		syscall 13, __TextOutArgs
+10	7377	92	#line 7377 "NXCDefs.h"
+10	6076	92	#line 6076 "NXCDefs.h"
+10	136	92	#line 136 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	136	92	#line 136 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	137	92		set __signed_stack_001controller, 0
+10	136	95	#line 136 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	136	95	#line 136 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	137	95		set __signed_stack_002controller, 56
+10	136	98	#line 136 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	136	98	#line 136 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	137	98		mov __DF0controller, __controller_7qG2_error_7qG2_002
+10	138	100	#line 138 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	138	100	#line 138 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	139	100		mov __TextOutArgs.Location.X, __signed_stack_001controller
+10	138	103	#line 138 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	139	103		mov __TextOutArgs.Location.Y, __signed_stack_002controller
+10	138	106	#line 138 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	139	106		set __TextOutArgs.Options, 0
+10	138	109	#line 138 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	139	109		numtostr __TextOutArgs.Text, __DF0controller
+10	138	112	#line 138 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	139	112		syscall 13, __TextOutArgs
+10	138	115	#line 138 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	138	115	#line 138 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	138	115	#line 138 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	139	115	#line 139 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	140	115		set __controller_7qG2_base_7qG2_002, 50
+10	139	118	#line 139 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	139	118	#line 139 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	139	118	#line 139 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	141	118	#line 141 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	141	118	#line 141 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	142	118		mul __controller_7qG2_turn_7qG2_002, __controller_7qG2_error_7qG2_002, __constValf0P14
+10	141	122	#line 141 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	141	122	#line 141 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	142	122		set __ClearLine_7qG2_line_7qG2_000_inline_controller, 48
+10	141	125	#line 141 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	6076	125	#line 6076 "NXCDefs.h"
+10	6077	125	#pragma macro 7
+10	6077	125		mov __TextOutArgs.Location.X, __constVal0
+10	6077	127		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_controller
+10	6077	129		mov __TextOutArgs.Options, __constVal0
+10	6077	131		mov __TextOutArgs.Text, __BlankLine
+10	6077	133		syscall 13, __TextOutArgs
+10	7446	136	#line 7446 "NXCDefs.h"
+10	6076	136	#line 6076 "NXCDefs.h"
+10	142	136	#line 142 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	142	136	#line 142 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	143	136		set __signed_stack_001controller, 0
+10	142	139	#line 142 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	142	139	#line 142 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	143	139		set __signed_stack_002controller, 48
+10	142	142	#line 142 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	142	142	#line 142 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	143	142		mov __DF0controller, __controller_7qG2_turn_7qG2_002
+10	144	144	#line 144 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	144	144	#line 144 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	145	144		mov __TextOutArgs.Location.X, __signed_stack_001controller
+10	144	147	#line 144 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	145	147		mov __TextOutArgs.Location.Y, __signed_stack_002controller
+10	144	150	#line 144 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	145	150		set __TextOutArgs.Options, 0
+10	144	153	#line 144 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	145	153		numtostr __TextOutArgs.Text, __DF0controller
+10	144	156	#line 144 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	145	156		syscall 13, __TextOutArgs
+10	144	159	#line 144 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	144	159	#line 144 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	144	159	#line 144 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	144	159	#line 144 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	145	159		set __ClearLine_7qG2_line_7qG2_000_inline_controller, 40
+10	144	162	#line 144 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	6076	162	#line 6076 "NXCDefs.h"
+10	6077	162	#pragma macro 7
+10	6077	162		mov __TextOutArgs.Location.X, __constVal0
+10	6077	164		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_controller
+10	6077	166		mov __TextOutArgs.Options, __constVal0
+10	6077	168		mov __TextOutArgs.Text, __BlankLine
+10	6077	170		syscall 13, __TextOutArgs
+10	7489	173	#line 7489 "NXCDefs.h"
+10	6076	173	#line 6076 "NXCDefs.h"
+10	145	173	#line 145 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	145	173	#line 145 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	146	173		set __signed_stack_001controller, 0
+10	145	176	#line 145 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	145	176	#line 145 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	146	176		set __signed_stack_002controller, 40
+10	145	179	#line 145 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	145	179	#line 145 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	146	179		mov __seeLine_7qG2_sensor_7qG2_000, sens
+10	145	181	#line 145 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	146	181		subcall seeLine, __seeLine_return
+10	145	183	#line 145 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	146	183		mov __DU0controller, __DU0seeLine
+10	147	185	#line 147 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	147	185	#line 147 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	148	185		mov __TextOutArgs.Location.X, __signed_stack_001controller
+10	147	188	#line 147 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	148	188		mov __TextOutArgs.Location.Y, __signed_stack_002controller
+10	147	191	#line 147 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	148	191		set __TextOutArgs.Options, 0
+10	147	194	#line 147 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	148	194		numtostr __TextOutArgs.Text, __DU0controller
+10	147	197	#line 147 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	148	197		syscall 13, __TextOutArgs
+10	147	200	#line 147 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	148	200		mov __D0controller, __TextOutArgs.Result
+10	147	203	#line 147 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	147	203	#line 147 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	147	203	#line 147 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	147	203	#line 147 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	148	203	#line 148 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	148	203	#line 148 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	149	203		add __controller_7qG2_moveLeft_7qG2_002, __controller_7qG2_base_7qG2_002, __controller_7qG2_turn_7qG2_002
+10	148	207	#line 148 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	148	207	#line 148 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	148	207	#line 148 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	150	207	#line 150 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	150	207	#line 150 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	151	207		sub __controller_7qG2_moveRight_7qG2_002, __controller_7qG2_base_7qG2_002, __controller_7qG2_turn_7qG2_002
+10	150	211	#line 150 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	150	211	#line 150 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	151	211		mov __Move_7qG2_left_7qG2_000, __controller_7qG2_moveLeft_7qG2_002
+10	150	213	#line 150 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	150	213	#line 150 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	151	213		mov __Move_7qG2_right_7qG2_000, __controller_7qG2_moveRight_7qG2_002
+10	150	215	#line 150 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	152	215	#line 152 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	153	215		subcall Move, __Move_return
+10	152	217	#line 152 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	152	217	#line 152 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	152	217	#line 152 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	152	217	#line 152 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	152	217	#line 152 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	153	217		mul __float_stack_001controller, memory, __constValf0P6666666667
+10	152	221	#line 152 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	153	221	#line 153 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	153	221	#line 153 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	154	221		add memory, __float_stack_001controller, __controller_7qG2_error_7qG2_002
+10	153	225	#line 153 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	153	225	#line 153 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	153	225	#line 153 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	154	225		set __ClearLine_7qG2_line_7qG2_000_inline_controller, 32
+10	153	228	#line 153 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	6076	228	#line 6076 "NXCDefs.h"
+10	6077	228	#pragma macro 7
+10	6077	228		mov __TextOutArgs.Location.X, __constVal0
+10	6077	230		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_controller
+10	6077	232		mov __TextOutArgs.Options, __constVal0
+10	6077	234		mov __TextOutArgs.Text, __BlankLine
+10	6077	236		syscall 13, __TextOutArgs
+10	7604	239	#line 7604 "NXCDefs.h"
+10	6076	239	#line 6076 "NXCDefs.h"
+10	154	239	#line 154 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	154	239	#line 154 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	155	239		set __signed_stack_001controller, 0
+10	154	242	#line 154 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	154	242	#line 154 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	155	242		set __signed_stack_002controller, 32
+10	154	245	#line 154 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	154	245	#line 154 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	155	245		mov __DF0controller, memory
+10	155	247	#line 155 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	155	247	#line 155 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	156	247		mov __TextOutArgs.Location.X, __signed_stack_001controller
+10	155	250	#line 155 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	156	250		mov __TextOutArgs.Location.Y, __signed_stack_002controller
+10	155	253	#line 155 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	156	253		set __TextOutArgs.Options, 0
+10	155	256	#line 155 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	156	256		numtostr __TextOutArgs.Text, __DF0controller
+10	155	259	#line 155 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	156	259		syscall 13, __TextOutArgs
+10	155	262	#line 155 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	156	262		mov __D0controller, __TextOutArgs.Result
+10	155	265	#line 155 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	155	265	#line 155 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	156	265	#line 156 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	157	265		mov lastError, __controller_7qG2_error_7qG2_002
+10	156	267	#line 156 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	156	267	#line 156 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	158	267	#line 158 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	159	267		jmp __NXC_Label_946
+10	158	269	#line 158 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	159	269		set __ClearLine_7qG2_line_7qG2_000_inline_controller, 56
+10	158	272	#line 158 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	6076	272	#line 6076 "NXCDefs.h"
+10	6077	272	#pragma macro 7
+10	6077	272		mov __TextOutArgs.Location.X, __constVal0
+10	6077	274		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_controller
+10	6077	276		mov __TextOutArgs.Options, __constVal0
+10	6077	278		mov __TextOutArgs.Text, __BlankLine
+10	6077	280		syscall 13, __TextOutArgs
+10	7657	283	#line 7657 "NXCDefs.h"
+10	6076	283	#line 6076 "NXCDefs.h"
+10	159	283	#line 159 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	159	283	#line 159 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	160	283		set __signed_stack_001controller, 0
+10	159	286	#line 159 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	159	286	#line 159 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	160	286		set __signed_stack_002controller, 56
+10	159	289	#line 159 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	159	289	#line 159 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	160	289		strcat __strbufcontroller, __constStr0026
+10	160	293	#line 160 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	160	293	#line 160 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	161	293		mov __TextOutArgs.Location.X, __signed_stack_001controller
+10	160	296	#line 160 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	161	296		mov __TextOutArgs.Location.Y, __signed_stack_002controller
+10	160	299	#line 160 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	161	299		set __TextOutArgs.Options, 0
+10	160	302	#line 160 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	161	302		mov __TextOutArgs.Text, __strbufcontroller
+10	160	304	#line 160 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	161	304		syscall 13, __TextOutArgs
+10	160	307	#line 160 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	160	307	#line 160 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	160	307	#line 160 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	160	307	#line 160 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	161	307		set __ClearLine_7qG2_line_7qG2_000_inline_controller, 48
+10	160	310	#line 160 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	6076	310	#line 6076 "NXCDefs.h"
+10	6077	310	#pragma macro 7
+10	6077	310		mov __TextOutArgs.Location.X, __constVal0
+10	6077	312		mov __TextOutArgs.Location.Y, __ClearLine_7qG2_line_7qG2_000_inline_controller
+10	6077	314		mov __TextOutArgs.Options, __constVal0
+10	6077	316		mov __TextOutArgs.Text, __BlankLine
+10	6077	318		syscall 13, __TextOutArgs
+10	7698	321	#line 7698 "NXCDefs.h"
+10	6076	321	#line 6076 "NXCDefs.h"
+10	161	321	#line 161 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	161	321	#line 161 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	162	321		set __signed_stack_001controller, 0
+10	161	324	#line 161 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	161	324	#line 161 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	162	324		set __signed_stack_002controller, 48
+10	161	327	#line 161 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	161	327	#line 161 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	162	327		strcat __strbufcontroller, __constStr0027
+10	162	331	#line 162 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	162	331	#line 162 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	163	331		mov __TextOutArgs.Location.X, __signed_stack_001controller
+10	162	334	#line 162 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	163	334		mov __TextOutArgs.Location.Y, __signed_stack_002controller
+10	162	337	#line 162 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	163	337		set __TextOutArgs.Options, 0
+10	162	340	#line 162 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	163	340		mov __TextOutArgs.Text, __strbufcontroller
+10	162	342	#line 162 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	163	342		syscall 13, __TextOutArgs
+10	162	345	#line 162 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	163	345		mov __D0controller, __TextOutArgs.Result
+10	162	348	#line 162 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	162	348	#line 162 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	163	348	#line 163 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	164	348		jmp __NXC_Label_872
+10	163	350	#line 163 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	165	350	#line 165 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	167	350	#line 167 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	168	350		jmp __NXC_Label_871
+10	167	352	#line 167 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	167	352	#line 167 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+10	168	352		subret __controller_return
+11	168	0	#line 168 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+11	169	0		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_init, 1
+11	168	3	#line 168 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+11	169	3	#line 169 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+11	170	3		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_init, __constVal1
+11	3758	5	#line 3758 "NXCDefs.h"
+11	3759	5		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_init
+11	3758	7	#line 3758 "NXCDefs.h"
+11	3758	7	#line 3758 "NXCDefs.h"
+11	3759	7		mov __DU0SetSensorLowspeed_inline_init, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_init
+11	3758	9	#line 3758 "NXCDefs.h"
+11	3759	9		tst 5, __zfSetSensorLowspeed_inline_init, __DU0SetSensorLowspeed_inline_init
+11	3758	12	#line 3758 "NXCDefs.h"
+11	3759	12		brtst 4, __004__NXC_Label_36, __zfSetSensorLowspeed_inline_init
+11	3758	15	#line 3758 "NXCDefs.h"
+11	3759	15		set __D0SetSensorLowspeed_inline_init, 11
+11	3758	18	#line 3758 "NXCDefs.h"
+11	3759	18		jmp __004__NXC_Label_37
+11	3758	20	#line 3758 "NXCDefs.h"
+11	3759	20		set __D0SetSensorLowspeed_inline_init, 10
+11	3758	23	#line 3758 "NXCDefs.h"
+11	3759	23		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_init, __D0SetSensorLowspeed_inline_init
+11	3663	25	#line 3663 "NXCDefs.h"
+11	3664	25		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_init, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init, 0
+11	3663	29	#line 3663 "NXCDefs.h"
+11	3759	29	#line 3759 "NXCDefs.h"
+11	3759	29	#line 3759 "NXCDefs.h"
+11	3760	29		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_init
+11	3759	31	#line 3759 "NXCDefs.h"
+11	3759	31	#line 3759 "NXCDefs.h"
+11	3760	31		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_init, 0
+11	3759	34	#line 3759 "NXCDefs.h"
+11	3676	34	#line 3676 "NXCDefs.h"
+11	3677	34		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_init, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_init, 1
+11	3676	38	#line 3676 "NXCDefs.h"
+11	3760	38	#line 3760 "NXCDefs.h"
+11	3760	38	#line 3760 "NXCDefs.h"
+11	3760	38	#line 3760 "NXCDefs.h"
+11	3694	38	#line 3694 "NXCDefs.h"
+11	3695	38	#pragma macro 4
+11	3695	38		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_init
+11	3695	40		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+11	7837	43	#line 7837 "NXCDefs.h"
+11	3694	43	#line 3694 "NXCDefs.h"
+11	3761	43	#line 3761 "NXCDefs.h"
+11	169	43	#line 169 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+11	169	43	#line 169 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+11	170	43		set __LSA_WakeUp_7qG2_port_7qG2_000, 1
+11	169	46	#line 169 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+11	169	46	#line 169 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+11	170	46		set __LSA_WakeUp_7qG2_addr_7qG2_000, 20
+11	169	49	#line 169 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+11	171	49	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+11	172	49		subcall LSA_WakeUp, __LSA_WakeUp_return
+11	171	52	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+11	171	52	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+11	171	52	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+11	172	52		set __Wait_7qG2_ms_7qG2_000_inline_init, 50
+11	171	55	#line 171 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+11	7921	55	#line 7921 "NXCDefs.h"
+11	7922	55		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_init
+11	7921	58	#line 7921 "NXCDefs.h"
+11	172	58	#line 172 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+11	174	58	#line 174 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+11	175	58		subret __init_return
+12	183	0	#line 183 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+12	184	0		arrinit buf, __constVal0, __constVal20
+12	183	4	#line 183 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+12	184	4		arrinit sens, __constVal0, __constVal8
+12	183	8	#line 183 "C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc"
+12	184	8		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc
+1	__ResetSensorSubroutine	9	NXTDefs.h
+2	__ReadLSBytesVar	22	NXTDefs.h
+3	LSA_Read	122	C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc
+4	LSA_WakeUp	219	C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc
+5	LSA_ReadRaw_Calibrated	234	C:\Users\Administrator.FEQ\Desktop\nxt\china\.\lib/LSA-lib.nxc
+6	Move	321	C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc
+7	CorrectSens	453	C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc
+8	seeLine	564	C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc
+9	getError	800	C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc
+10	controller	1173	C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc
+11	init	1527	C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc
+12	__initialize_global_data	1587	C:\Users\Administrator.FEQ\Desktop\nxt\china\_main.nxc

@@ -1,0 +1,984 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0LSA_format_hex	6	1	0	4	1
+1	__D0LSA_format_bin	6	1	4	4	1
+2	__D0LSA_Read	6	1	8	4	7
+3	__D0LSA_ReadRaw_Uncalibrated	6	1	12	4	2
+4	__DU0LSA_Read	5	1	16	4	2
+5	__RLSBmutex1	9	0	20	4	2
+6	__RLSBmutex0	9	0	24	4	2
+7	__RLSBmutex2	9	0	28	4	2
+8	__SPTArgsMutex	9	0	32	4	4
+9	__RLSBmutex3	9	0	36	4	2
+10	__D0LSA_SendCommand	6	1	40	4	14
+11	__signed_stack_001main	6	1	44	4	30
+12	__signed_stack_001LSA_SendCommand	6	1	48	4	4
+13	__signed_stack_002main	6	1	52	4	26
+14	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	56	4	10
+15	__signed_stack_003main	6	1	60	4	4
+16	__D0main	6	1	64	4	45
+17	__D0LSA_weighted_average	6	1	68	4	1
+18	__D0SetSensorLowspeed_inline_main	6	1	72	4	3
+19	__signed_stack_001LSA_Read	6	1	76	4	4
+20	__DU0SetSensorLowspeed_inline_main	5	1	80	4	2
+21	__CLSCSMutex2	9	0	84	4	10
+22	__CLSRMutex1	9	0	88	4	2
+23	__CLSRMutex2	9	0	92	4	2
+24	__CLSWMutex2	9	0	96	4	4
+25	__CLSWMutex1	9	0	100	4	4
+26	__CLSWMutex0	9	0	104	4	4
+27	__CLSCSMutex0	9	0	108	4	10
+28	__CLSCSMutex1	9	0	112	4	10
+29	__CLSRMutex0	9	0	116	4	2
+30	__CLSWMutex3	9	0	120	4	4
+31	__CLSCSMutex3	9	0	124	4	10
+32	__CLSRMutex3	9	0	128	4	2
+33	__LSA_Read_7qG2_count_7qG2_000	4	1	132	2	3
+34	__LSA_SendCommand_7qG2_status_7qG2_000	4	1	134	2	4
+35	__LSA_Read_7qG2_reg_to_read_7qG2_000	4	1	136	2	2
+36	__constVal65	2	0	138	1	1
+37	__LSA_SendCommand_7qG2_nByteReady_7qG2_000	1	1	139	1	2
+38	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	140	1	2
+39	__LSA_Read_7qG2_port_7qG2_000	1	1	141	1	3
+40	__SetSensorLowspeed_7qG2_port_7qG2_000_inline_main	1	1	142	1	4
+41	__LSA_SendCommand_return	1	1	143	1	5
+42	__LSA_SendCommand_7qG2_port_7qG2_000	1	1	144	1	6
+43	__constVal0	2	1	145	1	2
+44	__LSA_SendCommand_7qG2_addr_7qG2_000	1	1	146	1	3
+45	__constVal1	2	0	147	1	4
+46	__LSA_SendCommand_7qG2_cmd_7qG2_000	1	1	148	1	3
+47	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	149	1	2
+48	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	150	1	2
+49	__LSA_Read_return	1	1	151	1	5
+50	__LSA_Read_7qG2_nByteReady_7qG2_000	1	1	152	1	2
+51	__SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main	1	1	153	1	2
+52	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main	1	1	154	1	2
+53	__LSA_Read_7qG2_i2cAddr_7qG2_000	1	1	155	1	2
+54	____initialize_global_data_return	1	1	156	1	3
+55	__LSA_WakeUp_return	1	1	157	1	4
+56	__LSA_WakeUp_7qG2_port_7qG2_000	1	1	158	1	2
+57	__LSA_WakeUp_7qG2_addr_7qG2_000	1	1	159	1	2
+58	__ResetSensorPort	1	1	160	1	3
+59	__constVal20	2	0	161	1	1
+60	__RLSReadPort	1	1	162	1	4
+61	__PFTmp	1	1	163	1	1
+62	__zfLSA_Read	1	1	164	1	5
+63	__ArrHelper__LSA_Read_98_0	1	1	165	1	2
+64	____ReadLSBytesVar_return	1	1	166	1	3
+65	__constVal15	2	0	167	1	1
+66	__RLSBResultVar	2	1	168	1	8
+67	__RLSBIterationsVar	1	1	169	1	4
+68	__RLSBytesCountVar	1	1	170	1	8
+69	__tmpsbyteLSA_SendCommand	2	1	171	1	2
+70	____ResetSensorSubroutine_return	1	1	172	1	3
+71	__zfmain	1	1	173	1	4
+72	__zfSetSensorLowspeed_inline_main	1	1	174	1	2
+73	__zfLSA_SendCommand	1	1	175	1	6
+74	__ResetSensorTmp	1	1	176	1	2
+75	__CLSWArgs0	8	0	4	12	10
+76	__CLSWArgs0.Result	2	1	180	1	10
+77	__CLSWArgs0.Port	1	1	181	1	10
+78	__CLSWArgs0.Buffer	7	0	182	4	10
+79	__CLSWArgs0.Buffer.Buffer_type	1	0	0	1	0
+80	__CLSWArgs0.ReturnLen	1	1	184	1	10
+81	__CLSCSArgs0	8	0	3	4	20
+82	__CLSCSArgs0.Result	2	1	188	1	20
+83	__CLSCSArgs0.Port	1	1	189	1	20
+84	__CLSCSArgs0.BytesReady	1	1	190	1	20
+85	__TextOutArgs	8	0	4	16	64
+86	__TextOutArgs.Result	2	1	192	1	64
+87	__TextOutArgs.Location	8	0	2	4	64
+88	__TextOutArgs.Location.X	4	1	196	2	64
+89	__TextOutArgs.Location.Y	4	1	198	2	64
+90	__TextOutArgs.Text	7	0	200	4	64
+91	__TextOutArgs.Text.Text_type	1	0	0	1	0
+92	__TextOutArgs.Options	5	1	204	4	64
+93	__RBtnArgs	8	0	5	8	10
+94	__RBtnArgs.Result	2	1	208	1	10
+95	__RBtnArgs.Index	1	1	209	1	10
+96	__RBtnArgs.Pressed	1	1	210	1	10
+97	__RBtnArgs.Count	1	1	211	1	10
+98	__RBtnArgs.Reset	1	1	212	1	10
+99	__SPTArgs	8	0	5	8	12
+100	__SPTArgs.Result	2	1	216	1	12
+101	__SPTArgs.Frequency	3	1	218	2	12
+102	__SPTArgs.Duration	3	1	220	2	12
+103	__SPTArgs.Loop	1	1	222	1	12
+104	__SPTArgs.Volume	1	1	223	1	12
+105	__CLSRArgs0	8	0	4	12	5
+106	__CLSRArgs0.Result	2	1	224	1	5
+107	__CLSRArgs0.Port	1	1	225	1	5
+108	__CLSRArgs0.Buffer	7	0	226	4	5
+109	__CLSRArgs0.Buffer.Buffer_type	1	0	0	1	0
+110	__CLSRArgs0.BufferLen	1	1	228	1	5
+111	__constStr0026	7	0	230	4	1
+112	__constStr0026.__constStr0026_type	1	1	0	1	0
+113	__constStr0027	7	0	232	4	4
+114	__constStr0027.__constStr0027_type	1	1	0	1	0
+115	__constStr0030	7	0	234	4	2
+116	__constStr0030.__constStr0030_type	1	1	0	1	0
+117	__constStr0031	7	0	236	4	1
+118	__constStr0031.__constStr0031_type	1	1	0	1	0
+119	__constStr0028	7	0	238	4	1
+120	__constStr0028.__constStr0028_type	1	1	0	1	0
+121	__constStr0029	7	0	240	4	2
+122	__constStr0029.__constStr0029_type	1	1	0	1	0
+123	__main_7qG2_msg_7qG2_000	7	0	242	4	22
+124	__main_7qG2_msg_7qG2_000.__main_7qG2_msg_7qG2_000_type	1	0	0	1	0
+125	__RLSReadBufVar	7	0	244	4	8
+126	__RLSReadBufVar.__RLSReadBufVar_type	1	0	0	1	0
+127	__LSA_SendCommand_7qG2_cmdBuf_7qG2_000	7	0	246	4	2
+128	__LSA_SendCommand_7qG2_cmdBuf_7qG2_000.__LSA_SendCommand_7qG2_cmdBuf_7qG2_000_type	1	0	0	1	0
+129	__strbufmain	7	0	248	4	44
+130	__strbufmain.__strbufmain_type	1	0	0	1	0
+131	__LSA_Read_7qG2_message_7qG2_000	7	0	250	4	2
+132	__LSA_Read_7qG2_message_7qG2_000.__LSA_Read_7qG2_message_7qG2_000_type	1	0	0	1	0
+133	__LSA_Read_7qG2_buf_7qG2_000	7	0	252	4	3
+134	__LSA_Read_7qG2_buf_7qG2_000.__LSA_Read_7qG2_buf_7qG2_000_type	1	0	0	1	0
+135	__RLSLastGoodReadVar	7	0	254	4	2
+136	__RLSLastGoodReadVar.__RLSLastGoodReadVar_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	26	0	#line 26 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	27	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	26	2	#line 26 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	32	2	#line 32 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	35	2	#line 35 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	35	2	#line 35 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	35	2	#line 35 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	36	2		set __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main, 1
+0	35	5	#line 35 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	37	5	#line 37 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	38	5		mov __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main, __constVal1
+0	3758	7	#line 3758 "NXCDefs.h"
+0	3759	7		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3758	9	#line 3758 "NXCDefs.h"
+0	3758	9	#line 3758 "NXCDefs.h"
+0	3759	9		mov __DU0SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_bIsPowered_7qG2_000_inline_main
+0	3758	11	#line 3758 "NXCDefs.h"
+0	3759	11		tst 5, __zfSetSensorLowspeed_inline_main, __DU0SetSensorLowspeed_inline_main
+0	3758	14	#line 3758 "NXCDefs.h"
+0	3759	14		brtst 4, __004__NXC_Label_36, __zfSetSensorLowspeed_inline_main
+0	3758	17	#line 3758 "NXCDefs.h"
+0	3759	17		set __D0SetSensorLowspeed_inline_main, 11
+0	3758	20	#line 3758 "NXCDefs.h"
+0	3759	20		jmp __004__NXC_Label_37
+0	3758	22	#line 3758 "NXCDefs.h"
+0	3759	22		set __D0SetSensorLowspeed_inline_main, 10
+0	3758	25	#line 3758 "NXCDefs.h"
+0	3759	25		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __D0SetSensorLowspeed_inline_main
+0	3663	27	#line 3663 "NXCDefs.h"
+0	3664	27		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3663	31	#line 3663 "NXCDefs.h"
+0	3759	31	#line 3759 "NXCDefs.h"
+0	3759	31	#line 3759 "NXCDefs.h"
+0	3760	31		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3759	33	#line 3759 "NXCDefs.h"
+0	3759	33	#line 3759 "NXCDefs.h"
+0	3760	33		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, 0
+0	3759	36	#line 3759 "NXCDefs.h"
+0	3676	36	#line 3676 "NXCDefs.h"
+0	3677	36		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLowspeed_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLowspeed_inline_main, 1
+0	3676	40	#line 3676 "NXCDefs.h"
+0	3760	40	#line 3760 "NXCDefs.h"
+0	3760	40	#line 3760 "NXCDefs.h"
+0	3760	40	#line 3760 "NXCDefs.h"
+0	3694	40	#line 3694 "NXCDefs.h"
+0	3695	40	#pragma macro 4
+0	3695	40		mov __ResetSensorPort, __SetSensorLowspeed_7qG2_port_7qG2_000_inline_main
+0	3695	42		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	5734	44	#line 5734 "NXCDefs.h"
+0	3694	44	#line 3694 "NXCDefs.h"
+0	3761	44	#line 3761 "NXCDefs.h"
+0	37	44	#line 37 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	37	44	#line 37 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	38	44		set __LSA_WakeUp_7qG2_port_7qG2_000, 1
+0	37	47	#line 37 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	37	47	#line 37 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	38	47		set __LSA_WakeUp_7qG2_addr_7qG2_000, 20
+0	37	50	#line 37 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	39	50	#line 39 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	40	50		subcall LSA_WakeUp, __LSA_WakeUp_return
+0	39	52	#line 39 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	39	52	#line 39 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	39	52	#line 39 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	40	52		set __Wait_7qG2_ms_7qG2_000_inline_main, 10
+0	39	55	#line 39 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	7921	55	#line 7921 "NXCDefs.h"
+0	7922	55		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	58	#line 7921 "NXCDefs.h"
+0	40	58	#line 40 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	41	58	#line 41 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	42	58		strcat __strbufmain, __constStr0026
+0	41	62	#line 41 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	42	62		mov __main_7qG2_msg_7qG2_000, __strbufmain
+0	41	64	#line 41 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	41	64	#line 41 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	42	64		set __signed_stack_001main, 2
+0	41	67	#line 41 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	41	67	#line 41 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	42	67		set __signed_stack_002main, 56
+0	41	70	#line 41 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	41	70	#line 41 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	42	70		strcat __strbufmain, __main_7qG2_msg_7qG2_000
+0	41	74	#line 41 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	42	74		set __D0main, 0
+0	42	77	#line 42 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	42	77	#line 42 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	43	77		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	42	79	#line 42 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	43	79		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	42	81	#line 42 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	43	81		mov __TextOutArgs.Options, __D0main
+0	42	83	#line 42 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	43	83		mov __TextOutArgs.Text, __strbufmain
+0	42	85	#line 42 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	43	85		syscall 13, __TextOutArgs
+0	42	88	#line 42 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	43	88		mov __D0main, __TextOutArgs.Result
+0	42	90	#line 42 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	42	90	#line 42 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	43	90	#line 43 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	44	90		strcat __strbufmain, __constStr0027
+0	43	94	#line 43 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	44	94		mov __main_7qG2_msg_7qG2_000, __strbufmain
+0	43	96	#line 43 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	43	96	#line 43 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	44	96		set __signed_stack_001main, 2
+0	43	99	#line 43 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	43	99	#line 43 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	44	99		set __signed_stack_002main, 48
+0	43	102	#line 43 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	43	102	#line 43 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	44	102		strcat __strbufmain, __main_7qG2_msg_7qG2_000
+0	43	106	#line 43 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	44	106		set __D0main, 0
+0	44	109	#line 44 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	44	109	#line 44 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	45	109		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	44	111	#line 44 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	45	111		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	44	113	#line 44 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	45	113		mov __TextOutArgs.Options, __D0main
+0	44	115	#line 44 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	45	115		mov __TextOutArgs.Text, __strbufmain
+0	44	117	#line 44 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	45	117		syscall 13, __TextOutArgs
+0	44	120	#line 44 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	45	120		mov __D0main, __TextOutArgs.Result
+0	44	122	#line 44 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	44	122	#line 44 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	45	122	#line 45 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	46	122		strcat __strbufmain, __constStr0027
+0	45	126	#line 45 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	46	126		mov __main_7qG2_msg_7qG2_000, __strbufmain
+0	45	128	#line 45 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	45	128	#line 45 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	46	128		set __signed_stack_001main, 2
+0	45	131	#line 45 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	45	131	#line 45 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	46	131		set __signed_stack_002main, 40
+0	45	134	#line 45 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	45	134	#line 45 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	46	134		strcat __strbufmain, __main_7qG2_msg_7qG2_000
+0	45	138	#line 45 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	46	138		set __D0main, 0
+0	46	141	#line 46 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	46	141	#line 46 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	47	141		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	46	143	#line 46 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	47	143		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	46	145	#line 46 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	47	145		mov __TextOutArgs.Options, __D0main
+0	46	147	#line 46 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	47	147		mov __TextOutArgs.Text, __strbufmain
+0	46	149	#line 46 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	47	149		syscall 13, __TextOutArgs
+0	46	152	#line 46 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	47	152		mov __D0main, __TextOutArgs.Result
+0	46	154	#line 46 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	46	154	#line 46 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	47	154	#line 47 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	48	154		strcat __strbufmain, __constStr0028
+0	47	158	#line 47 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	48	158		mov __main_7qG2_msg_7qG2_000, __strbufmain
+0	47	160	#line 47 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	47	160	#line 47 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	48	160		set __signed_stack_001main, 2
+0	47	163	#line 47 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	47	163	#line 47 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	48	163		set __signed_stack_002main, 32
+0	47	166	#line 47 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	47	166	#line 47 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	48	166		strcat __strbufmain, __main_7qG2_msg_7qG2_000
+0	47	170	#line 47 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	48	170		set __D0main, 0
+0	48	173	#line 48 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	48	173	#line 48 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	49	173		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	48	175	#line 48 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	49	175		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	48	177	#line 48 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	49	177		mov __TextOutArgs.Options, __D0main
+0	48	179	#line 48 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	49	179		mov __TextOutArgs.Text, __strbufmain
+0	48	181	#line 48 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	49	181		syscall 13, __TextOutArgs
+0	48	184	#line 48 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	49	184		mov __D0main, __TextOutArgs.Result
+0	48	186	#line 48 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	48	186	#line 48 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	49	186	#line 49 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	50	186		strcat __strbufmain, __constStr0027
+0	49	190	#line 49 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	50	190		mov __main_7qG2_msg_7qG2_000, __strbufmain
+0	49	192	#line 49 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	49	192	#line 49 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	50	192		set __signed_stack_001main, 2
+0	49	195	#line 49 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	49	195	#line 49 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	50	195		set __signed_stack_002main, 24
+0	49	198	#line 49 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	49	198	#line 49 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	50	198		strcat __strbufmain, __main_7qG2_msg_7qG2_000
+0	49	202	#line 49 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	50	202		set __D0main, 0
+0	50	205	#line 50 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	50	205	#line 50 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	51	205		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	50	207	#line 50 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	51	207		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	50	209	#line 50 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	51	209		mov __TextOutArgs.Options, __D0main
+0	50	211	#line 50 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	51	211		mov __TextOutArgs.Text, __strbufmain
+0	50	213	#line 50 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	51	213		syscall 13, __TextOutArgs
+0	50	216	#line 50 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	51	216		mov __D0main, __TextOutArgs.Result
+0	50	218	#line 50 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	50	218	#line 50 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	51	218	#line 51 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	52	218		strcat __strbufmain, __constStr0027
+0	51	222	#line 51 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	52	222		mov __main_7qG2_msg_7qG2_000, __strbufmain
+0	51	224	#line 51 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	51	224	#line 51 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	52	224		set __signed_stack_001main, 2
+0	51	227	#line 51 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	51	227	#line 51 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	52	227		set __signed_stack_002main, 16
+0	51	230	#line 51 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	51	230	#line 51 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	52	230		strcat __strbufmain, __main_7qG2_msg_7qG2_000
+0	51	234	#line 51 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	52	234		set __D0main, 0
+0	52	237	#line 52 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	52	237	#line 52 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	53	237		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	52	239	#line 52 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	53	239		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	52	241	#line 52 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	53	241		mov __TextOutArgs.Options, __D0main
+0	52	243	#line 52 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	53	243		mov __TextOutArgs.Text, __strbufmain
+0	52	245	#line 52 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	53	245		syscall 13, __TextOutArgs
+0	52	248	#line 52 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	53	248		mov __D0main, __TextOutArgs.Result
+0	52	250	#line 52 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	52	250	#line 52 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	53	250	#line 53 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	54	250		strcat __strbufmain, __constStr0029
+0	53	254	#line 53 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	54	254		mov __main_7qG2_msg_7qG2_000, __strbufmain
+0	53	256	#line 53 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	53	256	#line 53 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	54	256		set __signed_stack_001main, 2
+0	53	259	#line 53 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	53	259	#line 53 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	54	259		set __signed_stack_002main, 8
+0	53	262	#line 53 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	53	262	#line 53 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	54	262		strcat __strbufmain, __main_7qG2_msg_7qG2_000
+0	53	266	#line 53 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	54	266		set __D0main, 0
+0	54	269	#line 54 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	54	269	#line 54 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	55	269		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	54	271	#line 54 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	55	271		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	54	273	#line 54 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	55	273		mov __TextOutArgs.Options, __D0main
+0	54	275	#line 54 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	55	275		mov __TextOutArgs.Text, __strbufmain
+0	54	277	#line 54 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	55	277		syscall 13, __TextOutArgs
+0	54	280	#line 54 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	55	280		mov __D0main, __TextOutArgs.Result
+0	54	282	#line 54 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	54	282	#line 54 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	54	282	#line 54 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	55	282		set __signed_stack_001main, 3
+0	54	285	#line 54 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	54	285	#line 54 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	55	285		set __D0main, 1
+0	54	288	#line 54 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	54	288	#line 54 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	55	288		mov __RBtnArgs.Index, __signed_stack_001main
+0	54	290	#line 54 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	55	290		mov __RBtnArgs.Reset, __D0main
+0	54	292	#line 54 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	55	292		syscall 20, __RBtnArgs
+0	54	295	#line 54 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	54	295	#line 54 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	54	295	#line 54 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	55	295		not __D0main, __RBtnArgs.Pressed
+0	55	298	#line 55 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	56	298		tst 5, __zfmain, __D0main
+0	55	301	#line 55 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	56	301		brtst 4, __NXC_Label_782, __zfmain
+0	55	304	#line 55 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	55	304	#line 55 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	56	304		jmp __NXC_Label_781
+0	55	306	#line 55 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	56	306	#line 56 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	57	306		strcat __strbufmain, __constStr0030
+0	56	310	#line 56 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	57	310		mov __main_7qG2_msg_7qG2_000, __strbufmain
+0	56	312	#line 56 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	56	312	#line 56 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	57	312		set __signed_stack_001main, 2
+0	56	315	#line 56 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	56	315	#line 56 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	57	315		set __signed_stack_002main, 8
+0	56	318	#line 56 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	56	318	#line 56 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	57	318		strcat __strbufmain, __main_7qG2_msg_7qG2_000
+0	56	322	#line 56 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	57	322		set __D0main, 0
+0	57	325	#line 57 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	57	325	#line 57 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	58	325		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	57	327	#line 57 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	58	327		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	57	329	#line 57 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	58	329		mov __TextOutArgs.Options, __D0main
+0	57	331	#line 57 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	58	331		mov __TextOutArgs.Text, __strbufmain
+0	57	333	#line 57 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	58	333		syscall 13, __TextOutArgs
+0	57	336	#line 57 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	57	336	#line 57 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	57	336	#line 57 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	57	336	#line 57 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	58	336		set __Wait_7qG2_ms_7qG2_000_inline_main, 1500
+0	57	339	#line 57 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	7921	339	#line 7921 "NXCDefs.h"
+0	7922	339		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	342	#line 7921 "NXCDefs.h"
+0	58	342	#line 58 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	58	342	#line 58 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	59	342		set __LSA_SendCommand_7qG2_port_7qG2_000, 1
+0	58	345	#line 58 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	58	345	#line 58 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	59	345		set __LSA_SendCommand_7qG2_addr_7qG2_000, 20
+0	58	348	#line 58 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	58	348	#line 58 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	59	348		set __LSA_SendCommand_7qG2_cmd_7qG2_000, 87
+0	58	351	#line 58 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	59	351	#line 59 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	60	351		subcall LSA_SendCommand, __LSA_SendCommand_return
+0	59	353	#line 59 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	59	353	#line 59 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	59	353	#line 59 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	60	353		set __Wait_7qG2_ms_7qG2_000_inline_main, 500
+0	59	356	#line 59 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	7921	356	#line 7921 "NXCDefs.h"
+0	7922	356		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	359	#line 7921 "NXCDefs.h"
+0	60	359	#line 60 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	60	359	#line 60 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	61	359		set __signed_stack_001main, 400
+0	60	362	#line 60 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	60	362	#line 60 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	61	362		set __signed_stack_002main, 60
+0	60	365	#line 60 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	60	365	#line 60 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	61	365		set __signed_stack_003main, 4
+0	60	368	#line 60 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	60	368	#line 60 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	61	368		set __D0main, 0
+0	63	371	#line 63 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	64	371		acquire __SPTArgsMutex
+0	63	372	#line 63 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	64	372		mov __SPTArgs.Frequency, __signed_stack_001main
+0	63	374	#line 63 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	64	374		mov __SPTArgs.Duration, __signed_stack_002main
+0	63	376	#line 63 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	64	376		mov __SPTArgs.Volume, __signed_stack_003main
+0	63	378	#line 63 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	64	378		mov __SPTArgs.Loop, __D0main
+0	63	380	#line 63 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	64	380		syscall 10, __SPTArgs
+0	63	383	#line 63 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	64	383		mov __D0main, __SPTArgs.Result
+0	63	385	#line 63 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	64	385		release __SPTArgsMutex
+0	63	386	#line 63 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	64	386	#line 64 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	65	386		strcat __strbufmain, __constStr0031
+0	64	390	#line 64 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	65	390		mov __main_7qG2_msg_7qG2_000, __strbufmain
+0	64	392	#line 64 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	64	392	#line 64 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	65	392		set __signed_stack_001main, 2
+0	64	395	#line 64 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	64	395	#line 64 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	65	395		set __signed_stack_002main, 32
+0	64	398	#line 64 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	64	398	#line 64 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	65	398		strcat __strbufmain, __main_7qG2_msg_7qG2_000
+0	64	402	#line 64 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	65	402		set __D0main, 0
+0	65	405	#line 65 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	65	405	#line 65 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	66	405		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	65	407	#line 65 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	66	407		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	65	409	#line 65 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	66	409		mov __TextOutArgs.Options, __D0main
+0	65	411	#line 65 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	66	411		mov __TextOutArgs.Text, __strbufmain
+0	65	413	#line 65 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	66	413		syscall 13, __TextOutArgs
+0	65	416	#line 65 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	66	416		mov __D0main, __TextOutArgs.Result
+0	65	418	#line 65 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	65	418	#line 65 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	66	418	#line 66 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	67	418		strcat __strbufmain, __constStr0029
+0	66	422	#line 66 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	67	422		mov __main_7qG2_msg_7qG2_000, __strbufmain
+0	66	424	#line 66 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	66	424	#line 66 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	67	424		set __signed_stack_001main, 2
+0	66	427	#line 66 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	66	427	#line 66 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	67	427		set __signed_stack_002main, 8
+0	66	430	#line 66 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	66	430	#line 66 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	67	430		strcat __strbufmain, __main_7qG2_msg_7qG2_000
+0	66	434	#line 66 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	67	434		set __D0main, 0
+0	67	437	#line 67 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	67	437	#line 67 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	68	437		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	67	439	#line 67 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	68	439		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	67	441	#line 67 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	68	441		mov __TextOutArgs.Options, __D0main
+0	67	443	#line 67 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	68	443		mov __TextOutArgs.Text, __strbufmain
+0	67	445	#line 67 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	68	445		syscall 13, __TextOutArgs
+0	67	448	#line 67 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	68	448		mov __D0main, __TextOutArgs.Result
+0	67	450	#line 67 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	67	450	#line 67 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	67	450	#line 67 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	68	450		set __signed_stack_001main, 3
+0	67	453	#line 67 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	67	453	#line 67 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	68	453		set __D0main, 1
+0	67	456	#line 67 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	67	456	#line 67 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	68	456		mov __RBtnArgs.Index, __signed_stack_001main
+0	67	458	#line 67 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	68	458		mov __RBtnArgs.Reset, __D0main
+0	67	460	#line 67 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	68	460		syscall 20, __RBtnArgs
+0	67	463	#line 67 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	67	463	#line 67 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	67	463	#line 67 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	68	463		not __D0main, __RBtnArgs.Pressed
+0	68	466	#line 68 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	69	466		tst 5, __zfmain, __D0main
+0	68	469	#line 68 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	69	469		brtst 4, __NXC_Label_828, __zfmain
+0	68	472	#line 68 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	68	472	#line 68 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	69	472		jmp __NXC_Label_827
+0	68	474	#line 68 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	69	474	#line 69 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	70	474		strcat __strbufmain, __constStr0030
+0	69	478	#line 69 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	70	478		mov __main_7qG2_msg_7qG2_000, __strbufmain
+0	69	480	#line 69 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	69	480	#line 69 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	70	480		set __signed_stack_001main, 2
+0	69	483	#line 69 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	69	483	#line 69 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	70	483		set __signed_stack_002main, 8
+0	69	486	#line 69 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	69	486	#line 69 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	70	486		strcat __strbufmain, __main_7qG2_msg_7qG2_000
+0	69	490	#line 69 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	70	490		set __D0main, 0
+0	70	493	#line 70 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	70	493	#line 70 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	71	493		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	70	495	#line 70 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	71	495		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	70	497	#line 70 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	71	497		mov __TextOutArgs.Options, __D0main
+0	70	499	#line 70 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	71	499		mov __TextOutArgs.Text, __strbufmain
+0	70	501	#line 70 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	71	501		syscall 13, __TextOutArgs
+0	70	504	#line 70 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	70	504	#line 70 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	70	504	#line 70 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	70	504	#line 70 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	71	504		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	70	507	#line 70 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	7921	507	#line 7921 "NXCDefs.h"
+0	7922	507		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	510	#line 7921 "NXCDefs.h"
+0	71	510	#line 71 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	71	510	#line 71 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	72	510		set __LSA_SendCommand_7qG2_port_7qG2_000, 1
+0	71	513	#line 71 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	71	513	#line 71 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	72	513		set __LSA_SendCommand_7qG2_addr_7qG2_000, 20
+0	71	516	#line 71 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	71	516	#line 71 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	72	516		set __LSA_SendCommand_7qG2_cmd_7qG2_000, 66
+0	71	519	#line 71 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	72	519	#line 72 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	73	519		subcall LSA_SendCommand, __LSA_SendCommand_return
+0	72	521	#line 72 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	72	521	#line 72 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	72	521	#line 72 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	73	521		set __signed_stack_001main, 400
+0	72	524	#line 72 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	72	524	#line 72 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	73	524		set __signed_stack_002main, 60
+0	72	527	#line 72 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	72	527	#line 72 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	73	527		set __signed_stack_003main, 4
+0	72	530	#line 72 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	72	530	#line 72 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	73	530		set __D0main, 0
+0	73	533	#line 73 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	74	533		acquire __SPTArgsMutex
+0	73	534	#line 73 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	74	534		mov __SPTArgs.Frequency, __signed_stack_001main
+0	73	536	#line 73 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	74	536		mov __SPTArgs.Duration, __signed_stack_002main
+0	73	538	#line 73 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	74	538		mov __SPTArgs.Volume, __signed_stack_003main
+0	73	540	#line 73 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	74	540		mov __SPTArgs.Loop, __D0main
+0	73	542	#line 73 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	74	542		syscall 10, __SPTArgs
+0	73	545	#line 73 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	74	545		mov __D0main, __SPTArgs.Result
+0	73	547	#line 73 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	74	547		release __SPTArgsMutex
+0	73	548	#line 73 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	73	548	#line 73 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	74	548		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	73	551	#line 73 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	7921	551	#line 7921 "NXCDefs.h"
+0	7922	551		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	7921	554	#line 7921 "NXCDefs.h"
+0	75	554	#line 75 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+0	76	554		exit -1, -1
+1	4885	0		setin __constVal1, __ResetSensorPort, 5
+1	4887	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	4888	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	4889	11		subret ____ResetSensorSubroutine_return
+2	5821	0	#pragma macro 25
+2	5821	0		acquire __CLSWMutex0
+2	5821	1		acquire __CLSWMutex1
+2	5821	2		acquire __CLSWMutex2
+2	5821	3		acquire __CLSWMutex3
+2	5821	4		mov __CLSWArgs0.Port, __RLSReadPort
+2	5821	6		mov __CLSWArgs0.ReturnLen, __RLSBytesCountVar
+2	5821	8		mov __CLSWArgs0.Buffer, __RLSReadBufVar
+2	5821	10		syscall 21, __CLSWArgs0
+2	5821	13		mov __RLSBResultVar, __CLSWArgs0.Result
+2	5821	15		release __CLSWMutex0
+2	5821	16		release __CLSWMutex1
+2	5821	17		release __CLSWMutex2
+2	5821	18		release __CLSWMutex3
+2	5821	19	#line 5821 "NXTDefs.h"
+2	5822	19		brtst 4, __RLSBReturnVar, __RLSBytesCountVar
+2	5823	22		arrinit __RLSReadBufVar, __constVal0, __RLSBytesCountVar
+2	5824	26		brtst 5, __RLSBErrorVar, __RLSBResultVar
+2	5825	29		set __RLSBIterationsVar, 4
+2	5827	32	#pragma macro 23
+2	5827	32		acquire __CLSCSMutex0
+2	5827	33		acquire __CLSCSMutex1
+2	5827	34		acquire __CLSCSMutex2
+2	5827	35		acquire __CLSCSMutex3
+2	5827	36		mov __CLSCSArgs0.Port, __RLSReadPort
+2	5827	38		syscall 23, __CLSCSArgs0
+2	5827	41		mov __RLSBytesCountVar, __CLSCSArgs0.BytesReady
+2	5827	43		mov __RLSBResultVar, __CLSCSArgs0.Result
+2	5827	45		release __CLSCSMutex0
+2	5827	46		release __CLSCSMutex1
+2	5827	47		release __CLSCSMutex2
+2	5827	48		release __CLSCSMutex3
+2	5827	49	#line 5827 "NXTDefs.h"
+2	5828	49		sub __RLSBIterationsVar, __RLSBIterationsVar, __constVal1
+2	5829	53		brtst 2, __RLSBErrorVar, __RLSBIterationsVar
+2	5830	56		brtst 0, __RLSBErrorVar, __RLSBResultVar
+2	5831	59		brtst 4, __RLSBReadyToReadVar, __RLSBResultVar
+2	5833	62		wait2 NA, __constVal15
+2	5834	65		jmp __RLSBDoCheckStatusVar
+2	5837	67	#pragma macro 25
+2	5837	67		acquire __CLSRMutex0
+2	5837	68		acquire __CLSRMutex1
+2	5837	69		acquire __CLSRMutex2
+2	5837	70		acquire __CLSRMutex3
+2	5837	71		mov __CLSRArgs0.Port, __RLSReadPort
+2	5837	73		mov __CLSRArgs0.BufferLen, __RLSBytesCountVar
+2	5837	75		syscall 22, __CLSRArgs0
+2	5837	78		mov __RLSReadBufVar, __CLSRArgs0.Buffer
+2	5837	80		mov __RLSBResultVar, __CLSRArgs0.Result
+2	5837	82		release __CLSRMutex0
+2	5837	83		release __CLSRMutex1
+2	5837	84		release __CLSRMutex2
+2	5837	85		release __CLSRMutex3
+2	5837	86	#line 5837 "NXTDefs.h"
+2	5838	86		brtst 5, __RLSBErrorVar, __RLSBResultVar
+2	5839	89		mov __RLSLastGoodReadVar, __RLSReadBufVar
+2	5840	91		jmp __RLSBDoneVar
+2	5842	93		mov __RLSReadBufVar, __RLSLastGoodReadVar
+2	5844	95		arrsize __RLSBytesCountVar, __RLSReadBufVar
+2	5846	98		subret ____ReadLSBytesVar_return
+3	178	0	#line 178 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	179	0		set __LSA_SendCommand_7qG2_nByteReady_7qG2_000, 0
+3	178	3	#line 178 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	178	3	#line 178 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	179	3		arrbuild __LSA_SendCommand_7qG2_cmdBuf_7qG2_000, __LSA_SendCommand_7qG2_addr_7qG2_000, __constVal65, __LSA_SendCommand_7qG2_cmd_7qG2_000
+3	178	9	#line 178 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	178	9	#line 178 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	179	9	#line 179 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	180	9	#pragma macro 25
+3	180	9		acquire __CLSWMutex0
+3	180	10		acquire __CLSWMutex1
+3	180	11		acquire __CLSWMutex2
+3	180	12		acquire __CLSWMutex3
+3	180	13		mov __CLSWArgs0.Port, __LSA_SendCommand_7qG2_port_7qG2_000
+3	180	15		mov __CLSWArgs0.ReturnLen, __constVal1
+3	180	17		mov __CLSWArgs0.Buffer, __LSA_SendCommand_7qG2_cmdBuf_7qG2_000
+3	180	19		syscall 21, __CLSWArgs0
+3	180	22		mov __D0LSA_SendCommand, __CLSWArgs0.Result
+3	180	24		release __CLSWMutex0
+3	180	25		release __CLSWMutex1
+3	180	26		release __CLSWMutex2
+3	180	27		release __CLSWMutex3
+3	4762	28	#line 4762 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	179	28	#line 179 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	179	28	#line 179 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	180	28	#line 180 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	181	28	#pragma macro 23
+3	181	28		acquire __CLSCSMutex0
+3	181	29		acquire __CLSCSMutex1
+3	181	30		acquire __CLSCSMutex2
+3	181	31		acquire __CLSCSMutex3
+3	181	32		mov __CLSCSArgs0.Port, __LSA_SendCommand_7qG2_port_7qG2_000
+3	181	34		syscall 23, __CLSCSArgs0
+3	181	37		mov __LSA_SendCommand_7qG2_nByteReady_7qG2_000, __CLSCSArgs0.BytesReady
+3	181	39		mov __D0LSA_SendCommand, __CLSCSArgs0.Result
+3	181	41		release __CLSCSMutex0
+3	181	42		release __CLSCSMutex1
+3	181	43		release __CLSCSMutex2
+3	181	44		release __CLSCSMutex3
+3	4767	45	#line 4767 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	180	45	#line 180 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	181	45		mov __signed_stack_001LSA_SendCommand, __D0LSA_SendCommand
+3	180	47	#line 180 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	181	47		set __D0LSA_SendCommand, 32
+3	180	50	#line 180 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	181	50		cmp 4, __zfLSA_SendCommand, __signed_stack_001LSA_SendCommand, __D0LSA_SendCommand
+3	180	54	#line 180 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	181	54		mov __D0LSA_SendCommand, __zfLSA_SendCommand
+3	181	56	#line 181 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	182	56		brtst 4, __NXC_Label_589, __zfLSA_SendCommand
+3	181	59	#line 181 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	181	59	#line 181 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	182	59		jmp __NXC_Label_588
+3	181	61	#line 181 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	181	61	#line 181 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	182	61	#pragma macro 23
+3	182	61		acquire __CLSCSMutex0
+3	182	62		acquire __CLSCSMutex1
+3	182	63		acquire __CLSCSMutex2
+3	182	64		acquire __CLSCSMutex3
+3	182	65		mov __CLSCSArgs0.Port, __LSA_SendCommand_7qG2_port_7qG2_000
+3	182	67		syscall 23, __CLSCSArgs0
+3	182	70		mov __tmpsbyteLSA_SendCommand, __CLSCSArgs0.BytesReady
+3	182	72		mov __D0LSA_SendCommand, __CLSCSArgs0.Result
+3	182	74		release __CLSCSMutex0
+3	182	75		release __CLSCSMutex1
+3	182	76		release __CLSCSMutex2
+3	182	77		release __CLSCSMutex3
+3	4790	78	#line 4790 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	181	78	#line 181 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	182	78		mov __LSA_SendCommand_7qG2_status_7qG2_000, __D0LSA_SendCommand
+3	182	80	#line 182 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	183	80		mov __signed_stack_001LSA_SendCommand, __LSA_SendCommand_7qG2_status_7qG2_000
+3	182	82	#line 182 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	183	82	#line 183 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	184	82		set __D0LSA_SendCommand, 0
+3	183	85	#line 183 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	184	85		cmp 1, __zfLSA_SendCommand, __signed_stack_001LSA_SendCommand, __D0LSA_SendCommand
+3	183	89	#line 183 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	184	89		mov __D0LSA_SendCommand, __zfLSA_SendCommand
+3	183	91	#line 183 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	184	91		brtst 4, __NXC_Label_595, __zfLSA_SendCommand
+3	183	94	#line 183 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	184	94	#pragma macro 23
+3	184	94		acquire __CLSCSMutex0
+3	184	95		acquire __CLSCSMutex1
+3	184	96		acquire __CLSCSMutex2
+3	184	97		acquire __CLSCSMutex3
+3	184	98		mov __CLSCSArgs0.Port, __LSA_SendCommand_7qG2_port_7qG2_000
+3	184	100		syscall 23, __CLSCSArgs0
+3	184	103		mov __tmpsbyteLSA_SendCommand, __CLSCSArgs0.BytesReady
+3	184	105		mov __D0LSA_SendCommand, __CLSCSArgs0.Result
+3	184	107		release __CLSCSMutex0
+3	184	108		release __CLSCSMutex1
+3	184	109		release __CLSCSMutex2
+3	184	110		release __CLSCSMutex3
+3	4811	111	#line 4811 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	183	111	#line 183 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	184	111		mov __LSA_SendCommand_7qG2_status_7qG2_000, __D0LSA_SendCommand
+3	183	113	#line 183 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	183	113	#line 183 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	184	113		jmp __NXC_Label_594
+3	183	115	#line 183 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	183	115	#line 183 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	185	115	#line 185 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	186	115		mov __D0LSA_SendCommand, __LSA_SendCommand_7qG2_status_7qG2_000
+3	185	117	#line 185 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	186	117		subret __LSA_SendCommand_return
+3	185	119	#line 185 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	194	119	#line 194 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+3	195	119		subret __LSA_SendCommand_return
+4	206	0	#line 206 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	207	0		arrinit __LSA_Read_7qG2_buf_7qG2_000, __constVal0, __constVal20
+4	209	4	#line 209 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	210	4		set __LSA_Read_7qG2_nByteReady_7qG2_000, 0
+4	209	7	#line 209 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	209	7	#line 209 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	210	7		arrbuild __LSA_Read_7qG2_message_7qG2_000, __LSA_Read_7qG2_i2cAddr_7qG2_000, __LSA_Read_7qG2_reg_to_read_7qG2_000
+4	209	12	#line 209 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	209	12	#line 209 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	210	12	#line 210 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	211	12	#pragma macro 23
+4	211	12		acquire __CLSCSMutex0
+4	211	13		acquire __CLSCSMutex1
+4	211	14		acquire __CLSCSMutex2
+4	211	15		acquire __CLSCSMutex3
+4	211	16		mov __CLSCSArgs0.Port, __LSA_Read_7qG2_port_7qG2_000
+4	211	18		syscall 23, __CLSCSArgs0
+4	211	21		mov __LSA_Read_7qG2_nByteReady_7qG2_000, __CLSCSArgs0.BytesReady
+4	211	23		mov __D0LSA_Read, __CLSCSArgs0.Result
+4	211	25		release __CLSCSMutex0
+4	211	26		release __CLSCSMutex1
+4	211	27		release __CLSCSMutex2
+4	211	28		release __CLSCSMutex3
+4	4920	29	#line 4920 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	210	29	#line 210 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	211	29		mov __signed_stack_001LSA_Read, __D0LSA_Read
+4	210	31	#line 210 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	211	31		set __D0LSA_Read, 32
+4	210	34	#line 210 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	211	34		cmp 4, __zfLSA_Read, __signed_stack_001LSA_Read, __D0LSA_Read
+4	210	38	#line 210 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	211	38		mov __D0LSA_Read, __zfLSA_Read
+4	211	40	#line 211 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	212	40		brtst 4, __NXC_Label_613, __zfLSA_Read
+4	211	43	#line 211 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	211	43	#line 211 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	212	43		jmp __NXC_Label_612
+4	211	45	#line 211 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	212	45	#line 212 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	213	45		set __LSA_Read_7qG2_count_7qG2_000, 1
+4	212	48	#line 212 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	212	48	#line 212 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	212	48	#line 212 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	213	48	#pragma macro 28
+4	213	48		acquire __RLSBmutex0
+4	213	49		acquire __RLSBmutex1
+4	213	50		acquire __RLSBmutex2
+4	213	51		acquire __RLSBmutex3
+4	213	52		mov __RLSReadPort, __LSA_Read_7qG2_port_7qG2_000
+4	213	54		mov __RLSReadBufVar, __LSA_Read_7qG2_message_7qG2_000
+4	213	56		mov __RLSBytesCountVar, __LSA_Read_7qG2_count_7qG2_000
+4	213	58		subcall __ReadLSBytesVar, ____ReadLSBytesVar_return
+4	213	60		tst 4, __D0LSA_Read, __RLSBResultVar
+4	213	63		mov __LSA_Read_7qG2_count_7qG2_000, __RLSBytesCountVar
+4	213	65		mov __LSA_Read_7qG2_buf_7qG2_000, __RLSReadBufVar
+4	213	67		release __RLSBmutex0
+4	213	68		release __RLSBmutex1
+4	213	69		release __RLSBmutex2
+4	213	70		release __RLSBmutex3
+4	4946	71	#line 4946 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	213	71	#line 213 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	214	71		tst 5, __zfLSA_Read, __D0LSA_Read
+4	213	74	#line 213 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	214	74		brtst 4, __NXC_Label_620, __zfLSA_Read
+4	213	77	#line 213 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	214	77		set __signed_stack_001LSA_Read, 0
+4	213	80	#line 213 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	213	80	#line 213 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	214	80		index __ArrHelper__LSA_Read_98_0, __LSA_Read_7qG2_buf_7qG2_000, __signed_stack_001LSA_Read
+4	213	84	#line 213 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	214	84		mov __DU0LSA_Read, __ArrHelper__LSA_Read_98_0
+4	214	86	#line 214 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	215	86		subret __LSA_Read_return
+4	214	88	#line 214 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	215	88	#line 215 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	216	88	#line 216 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	217	88		set __DU0LSA_Read, 0
+4	216	91	#line 216 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	216	91	#line 216 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	217	91		subret __LSA_Read_return
+4	216	93	#line 216 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	225	93	#line 225 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+4	226	93		subret __LSA_Read_return
+5	227	0	#line 227 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+5	228	0		mov __LSA_Read_7qG2_port_7qG2_000, __LSA_WakeUp_7qG2_port_7qG2_000
+5	227	2	#line 227 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+5	227	2	#line 227 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+5	228	2		mov __LSA_Read_7qG2_i2cAddr_7qG2_000, __LSA_WakeUp_7qG2_addr_7qG2_000
+5	227	4	#line 227 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+5	227	4	#line 227 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+5	228	4		set __LSA_Read_7qG2_reg_to_read_7qG2_000, 66
+5	227	7	#line 227 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+5	228	7	#line 228 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+5	229	7		subcall LSA_Read, __LSA_Read_return
+5	228	9	#line 228 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+5	228	9	#line 228 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+5	228	9	#line 228 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+5	229	9		subret __LSA_WakeUp_return
+5	228	11	#line 228 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+5	231	11	#line 231 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc"
+5	232	11		subret __LSA_WakeUp_return
+6	78	0	#line 78 "C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc"
+6	79	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc
+1	__ResetSensorSubroutine	557	NXTDefs.h
+2	__ReadLSBytesVar	570	NXTDefs.h
+3	LSA_SendCommand	670	C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc
+4	LSA_Read	791	C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc
+5	LSA_WakeUp	886	C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\.\../lib/LSA-lib.nxc
+6	__initialize_global_data	899	C:\Users\Administrator.FEQ\Desktop\nxt\china\demos\LSA-calib.nxc

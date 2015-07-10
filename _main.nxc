@@ -1,0 +1,179 @@
+#include "NXCDefs.h"
+#include "lib/LSA-lib.nxc"
+//#include "lib/IMU-lib.nxc"
+//#include "lib/SE-lib.nxc"
+//#include "lib/HTSMUX-driver.h"
+//#include "functions.nxc"
+
+//accl currAccl;
+//gyro currGyro;
+
+string msg;
+string x;
+int s, i;
+
+byte message[];
+unsigned byte buf[20];
+unsigned byte sens[8];
+int count, l;
+byte nByteReady = 0;
+int lastError = 0;
+float memory = 0;
+
+
+/*
+typedef struct {
+  int low;
+  int normal;
+  int high;
+} deg;
+
+void setDeg(deg &toWrite, int value) {
+  toWrite.low = -360 + value;
+  toWrite.normal = value;
+  toWrite.high = 360 + value;
+}*/
+
+/*int imuHeading () {
+  return IMU_ReadCompassHeading(IN_1,0x22);
+}
+accl imuAccel () {
+  IMU_ReadAcceleration(IN_1, 0x22, currAccl);
+  return currAccl;
+}
+gyro imuGyro () {
+  IMU_ReadGyro(IN_1, 0x22, currGyro);
+  return currGyro;
+}*/
+
+void move (int left, int right) {
+  float change;
+  /*
+  if (left > 100 && left != 0) {
+    change = left/100;
+    left = left/change;
+    right = right/change;
+  }
+  else if (left < -100 && left != 0) {
+    change = left/-100;
+    left = left/change;
+    right = right/change;
+  }
+  if (right > 100 && right != 0) {
+    change = right/100;
+    left = left/change;
+    right = right/change;
+  }
+  else if (right < -100 && right != 0) {
+    change = right/-100;
+    left = left/change;
+    right = right/change;
+  }  */
+
+  if (left == 0) {
+    Off(OUT_C);
+  }
+  else {
+    OnRev(OUT_C,left);
+  }
+  if (right == 0) {
+    Off(OUT_A);
+  }
+  else {
+    OnRev(OUT_A,right);
+  }
+
+}
+
+void CorrectSens (byte &array[]) {
+  for (int i=0; i < 8; i++) {
+    if (array[i] < 0) {
+      array[i] = 0;
+    }
+    else if (array[i] > 100) {
+      array[i] = 100;
+    }
+    array[i] = 100 - array[i];
+  }
+}
+
+bool seeLine (byte sensor[]) {
+  return (sensor[0] > 20 || sensor[1] > 20 || sensor[2] > 20 || sensor[3] > 20 || sensor[4] > 20 || sensor[5] > 20 || sensor[6] > 20 || sensor[7] > 20);
+}
+
+int getError (byte sensor[]) {
+  int error;
+  error = 350 - (sensor[0] + sensor[1]*100 + sensor[2]*200 + sensor[3]*300 + sensor[4]*400 + sensor[5]*500 + sensor[6]*600 + sensor[7]*700) / ( sensor[0] + sensor[1] + sensor[2] + sensor[3] + sensor[4] + sensor[5] + sensor[6] + sensor[7] );
+  if (error >= 350 || error <= -350) {
+    if (!seeLine(sensor) && memory > -250 && memory < 250) {
+      error = 0;
+    }
+    else if (lastError > 351) {
+      error = lastError + 1;
+    }
+    else if (lastError < -351) {
+      error = lastError - 1;
+    }
+    else if (lastError >= 0) {
+      error = 352;
+    }
+    else {
+      error = -352;
+    }
+  }
+  return error;
+}
+
+void controller () {
+  while (true) {
+    for (i=0; i < 8; i++) {
+      sens[i] = 0;
+    }
+    if( LSA_ReadRaw_Calibrated (IN_2, 0x14, sens) ) {
+      CorrectSens(sens);
+      float error = getError(sens);
+
+      ClearLine(LCD_LINE1);
+      NumOut(0,LCD_LINE1,error);
+
+      float base = 50;
+      float turn = error * 0.14;//(50/350);
+
+      ClearLine(LCD_LINE2);
+      NumOut(0,LCD_LINE2,turn);
+
+      ClearLine(LCD_LINE3);
+      NumOut(0,LCD_LINE3,seeLine(sens));
+
+      int moveLeft = base+turn;
+      int moveRight = base-turn;
+      //move(moveLeft,moveRight);
+      memory = memory * (2/3) + error;
+      ClearLine(LCD_LINE4);
+      NumOut(0,LCD_LINE4,memory);
+      lastError = error;
+    }
+    else {
+      ClearLine(LCD_LINE1);
+      TextOut(0,LCD_LINE1,"an error");
+      ClearLine(LCD_LINE2);
+      TextOut(0,LCD_LINE2,"occurred :-(");
+      break;
+    }
+  }
+}
+
+void init () {
+  SetSensorLowspeed(IN_2);
+  LSA_WakeUp(IN_2, 0x14);
+  //IMU_SendCommand(IN_1, 0x22, '1');
+  Wait(50);
+}
+
+task main () {
+  init();
+  controller();
+  
+  //OnRev(OUT_AC,50);
+  //until(false);
+}
