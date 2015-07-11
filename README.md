@@ -11,7 +11,7 @@ int error = 350 - (sensor[0] + sensor[1]*100 + sensor[2]*200 ... ) / (sensor[0] 
    ```
    > **note:** that the values are reversed, so black is 100 and white is 0
    
-   then, it does the error times `Kp` and runs the motors with that.
+   then, it does the `error * Kp` and runs the motors with that.
 
 ### gap vs line lost
 
