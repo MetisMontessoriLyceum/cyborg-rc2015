@@ -1,7 +1,0 @@
-#include "menu.nxc"
-
-task main () {
-  byte foo = Select("pizza","kaas","taart","aardbij","hamburger");
-  NumOut(0,LCD_LINE1,foo);
-  Wait(1000);
-}
