@@ -472,109 +472,15 @@ int getStatus (unsigned byte &sensor[]) {
     int dir;
 
     if (distToSideRight < distToSideLeft) {
-      dir = RIGHT;
+      status = MOVE_RIGHT;
     }
     else if (distToSideLeft < distToSideRight) {
-      dir = LEFT;
+      status = MOVE_LEFT;
     }
     else {
-      return FOLLOW_LINE;
+      status = FOLLOW_LINE;
     }
 
-    // right = 1 and left = 0, this way you can do !dir to get the other direction
-
-    // COLORS:
-    // black: 0-20
-    // green: 20-60
-    // white: 60-100
-
-    bool lineFront;
-    if (getSens(IN_4_3) <= 20) {
-      lineFront = true;
-    }
-    else {
-      lineFront = false;
-    }
-
-    Move(-75,-75,false);
-    Wait(200);
-    MoveTo(dir);
-    
-    int oldTick = CurrentTick();
-    int moveTime;
-    int lineSide;
-    int status = 0;
-    int sensVal;
-    
-    int minTime = 200;
-    Wait(minTime);
-    while (status < 1) {
-      /*if (CurrentTick() - oldTick > 1000) {
-        if (status > 0) {
-          moveTime = CurrentTick() + minTime;
-        }
-        else {
-          // somthing went wrong, better luck next time!
-          StopMove();
-          MoveTo(!dir,500);
-          StopMove();
-          Debug("close",Random(100),2);
-          return FOLLOW_LINE;
-        }
-      }*/
-      switch (status) {
-        case 0:
-          sensVal = getSens(IN_4_3);
-          if (sensVal <= 60) {  // black or green
-
-            if (sensVal > 20) { // green
-              lineSide = COLOR_GREEN;
-            }
-            else { // black
-              lineSide = COLOR_BLACK;
-            }
-            status++;
-          }
-          break;
-        case 1:
-          sensVal = getSens(IN_4_3);
-          if (sensVal > 20 && sensVal <= 60) { // green
-            lineSide = COLOR_GREEN;
-            
-            moveTime = CurrentTick() + minTime;
-            StopMove();
-            status++;
-            break;
-          }
-      }
-    }
-    
-    if (
-    
-      ( lineSide == COLOR_GREEN ) // green
-        ||
-      ( lineSide == COLOR_BLACK && !lineFront ) // black
-
-
-    ) {
-      if (dir) {
-        Debug("right",1,1);
-        status = MOVE_RIGHT;
-      }
-      else {
-        Debug("left",1,1);
-        status = MOVE_LEFT;
-      }
-    }
-    else if (lineFront) {
-      Debug("forward",1,1);
-      status = MOVE_FORWARD;
-    }
-
-    Debug("sens",lineSide,8);
-  
-    moveBack(moveTime, dir);
-  
     lastStatus  = status;
     return status;
   }
@@ -856,12 +762,18 @@ task main () {
             dir = LEFT;
           }
 
-          Move(75,75,false);
-          Wait(200);
+          MoveTo(FRONT);
           untilSeeLine(MIDDLE);
           MoveTo(dir);
-
-          until(getSens(IN_4_3) < 60);
+          while (true) {
+            if( LSA_ReadRaw_Calibrated (SENS_PORT, SENS_CODE, sens) ) {
+              CorrectSens(sens);
+              if (sens[3] > BLACK) {
+                break;
+              }
+            }
+          }
+          //until(getSens(IN_4_3) < 60);
           StopMove();
           
           break;
