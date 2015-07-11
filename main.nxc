@@ -353,6 +353,45 @@ int sensUS (int port) {
   return smuxSensorLegoUS(port);
 }
 
+int getLineWidth (unsigned byte sensor[], int &lowestIndex, int &highestIndex, int lineColVal = 60 ) {
+
+  lowestIndex = 7;
+  highestIndex = 0;
+  int j;
+  for (j=0; j<8; j++) {
+    if (sensor[j] > lineColVal) {
+      if (j < lowestIndex) {
+        lowestIndex = j;
+      }
+      if (j > highestIndex) {
+        highestIndex = j;
+      }
+    }
+  }
+
+  int lineWidth;
+  if (lowestIndex > highestIndex) {
+    lineWidth = 0;
+  }
+  else {
+    lineWidth = highestIndex - lowestIndex;
+  }
+
+  return lineWidth;
+
+}
+
+
+
+void moveBack (int moveTime, int dir) {
+  MoveTo(!dir,moveTime);
+  StopMove();
+
+  Move(75,75,false);
+  Wait(200);
+  StopMove();
+}
+
 // returns what the robot needs to do
 // possible outcomes:
 //  - FOLLOW_LINE (use P controller)
@@ -422,28 +461,9 @@ int getStatus (unsigned byte &sensor[]) {
     return status;
   }
 
-  int lowestIndex = 7;
-  int highestIndex = 0;
-  int j;
-  for (j=0; j<8; j++) {
-    if (sensor[j] > 60) {
-      if (j < lowestIndex) {
-        lowestIndex = j;
-      }
-      if (j > highestIndex) {
-        highestIndex = j;
-      }
-    }
-  }
-
-  
-  int lineWidth;
-  if (lowestIndex > highestIndex) {
-    lineWidth = 0;
-  }
-  else {
-    lineWidth = highestIndex - lowestIndex;
-  }
+  int lowestIndex;
+  int highestIndex;
+  int lineWidth = getLineWidth(sensor,lowestIndex,highestIndex,60);
 
   if (lineWidth > 4) {
   
@@ -456,6 +476,9 @@ int getStatus (unsigned byte &sensor[]) {
     }
     else if (distToSideLeft < distToSideRight) {
       dir = LEFT;
+    }
+    else {
+      return FOLLOW_LINE;
     }
 
     // right = 1 and left = 0, this way you can do !dir to get the other direction
@@ -475,35 +498,65 @@ int getStatus (unsigned byte &sensor[]) {
 
     Move(-75,-75,false);
     Wait(200);
-    MoveTo(dir,300);
-    StopMove();
+    MoveTo(dir);
+    
+    int oldTick = CurrentTick();
+    int moveTime;
+    int lineSide;
+    int status = 0;
+    int sensVal;
+    
+    int minTime = 200;
+    Wait(minTime);
+    while (status < 1) {
+      /*if (CurrentTick() - oldTick > 1000) {
+        if (status > 0) {
+          moveTime = CurrentTick() + minTime;
+        }
+        else {
+          // somthing went wrong, better luck next time!
+          StopMove();
+          MoveTo(!dir,500);
+          StopMove();
+          Debug("close",Random(100),2);
+          return FOLLOW_LINE;
+        }
+      }*/
+      switch (status) {
+        case 0:
+          sensVal = getSens(IN_4_3);
+          if (sensVal <= 60) {  // black or green
 
-    int lineSide = getSens(IN_4_3);
-    int lineSideColor;
-    if (lineSide <= 60) {
-      lineSideColor = COLOR_GREEN;
-    }
-    else {
-      lineSideColor = COLOR_WHITE;
-    }
-
-    int status;
-    if (lineSideColor == COLOR_WHITE) {
-      // scaned the wrong side
-      dir = !dir;
-      MoveTo(dir,600);
-      StopMove();
-
-      lineSide = getSens(IN_4_3);
-      if (lineSide <= 60) {
-        lineSideColor = COLOR_GREEN;
+            if (sensVal > 20) { // green
+              lineSide = COLOR_GREEN;
+            }
+            else { // black
+              lineSide = COLOR_BLACK;
+            }
+            status++;
+          }
+          break;
+        case 1:
+          sensVal = getSens(IN_4_3);
+          if (sensVal > 20 && sensVal <= 60) { // green
+            lineSide = COLOR_GREEN;
+            
+            moveTime = CurrentTick() + minTime;
+            StopMove();
+            status++;
+            break;
+          }
       }
-      else {
-        lineSideColor = COLOR_WHITE;
-      }
     }
+    
+    if (
+    
+      ( lineSide == COLOR_GREEN ) // green
+        ||
+      ( lineSide == COLOR_BLACK && !lineFront ) // black
 
-    if (lineSideColor == COLOR_GREEN || !lineFront) {
+
+    ) {
       if (dir) {
         Debug("right",1,1);
         status = MOVE_RIGHT;
@@ -513,17 +566,16 @@ int getStatus (unsigned byte &sensor[]) {
         status = MOVE_LEFT;
       }
     }
-    else {
+    else if (lineFront) {
       Debug("forward",1,1);
       status = MOVE_FORWARD;
     }
 
     Debug("sens",lineSide,8);
-
-    MoveTo(!dir,300);
-    StopMove();
   
-    lastStatus = status;
+    moveBack(moveTime, dir);
+  
+    lastStatus  = status;
     return status;
   }
 }
@@ -553,6 +605,8 @@ bool seeLine (byte sensor[], int mode = 0) {
   return ret;
 }
 
+
+
 // keeps running until a line is visible
 void untilSeeLine (int mode = 1) {
   int i;
@@ -563,9 +617,12 @@ void untilSeeLine (int mode = 1) {
       }
       if( LSA_ReadRaw_Calibrated (SENS_PORT, SENS_CODE, sens) ) {
         CorrectSens(sens);
-        if (seeLine(sens,MIDDLE)) {
+        int lowestIndex;
+        int highestIndex;
+        if (getLineWidth(sens,lowestIndex,highestIndex,60) <= 4) {
           break;
         }
+        
       }
     }
   }
@@ -638,7 +695,7 @@ bool isMoving () {
 }
 
 // calculates the error for the PID controller
-int getError (byte sensor[]) {
+int getError (unsigned byte sensor[]) {
   int error;
   error = 350 - (sensor[0] + sensor[1]*100 + sensor[2]*200 + sensor[3]*300 + sensor[4]*400 + sensor[5]*500 + sensor[6]*600 + sensor[7]*700) / ( sensor[0] + sensor[1] + sensor[2] + sensor[3] + sensor[4] + sensor[5] + sensor[6] + sensor[7] );
   if (error <= -350 || error >= 350) {
@@ -791,8 +848,6 @@ task main () {
         case MOVE_LEFT:
         case MOVE_RIGHT:
 
-          // TODO: return to the old ver.
-          // this one is worse
           int dir;
           if (status == MOVE_RIGHT) {
             dir = RIGHT;
@@ -805,7 +860,9 @@ task main () {
           Wait(200);
           untilSeeLine(MIDDLE);
           MoveTo(dir);
-          untilSeeLine(LINE);
+
+          until(getSens(IN_4_3) < 60);
+          StopMove();
           
           break;
 
