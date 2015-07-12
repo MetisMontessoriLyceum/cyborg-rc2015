@@ -21,6 +21,7 @@
 #include "lib/HTSMUX-driver.h"
 #include "lib/LSA-lib.nxc"
 #include "lib/IMU-lib.nxc"
+#include "lib/menu.nxc"
 
 // define colors
 #define BLACK 90
@@ -732,10 +733,7 @@ void Obstacle (byte dir) {
   
 }
 
-task main () {
-
-  init();
-
+void followLine () {
   int i;
   while (true) {
     for ( i=0; i < 8; i++) {
@@ -750,7 +748,7 @@ task main () {
         case MOVE_FORWARD:
           Move(75,75,false);
           Wait(500);
-        
+
         case MOVE_LEFT:
         case MOVE_RIGHT:
 
@@ -773,26 +771,9 @@ task main () {
               }
             }
           }
-          //until(getSens(IN_4_3) < 60);
           StopMove();
-          
-          break;
 
-        /*case MOVE_UP:
-          // REMEMBER: the order is reversed, se sens[7] is left and sens[0] is right!
-          if (sens[7] > BLACK) {
-            // line left
-            Move(0,100,false);
-          }
-          else if (sens[0] > BLACK) {
-            // line right
-            Move(100,0,false);
-          }
-          else {
-            Move(100,100,false);
-          }
-          
-          break;  */
+          break;
 
         case OBSTACLE:
           Move(0,0);
@@ -801,13 +782,13 @@ task main () {
 
         default:
           int error = getError(sens); // get the error value
-        
+
           int base = 25;
           int turn = error * 0.21; // same as 75/350;
 
           int motorLeft = base + turn;
           int motorRight = base - turn;
-        
+
           Move(motorLeft,motorRight);
 
           // will be used for calculating the error.
@@ -815,6 +796,32 @@ task main () {
           memory = memory * (2/3) + error;
           lastError = error;
       }
+    }
+  }
+}
+
+void evacuationField () {
+
+}
+
+task main () {
+
+  init();
+
+  int status = Select("normal","evacuation");
+  
+  while (status < 2) {
+  
+    switch (status) {
+
+      case 0:
+        followLine();
+        status++;
+        break;
+      case 1:
+        evacuationField();
+        status++;
+        break;
     }
   }
 }
