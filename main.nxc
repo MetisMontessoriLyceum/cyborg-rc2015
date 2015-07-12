@@ -154,7 +154,6 @@ void readCali () {
 
   fgets(buffer, 10, file);
   caliMiddleSens.dark = atol(buffer);
-  Debug("",caliMiddleSens.dark,5);
 
   fclose(file);
 }
@@ -801,6 +800,127 @@ void followLine () {
 }
 
 void evacuationField () {
+
+  int dir, senValue;
+  
+  // TODO: auto detect dir
+  dir = LEFT;
+
+  int status = 0;
+  int sideValue;
+  int goTo = 0;
+
+  while (status < 5) {
+  
+    switch (status) {
+      case 0:
+        MoveTo(FRONT,0,60);
+        while (true) {
+          senValue = sensUS(dir);
+          Debug("senDirValue", senValue,1);
+          if (senValue < 255) {
+            StopMove();
+            sideValue = senValue;
+            break;
+          }
+        }
+        status++;
+        break;
+        
+      case 1:
+        MoveTo(dir,0,75);
+        while (true) {
+          senValue = sensUS(FRONT);
+          Debug("senFrontValue", senValue,2);
+          if (senValue < sideValue) {
+            StopMove();
+            break;
+          }
+        }
+        status = 3;
+        break;
+
+      case 2:
+        MoveTo(!dir,0,75);
+        int status_c4 = 0;
+        long startTick_c4 = CurrentTick();
+        while (status_c4 < 2) {
+          if (CurrentTick() - startTick_c4 > 2000) {
+            // go to dir
+            MoveTo(dir,0,100);
+            until(sensUS(FRONT) == 255);
+            status_c4 = 2;
+            break;
+          }
+
+          switch (status_c4) {
+            case 0:
+              if (sensUS(FRONT) < 255) {
+                status_c4++;
+                break;
+              }
+            case 1:
+              if (sensUS(FRONT) == 255) {
+                status_c4++;
+                break;
+              }
+          }
+        }
+        StopMove();
+        status++;
+        break;
+        
+      case 3:
+        while (true) {
+        
+          MoveTo(dir,0,75);
+          until(sensUS(FRONT) < sideValue);
+
+          int lowestValue = 255;
+          while (sensUS(FRONT) < sideValue) {
+            if (sensUS(FRONT) < lowestValue) {
+              lowestValue = sensUS(FRONT);
+            }
+          }
+
+          StopMove();
+          
+          //int time = endObjTick - startObjTick;
+          MoveTo(!dir,0,75);
+          
+          until(sensUS(FRONT) <= lowestValue + 2);
+          
+          StopMove();
+          break;
+          
+        }
+        status++;
+        break;
+        
+      case 4:
+        MoveTo(FRONT,0,60);
+        int redo = false;
+        while (true) {
+          if (sensUS(FRONT) == 255) {
+            redo = true;
+            break;
+          }
+          else if (sensUS(FRONT) <= 11) {
+            break;
+          }
+        }
+        StopMove();
+        
+        if (redo) {
+          status = 2;
+          break;
+        }
+        else {
+          status++;
+          break;
+        }
+    }
+  }
 
 }
 

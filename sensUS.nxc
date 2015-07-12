@@ -1,0 +1,97 @@
+#include "lib/HTSMUX-driver.h"
+
+// for splitter
+// becuse IN_4_2 make more sense then msensor_S4_2
+#define IN_1_1 msensor_S1_1
+#define IN_1_2 msensor_S1_2
+#define IN_1_3 msensor_S1_3
+#define IN_1_4 msensor_S1_4
+#define IN_2_1 msensor_S2_1
+#define IN_2_2 msensor_S2_2
+#define IN_2_3 msensor_S2_3
+#define IN_2_4 msensor_S2_4
+#define IN_3_1 msensor_S3_1
+#define IN_3_2 msensor_S3_2
+#define IN_3_3 msensor_S3_3
+#define IN_3_4 msensor_S3_4
+#define IN_4_1 msensor_S4_1
+#define IN_4_2 msensor_S4_2
+#define IN_4_3 msensor_S4_3
+#define IN_4_4 msensor_S4_4
+
+#define LEFT 0
+#define RIGHT 1
+#define FRONT 2
+
+void init () {
+  // set up splitter
+  SetSensor(S4, SENSOR_LOWSPEED);
+  if (!HTSMUXscanPorts(S4)) {
+    TextOut(0, LCD_LINE1, "Splitter not");
+    TextOut(0, LCD_LINE2, "Working!");
+    Wait(1000);
+    StopAllTasks();
+  }
+}
+
+// for easy debuging
+// use: Debug("sen1",42,1);
+// on display: "sen1: 42"
+void Debug (string name, int num, int line) {
+  switch (line) {
+    case 1:
+      line = LCD_LINE1;
+      break;
+    case 2:
+      line = LCD_LINE2;
+      break;
+    case 3:
+      line = LCD_LINE3;
+      break;
+    case 4:
+      line = LCD_LINE4;
+      break;
+    case 5:
+      line = LCD_LINE5;
+      break;
+    case 6:
+      line = LCD_LINE6;
+      break;
+    case 7:
+      line = LCD_LINE7;
+      break;
+    case 8:
+      line = LCD_LINE8;
+      break;
+  }
+  string toDebug;
+  toDebug = name + ": "+NumToStr(num);
+  ClearLine(line);
+  TextOut(0,line,toDebug);
+}
+
+
+int sensUS (int port) {
+  if (port == LEFT) {
+    port = IN_4_4;
+  }
+  else if (port == RIGHT) {
+    port = IN_4_1;
+  }
+  else if (port == FRONT) {
+    port = IN_4_2;
+  }
+  return smuxSensorLegoUS(port);
+}
+
+task main () {
+  init();
+
+  int count;
+  while (true) {
+    Debug("LEFT",sensUS(LEFT),1);
+    Debug("RIGHT",sensUS(RIGHT),2);
+    Debug("FRONT",sensUS(FRONT),3);
+    Wait(15);
+  }
+}
