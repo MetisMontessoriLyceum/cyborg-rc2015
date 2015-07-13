@@ -750,12 +750,9 @@ void followLine () {
         case MOVE_FORWARD:
           Move(75,75,false);
           Wait(500);
-<<<<<<< HEAD
-
-=======
           Debug("MOVE_FORWARD",1,2);
-        
->>>>>>> master
+          break;
+          
         case MOVE_LEFT:
         case MOVE_RIGHT:
 
@@ -793,13 +790,9 @@ void followLine () {
         default:
           Debug("FOLLOW_LINE",1,2);
           int error = getError(sens); // get the error value
-<<<<<<< HEAD
-
-=======
           Debug("error",error,7);
           Debug("memory",memory,8);
-        
->>>>>>> master
+          
           int base = 25;
           int turn = error * 0.21; // same as 75/350;
 
