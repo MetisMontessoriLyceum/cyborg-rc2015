@@ -87,7 +87,7 @@
 // define public values
 int moving = 0;
 unsigned byte sens[8];
-int memory = 0;
+float memory = 0;
 int lastError = 0;
 int lastStatus = FOLLOW_LINE;
 int lastTilt = 0;
@@ -448,7 +448,7 @@ int getStatus (unsigned byte &sensor[]) {
   lastTilt = tiltTX;
   */
 
-  if (needFix(sensor)) {
+  if (false) {
     valueFixer(sensor);
     lastStatus = FOLLOW_LINE;
     return FOLLOW_LINE;
@@ -604,12 +604,12 @@ bool isMoving () {
 int getError (unsigned byte sensor[]) {
   int error;
   error = 350 - (sensor[0] + sensor[1]*100 + sensor[2]*200 + sensor[3]*300 + sensor[4]*400 + sensor[5]*500 + sensor[6]*600 + sensor[7]*700) / ( sensor[0] + sensor[1] + sensor[2] + sensor[3] + sensor[4] + sensor[5] + sensor[6] + sensor[7] );
-  if (error <= -350 || error >= 350) {
+  if (error <= -340 || error >= 340) {
+    error = 0;
     // line is lost, is it a gap?
-    if (!seeLine(sensor) && memory > -150 && memory < 150) {
+    if (memory > -350 && memory < 300) {
       error = 0;
     }
-    // line is out of range, error will keep incrementing to increase the chance of finding the line back
     else if (lastError > 3000) {
       error = 3001;
     }
@@ -622,10 +622,10 @@ int getError (unsigned byte sensor[]) {
     else if (lastError < -351) {
       error = lastError - 8;
     }
-    else if (lastError >= 0) {
+    else if (lastError >= 1) {
       error = 352;
     }
-    else {
+    else if (lastError <= 1) {
       error = -352;
     }
   }
@@ -708,19 +708,19 @@ bool MoveUntilNoBlock(int dir, int extraTime = 0, bool stopOnLine = false) {
 }
 
 void Obstacle (byte dir) {
-  MoveTo(dir,1600);
+  MoveTo(dir,1800);
   StopMove();
   
   MoveTo(FRONT);
-  MoveUntilNoBlock(!dir,800);
+  MoveUntilNoBlock(!dir,1200);
   StopMove();
 
   for (int i=0; i<2; i++) {
-    MoveTo(!dir,1400);
+    MoveTo(!dir,1600);
     StopMove();
   
     MoveTo(FRONT);
-    if (MoveUntilNoBlock(!dir,800,i)) {
+    if (MoveUntilNoBlock(!dir,1400,i)) {
       // robot is on line
       Wait(200);
       MoveTo(dir);
@@ -750,15 +750,18 @@ task main () {
         case MOVE_FORWARD:
           Move(75,75,false);
           Wait(500);
+          Debug("MOVE_FORWARD",1,2);
         
         case MOVE_LEFT:
         case MOVE_RIGHT:
 
           int dir;
           if (status == MOVE_RIGHT) {
+            Debug("MOVE_RIGHT",1,2);
             dir = RIGHT;
           }
           else {
+            Debug("MOVE_LEFT",1,2);
             dir = LEFT;
           }
 
@@ -795,12 +798,16 @@ task main () {
           break;  */
 
         case OBSTACLE:
+          Debug("OBSTACLE",1,2);
           Move(0,0);
           Obstacle(sensUS(RIGHT) > sensUS(LEFT)); // this works becuse RIGHT = 1 and LEFT = 0;
           break;
 
         default:
+          Debug("FOLLOW_LINE",1,2);
           int error = getError(sens); // get the error value
+          Debug("error",error,7);
+          Debug("memory",memory,8);
         
           int base = 25;
           int turn = error * 0.21; // same as 75/350;
@@ -811,8 +818,12 @@ task main () {
           Move(motorLeft,motorRight);
 
           // will be used for calculating the error.
-          //Debug("memory",memory,8);
-          memory = memory * (2/3) + error;
+          if (memory == 0 && error == 0) {
+            memory = 0;
+          }
+          else {
+            memory = memory * (2/3) + error;
+          }
           lastError = error;
       }
     }
