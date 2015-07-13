@@ -5,7 +5,7 @@
  * PORTS:                                   *
  * IN_1    Gyro (0x14)                      *
  * IN_2    SensorArray (0x22)               *
- * IN_3                                     *
+ * IN_3    NXTcam v2                        *
  * IN_4    Splitter                         *
  * IN_4_1  EyeRight                         *
  * IN_4_2  EyeFront                         *
@@ -74,6 +74,8 @@
 #define COLOR_BLACK 0
 #define COLOR_GREEN 1
 #define COLOR_WHITE 2
+#define UP 0
+#define DOWN 1
 
 
 
@@ -129,6 +131,7 @@ void Debug (string name, int num, int line) {
     case 6:
       line = LCD_LINE6;
       break;
+      
     case 7:
       line = LCD_LINE7;
       break;
@@ -799,6 +802,28 @@ void followLine () {
   }
 }
 
+void moveGrabberTo (int dir) {
+  if (dir == UP) {
+    OnRev(OUT_B,50);
+    int oldRotaB = 0;
+    int thisRotaB;
+    while (true) {
+      Wait(100);
+      thisRotaB = MotorRotationCount(OUT_B);
+      if (thisRotaB-oldRotaB > -20) {
+        Off(OUT_B);
+        break;
+      }
+      oldRotaB = thisRotaB;
+    }
+  }
+  else {
+    OnFwd(OUT_B,50);
+    until(MotorRotationCount(OUT_B) >= 0);
+    Off(OUT_B);
+  }
+}
+
 void evacuationField () {
 
   int dir, senValue;
@@ -809,6 +834,7 @@ void evacuationField () {
   int status = 0;
   int sideValue;
   int goTo = 0;
+  int ballMaxDist = 50;
 
   while (status < 5) {
   
@@ -818,7 +844,7 @@ void evacuationField () {
         while (true) {
           senValue = sensUS(dir);
           Debug("senDirValue", senValue,1);
-          if (senValue < 255) {
+          if (senValue <= ballMaxDist) {
             StopMove();
             sideValue = senValue;
             break;
@@ -848,19 +874,19 @@ void evacuationField () {
           if (CurrentTick() - startTick_c4 > 2000) {
             // go to dir
             MoveTo(dir,0,100);
-            until(sensUS(FRONT) == 255);
+            until(sensUS(FRONT) > ballMaxDist);
             status_c4 = 2;
             break;
           }
 
           switch (status_c4) {
             case 0:
-              if (sensUS(FRONT) < 255) {
+              if (sensUS(FRONT) <= ballMaxDist) {
                 status_c4++;
                 break;
               }
             case 1:
-              if (sensUS(FRONT) == 255) {
+              if (sensUS(FRONT) > ballMaxDist) {
                 status_c4++;
                 break;
               }
@@ -877,7 +903,10 @@ void evacuationField () {
           until(sensUS(FRONT) < sideValue);
 
           int lowestValue = 255;
-          while (sensUS(FRONT) < sideValue) {
+          while (true) {
+            if (sensUS(FRONT) > sideValue) {
+              break;
+            }
             if (sensUS(FRONT) < lowestValue) {
               lowestValue = sensUS(FRONT);
             }
@@ -922,6 +951,15 @@ void evacuationField () {
     }
   }
 
+  moveGrabberTo(DOWN);
+  
+  MoveTo(FRONT,2000,60);
+  StopMove();
+
+  moveGrabberTo(UP);
+  
+  until(false);
+
 }
 
 task main () {
@@ -929,6 +967,8 @@ task main () {
   init();
 
   int status = Select("normal","evacuation");
+
+  moveGrabberTo(UP);
   
   while (status < 2) {
   
