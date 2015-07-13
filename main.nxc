@@ -5,7 +5,7 @@
  * PORTS:                                   *
  * IN_1    Gyro (0x14)                      *
  * IN_2    SensorArray (0x22)               *
- * IN_3                                     *
+ * IN_3    NXTcam v2                        *
  * IN_4    Splitter                         *
  * IN_4_1  EyeRight                         *
  * IN_4_2  EyeFront                         *
@@ -21,6 +21,7 @@
 #include "lib/HTSMUX-driver.h"
 #include "lib/LSA-lib.nxc"
 #include "lib/IMU-lib.nxc"
+#include "lib/menu.nxc"
 
 // define colors
 #define BLACK 90
@@ -73,6 +74,8 @@
 #define COLOR_BLACK 0
 #define COLOR_GREEN 1
 #define COLOR_WHITE 2
+#define UP 0
+#define DOWN 1
 
 
 
@@ -128,6 +131,7 @@ void Debug (string name, int num, int line) {
     case 6:
       line = LCD_LINE6;
       break;
+      
     case 7:
       line = LCD_LINE7;
       break;
@@ -153,7 +157,6 @@ void readCali () {
 
   fgets(buffer, 10, file);
   caliMiddleSens.dark = atol(buffer);
-  Debug("",caliMiddleSens.dark,5);
 
   fclose(file);
 }
@@ -732,10 +735,7 @@ void Obstacle (byte dir) {
   
 }
 
-task main () {
-
-  init();
-
+void followLine () {
   int i;
   while (true) {
     for ( i=0; i < 8; i++) {
@@ -751,7 +751,8 @@ task main () {
           Move(75,75,false);
           Wait(500);
           Debug("MOVE_FORWARD",1,2);
-        
+          break;
+          
         case MOVE_LEFT:
         case MOVE_RIGHT:
 
@@ -776,26 +777,9 @@ task main () {
               }
             }
           }
-          //until(getSens(IN_4_3) < 60);
           StopMove();
-          
-          break;
 
-        /*case MOVE_UP:
-          // REMEMBER: the order is reversed, se sens[7] is left and sens[0] is right!
-          if (sens[7] > BLACK) {
-            // line left
-            Move(0,100,false);
-          }
-          else if (sens[0] > BLACK) {
-            // line right
-            Move(100,0,false);
-          }
-          else {
-            Move(100,100,false);
-          }
-          
-          break;  */
+          break;
 
         case OBSTACLE:
           Debug("OBSTACLE",1,2);
@@ -808,13 +792,13 @@ task main () {
           int error = getError(sens); // get the error value
           Debug("error",error,7);
           Debug("memory",memory,8);
-        
+          
           int base = 25;
           int turn = error * 0.21; // same as 75/350;
 
           int motorLeft = base + turn;
           int motorRight = base - turn;
-        
+
           Move(motorLeft,motorRight);
 
           // will be used for calculating the error.
@@ -826,6 +810,190 @@ task main () {
           }
           lastError = error;
       }
+    }
+  }
+}
+
+void moveGrabberTo (int dir) {
+  if (dir == UP) {
+    OnRev(OUT_B,50);
+    int oldRotaB = 0;
+    int thisRotaB;
+    while (true) {
+      Wait(100);
+      thisRotaB = MotorRotationCount(OUT_B);
+      if (thisRotaB-oldRotaB > -20) {
+        Off(OUT_B);
+        break;
+      }
+      oldRotaB = thisRotaB;
+    }
+  }
+  else {
+    OnFwd(OUT_B,50);
+    until(MotorRotationCount(OUT_B) >= 0);
+    Off(OUT_B);
+  }
+}
+
+void evacuationField () {
+
+  int dir, senValue;
+  
+  // TODO: auto detect dir
+  dir = LEFT;
+
+  int status = 0;
+  int sideValue;
+  int goTo = 0;
+  int ballMaxDist = 50;
+
+  while (status < 5) {
+  
+    switch (status) {
+      case 0:
+        MoveTo(FRONT,0,60);
+        while (true) {
+          senValue = sensUS(dir);
+          Debug("senDirValue", senValue,1);
+          if (senValue <= ballMaxDist) {
+            StopMove();
+            sideValue = senValue;
+            break;
+          }
+        }
+        status++;
+        break;
+        
+      case 1:
+        MoveTo(dir,0,75);
+        while (true) {
+          senValue = sensUS(FRONT);
+          Debug("senFrontValue", senValue,2);
+          if (senValue < sideValue) {
+            StopMove();
+            break;
+          }
+        }
+        status = 3;
+        break;
+
+      case 2:
+        MoveTo(!dir,0,75);
+        int status_c4 = 0;
+        long startTick_c4 = CurrentTick();
+        while (status_c4 < 2) {
+          if (CurrentTick() - startTick_c4 > 2000) {
+            // go to dir
+            MoveTo(dir,0,100);
+            until(sensUS(FRONT) > ballMaxDist);
+            status_c4 = 2;
+            break;
+          }
+
+          switch (status_c4) {
+            case 0:
+              if (sensUS(FRONT) <= ballMaxDist) {
+                status_c4++;
+                break;
+              }
+            case 1:
+              if (sensUS(FRONT) > ballMaxDist) {
+                status_c4++;
+                break;
+              }
+          }
+        }
+        StopMove();
+        status++;
+        break;
+        
+      case 3:
+        while (true) {
+        
+          MoveTo(dir,0,75);
+          until(sensUS(FRONT) < sideValue);
+
+          int lowestValue = 255;
+          while (true) {
+            if (sensUS(FRONT) > sideValue) {
+              break;
+            }
+            if (sensUS(FRONT) < lowestValue) {
+              lowestValue = sensUS(FRONT);
+            }
+          }
+
+          StopMove();
+          
+          //int time = endObjTick - startObjTick;
+          MoveTo(!dir,0,75);
+          
+          until(sensUS(FRONT) <= lowestValue + 2);
+          
+          StopMove();
+          break;
+          
+        }
+        status++;
+        break;
+        
+      case 4:
+        MoveTo(FRONT,0,60);
+        int redo = false;
+        while (true) {
+          if (sensUS(FRONT) == 255) {
+            redo = true;
+            break;
+          }
+          else if (sensUS(FRONT) <= 11) {
+            break;
+          }
+        }
+        StopMove();
+        
+        if (redo) {
+          status = 2;
+          break;
+        }
+        else {
+          status++;
+          break;
+        }
+    }
+  }
+
+  moveGrabberTo(DOWN);
+  
+  MoveTo(FRONT,2000,60);
+  StopMove();
+
+  moveGrabberTo(UP);
+  
+  until(false);
+
+}
+
+task main () {
+
+  init();
+
+  int status = Select("normal","evacuation");
+
+  moveGrabberTo(UP);
+  
+  while (status < 2) {
+  
+    switch (status) {
+
+      case 0:
+        followLine();
+        status++;
+        break;
+      case 1:
+        evacuationField();
+        status++;
+        break;
     }
   }
 }
