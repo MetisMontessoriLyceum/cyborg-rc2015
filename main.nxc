@@ -401,20 +401,19 @@ void moveBack (int moveTime, int dir) {
 //  - MOVE_LEFT
 //  - MOVE_RIGHT
 //  - MOVE_FORWARD
+//  - MOVE_UP
 //  - OBSTACLE
 
 int getStatus (unsigned byte &sensor[]) {
-  /*
   accl tilt;
   IMU_ReadAcceleration(IN_1, 0x22, tilt);
   int tiltTX = tilt.tx;
   //NumOut(0,LCD_LINE1,tiltTX,true);
   Debug("tiltTX",tiltTX,3);
-
-  
   if (tiltTX < -40) {
+    return MOVE_UP;
 
-    int change = tiltTX - lastTilt;
+    /*int change = tiltTX - lastTilt;
     if (change < 0) {
       change = -change;
     }
@@ -428,10 +427,10 @@ int getStatus (unsigned byte &sensor[]) {
       lastStatus = MOVE_UP;
       lastTilt = tiltTX;
       return MOVE_UP;
-    }
+    }*/
   }
 
-  if (tiltTX > 40) {
+  /*if (tiltTX > 40) {
     int change = tiltTX - lastTilt;
     if (change < 0) {
       change = -change;
@@ -451,7 +450,7 @@ int getStatus (unsigned byte &sensor[]) {
   lastTilt = tiltTX;
   */
 
-  if (false) {
+  if (needFix(sensor)) {
     valueFixer(sensor);
     lastStatus = FOLLOW_LINE;
     return FOLLOW_LINE;
@@ -735,7 +734,34 @@ void Obstacle (byte dir) {
   
 }
 
+void ramp (int dir) {
+  if (dir == UP) {
+    while (true) {
+
+      for ( int i=0; i < 8; i++) {
+        sens[i] = 0;
+      }
+      if( LSA_ReadRaw_Calibrated (SENS_PORT, SENS_CODE, sens) ) {
+        // REMEMBER: the index is REVERSED, so sens[7] is LEFT and sens[0] is RIGHT!
+        if (sens[7] > BLACK) { // left
+          Move(0,100,false);
+        }
+        else if (sens[0] > BLACK) { // right
+          Move(0,100,false)       ;
+        }
+        else { // forward
+          Move(100,100,false);
+        }
+      }
+    }
+  }
+  else if (dir == DOWN) {
+  
+  }
+}
+
 void followLine () {
+
   int i;
   while (true) {
     for ( i=0; i < 8; i++) {
@@ -744,9 +770,12 @@ void followLine () {
     if( LSA_ReadRaw_Calibrated (SENS_PORT, SENS_CODE, sens) ) {
       CorrectSens(sens);
       int status = getStatus(sens);
-
       switch (status) {
 
+        case MOVE_UP:
+          ramp(UP);
+          break;
+        
         case MOVE_FORWARD:
           Move(75,75,false);
           Wait(500);
@@ -838,7 +867,8 @@ void moveGrabberTo (int dir) {
 }
 
 void evacuationField () {
-
+  // MoveTo( direction, waitTime, speed );
+  
   int dir, senValue;
   
   // TODO: auto detect dir
@@ -848,15 +878,17 @@ void evacuationField () {
   int sideValue;
   int goTo = 0;
   int ballMaxDist = 50;
+  int turnSpeed = 85;
 
   while (status < 5) {
-  
+    Debug("status",status,1);
     switch (status) {
+      // # Search for the ball
       case 0:
         MoveTo(FRONT,0,60);
         while (true) {
           senValue = sensUS(dir);
-          Debug("senDirValue", senValue,1);
+          Debug("senDirValue", senValue,3);
           if (senValue <= ballMaxDist) {
             StopMove();
             sideValue = senValue;
@@ -865,9 +897,10 @@ void evacuationField () {
         }
         status++;
         break;
-        
+
+      // # Rotate to the ball
       case 1:
-        MoveTo(dir,0,75);
+        MoveTo(dir,0,turnSpeed);
         while (true) {
           senValue = sensUS(FRONT);
           Debug("senFrontValue", senValue,2);
@@ -879,14 +912,17 @@ void evacuationField () {
         status = 3;
         break;
 
+      // #  Point to the right side of the ball
       case 2:
-        MoveTo(!dir,0,75);
+        MoveTo(!dir,0,turnSpeed);
+        Debug("!dir",dir,5);
         int status_c4 = 0;
         long startTick_c4 = CurrentTick();
         while (status_c4 < 2) {
-          if (CurrentTick() - startTick_c4 > 2000) {
+          if (CurrentTick() - startTick_c4 > 8000) {
             // go to dir
-            MoveTo(dir,0,75);
+            MoveTo(dir,0,turnSpeed);
+            Debug("dir",dir,5);
             until(sensUS(FRONT) > ballMaxDist);
             status_c4 = 2;
             break;
@@ -908,16 +944,25 @@ void evacuationField () {
         StopMove();
         status++;
         break;
-        
+
+      // # Point to the center of the ball
       case 3:
         while (true) {
         
-          MoveTo(dir,0,75);
-          until(sensUS(FRONT) < sideValue);
+          // what to do:
+          //  - make shur that you are close to the ball by:
+          //     - see if you get 3 time 255 in a row
+          //     - move back until you see somthing
+          //        - if this takes to long; realine the robot
+          //     - move move just anof forward
+          //     - grab the ball
+
+          MoveTo(dir,0,turnSpeed);
+          until(sensUS(FRONT) < sideValue + 5);
 
           int lowestValue = 255;
           while (true) {
-            if (sensUS(FRONT) > sideValue) {
+            if (sensUS(FRONT) > sideValue + 5) {
               break;
             }
             if (sensUS(FRONT) < lowestValue) {
@@ -928,9 +973,9 @@ void evacuationField () {
           StopMove();
           
           //int time = endObjTick - startObjTick;
-          MoveTo(!dir,0,75);
+          MoveTo(!dir,0,turnSpeed);
           
-          until(sensUS(FRONT) <= lowestValue + 2);
+          until(sensUS(FRONT) <= lowestValue + 5);
           
           StopMove();
           break;
@@ -938,16 +983,22 @@ void evacuationField () {
         }
         status++;
         break;
-        
+
+      // # Determine if the robot is ready to grap the ball
       case 4:
         MoveTo(FRONT,0,60);
         int redo = false;
         while (true) {
           if (sensUS(FRONT) == 255) {
-            redo = true;
-            break;
-          }
-          else if (sensUS(FRONT) <= 11) {
+            Move(-75,-75,false);
+            Wait(200);
+            if (sensUS(FRONT) <= 11) {
+              break;
+            }
+            else {
+              redo = true;
+              break;
+            }
             break;
           }
         }
@@ -964,6 +1015,7 @@ void evacuationField () {
     }
   }
 
+  // # Grab the ball
   moveGrabberTo(DOWN);
   
   for (int i; i<20; i++) {
@@ -987,6 +1039,7 @@ task main () {
   int status = Select("normal","evacuation");
 
   moveGrabberTo(UP);
+
   
   while (status < 2) {
   
