@@ -430,25 +430,11 @@ int getStatus (unsigned byte &sensor[]) {
     }*/
   }
 
-  /*if (tiltTX > 40) {
-    int change = tiltTX - lastTilt;
-    if (change < 0) {
-      change = -change;
-    }
-    if (change > 25) {
-      if (lastStatus == MOVE_DOWN) {
-        lastTilt = tiltTX;
-        return MOVE_DOWN;
-      }
-    }
-    else {
-      lastStatus = MOVE_DOWN;
-      lastTilt = tiltTX;
-      return MOVE_DOWN;
-    }
+  if (tiltTX > 40) {
+    return MOVE_DOWN;
   }
-  lastTilt = tiltTX;
-  */
+
+
 
   if (needFix(sensor)) {
     valueFixer(sensor);
@@ -734,29 +720,68 @@ void Obstacle (byte dir) {
   
 }
 
+bool isFlat () {
+  accl tilt;
+  IMU_ReadAcceleration(IN_1, 0x22, tilt);
+  int tiltTX = tilt.tx;
+  int tiltTY = tilt.ty;
+  if (tiltTX < -40) {
+}
+
 void ramp (int dir) {
   if (dir == UP) {
     while (true) {
-
+    
       for ( int i=0; i < 8; i++) {
         sens[i] = 0;
       }
       if( LSA_ReadRaw_Calibrated (SENS_PORT, SENS_CODE, sens) ) {
+        CorrectSens(sens);
         // REMEMBER: the index is REVERSED, so sens[7] is LEFT and sens[0] is RIGHT!
-        if (sens[7] > BLACK) { // left
+        Debug("sen7",sens[7],1);
+        Debug("sen0",sens[0],2);
+        if (sens[7] > BLACK || sens[6] > BLACK) { // left
           Move(0,100,false);
         }
-        else if (sens[0] > BLACK) { // right
-          Move(0,100,false)       ;
+        else if (sens[0] > BLACK || sens[1] > BLACK) { // right
+          Move(100,0,false);
         }
-        else { // forward
+        else if (sens[2] > BLACK || sens[3] > BLACK || sens[4] > BLACK || sens[5] > BLACK) { // forward
           Move(100,100,false);
         }
       }
     }
   }
   else if (dir == DOWN) {
-  
+    int status = LEFT;
+    while (true) {
+
+      for ( int i=0; i < 8; i++) {
+        sens[i] = 0;
+      }
+      if( LSA_ReadRaw_Calibrated (SENS_PORT, SENS_CODE, sens) ) {
+        CorrectSens(sens);
+        // REMEMBER: the index is REVERSED, so sens[7] is LEFT and sens[0] is RIGHT!
+
+        switch (status) {
+          case LEFT:
+            Move(0,50);
+            if (sens[0] > BLACK) {
+              status = RIGHT;
+            }
+            break;
+            
+          case RIGHT:
+            Move(50,0);
+            if (sens[7] > BLACK) {
+              status = LEFT;
+            }
+            break;
+        }
+
+
+      }
+    }
   }
 }
 
@@ -774,6 +799,10 @@ void followLine () {
 
         case MOVE_UP:
           ramp(UP);
+          break;
+        
+        case MOVE_DOWN:
+          ramp(DOWN);
           break;
         
         case MOVE_FORWARD:
