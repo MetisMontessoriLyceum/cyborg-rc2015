@@ -1,0 +1,316 @@
+/************************************************************************/
+/*                                                                      */
+/* Program Name: accl-xyz-calib.nxc  */
+/* ===========================                                          */
+/*                                                                      */
+/* Copyright (c) 2009 by mindsensors.com                                */
+/* Email: info (<at>) mindsensors (<dot>) com                           */
+/*                                                                      */
+/* Internal development program.                                        */
+/*                                                                      */
+/************************************************************************/
+/*
+ * When        Who             Comments
+ * 09/19/08    Deepak Patil    Initial authoring.
+ */
+#define SensorPort  IN_1
+#define ADDR     0x22
+//#include "nxtcamlib.nxc"
+#include "IMU-lib.nxc"
+
+string format_hex ( int loop ) {
+  int j;
+  string s;
+  int b = 0xF0;
+  int a = 0x0F;
+
+  j = (loop&b)>>4;
+
+  s = "";
+  switch ( j ) {
+  case 1:
+      s += "1";
+      break;
+  case 2:
+      s += "2";
+      break;
+  case 3:
+      s += "3";
+      break;
+  case 4:
+      s += "4";
+      break;
+  case 5:
+      s += "5";
+      break;
+  case 6:
+      s += "6";
+      break;
+  case 7:
+      s += "7";
+      break;
+  case 8:
+      s += "8";
+      break;
+  case 9:
+      s += "9";
+      break;
+  case 10:
+      s += "A";
+      break;
+  case 11:
+      s += "B";
+      break;
+  case 12:
+      s += "C";
+      break;
+  case 13:
+      s += "D";
+      break;
+  case 14:
+      s += "E";
+      break;
+  case 15:
+      s += "F";
+      break;
+  case 16:
+      s += "0";
+      break;
+  case 0:
+      s += "0";
+      break;
+  }
+
+  j = loop&a;
+
+  switch ( j ) {
+  case 1:
+      s += "1";
+      break;
+  case 2:
+      s += "2";
+      break;
+  case 3:
+      s += "3";
+      break;
+  case 4:
+      s += "4";
+      break;
+  case 5:
+      s += "5";
+      break;
+  case 6:
+      s += "6";
+      break;
+  case 7:
+      s += "7";
+      break;
+  case 8:
+      s += "8";
+      break;
+  case 9:
+      s += "9";
+      break;
+  case 10:
+      s += "A";
+      break;
+  case 11:
+      s += "B";
+      break;
+  case 12:
+      s += "C";
+      break;
+  case 13:
+      s += "D";
+      break;
+  case 14:
+      s += "E";
+      break;
+  case 15:
+      s += "F";
+      break;
+  case 16:
+      s += "0";
+      break;
+  case 0:
+      s += "0";
+      break;
+  } 
+  return (s);
+}
+
+string format_bin ( int loop ) {
+
+  string s;
+  int j;
+  int b = 0x80;
+  s = "";
+  for ( j = 0; j < 8; j++) {
+    if ( loop&b ) {
+      s += NumToStr(1);
+    } else {
+      s += NumToStr(0);
+    }
+    b = b>>1;
+  }
+  return (s);
+}
+
+
+void IMU_DisplayCalibrations(byte port, byte i2cAddr)
+{
+  string msg;
+  byte message[];
+  byte buf[12];
+  int count;
+  byte nByteReady = 0;
+  string ax, ay, az, tx, ty, tz;
+	int x_off_lsb, x_off_msb, x_rng_lsb, x_rng_msb;
+	int y_off_lsb, y_off_msb, y_rng_lsb, y_rng_msb;
+	int z_off_lsb, z_off_msb, z_rng_lsb, z_rng_msb;
+
+  ArrayBuild(message, i2cAddr, 0x4b);
+  while (I2CStatus(port, nByteReady) ==  STAT_COMM_PENDING);
+  count = 8;
+  if(I2CBytes(port, message, count, buf)) {
+		x_off_lsb = buf[0];
+		x_off_msb = buf[1];
+		x_rng_lsb = buf[2];
+		x_rng_msb = buf[3];
+		y_off_lsb = buf[4];
+		y_off_msb = buf[5];
+		y_rng_lsb = buf[6];
+		y_rng_msb = buf[7];
+  } else {
+		x_off_lsb = 0;
+		x_off_msb = 0;
+		x_rng_lsb = 0;
+		x_rng_msb = 0;
+		y_off_lsb = 0;
+		y_off_msb = 0;
+		y_rng_lsb = 0;
+		y_rng_msb = 0;
+	}
+
+  ArrayBuild(message, i2cAddr, 0x53);
+  while (I2CStatus(port, nByteReady) ==  STAT_COMM_PENDING);
+  count = 4;
+  if(I2CBytes(port, message, count, buf)) {
+		z_off_lsb = buf[0];
+		z_off_msb = buf[1];
+		z_rng_lsb = buf[2];
+		z_rng_msb = buf[3];
+  } else {
+		z_off_lsb = 0;
+		z_off_msb = 0;
+		z_rng_lsb = 0;
+		z_rng_msb = 0;
+	}
+
+	msg = "xo              ";
+	ax = format_hex(x_off_lsb);
+	msg = StrReplace(msg, 3, ax);
+	tx = format_hex(x_off_msb);
+	msg = StrReplace(msg, 8, tx);
+	TextOut(0, LCD_LINE2, msg, false);
+
+	msg = "xr              ";
+	ax = format_hex(x_rng_lsb);
+	msg = StrReplace(msg, 3, ax);
+	tx = format_hex(x_rng_msb);
+	msg = StrReplace(msg, 8, tx);
+	TextOut(0, LCD_LINE3, msg, false);
+
+	msg = "yo              ";
+	ax = format_hex(y_off_lsb);
+	msg = StrReplace(msg, 3, ax);
+	tx = format_hex(y_off_msb);
+	msg = StrReplace(msg, 8, tx);
+	TextOut(0, LCD_LINE4, msg, false);
+
+	msg = "yr              ";
+	ax = format_hex(y_rng_lsb);
+	msg = StrReplace(msg, 3, ax);
+	tx = format_hex(y_rng_msb);
+	msg = StrReplace(msg, 8, tx);
+	TextOut(0, LCD_LINE5, msg, false);
+
+	msg = "zo              ";
+	ax = format_hex(z_off_lsb);
+	msg = StrReplace(msg, 3, ax);
+	tx = format_hex(z_off_msb);
+	msg = StrReplace(msg, 8, tx);
+	TextOut(0, LCD_LINE6, msg, false);
+
+	msg = "zr              ";
+	ax = format_hex(z_rng_lsb);
+	msg = StrReplace(msg, 3, ax);
+	tx = format_hex(z_rng_msb);
+	msg = StrReplace(msg, 8, tx);
+	TextOut(0, LCD_LINE7, msg, false);
+
+}
+
+task main()
+{
+	byte calib[12];
+  SetSensorLowspeed(SensorPort);
+
+
+	TextOut(0, LCD_LINE1, "Program to cali-", false);
+	TextOut(0, LCD_LINE2, "brate x, y & z  ", false);
+	TextOut(0, LCD_LINE3, "Hold sensor very", false);
+	TextOut(0, LCD_LINE4, "stationary at   ", false);
+	TextOut(0, LCD_LINE5, "every step poin-", false);
+	TextOut(0, LCD_LINE6, "ting vertically ", false);
+	TextOut(0, LCD_LINE7, "up or down.     ", false);
+	TextOut(0, LCD_LINE8, "NextStep:OrngBtn", false);
+  Wait(500);
+	until(ButtonPressed(BTNCENTER, true));
+
+	IMU_DisplayCalibrations(SensorPort, ADDR);
+	TextOut(0, LCD_LINE1, "NextStep:OrngBtn", false);
+	TextOut(0, LCD_LINE8, "Hold X UP       ", false);
+  Wait(500);
+	until(ButtonPressed(BTNCENTER, true));
+	IMU_SendCommand(SensorPort, ADDR, 'X'); 
+	TextOut(0, LCD_LINE8, "Hold X DOWN     ", false);
+  Wait(500);
+	until(ButtonPressed(BTNCENTER, true));
+	IMU_SendCommand(SensorPort, ADDR, 'x');
+
+	TextOut(0, LCD_LINE8, "Hold Y UP     ", false);
+  Wait(500);
+	until(ButtonPressed(BTNCENTER, true));
+	IMU_SendCommand(SensorPort, ADDR, 'Y'); 
+	TextOut(0, LCD_LINE8, "Hold Y DOWN      ", false);
+  Wait(500);
+	until(ButtonPressed(BTNCENTER, true));
+	IMU_SendCommand(SensorPort, ADDR, 'y');
+
+	TextOut(0, LCD_LINE8, "HOLD Z UP      ", false);
+  Wait(500);
+	until(ButtonPressed(BTNCENTER, true));
+	IMU_SendCommand(SensorPort, ADDR, 'Z'); 
+	TextOut(0, LCD_LINE8, "HOLD Z DOWN      ", false);
+  Wait(500);
+	until(ButtonPressed(BTNCENTER, true));
+	IMU_SendCommand(SensorPort, ADDR, 'z');
+
+	TextOut(0, LCD_LINE8, "OrngeBtn to go", false);
+  Wait(500);
+	until(ButtonPressed(BTNCENTER, true));
+
+	IMU_DisplayCalibrations(SensorPort, ADDR);
+
+  Wait(200);
+	TextOut(0, LCD_LINE8, "OrngeBtn to go", false);
+  Wait(200);
+	until(ButtonPressed(BTNCENTER, true));
+
+	IMU_DisplayCalibrations(SensorPort, ADDR);
+
+	TextOut(0, LCD_LINE8, "OrngeBtn to exit", false);
+  Wait(200);
+	until(ButtonPressed(BTNCENTER, true));
+}

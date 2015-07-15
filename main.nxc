@@ -101,6 +101,10 @@ long lastRotaC = 0;
 float penMemory = 0;
 float penMax = 0;
 
+int startTiltX;
+int startTiltY;
+
+
 typedef struct {
   int light;
   int dark;
@@ -410,7 +414,7 @@ int getStatus (unsigned byte &sensor[]) {
   int tiltTX = tilt.tx;
   //NumOut(0,LCD_LINE1,tiltTX,true);
   Debug("tiltTX",tiltTX,3);
-  if (tiltTX < -40) {
+  if (tiltTX - startTiltX < -40) {
     return MOVE_UP;
 
     /*int change = tiltTX - lastTilt;
@@ -430,7 +434,7 @@ int getStatus (unsigned byte &sensor[]) {
     }*/
   }
 
-  if (tiltTX > 40) {
+  if (tiltTX - startTiltX > 40) {
     return MOVE_DOWN;
   }
 
@@ -650,6 +654,13 @@ void init () {
   // set values
   lastTick = CurrentTick();
   startTick = CurrentTick();
+
+  accl tilt;
+  IMU_ReadAcceleration(IN_1, 0x22, tilt);
+
+  startTiltX = tilt.tx;
+  startTiltY = tilt.ty;
+  
 }
 
 
@@ -725,13 +736,17 @@ bool isFlat () {
   IMU_ReadAcceleration(IN_1, 0x22, tilt);
   int tiltTX = tilt.tx;
   int tiltTY = tilt.ty;
-  if (tiltTX < -40) {
+  return tiltTX - startTiltX  > -10 && tiltTX - startTiltX  < 10 && tiltTY - startTiltY > -10 && tiltTY - startTiltY < 10;
 }
 
 void ramp (int dir) {
   if (dir == UP) {
     while (true) {
     
+      if (isFlat()) {
+        break;
+      }
+
       for ( int i=0; i < 8; i++) {
         sens[i] = 0;
       }
@@ -755,6 +770,10 @@ void ramp (int dir) {
   else if (dir == DOWN) {
     int status = LEFT;
     while (true) {
+
+      if (isFlat()) {
+        break;
+      }
 
       for ( int i=0; i < 8; i++) {
         sens[i] = 0;
@@ -783,6 +802,9 @@ void ramp (int dir) {
       }
     }
   }
+  
+  // code here
+  
 }
 
 void followLine () {

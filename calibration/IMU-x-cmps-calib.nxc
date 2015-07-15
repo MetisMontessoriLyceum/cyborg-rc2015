@@ -1,0 +1,67 @@
+/************************************************************************/
+/*                                                                      */
+/* Program Name: IMU-cmps-calib.nxc */
+/* =============================                                        */
+/*                                                                      */
+/* Copyright (c) 2012 by mindsensors.com                                */
+/* Email: info (<at>) mindsensors (<dot>) com                           */
+/*                                                                      */
+/* This program is free software. You can redistribute it and/or modify */
+/* it under the terms of the GNU General Public License as published by */
+/* the Free Software Foundation; version 3 of the License.              */
+/* Read the license at: http://www.gnu.org/licenses/gpl.txt             */
+/*                                                                      */
+/************************************************************************/
+/*
+ * When        Who             Comments
+ * 05/16/12    Deepak Patil    Initial authoring.
+ */
+
+const byte SensorPort  =  IN_1;
+#define ADDR     0x22
+#include "IMU-lib.nxc"
+
+task main ()
+{
+
+  string msg, msg0, msg1, msg2, msg3;
+  string x;
+	int s, i, a_speed, b_speed;
+
+  byte message[];
+  unsigned byte buf[20];
+  int count, l;
+  byte nByteReady = 0;
+
+  SetSensorLowspeed(SensorPort);
+
+  Wait(10);
+	msg = "AbsoluteIMU Cmps";
+	TextOut(0, LCD_LINE1, msg, false);
+	msg = "Calib atach @ S1";
+	TextOut(0, LCD_LINE2, msg, false);
+	msg = "refer to calib-";
+	TextOut(0, LCD_LINE3, msg, false);
+	msg = "ration guide for";
+	TextOut(0, LCD_LINE4, msg, false);
+	msg = "steps to follow";
+	TextOut(0, LCD_LINE5, msg, false);
+	msg = "Press ORNGE btn ";
+	TextOut(0, LCD_LINE7, msg, false);
+	msg = "to begin        ";
+	TextOut(0, LCD_LINE8, msg, false);
+  until(ButtonPressed(BTNCENTER, true));
+	IMU_BeginCompassCalibration(SensorPort, ADDR);
+  Wait(500);
+	PlayTone(400, 60);
+
+	msg = "ORNGE btn to end";
+	TextOut(0, LCD_LINE4, msg, true);
+  until(ButtonPressed(BTNCENTER, true));
+	msg = "*** wait ***    ";
+	TextOut(0, LCD_LINE4, msg, true);
+	IMU_EndCompassCalibration(SensorPort, ADDR);
+	PlayTone(400, 60);
+  Wait(1000);
+
+}
