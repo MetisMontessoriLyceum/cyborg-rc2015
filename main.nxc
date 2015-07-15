@@ -410,8 +410,8 @@ int getStatus (unsigned byte &sensor[]) {
   int tiltTX = tilt.tx;
   //NumOut(0,LCD_LINE1,tiltTX,true);
   Debug("tiltTX",tiltTX,3);
-  if (tiltTX < -40) {
-    return MOVE_UP;
+  //if (tiltTX < -40) {
+    //return MOVE_UP;
 
     /*int change = tiltTX - lastTilt;
     if (change < 0) {
@@ -428,7 +428,7 @@ int getStatus (unsigned byte &sensor[]) {
       lastTilt = tiltTX;
       return MOVE_UP;
     }*/
-  }
+  //}
 
   /*if (tiltTX > 40) {
     int change = tiltTX - lastTilt;
