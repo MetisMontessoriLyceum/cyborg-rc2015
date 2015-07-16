@@ -102,8 +102,8 @@ long lastRotaC = 0;
 float penMemory = 0;
 float penMax = 0;
 
-int startTiltX;
-int startTiltY;
+short startTiltX;
+short startTiltY;
 
 
 typedef struct {
@@ -145,7 +145,7 @@ void Debug (string name, int num, int line) {
       break;
   }
   string toDebug;
-  toDebug = name + ": "+NumToStr(num);
+  toDebug = StrCat(name,": ",NumToStr(num));
   ClearLine(line);
   TextOut(0,line,toDebug);
 }
@@ -176,9 +176,9 @@ int getSens (int port) {
   else {
     ret = smuxSensorLegoLightNorm(port);
   }
-  Debug("before",ret,4);
-  ret = (ret - caliMiddleSens.light) * (100/(caliMiddleSens.dark - caliMiddleSens.light));
-  Debug("after",ret,5);
+  // Debug("before",ret,4);
+  //ret = (ret - caliMiddleSens.light) * (100/(caliMiddleSens.dark - caliMiddleSens.light));
+  //Debug("after",ret,5);
   return ret;
 }
 
@@ -269,10 +269,10 @@ void CorrectSens (byte &array[]) {
     }
     array[i] = 100 - array[i];
   }
-  int tmp[8];
+  float tmp[8];
   tmp = array;
   for (int i=0; i<8; i++) {
-    tmp[i] = (tmp[i] - 10) * 1.25;
+    tmp[i] = (tmp[i] - 10) * (100/(90 - 10));
     
     if (tmp[i] < 0) {
       tmp[i] = 0;
@@ -417,27 +417,11 @@ int getStatus (unsigned byte &sensor[]) {
 
   accl tilt;
   IMU_ReadAcceleration(IN_1, 0x22, tilt);
-  int tiltTX = tilt.tx;
+  short tiltTX = tilt.tx;
   //NumOut(0,LCD_LINE1,tiltTX,true);
   Debug("tiltTX",tiltTX,3);
   if (tiltTX - startTiltX < -40) {
     return MOVE_UP;
-
-    /*int change = tiltTX - lastTilt;
-    if (change < 0) {
-      change = -change;
-    }
-    if (change > 25) {
-      if (lastStatus == MOVE_UP) {
-        lastTilt = tiltTX;
-        return MOVE_UP;
-      }
-    }
-    else {
-      lastStatus = MOVE_UP;
-      lastTilt = tiltTX;
-      return MOVE_UP;
-    }*/
   }
 
   if (tiltTX - startTiltX > 40) {
@@ -446,23 +430,26 @@ int getStatus (unsigned byte &sensor[]) {
 
 
 
-  if (needFix(sensor)) {
+  /*if (needFix(sensor)) {
     valueFixer(sensor);
     lastStatus = FOLLOW_LINE;
     return FOLLOW_LINE;
-  }
+  }*/
   
   int status = FOLLOW_LINE;
   
-  if (sensUS(FRONT) < 11) {
+  /*if (sensUS(FRONT) < 11) {
     status = OBSTACLE;
     return status;
-  }
+  }*/
 
   int lowestIndex;
   int highestIndex;
   int lineWidth = getLineWidth(sensor,lowestIndex,highestIndex,60);
 
+  Debug("lineWidth",lineWidth,4);
+  Debug("lowestIndex",lowestIndex,5);
+  Debug("highestIndex",highestIndex,6);
   if (lineWidth > 4) {
   
     int distToSideRight = lowestIndex;
@@ -746,6 +733,7 @@ bool isFlat () {
 }
 
 void ramp (int dir) {
+  int last;
   if (dir == UP) {
     while (true) {
     
@@ -763,9 +751,11 @@ void ramp (int dir) {
         Debug("sen0",sens[0],2);
         if (sens[7] > BLACK || sens[6] > BLACK) { // left
           Move(0,100,false);
+          last = LEFT;
         }
         else if (sens[0] > BLACK || sens[1] > BLACK) { // right
           Move(100,0,false);
+          last = RIGHT;
         }
         else if (sens[2] > BLACK || sens[3] > BLACK || sens[4] > BLACK || sens[5] > BLACK) { // forward
           Move(100,100,false);
@@ -809,8 +799,27 @@ void ramp (int dir) {
     }
   }
   
-  // code here
-  
+  if (dir == UP) {
+    while (true) {
+      for ( int i=0; i < 8; i++) {
+        sens[i] = 0;
+      }
+      if( LSA_ReadRaw_Calibrated (SENS_PORT, SENS_CODE, sens) ) {
+        CorrectSens(sens);
+        if (seeLine(sens)) {
+          break;
+        }
+        else {
+          switch (last) {
+            case LEFT:
+              MoveTo(LEFT);
+            case RIGHT:
+              MoveTo(RIGHT);
+          }
+        }
+      }
+    }
+  }
 }
 
 void followLine () {
@@ -860,6 +869,7 @@ void followLine () {
 
           MoveTo(FRONT);
           untilSeeLine(MIDDLE);
+          Wait(50);
           MoveTo(dir);
           while (true) {
             if( LSA_ReadRaw_Calibrated (SENS_PORT, SENS_CODE, sens) ) {
@@ -911,11 +921,11 @@ void moveGrabberTo (int dir) {
     OnRev(OUT_B,50);
     int oldRotaB = 0;
     int thisRotaB;
-    Wait(200);
+    Wait(600);
     while (true) {
       Wait(100);
       thisRotaB = MotorRotationCount(OUT_B);
-      if (thisRotaB-oldRotaB > -20) {
+      if (thisRotaB-oldRotaB == 0) {
         Off(OUT_B);
         break;
       }
@@ -923,8 +933,7 @@ void moveGrabberTo (int dir) {
     }
   }
   else {
-    OnFwd(OUT_B,50);
-    until(MotorRotationCount(OUT_B) >= 0);
+    RotateMotor(OUT_B,50,720);
     Off(OUT_B);
   }
 }
@@ -1160,7 +1169,6 @@ task main () {
   int status = Select("normal","evacuation");
 
   moveGrabberTo(UP);
-
   
   while (status < 2) {
   

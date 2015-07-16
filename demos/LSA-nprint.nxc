@@ -31,6 +31,20 @@ void CorrectSens (byte &array[]) {
     }
     array[i] = 100 - array[i];
   }
+  float tmp[8];
+  tmp = array;
+  for (int i=0; i<8; i++) {
+    tmp[i] = (tmp[i] - 10) * (100/(90 - 10));
+
+    if (tmp[i] < 0) {
+      tmp[i] = 0;
+    }
+    if (tmp[i] > 100) {
+      tmp[i] = 100;
+    }
+
+  }
+  array = tmp;
 }
 
 int cb;

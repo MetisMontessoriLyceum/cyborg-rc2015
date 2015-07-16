@@ -23,6 +23,13 @@
 #define RIGHT 1
 #define FRONT 2
 
+typedef struct {
+  int light;
+  int dark;
+} calibration;
+
+calibration caliMiddleSens;
+
 void init () {
   // set up splitter
   SetSensor(S4, SENSOR_LOWSPEED);
@@ -84,14 +91,48 @@ int sensUS (int port) {
   return smuxSensorLegoUS(port);
 }
 
+void readCali () {
+  string buffer;
+  byte file = fopen("caliSensMiddle.txt", "r");
+  if (file == NULL) {
+    StopAllTasks();
+  }
+
+  fgets(buffer, 10, file);
+  caliMiddleSens.light = atol(buffer);
+
+  fgets(buffer, 10, file);
+  caliMiddleSens.dark = atol(buffer);
+
+  fclose(file);
+}
+
+int getSens (int port) {
+
+  float ret;
+
+  if (port == IN_1 || port == IN_1 || port == IN_1 || port == IN_1) {
+    ret = Sensor(port);
+  }
+  else {
+    ret = smuxSensorLegoLightNorm(port);
+  }
+  Debug("before",ret,6);
+  ret = (ret - caliMiddleSens.light) * (100/(caliMiddleSens.dark - caliMiddleSens.light));
+  Debug("after",ret,7);
+  return ret;
+}
+
 task main () {
   init();
-
+  readCali();
+  
   int count;
   while (true) {
     Debug("LEFT",sensUS(LEFT),1);
     Debug("RIGHT",sensUS(RIGHT),2);
     Debug("FRONT",sensUS(FRONT),3);
+    Debug("DOWN",getSens(IN_4_3),4);
     Wait(15);
   }
 }
