@@ -18,3 +18,20 @@ int error = 350 - (sensor[0] + sensor[1]*100 + sensor[2]*200 ... ) / (sensor[0] 
    when the line is not directly under the line sensor array the error is -350,
    in this case, we look at what happend *before* the robot lost the line to
    determine if the line was lost or if ther is a gap
+
+## calibration
+
+   for calibration we use the following formule I came up width:
+   ```c
+sensor = (sensor - cali.light) * (100 / (cali.dark - cali.light));
+   ```
+   then, you simply remove the values above 100 and below 0:
+   ```c
+if (sensor > 100) {
+	sensor = 100;
+}
+else if (sensor < 0) {
+	sensor = 0;
+}
+   ```
+   > **note:** make sure you use a `float` as datatype of the sensor
