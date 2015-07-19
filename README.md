@@ -56,7 +56,7 @@ for (int i; i<2; i++) {
 
 We do the detection of the ramp width a Accelerometer, compass & gyrosensor in one form www.mindsensors.com
 
-### calibration
+## calibration
 
    The built in calibration rutene wasn't quick anof, so we made une ourer self,
    It is very simple:
