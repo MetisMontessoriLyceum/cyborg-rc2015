@@ -1,0 +1,89 @@
+#include "lib/IMU-lib.nxc"
+
+void Move (int left, int right, bool autofix = true) {
+
+  if (autofix) {
+
+    if (left > 0) {
+      left = left * 0.4 + 60;
+    }
+    else if (left < 0) {
+      left = left * 0.4 - 60;
+    }
+    if (right > 0) {
+      right = right * 0.4 + 60;
+    }
+    else if (right < 0) {
+      right = right * 0.4 - 60;
+    }
+  }
+
+  if (left > 100) {
+    left = 100;
+  }
+  else if (left < -100) {
+    left = -100;
+  }
+
+  if (right > 100) {
+    right = 100;
+  }
+  else if (right < -100) {
+    right = -100;
+  }
+
+  if (left == 0) {
+    Off(OUT_A);
+  }
+  else {
+    OnRev(OUT_A,left);
+  }
+  if (right == 0) {
+    Off(OUT_C);
+  }
+  else {
+    OnRev(OUT_C,right);
+  }
+}
+
+void turn (int _goal) {
+  float goal = _goal*(1000/360);
+  if (goal  < 500) {
+    goal += 1000;
+  }
+  else if (goal > 500) {
+    goal -= 1000;
+  }
+  int goalGyro,  error, turn;
+  gyro dir;
+  IMU_ReadGyro(IN_1, 0x22, dir);
+  goalGyro = dir.gx - goal;
+
+  while (true) {
+    IMU_ReadGyro(IN_1,0x22,dir);
+    error = dir.gx - goalGyro;
+    if (error  < 500) {
+      error += 1000;
+    }
+    else if (error > 500) {
+      error -= 1000;
+    }
+    NumOut(0,LCD_LINE1,error,true);
+
+    turn = error * 0.2;
+
+    if (turn > -5 && turn < 5) {
+      break;
+    }
+
+    Move(-turn,turn);
+  }
+}
+
+task main () {
+
+  IMU_Init(IN_1);
+  
+  turn(90);
+  
+}
