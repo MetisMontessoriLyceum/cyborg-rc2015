@@ -809,15 +809,15 @@ void ramp (int dir) {
         Debug("sen7",sens[7],1);
         Debug("sen0",sens[0],2);
         if (sens[7] > BLACK || sens[6] > BLACK) { // left
-          //Move(0,100,false);
+          Move(0,60,false);
           last = LEFT;
         }
         else if (sens[0] > BLACK || sens[1] > BLACK) { // right
-          //Move(100,0,false);
+          Move(60,0,false);
           last = RIGHT;
         }
         else if (sens[2] > BLACK || sens[3] > BLACK || sens[4] > BLACK || sens[5] > BLACK) { // forward
-          //Move(100,100,false);
+          Move(50,50,false);
         }
       }
 
@@ -925,7 +925,6 @@ void followLine () {
 
         case MOVE_LEFT:
         case MOVE_RIGHT:
-
           int dir;
           if (status == MOVE_RIGHT) {
             Debug("MOVE_RIGHT",1,2);
